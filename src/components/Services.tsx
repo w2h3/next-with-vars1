@@ -9,11 +9,7 @@ const Why = () => {
       id="about"
       className="max-w-[1350px] w-[90vw] mx-auto -mt-28 mb-28 flex justify-center flex-wrap md:flex-wrap lg:flex-nowrap gap-10 scroll-mt-10"
     >
-      <WhyItem
-        Icon={BiBrain}
-        title="Neurology"
-        description="Ea elit adipisicing elit ea aliquip ullamco magna aliqua magna enim. Nisi anim cupidatat id Lorem tempor non ad."
-      />
+      <WhyItem Icon={BiBrain} title="Neurology" description="● Hello " />
       <WhyItem
         Icon={GiNightSleep}
         title="Sleep"
@@ -33,13 +29,14 @@ const Why = () => {
   );
 };
 
-interface WhyItemProps {
-  title: string;
-  Icon: IconType;
-  description: string;
-}
+// interface WhyItemProps {
+//   title: string;
+//   Icon: IconType;
+//   description: string;
+// }
 
-const WhyItem = ({ Icon, title, description }: WhyItemProps) => {
+const WhyItem = ({ Icon, title, description }) => {
+  // : WhyItemProps
   return (
     <div className="z-10 relative w-[30%] min-w-[330px] lg:min-w-[150px]">
       <div className="flex flex-col px-6 py-5 gap-3 bg-white rounded-md shadow-md border-2 border-gray-500 shadow-gray-500 after-border after:-translate-x-3 after:-translate-y-1">
