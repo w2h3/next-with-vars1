@@ -1,5 +1,4 @@
-import { AiOutlinePhone } from 'react-icons/ai';
-const Top = () => {
+const Header = () => {
   return (
     <nav className=" flex-row shadow dark:bg-gray-800 ">
       <div className="flex bg-slate-200 md:flex-row md:items-center lg:justify-evenly to-white mx-auto justify-center md:px-10 lg:mx-auto sm:px-2 ">
@@ -84,4 +83,4 @@ const Top = () => {
   );
 };
 
-export default Top;
+export default Header;

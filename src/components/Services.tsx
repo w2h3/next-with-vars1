@@ -27,7 +27,7 @@ const Why = () => {
       <WhyItem
         Icon={MdPsychology}
         title="Psychiatry"
-        description=''
+        description="Ea elit adipisicing elit ea aliquip ullamco magna aliqua magna enim. Nisi anim cupidatat id Lorem tempor non ad."
       />
     </div>
   );
@@ -41,7 +41,7 @@ interface WhyItemProps {
 
 const WhyItem = ({ Icon, title, description }: WhyItemProps) => {
   return (
-    <div className="z-10 relative w-[30%] min-w-[330px]">
+    <div className="z-10 relative w-[30%] min-w-[330px] lg:min-w-[150px]">
       <div className="flex flex-col px-6 py-5 gap-3 bg-white rounded-md shadow-md border-2 border-gray-500 shadow-gray-500 after-border after:-translate-x-3 after:-translate-y-1">
         <div className="flex items-center gap-5">
           <Icon className="bg-cyan-700 text-white w-[60px] h-[50px] p-2 rounded shadow-good shadow-gray-500/40" />
