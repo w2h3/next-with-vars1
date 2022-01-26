@@ -74,7 +74,7 @@ export const Header = () => {
                 title="forms"
                 className="font-medium tracking-wide text-cyan-700 transition-colors duration-200 hover:text-teal-accent-400"
               >
-                Insurance
+                Forms
               </a>
             </li>
             <li>
