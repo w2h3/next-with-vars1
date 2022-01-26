@@ -1,7 +1,7 @@
-
 import Head from 'next/head';
+import Layout from '../components/Layout';
 import '../styles/globals.css';
-
+import Footer from '../components/Footer';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -15,7 +15,10 @@ function MyApp({ Component, pageProps }) {
         />
         <meta name="author" content="James Wingert" />
       </Head>
-      <Component {...pageProps} />
+
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }

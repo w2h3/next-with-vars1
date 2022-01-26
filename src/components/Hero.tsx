@@ -2,7 +2,7 @@ import Link from 'next/link';
 import bg2 from '/public/fd5.jpg';
 const Hero = () => {
   return (
-    <div className="relative border-t-2 border-cyan-700 lg:border-b-2 flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0">
+    <div className="relative lg:border-b-2 flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0">
       <div className="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
         <svg
           className="absolute left-0 hidden h-full text-white transform -translate-x-1/2 lg:block"
@@ -19,7 +19,7 @@ const Hero = () => {
         />
       </div>
       <div className=" relative flex flex-col items-start w-fill max-w-xl px-4 mx-auto md:px-0 lg:mx-32 lg:max-w-3xl lg:flex-row lg:-top-16">
-        <div className=" lg:z-50 lg:bg-white  shadow-lg mb-10 lg:my-40 lg:max-w-2xl lg:pl-4 lg:py-2">
+        <div className=" lg:z-50 lg:bg-white mb-10 lg:my-40 lg:max-w-2xl lg:pl-4 lg:py-2">
           <h2 className="mb-3   font-sans text-3xl font-bold tracking-tight uppercase sm:text-4xl sm:leading-none text-center ">
             Welcome To
             <span className="block text-[#7ba009]">

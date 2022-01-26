@@ -1,27 +1,27 @@
 import Image from 'next/image';
 import { useState } from 'react';
-
+import logo from 'navlogo.png';
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="bg-white">
+    <div className="bg-white border-b-2 border-cyan-700">
       <div className="px-4 py-2 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-18 text-xl lg:mx-auto">
         <div className="relative flex items-center justify-between">
           <a
             href="/"
-            aria-label="Company"
-            title="Company"
+            aria-label="Neurology & Sleep"
+            title="Neurology & Sleep"
             className="inline-flex items-center"
           >
             <Image src="/logo.png" alt="logo" width="368" height="68" />
           </a>
-          <ul className="flex items-center hidden space-x-8 lg:flex">
+          <ul className=" items-center hidden space-x-8 lg:flex">
             <li>
               <a
                 href="/"
-                aria-label="Our product"
-                title="Our product"
+                aria-label="Home"
+                title="Home"
                 className="font-medium  tracking-wide text-cyan-700 transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Home
@@ -29,9 +29,9 @@ export const Header = () => {
             </li>
             <li>
               <a
-                href="/"
-                aria-label="Our product"
-                title="Our product"
+                href="/about"
+                aria-label="About Us"
+                title="About Us"
                 className="font-medium  tracking-wide text-cyan-700 transition-colors duration-200 hover:text-teal-accent-400"
               >
                 About
@@ -39,9 +39,9 @@ export const Header = () => {
             </li>
             <li>
               <a
-                href="/"
-                aria-label="Product pricing"
-                title="Product pricing"
+                href="/services"
+                aria-label="Services"
+                title="Services"
                 className="font-medium  tracking-wide text-cyan-700 transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Services
@@ -49,9 +49,9 @@ export const Header = () => {
             </li>
             <li>
               <a
-                href="/"
-                aria-label="About us"
-                title="About us"
+                href="/locations"
+                aria-label="Locations"
+                title="Locations"
                 className="font-medium  tracking-wide text-cyan-700 transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Locations
@@ -59,17 +59,27 @@ export const Header = () => {
             </li>
             <li>
               <a
-                href="/"
-                aria-label="About us"
-                title="About us"
+                href="/insurance"
+                aria-label="insurance"
+                title="insurance"
                 className="font-medium tracking-wide text-cyan-700 transition-colors duration-200 hover:text-teal-accent-400"
               >
-                Insurances
+                Insurance
               </a>
             </li>
             <li>
               <a
-                href="/"
+                href="/forms"
+                aria-label="forms"
+                title="forms"
+                className="font-medium tracking-wide text-cyan-700 transition-colors duration-200 hover:text-teal-accent-400"
+              >
+                Insurance
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://mycw34.eclinicalweb.com/portal3661/jsp/100mp/login_otp.jsp"
                 className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-cyan-700  transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 border border-cyan-700 focus:shadow-outline focus:outline-none"
                 aria-label="Sign up"
                 title="Sign up"
@@ -107,27 +117,20 @@ export const Header = () => {
                     <div>
                       <a
                         href="/"
-                        aria-label="Company"
-                        title="Company"
+                        aria-label="Neurology & Sleep"
+                        title="Neurology & Sleep"
                         className="inline-flex items-center"
                       >
-                        <svg
-                          className="w-8 text-deep-purple-accent-400"
-                          viewBox="0 0 24 24"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeMiterlimit="10"
-                          stroke="currentColor"
-                          fill="none"
-                        >
-                          <rect x="3" y="1" width="7" height="12" />
-                          <rect x="3" y="17" width="7" height="6" />
-                          <rect x="14" y="1" width="7" height="6" />
-                          <rect x="14" y="11" width="7" height="12" />
-                        </svg>
-                        <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                          Company
+                        <Image
+                          src="/navlogo.png"
+                          alt="logo"
+                          width="20"
+                          height="20"
+                        />
+                        <span className="ml-2 text-xl font-bold tracking-wide text-[#7ba009] uppercase">
+                          Neurology & Sleep
+                          <br className="text-black" />
+                          Medicine Associates
                         </span>
                       </a>
                     </div>

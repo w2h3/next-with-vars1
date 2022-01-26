@@ -1,4 +1,6 @@
 const Contact = () => {
+
+
   return (
     <section className="py-6 bg-gray-200 text-coolGray-900">
       <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
@@ -47,7 +49,7 @@ const Contact = () => {
           </div>
         </div>
         <form
-          noValidate=""
+          noValidate
           className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid"
         >
           <label className="block">
@@ -69,7 +71,7 @@ const Contact = () => {
           <label className="block">
             <span className="mb-1">Message</span>
             <textarea
-              rows="3"
+              rows={10}
               className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-lime-700 bg-coolGray-100"
             ></textarea>
           </label>
