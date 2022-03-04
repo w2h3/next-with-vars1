@@ -1,14 +1,12 @@
 const Contact = () => {
-
-
   return (
-    <section className="py-6 bg-gray-200 text-coolGray-900">
-      <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
-        <div className="py-6 md:py-0 md:px-6">
+    <section className="py-6 flex-col text-white">
+      <div className="bg-cyan-600 grid max-w-4xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 rounded-xl">
+        <div className="py-6 my-10  md:py-0 items-center">
           <h1 className="text-4xl font-bold">Contact Us</h1>
-          <p className="pt-2 pb-4">NO PHI</p>
+          <p className="pt-2 pb-4 text-slate-300">NO PHI</p>
           <div className="space-y-4">
-            <p className="flex items-center">
+            <p className="flex items-center ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -50,14 +48,14 @@ const Contact = () => {
         </div>
         <form
           noValidate
-          className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid"
+          className="bg-white my-10 rounded-md flex flex-col py-6 space-y-6 md:py-6 md:px-6 ng-untouched ng-pristine ng-valid text-black"
         >
-          <label className="block">
-            <span className="mb-1">Full name</span>
+          <label className="block ">
+            <span className="mb-1 ">Full name</span>
             <input
               type="text"
               placeholder="Leroy Jenkins"
-              className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-lime-700 bg-gray-100"
+              className=" border-2 block w-full rounded-lg shadow-sm focus:ring focus:ring-opacity-75 focus:ring-lime-700 bg-gray-100"
             />
           </label>
           <label className="block">
@@ -65,14 +63,14 @@ const Contact = () => {
             <input
               type="email"
               placeholder="leroy@jenkins.com"
-              className="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-lime-700 bg-coolGray-100"
+              className="border-2 block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-lime-700 bg-gray-100"
             />
           </label>
           <label className="block">
             <span className="mb-1">Message</span>
             <textarea
               rows={10}
-              className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-lime-700 bg-coolGray-100"
+              className="block border-2 w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-lime-700 bg-gray-100"
             ></textarea>
           </label>
           <button

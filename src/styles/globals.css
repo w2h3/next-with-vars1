@@ -4,3 +4,19 @@
 .text-shadown {
   text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -2px black;
 }
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.c-office-overview__map {
+  height: 300px;
+}
+
+.c-office-overview__map-selected-info__close {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

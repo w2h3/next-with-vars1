@@ -1,18 +1,17 @@
-
-import Hero from '../components/Hero';
-import Why from '../components/Services';
-import Maps from '../components/Maps';
+import Hero from '../components/home/Hero';
+import Why from '../components/home/Services';
+import Spots from '../components/home/Spots';
+import Map from '../components/Map';
 import Contact from '../components/Contact';
 
 const Home = () => {
   return (
     <div>
-
       <Hero />
       <Why />
-      <Maps />
+      <Map />
+      <Spots />
       <Contact />
-
     </div>
   );
 };

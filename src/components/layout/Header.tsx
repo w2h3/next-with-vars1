@@ -1,10 +1,10 @@
 const Header = () => {
   return (
-    <nav className=" flex-row shadow dark:bg-gray-800 ">
-      <div className="flex bg-slate-200 md:flex-row md:items-center lg:justify-evenly to-white mx-auto justify-center md:px-10 lg:mx-auto sm:px-2  ">
+    <nav className=" flex-row shadow dark:bg-gray-600">
+      <div className="flex bg-slate-100 md:flex-row md:items-center lg:justify-evenly to-white mx-auto justify-center md:px-10 lg:mx-auto sm:px-2  ">
         <body className="">
           <div className="flex ">
-            <button className="flex items-center justify-center px-5  text-lg font-medium  text-cyan-700 hover:bg-cyan-600 hover:text-white focus:outline-none space-x-2">
+            <button className="flex items-center justify-center px-5  text-md font-small  text-cyan-700 hover:bg-cyan-600 hover:text-white focus:outline-none space-x-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -22,7 +22,7 @@ const Header = () => {
               <p className="hidden lg:flex text-black">Phone: (480) 747-8296</p>
               <p className="hidden md:flex lg:hidden text-black">Phone</p>
             </button>
-            <button className="flex items-center justify-center px-5  text-lg font-medium text-cyan-700 hover:bg-cyan-600 border-l border-black hover:text-white focus:outline-none space-x-2">
+            <button className="flex items-center justify-center px-5  text-md font-small text-cyan-700 hover:bg-cyan-600   border-black hover:text-white focus:outline-none space-x-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -40,7 +40,7 @@ const Header = () => {
               <p className="hidden lg:flex text-black">Fax: (480) 747-8296</p>
               <p className="hidden md:flex lg:hidden text-black">Fax</p>
             </button>
-            <button className="flex items-center justify-center px-5  border-l border-black text-lg font-medium text-cyan-700 hover:bg-cyan-600 hover:text-white focus:outline-none space-x-2">
+            <button className="flex items-center justify-center px-5    border-black text-md font-small text-cyan-700 hover:bg-cyan-600 hover:text-white focus:outline-none space-x-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -58,7 +58,7 @@ const Header = () => {
               <p className="hidden lg:flex text-black">M-F 9:00 AM-5:00 PM</p>
               <p className="hidden md:flex lg:hidden text-black">Hours</p>
             </button>
-            <button className="flex items-center justify-center px-5 border-l border-black text-lg font-medium text-cyan-700 hover:bg-cyan-600 hover:text-white focus:outline-none space-x-2">
+            <button className="flex items-center justify-center px-5   border-black text-md font-small text-cyan-700 hover:bg-cyan-600 hover:text-white focus:outline-none space-x-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"

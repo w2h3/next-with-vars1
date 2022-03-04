@@ -1,13 +1,16 @@
 import Image from 'next/image';
 import { useState } from 'react';
-import logo from 'navlogo.png';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const router = useRouter();
 
   return (
-    <div className="bg-white border-b-2 border-cyan-700">
-      <div className="px-4 py-2 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-18 text-xl lg:mx-auto">
-        <div className="relative flex items-center justify-between">
+    <nav className="bg-white border-b-2 border-cyan-700 ">
+      <div className="px-4 py-2 mx-auto sm:max-w-xl  md:max-w-full lg:max-w-screen-2xl md:px-18 text-xl lg:mx-auto">
+        <div className="relative  flex items-center justify-between">
           <a
             href="/"
             aria-label="Neurology & Sleep"
@@ -16,7 +19,7 @@ export const Header = () => {
           >
             <Image src="/logo.png" alt="logo" width="368" height="68" />
           </a>
-          <ul className=" items-center hidden space-x-8 lg:flex">
+          <ul className="items-center hidden space-x-8 lg:flex">
             <li>
               <a
                 href="/"
@@ -32,7 +35,7 @@ export const Header = () => {
                 href="/about"
                 aria-label="About Us"
                 title="About Us"
-                className="font-medium  tracking-wide text-cyan-700 transition-colors duration-200 hover:text-teal-accent-400"
+                className="font-medium  tracking-wide text-cyan-700 transition-colors duration-200 hover:text-[#7ba009]"
               >
                 About
               </a>
@@ -47,16 +50,19 @@ export const Header = () => {
                 Services
               </a>
             </li>
-            <li>
+            <Link href="/locations">
               <a
-                href="/locations"
-                aria-label="Locations"
-                title="Locations"
-                className="font-medium  tracking-wide text-cyan-700 transition-colors duration-200 hover:text-teal-accent-400"
+                className={`font-medium  tracking-wide text-cyan-700 transition-colors duration-200 hover:text-teal-400 ${
+                  router.pathname == '/locations'
+                    ? 'border-2 border-cyan-700'
+                    : 'text-brand-darkblue'
+                }`}
               >
+                {' '}
                 Locations
               </a>
-            </li>
+            </Link>
+
             <li>
               <a
                 href="/insurance"
@@ -72,7 +78,7 @@ export const Header = () => {
                 href="/forms"
                 aria-label="forms"
                 title="forms"
-                className="font-medium tracking-wide text-cyan-700 transition-colors duration-200 hover:text-teal-accent-400"
+                className=" font-medium tracking-wide text-cyan-700 transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Forms
               </a>
@@ -210,7 +216,7 @@ export const Header = () => {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 export default Header;
