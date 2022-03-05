@@ -1,113 +1,91 @@
-import Image from 'next/image';
 import dr from '../../public/Dr.png';
+import Image from 'next/image';
 
-export const Team = () => {
+const people = [
+  {
+    name: 'Dr. George Wang',
+    role: 'Founder',
+    imageUrl: `${dr.src}`,
+    bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+  },
+  {
+    name: 'Dr. George Wang',
+    role: 'Founder',
+    imageUrl: `${dr.src}`,
+    bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+  },
+  {
+    name: 'Dr. George Wang',
+    role: 'Founder',
+    imageUrl: `${dr.src}`,
+    bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+  },
+  {
+    name: 'Dr. George Wang',
+    role: 'Founder',
+    imageUrl: `${dr.src}`,
+    bio: 'Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.',
+  },
+  // More people...
+];
+
+export default function Example() {
   return (
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="mx-auto mb-10 lg:max-w-xl sm:text-center">
-        <p className="inline-block px-3 py-px mb-4 text-6xl font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-400">
-          Our Team
-        </p>
-        {/* <p className="text-base text-gray-700 md:text-lg">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium.
-        </p> */}
-      </div>
-      <div className="grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-lg">
-        <div>
-          <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-            <img
-              className="absolute object-cover w-full h-full rounded"
-              src={dr.src}
-              alt="Person"
-            />
+    <div className="bg-white">
+      <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+        <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
+          <div className="space-y-5 sm:space-y-4">
+            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+              Meet Our Team
+            </h2>
+            <p className="text-xl text-gray-500">
+              As a neurologic and sleep disorders specialty clinic, Neurology &
+              Sleep Medicine Associates’ work is in a unique partnership of
+              health care: providing and interpreting your tests, serving as a
+              consultant to your referring physician and providing medical care
+              for your specific neurologic and sleep disorder needs. Neurology &
+              Sleep Medicine Associates’ has been carefully structured to
+              provide a personal approach to patient care. Our goal is to
+              provide you with very good service and pay close attention to your
+              individual needs and concerns.
+            </p>
           </div>
-          <div className="flex flex-col sm:text-center">
-            <p className="text-lg font-bold">Dr. Wang</p>
-            <p className="mb-5 text-xs text-gray-800">Doctor</p>
-            <div className="flex items-center space-x-3 sm:justify-center">
-              <a
-                href="/"
-                className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-              ></a>
-              <a
-                href="/"
-                className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-            <img
-              className="absolute object-cover w-full h-full rounded"
-              src={dr.src}
-              alt="Person"
-            />
-          </div>
-          <div className="flex flex-col sm:text-center">
-            <p className="text-lg font-bold">Dr. George</p>
-            <p className="mb-5 text-xs text-gray-800">Doctor</p>
-            <div className="flex items-center space-x-3 sm:justify-center">
-              <a
-                href="/"
-                className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-              ></a>
-              <a
-                href="/"
-                className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-            <img
-              className="absolute object-cover w-full h-full rounded"
-              src={dr.src}
-              alt="Person"
-            />
-          </div>
-          <div className="flex flex-col sm:text-center">
-            <p className="text-lg font-bold">Dr. George Wang</p>
-            <p className="mb-5 text-xs text-gray-800">Dr. George</p>
-            <div className="flex items-center space-x-3 sm:justify-center">
-              <a
-                href="/"
-                className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-              ></a>
-              <a
-                href="/"
-                className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
-            <img
-              className="absolute object-cover w-full h-full rounded"
-              src={dr.src}
-              alt="Person"
-            />
-          </div>
-          <div className="flex flex-col sm:text-center">
-            <p className="text-lg font-bold">Wang, Dr. Wang</p>
-            <p className="mb-5 text-xs text-gray-800">Good guy</p>
-            <div className="flex items-center space-x-3 sm:justify-center">
-              <a
-                href="/"
-                className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-              ></a>
-              <a
-                href="/"
-                className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-              ></a>
-            </div>
+          <div className="lg:col-span-2">
+            <ul
+              role="list"
+              className="space-y-12 sm:divide-y sm:divide-gray-200 sm:space-y-0 sm:-mt-8 lg:gap-x-8 lg:space-y-0"
+            >
+              {people.map((person) => (
+                <li key={person.name} className="sm:py-8">
+                  <div className="space-y-4 sm:grid sm:grid-cols-3 sm:items-start sm:gap-6 sm:space-y-0">
+                    <div className="aspect-w-3 aspect-h-2 sm:aspect-w-3 sm:aspect-h-4">
+                      <div className="object-cover shadow-lg rounded-lg">
+                        <Image
+                          src={person.imageUrl}
+                          alt="Provider Information"
+                          layout="fill"
+                          objectFit="cover"
+                        />
+                      </div>
+                    </div>
+                    <div className="sm:col-span-2">
+                      <div className="space-y-4">
+                        <div className="text-lg leading-6 font-medium space-y-1">
+                          <h3>{person.name}</h3>
+                          <p className="text-indigo-600">{person.role}</p>
+                        </div>
+                        <div className="text-lg">
+                          <p className="text-gray-500">{person.bio}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
     </div>
   );
-};
-export default Team;
+}

@@ -5,6 +5,7 @@ import {
   Marker,
   InfoWindow,
 } from '@react-google-maps/api';
+import Spots from './home/Spots';
 
 type OfficeNode = {
   id: string;
@@ -84,6 +85,7 @@ export default function App() {
   return (
     <div className="App bg-slate-100 border-2">
       <h1 className="text-6xl mt-10 font-bold">Our Locations</h1>
+      <Spots />
       {isLoaded && (
         <>
           <GoogleMap

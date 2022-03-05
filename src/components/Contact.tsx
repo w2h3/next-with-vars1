@@ -1,87 +1,131 @@
-const Contact = () => {
+import { MailIcon, PhoneIcon } from '@heroicons/react/outline';
+
+export default function Contact() {
   return (
-    <section className="py-6 flex-col text-white">
-      <div className="bg-cyan-600 grid max-w-4xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 rounded-xl">
-        <div className="py-6 my-10  md:py-0 items-center">
-          <h1 className="text-4xl font-bold">Contact Us</h1>
-          <p className="pt-2 pb-4 text-slate-300">NO PHI</p>
-          <div className="space-y-4">
-            <p className="flex items-center ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="w-5 h-5 mr-2 sm:mr-6"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                  clipRule="evenodd"
-                ></path>
-              </svg>
-              <span>Fake address, 9999 City</span>
+    <div className="relative bg-white">
+      <div className="absolute inset-0">
+        <div className="absolute inset-y-0 left-0 w-1/2 bg-gray-50" />
+      </div>
+      <div className="relative max-w-7xl mx-auto lg:grid lg:grid-cols-5">
+        <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
+          <div className="max-w-lg mx-auto">
+            <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
+              Get in touch
+            </h2>
+            <p className="mt-3 text-lg leading-6 text-gray-500">
+              Your feedback and questions are important to us. Please contact us
+              and let us know how we can assist you.
+              <div className="text-red-600">
+                NOTE: DO NOT USE THIS FORM FOR ANY QUESTIONS RELATED TO PATIENT
+                CARE, PLEASE CALL OUR OFFICE AT (480) 967-6888. IF YOU HAVE A
+                MEDICAL EMERGENCY, PLEASE CALL 911.
+              </div>
             </p>
-            <p className="flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="w-5 h-5 mr-2 sm:mr-6"
-              >
-                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-              </svg>
-              <span>123456789</span>
-            </p>
-            <p className="flex items-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="w-5 h-5 mr-2 sm:mr-6"
-              >
-                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-              </svg>
-              <span>contact@business.com</span>
-            </p>
+            <dl className="mt-8 text-base text-gray-500">
+              <div>
+                <dt className="sr-only">Postal address</dt>
+                <dd>
+                  <p>
+                    <dt className="font-bold text-black">West Mesa Clinic:</dt>
+                    2045 S. Vineyard, Bldg. N3, Suite 144 Mesa, AZ 85210
+                  </p>
+                  <br />
+                  <p>
+                    <dt className="font-bold text-black">East Mesa Clinic:</dt>{' '}
+                    2919 S. Ellsworth Road, Suite 135 Mesa, AZ 85212
+                  </p>
+                </dd>
+              </div>
+              <div className="mt-6">
+                <dt className="sr-only">Phone number</dt>
+                <dd className="flex">
+                  <PhoneIcon
+                    className="flex-shrink-0 h-6 w-6 text-gray-400"
+                    aria-hidden="true"
+                  />
+                  <span className="ml-3">+1 (480) 967-6888</span>
+                </dd>
+              </div>
+              <div className="mt-3">
+                <dt className="sr-only">Email</dt>
+                <dd className="flex">
+                  <MailIcon
+                    className="flex-shrink-0 h-6 w-6 text-gray-400"
+                    aria-hidden="true"
+                  />
+                  <span className="ml-3">support@example.com</span>
+                </dd>
+              </div>
+            </dl>
           </div>
         </div>
-        <form
-          noValidate
-          className="bg-white my-10 rounded-md flex flex-col py-6 space-y-6 md:py-6 md:px-6 ng-untouched ng-pristine ng-valid text-black"
-        >
-          <label className="block ">
-            <span className="mb-1 ">Full name</span>
-            <input
-              type="text"
-              placeholder="Leroy Jenkins"
-              className=" border-2 block w-full rounded-lg shadow-sm focus:ring focus:ring-opacity-75 focus:ring-lime-700 bg-gray-100"
-            />
-          </label>
-          <label className="block">
-            <span className="mb-1">Email address</span>
-            <input
-              type="email"
-              placeholder="leroy@jenkins.com"
-              className="border-2 block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-lime-700 bg-gray-100"
-            />
-          </label>
-          <label className="block">
-            <span className="mb-1">Message</span>
-            <textarea
-              rows={10}
-              className="block border-2 w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-lime-700 bg-gray-100"
-            ></textarea>
-          </label>
-          <button
-            type="button"
-            className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-cyan-700 text-gray-100 focus:bg-cyan-700 hover:ring-cyan-700"
-          >
-            Submit
-          </button>
-        </form>
+        <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
+          <div className="max-w-lg mx-auto lg:max-w-none">
+            <form action="#" method="POST" className="grid grid-cols-1 gap-y-6">
+              <div>
+                <label htmlFor="full-name" className="sr-only">
+                  Full name
+                </label>
+                <input
+                  type="text"
+                  name="full-name"
+                  id="full-name"
+                  autoComplete="name"
+                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                  placeholder="Full name"
+                />
+              </div>
+              <div>
+                <label htmlFor="email" className="sr-only">
+                  Email
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autoComplete="email"
+                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                  placeholder="Email"
+                />
+              </div>
+              <div>
+                <label htmlFor="phone" className="sr-only">
+                  Phone
+                </label>
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  autoComplete="tel"
+                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                  placeholder="Phone"
+                />
+              </div>
+              <div>
+                <label htmlFor="message" className="sr-only">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows={4}
+                  className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"
+                  placeholder="Message"
+                  defaultValue={''}
+                />
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
   );
-};
-export default Contact;
+}

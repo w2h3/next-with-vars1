@@ -13,7 +13,14 @@ module.exports = {
         border:
           'text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black',
       },
+
+      colors: {
+        wcyan: '#107E8E',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/forms'),
+  ],
 };
