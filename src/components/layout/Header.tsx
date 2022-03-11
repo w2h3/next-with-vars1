@@ -4,7 +4,7 @@ const Header = () => {
       <div className="flex  md:flex-row md:items-center lg:justify-evenly bg-gradient-to-t from-slate-100 to-white mx-auto justify-center md:px-10 lg:mx-auto sm:px-2">
         {/*  */}
         <div className="flex my-2">
-          <button className="flex items-center justify-center px-5 text-md rounded-lg font-small  text-[#107E8E] hover:text-[#17B9D2] hover:outline hover:border-[#17B9D2]  focus:outline-none space-x-2">
+          <button className="flex items-center justify-center px-5 text-md rounded-lg font-small  text-[#107E8E] hover:text-[#5582a6 hover:outline hover:border-[#5582a6]  focus:outline-none space-x-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -22,7 +22,7 @@ const Header = () => {
             <p className="hidden lg:flex text-black">Phone: (480) 967-6888</p>
             <p className="hidden md:flex lg:hidden text-black">Phone</p>
           </button>
-          <button className="flex items-center justify-center px-5 rounded-lg  text-md font-small text-[#107E8E] border-black hover:text-[#17B9D2] hover:outline hover:border-[#17B9D2] focus:outline-none space-x-2">
+          <button className="flex items-center justify-center px-5 rounded-lg  text-md font-small text-[#107E8E] border-black hover:text-[#5582a6] hover:outline hover:border-[#5582a6] focus:outline-none space-x-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -38,9 +38,9 @@ const Header = () => {
               />
             </svg>
             <p className="hidden lg:flex text-black">Fax: (480) 967-6887</p>
-            <p className="hidden md:flex lg:hidden text-black">Fax</p>
+            {/* <p className="hidden md:flex lg:hidden text-black">Fax</p> */}
           </button>
-          <button className="flex items-center justify-center px-5 rounded-lg    border-black text-md font-small text-[#107E8E] hover:text-[#17B9D2] hover:outline hover:border-[#17B9D2] focus:outline-none space-x-2">
+          <button className="flex items-center justify-center px-5 rounded-lg    border-black text-md font-small text-[#107E8E] hover:text-#5582a6 hover:outline hover:border-#5582a6 focus:outline-none space-x-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
@@ -55,10 +55,10 @@ const Header = () => {
                 d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg>
-            <p className="hidden lg:flex text-black">M-F 9:00 AM-5:00 PM</p>
-            <p className="hidden md:flex lg:hidden text-black">Hours</p>
+            <p className="hidden md:flex text-black">M-F 9:00 AM-5:00 PM</p>
+            {/* <p className="hidden md:flex lg:hidden text-black">Hours</p> */}
           </button>
-          <button className="flex items-center justify-center px-5 rounded-lg   border-black text-md font-small text-[#107E8E] hover:text-[#17B9D2] hover:outline hover:border-[#17B9D2] focus:outline-none space-x-2">
+          <button className="flex items-center justify-center px-5 rounded-lg   border-black text-md font-small text-[#107E8E] hover:text-#5582a6 hover:outline hover:border-#5582a6 focus:outline-none space-x-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"

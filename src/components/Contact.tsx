@@ -3,20 +3,18 @@ import {
   PhoneIcon,
   LocationMarkerIcon,
 } from '@heroicons/react/outline';
-import bgmap from 'public/bgmap.jpg';
+import bgmap from 'public/cactus4.jpg';
 import { useState } from 'react';
 
 export default function Example() {
   const [buttonText, setButtonText] = useState('Send');
 
   return (
-    <div className="testImage">
-      <div className="container max-w-6xl ">
-        <h2 className="mx-auto text-shadow-md  ">
-          {/*text-3xl  tracking-tight  text-gray-900 sm:text-4xl */}
-          <span className="text-[#24598C]/30">Lets </span>
-          <span className="font-bold text-[#24598C]/60">Talk</span>
-        </h2>
+    <div className="testImage ">
+      <div className="container max-w-6xl md:mb-16 ">
+        {/*text-3xl  tracking-tight  text-gray-900 sm:text-4xl */}
+        <h3 className="mx-auto">We're</h3>
+        <h2 className="mx-auto font-bold text-shadow-md">Here</h2>
         <div className=" lg:grid lg:grid-cols-3 mt-14 ">
           <div
             className=" rounded-2xl py-1 px-4 sm:px-6 lg:col-span-1 lg:px-8 lg:py-10 xl:pr-12"
@@ -38,15 +36,15 @@ export default function Example() {
               className="bgImage"
             /> */}
             <div className="max-w-lg  mx-auto">
-              <h1 className="text-center text-2xl font-extrabold tracking-tight text-[#24598C]/80 sm:text-3xl">
+              <h1 className="text-center text-2xl font-extrabold tracking-tight text-[#00847D]/80 sm:text-5xl">
                 Contact Us
               </h1>
 
-              <p className="text-center mt-3 text-sm leading-6 text-red-500">
+              {/* <p className="text-center mt-3 text-xs leading-6 text-red-500">
                 NOTE: DO NOT USE THIS FORM FOR ANY QUESTIONS RELATED TO PATIENT
                 CARE, PLEASE CALL OUR OFFICE AT (480) 967-6888. IF YOU HAVE A
                 MEDICAL EMERGENCY, PLEASE CALL 911.
-              </p>
+              </p> */}
               <dl className="mt-6 text-base text-gray-500">
                 <div>
                   <dt className="sr-only">Postal address</dt>
@@ -97,7 +95,7 @@ export default function Example() {
                       className="flex-shrink-0 h-6 w-6 text-wcyan"
                       aria-hidden="true"
                     />
-                    <span className="ml-3 mb-20 text-gray-500 ">
+                    <span className="ml-3 mb-32 md:mb-20 text-gray-500 ">
                       clinic@drwang.com
                     </span>
                   </dd>
@@ -105,8 +103,8 @@ export default function Example() {
               </dl>
             </div>
           </div>
-          <div className="bg-[#24598C]/60 py-16 px-4 sm:px-6 lg:col-span-2 lg:py-10 lg:px-8 xl:pl-12 rounded-2xl">
-            <div className="max-w-lg mx-auto lg:max-w-none">
+          <div className="bg-[#5692B7]/60 [#00847D]/80 py-16 px-4 sm:px-6 lg:col-span-2 lg:py-10 lg:px-8 xl:pl-12 rounded-2xl">
+            <div className="max-w-lg mx-auto lg:max-w-none py-10">
               <form
                 action="#"
                 method="POST"
@@ -165,10 +163,14 @@ export default function Example() {
                   />
                 </div>
                 <div>
-                  <div className="flex flex-row items-center justify-start ">
+                  <div className="flex flex-col justify-between items-center ">
+                    {' '}
+                    NOTE: DO NOT USE THIS FORM FOR ANY QUESTIONS RELATED TO
+                    PATIENT CARE, PLEASE CALL OUR OFFICE AT (480) 967-6888. IF
+                    YOU HAVE A MEDICAL EMERGENCY, PLEASE CALL 911.
                     <button
                       type="submit"
-                      className="px-10 mt-8 py-2 border-2 border-cyan-900 bg-wcyan text-gray-50 font-light rounded-md text-lg flex flex-row items-center hover:bg-opacity-70 "
+                      className="px-10 mt-8 py-2 border-2 border-wcyan bg-[#00847D]/80 text-gray-50 font-light rounded-md text-lg flex flex-row items-center hover:bg-wcyan/50 "
                     >
                       {buttonText}
                       <svg

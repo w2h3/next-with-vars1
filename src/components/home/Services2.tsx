@@ -10,23 +10,27 @@ export const Feature = () => {
       <div className="container">
         {/* px-4 py-16 mx-auto sm:max-w-xl md:max-w-full  lg:max-w-screen-7xl md:px-24 lg:px-8 lg:py-20  */}
         <div className="max-w-4xl   mb-10 mx-auto text-center lg:max-w-lg md:mb-20">
-          <h2>
-          <span className='text-[#24598C]/30'>Our </span><span className="font-bold text-[#24598C]/60">Services</span>
+          <h3 className="text-shadow-md">Our </h3>
+          <h2 className="font-bold text-shadow-md ">Services</h2>
 
-            
-            {/* #002e41
+          {/* #002e41
             #10298E */}
-          </h2>
         </div>
         <div className="grid  max-w-screen-lg gap-8  row-gap-10 mx-auto lg:grid-cols-2">
           <div className="flex  items-center flex-col max-w-md mx-auto sm:flex-row">
             <div className="mr-4 ">
-              <div className="flex items-center justify-center w-20 h-20 mb-4 rounded-full bg-indigo-50 overflow-hidden">
-                <Image src={psychiatry.src} alt="" height={200} width={200} />
+              <div className="flex items-center justify-center w-40 h-40 mb-4 rounded-full bg-indigo-50 overflow-hidden">
+                <Image
+                  src={psychiatry.src}
+                  alt=""
+                  layout="intrinsic"
+                  height={200}
+                  width={200}
+                />
               </div>
             </div>
             <div>
-              <h6 className="mb-3 text-xl font-bold leading-5 text-[#10298E]">
+              <h6 className="mb-3 text-xl font-bold leading-5 text-[#5582a6]">
                 Neurology
               </h6>
               <p className="mb-3 text-sm text-gray-900">
@@ -37,7 +41,7 @@ export const Feature = () => {
               <a
                 href="/"
                 aria-label=""
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                className="inline-flex items-center font-semibold transition-colors duration-200 text-sky-500 hover:text-sky-600"
               >
                 Learn more
               </a>
@@ -45,12 +49,18 @@ export const Feature = () => {
           </div>
           <div className="flex items-center  flex-col max-w-md sm:mx-auto sm:flex-row">
             <div className="mr-4">
-              <div className="flex items-center justify-center w-20 h-20 mb-4 rounded-full bg-indigo-50 overflow-hidden">
-                <Image src={psych.src} alt="" height={200} width={200} />
+              <div className="flex items-center justify-center w-40 h-40 mb-4 rounded-full bg-indigo-50 overflow-hidden">
+                <Image
+                  src={insomnia.src}
+                  alt=""
+                  layout="intrinsic"
+                  height={200}
+                  width={200}
+                />
               </div>
             </div>
             <div>
-              <h6 className="mb-3  text-xl font-bold leading-5 text-[#10298E]">
+              <h6 className="mb-3  text-xl font-bold leading-5 text-[#5582a6]">
                 Sleep
               </h6>
               <p className="mb-3 text-sm text-gray-900">
@@ -62,7 +72,7 @@ export const Feature = () => {
               <a
                 href="/"
                 aria-label=""
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                className="inline-flex items-center font-semibold transition-colors duration-200 text-sky-500 hover:text-sky-600"
               >
                 Learn more
               </a>
@@ -70,12 +80,18 @@ export const Feature = () => {
           </div>
           <div className="flex items-center flex-col max-w-md sm:mx-auto sm:flex-row">
             <div className="mr-4">
-              <div className="flex items-center justify-center w-20 h-20 mb-4 rounded-full bg-indigo-50 overflow-hidden">
-                <Image src={insomnia.src} alt="" height={200} width={200} />
+              <div className="flex items-center justify-center w-40 h-40 mb-4 rounded-full bg-indigo-50 overflow-hidden">
+                <Image
+                  src={physical.src}
+                  alt=""
+                  layout="intrinsic"
+                  height={200}
+                  width={200}
+                />
               </div>
             </div>
             <div>
-              <h6 className="mb-3 text-xl font-bold leading-5 text-[#10298E]">
+              <h6 className="mb-3 text-xl font-bold leading-5 text-[#5582a6]">
                 Physical Therapy
               </h6>
               <p className="mb-3 text-sm text-gray-900">
@@ -87,7 +103,7 @@ export const Feature = () => {
               <a
                 href="/"
                 aria-label=""
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                className="inline-flex items-center font-semibold transition-colors duration-200 text-sky-500 hover:text-sky-600"
               >
                 Learn more
               </a>
@@ -95,13 +111,19 @@ export const Feature = () => {
           </div>
           <div className="flex items-center flex-col max-w-md sm:mx-auto sm:flex-row">
             <div className="mr-4">
-              <div className="flex items-center justify-center w-20 h-20 mb-4 rounded-full bg-indigo-50 overflow-hidden">
+              <div className="flex items-center justify-center w-40 h-40 mb-4 rounded-full bg-indigo-50 overflow-hidden">
                 {' '}
-                <Image src={physical.src} alt="" height={200} width={200} />
+                <Image
+                  src={psych.src}
+                  alt=""
+                  layout="intrinsic"
+                  height={200}
+                  width={200}
+                />
               </div>
             </div>
             <div>
-              <h6 className="mb-3 text-xl font-bold leading-5 text-[#10298E]">
+              <h6 className="mb-3 text-xl font-bold leading-5 text-[#5582a6]">
                 Psychiatry
               </h6>
               <p className="mb-3 text-sm text-gray-900">
@@ -113,7 +135,7 @@ export const Feature = () => {
               <a
                 href="/"
                 aria-label=""
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+                className="inline-flex items-center font-semibold transition-colors duration-200 text-sky-500 hover:text-sky-600"
               >
                 Learn more
               </a>

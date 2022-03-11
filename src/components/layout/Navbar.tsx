@@ -22,7 +22,10 @@ export default function Navbar() {
   const router = useRouter();
 
   return (
-    <Disclosure as="nav" className="bg-white border-b -mb-.5 border-cyan-700 w-full ">
+    <Disclosure
+      as="nav"
+      className="bg-white border-b -mb-.5 border-cyan-700 w-full "
+    >
       {({ open }) => (
         <>
           <div className="max-w-screen-2xl lg:mx-auto mx-auto">
@@ -58,10 +61,12 @@ export default function Navbar() {
                         <Link href={item.href} key={item.name}>
                           <a
                             className={classNames(
-                              ' px-1 pt-2 text-md font-medium border-b-2',
+                              ' px-1 pt-2 text-md font-medium',
                               router.route === item.href
-                                ? 'text-gray-900  border-gray-900'
-                                : 'border-transparent text-gray-500  hover:border-gray-300 hover:text-gray-700'
+                                ? 'text-wcyan'
+                                : // text-gray-900  border-gray-900
+                                  ' text-gray-400  hover:text-wcyan'
+                              // border-transparent
                             )}
                             aria-current={
                               router.route === item.href ? 'page' : undefined

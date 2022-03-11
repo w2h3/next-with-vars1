@@ -49,11 +49,9 @@ export default function Map2() {
         {/* bg-opacity-70 */}
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
-            <h2 className="mx-auto text-shadow-md ">
-              {/*text-3xl  tracking-tight  text-gray-900 sm:text-4xl */}
-              <span className="text-[#24598C]/50">Visit </span>
-              <span className="font-bold text-[#24598C]/80">Us</span>
-            </h2>
+            {/*text-3xl  tracking-tight  text-gray-900 sm:text-4xl */}
+            <h3 className=" mx-auto">Our</h3>
+            <h2 className=" font-bold text-shadow-md  mx-auto">Locations</h2>
           </div>
           <div className="mt-12 bg-whitemax-w-lg  mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
             {posts.map((post) => (
@@ -62,7 +60,7 @@ export default function Map2() {
                 className="flex border-2 border-wcyan/20 flex-col rounded-lg shadow-lg bg-white overflow-hidden "
               >
                 <div className="flex-shrink-0 h-48 w-full mb-28">
-                  <Map/>
+                  <Map />
                   {/* object-cover
                   <Image src={directions} alt="" layout="fixed" height={200} /> */}
                 </div>
@@ -75,7 +73,6 @@ export default function Map2() {
                       />
                       <a href={post.category.href} className="hover:underline">
                         {post.category.name}
-
                       </a>
                     </p>
                     <a href={post.href} className="block mt-2">
