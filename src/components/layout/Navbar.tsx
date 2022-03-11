@@ -53,13 +53,15 @@ export default function Navbar() {
                     </Link>
                   </div>
                   <div className="hidden lg:block pt-3 w-auto">
-                    <Link href="/">
-                      <Image
-                        src="/logo.png"
-                        alt="logo"
-                        height={55}
-                        width={300}
-                      />{' '}
+                    <Link href="/" passHref>
+                      <a>
+                        <Image
+                          src="/logo.png"
+                          alt="logo"
+                          height={55}
+                          width={300}
+                        />
+                      </a>
                     </Link>
                   </div>
                 </div>
@@ -67,7 +69,7 @@ export default function Navbar() {
                   <div className="hidden md:block md:ml-6">
                     <div className="flex space-x-4 justify-end">
                       {navigation.map((item) => (
-                        <Link href={item.href} key={item.name}>
+                        <Link href={item.href} key={item.name} passHref>
                           <a
                             className={classNames(
                               ' px-1 pt-2 text-md font-medium',
