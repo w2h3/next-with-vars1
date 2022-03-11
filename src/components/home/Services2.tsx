@@ -3,6 +3,7 @@ import psychiatry from 'public/psychiatry.jpg';
 import psych from 'public/psych.jpg';
 import insomnia from 'public/insomnia.jpg';
 import physical from 'public/physical.jpg';
+import Link from 'next/link';
 
 export const Feature = () => {
   return (
@@ -38,13 +39,14 @@ export const Feature = () => {
                 never stopped old Big Bear. I didn't even know we were calling
                 him Big Bear. We never had the chance to.
               </p>
-              <a
-                href="/"
-                aria-label=""
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-sky-500 hover:text-sky-600"
-              >
-                Learn more
-              </a>
+              <Link href="/" passHref>
+                <a
+                  aria-label=""
+                  className="inline-flex items-center font-semibold transition-colors duration-200 text-sky-500 hover:text-sky-600"
+                >
+                  Learn more
+                </a>
+              </Link>
             </div>
           </div>
           <div className="flex items-center  flex-col max-w-md sm:mx-auto sm:flex-row">
@@ -69,13 +71,14 @@ export const Feature = () => {
                 triplefin gulper South American Lungfish mahi-mahi,
                 butterflyfish glass catfish soapfish ling gray mullet!
               </p>
-              <a
-                href="/"
-                aria-label=""
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-sky-500 hover:text-sky-600"
-              >
-                Learn more
-              </a>
+              <Link href="/" passHref>
+                <a
+                  aria-label=""
+                  className="inline-flex items-center font-semibold transition-colors duration-200 text-sky-500 hover:text-sky-600"
+                >
+                  Learn more
+                </a>
+              </Link>
             </div>
           </div>
           <div className="flex items-center flex-col max-w-md sm:mx-auto sm:flex-row">
@@ -100,13 +103,15 @@ export const Feature = () => {
                 Hercules Morse, as big as a horse and Mrs Falani were up to no
                 good with a bunch of crook pikelets.
               </p>
-              <a
-                href="/"
-                aria-label=""
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-sky-500 hover:text-sky-600"
-              >
-                Learn more
-              </a>
+              <Link href="/" passHref>
+                <a
+                  href="/"
+                  aria-label=""
+                  className="inline-flex items-center font-semibold transition-colors duration-200 text-sky-500 hover:text-sky-600"
+                >
+                  Learn more
+                </a>
+              </Link>
             </div>
           </div>
           <div className="flex items-center flex-col max-w-md sm:mx-auto sm:flex-row">
@@ -132,13 +137,14 @@ export const Feature = () => {
                 synergy capacity building, white paper; silo, unprecedented
                 challenge B-corp problem-solvers.
               </p>
-              <a
-                href="/"
-                aria-label=""
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-sky-500 hover:text-sky-600"
-              >
-                Learn more
-              </a>
+              <Link href="/" passHref>
+                <a
+                  aria-label=""
+                  className="inline-flex items-center font-semibold transition-colors duration-200 text-sky-500 hover:text-sky-600"
+                >
+                  Learn more
+                </a>
+              </Link>
             </div>
           </div>
         </div>

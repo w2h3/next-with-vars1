@@ -80,7 +80,7 @@ export const Footer = () => {
                 </p>
                 <div className="text-base row-span-6 ">
                   {navigation.map((item) => (
-                    <Link href={item.href} key={item.name}>
+                    <Link href={item.href} key={item.name} passHref>
                       <a
                         className={classNames(
                           'text-md ',
@@ -199,28 +199,25 @@ export const Footer = () => {
           </p>
           <ul className="flex flex-col mb-3 space-y-2  lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
             <li>
-              <a
-                href="/"
-                className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-              >
-                F.A.Q
-              </a>
+              <Link href="/" passHref>
+                <a className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
+                  F.A.Q
+                </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/"
-                className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-              >
-                Privacy Policy
-              </a>
+              <Link href="/" passHref>
+                <a className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
+                  Privacy Policy
+                </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="/"
-                className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-              >
-                Terms &amp; Conditions
-              </a>
+              <Link href="/" passHref>
+                <a className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
+                  Terms &amp; Conditions
+                </a>
+              </Link>
             </li>
           </ul>
         </div>
