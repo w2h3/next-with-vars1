@@ -24,7 +24,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="bg-white border-b -mb-.5 border-cyan-700 w-full "
+      className="bg-white border-b -mb-.5 border-cyan-700 w-full z-50 "
     >
       {({ open }) => (
         <>
@@ -34,24 +34,33 @@ export default function Navbar() {
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XIcon className="block h-6 w-6" aria-hidden="true" />
+                    <XIcon className="block h-10 w-10" aria-hidden="true" />
                   ) : (
-                    <MenuIcon className="block h-6 w-6" aria-hidden="true" />
+                    <MenuIcon className="block h-10 w-10" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
               </div>
               <div className="flex-1 flex md:items-stretch sm:justify-start ">
                 <div className="flex-shrink-0 flex items-center ">
                   <div className="flex lg:hidden w-auto">
-                    <Image
-                      src="/navlogo.png"
-                      alt="logo"
-                      height={55}
-                      width={67}
-                    />
+                    <Link href="/">
+                      <Image
+                        src="/navlogo.png"
+                        alt="logo"
+                        height={55}
+                        width={67}
+                      />
+                    </Link>
                   </div>
                   <div className="hidden lg:block pt-3 w-auto">
-                    <Image src="/logo.png" alt="logo" height={55} width={300} />
+                    <Link href="/">
+                      <Image
+                        src="/logo.png"
+                        alt="logo"
+                        height={55}
+                        width={300}
+                      />{' '}
+                    </Link>
                   </div>
                 </div>
                 <div className="md:flex-1 md:my-auto md:mx-auto">
@@ -105,8 +114,8 @@ export default function Navbar() {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? 'bg-gray-900 text-white'
-                      : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                      ? 'bg-[#5692B7] text-white'
+                      : 'bg-[#d0e5e8] hover:bg-[#d0e5e8]/70 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}

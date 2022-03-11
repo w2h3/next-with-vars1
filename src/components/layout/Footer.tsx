@@ -37,7 +37,7 @@ export const Footer = () => {
   return (
     <div className="bg-[#E8FAFC] relative mt-10  ">
       <div className="container">
-        <div className="custom-shape-divider-bottom-1647011816 absolute right-32 w-fill top-0  h-6 -mt-5 sm:-mt-10 sm:h-14 z-50">
+        <div className="custom-shape-divider-bottom-1647011816 absolute right-32 w-fill top-0  h-6 -mt-5 sm:-mt-10 sm:h-14 z-10">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ export const Footer = () => {
           <div className=" sm:col-span-1  ">
             <div className="mx-auto space-y-2">
               <div className="gap-2 grid grid-rows-6 justify-center">
-                <p className=" text-base font-bold tracking-wide text-gray-900 z-50">
+                <p className=" text-base font-bold tracking-wide text-gray-900">
                   Navigate
                 </p>
                 <div className="text-base row-span-6 ">
@@ -103,7 +103,7 @@ export const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="space-y-4 z-50">
+          <div className="space-y-4">
             <p className="text-base font-bold tracking-wide text-gray-900 ">
               Contacts
             </p>
@@ -166,10 +166,10 @@ export const Footer = () => {
             </dl>
           </div>
           <div>
-            <span className="text-base font-bold tracking-wide text-gray-900 z-50">
+            <span className="text-base font-bold tracking-wide text-gray-900">
               Quick Links
             </span>
-            <div className="flex items-center mt-1 space-x-3 z-50">
+            <div className="flex items-center mt-1 space-x-3">
               <Link href="https://mycw34.eclinicalweb.com/portal3661/jsp/100mp/login_otp.jsp">
                 {/* <button className="bg-[#107E8E] hover:bg-[#0B5A66] text-white font-bold py-2 px-4 rounded-full">
                   Make an appointment
