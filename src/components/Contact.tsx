@@ -103,7 +103,7 @@ export default function Example() {
               </dl>
             </div>
           </div>
-          <div className="bg-[#5692B7]/60 [#00847D]/80 py-16 px-4 sm:px-6 lg:col-span-2 lg:py-10 lg:px-8 xl:pl-12 rounded-2xl">
+          <div className="bg-[#5692B7]/60 py-16 sm:px-6 lg:col-span-2 lg:py-10 lg:px-8 xl:pl-12 rounded-2xl">
             <div className="max-w-lg mx-auto lg:max-w-none py-10">
               <form
                 action="#"
