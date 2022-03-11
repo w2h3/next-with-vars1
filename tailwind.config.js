@@ -4,10 +4,10 @@ module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      backgroundImage: {
-        champion: "url('/fd3.jpg')",
+      textShadow: {
+        '2xl': '1px 1px 5px rgb(33 34 43 / 20%)',
+        '3xl': '0 0 3px rgba(0, 0, 0, .8), 0 0 5px rgba(0, 0, 0, .9)',
       },
-
       boxShadow: {
         good: '4px 4px 0 0px rgba(0, 0, 0, 0.3)',
         border:
@@ -17,10 +17,14 @@ module.exports = {
       colors: {
         wcyan: '#107E8E',
       },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
     },
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/forms'),
+    require('tailwindcss-textshadow'),
   ],
 };

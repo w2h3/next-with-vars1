@@ -22,7 +22,7 @@ interface AccordionPanelProps extends React.HTMLAttributes<HTMLElement> {
 }
 
 const style = {
-  item: 'focus:outline-none outline outline-wcyan mx-4 my-2 p-6 font-bold ',
+  item: 'focus:outline-none outline outline-wcyan mx-4 my-2 p-6 font-bold',
   panel:
     'border-2 border-wcyan overflow-hidden overflow-x-hidden mx-4 -my-2 mb-4 transition-height ease duration-300 text-gray-600',
 };

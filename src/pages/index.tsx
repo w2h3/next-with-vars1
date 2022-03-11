@@ -1,16 +1,16 @@
-import Why from '../components/home/Services';
-import Map from '../components/Map';
+// import Why from '../components/home/Services';
+import Map2 from '../components/Map2';
 import Contact from '../components/Contact';
-import Hero from '../components/home/Hero2';
-import AccordionFirstExample from '@/components/home/Accordion';
-
+import Hero from '../components/home/Hero';
+import { Feature } from '@/components/home/Services2';
 const Home = () => {
   return (
     <div>
       <Hero />
-      <Why />
-      <AccordionFirstExample />
-      <Map />
+      <Feature />
+      {/* <Why /> */}
+      {/* <AccordionFirstExample /> */}
+      <Map2 />
       <Contact />
     </div>
   );

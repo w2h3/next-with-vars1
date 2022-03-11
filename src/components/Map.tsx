@@ -19,7 +19,7 @@ type OfficeNode = {
   };
 };
 
-export default function App() {
+export default function Map() {
   const offices = [
     {
       id: '1',
@@ -28,8 +28,8 @@ export default function App() {
         postal_code: '85210',
         address_line1: '2045 S. Vineyard',
         address_line2: 'Bldg. N3, Suite 144',
-        latitude: 33.414930,
-        longitude: -111.842050,
+        latitude: 33.41493,
+        longitude: -111.84205,
       },
     },
     {
@@ -39,8 +39,8 @@ export default function App() {
         postal_code: '85212',
         address_line1: '2919 S. Ellsworth Road',
         address_line2: 'Suite 135',
-        latitude: 33.362460,
-        longitude: -111.634580,
+        latitude: 33.36246,
+        longitude: -111.63458,
       },
     },
     // {
@@ -83,11 +83,14 @@ export default function App() {
     setSelectedOffice(offices.find((office) => office.id === officeId));
   };
   return (
-    <div className="App bg-slate-100 border-2">
-      <h1 className="text-6xl mt-10 font-bold">Our Locations</h1>
-      <Spots />
+    <div className="App mx-auto h-[40rem] bg-slate-100  ">
+      {/* bg-slate-100 */}
+      {/*outline   outline-[#22707C] */}
+      {/* <div className="text-6xl font-bold">Our Locations</div> */}
+      {/* <Spots /> */}
       {isLoaded && (
-        <>
+        <div className="  mx-auto  border-wcyan">
+          {/*  */}
           <GoogleMap
             mapContainerClassName="c-office-overview__map"
             onLoad={onLoad}
@@ -119,7 +122,7 @@ export default function App() {
               </InfoWindow>
             )}
           </GoogleMap>
-        </>
+        </div>
       )}
     </div>
   );

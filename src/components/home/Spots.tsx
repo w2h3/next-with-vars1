@@ -3,7 +3,8 @@ import React from 'react';
 
 export const Spots = () => {
   return (
-    <div className="bg-slate-100 border-b-2 border-l-2 border-r-2 px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen md:px-24 lg:px-8 lg:py-12">
+    <div className="bg-wcyan bg-opacity-0 px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen md:px-24 lg:px-8 lg:py-12">
+     {/* <div className="text-6xl font-bold">Our Locations</div> */}
       {/* <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-3xl border-8 border-gray-600 md:mb-12 w-full">
          <div className="flex  items-center justify-center w-16 h-16 mb-4  bg-[#107E8E] sm:mx-auto sm:w-24 sm:h-24 lg:w-[90%] lg:h-[60%] lg:mx-0"> 
         <Image

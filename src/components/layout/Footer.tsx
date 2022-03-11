@@ -1,4 +1,4 @@
-/* This example requires Tailwind CSS v2.0+ */
+import Image from 'next/image';
 const navigation = {
   main: [
     { name: 'Home', href: '/', current: true },
@@ -76,17 +76,23 @@ const navigation = {
 
 export default function Example() {
   return (
-    <footer className="bg-white border-t-2 border-slate-500">
-      <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+    <footer className="border-t-2 border-wcyan bg-wcyan/20">
+      {/* bg-opacity-10  */}
+
+      <div className="px-4 sm:px-6 lg:px-8  items-center overflow-hidden ">
+        {/* max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 */}
+        <div className="hidden lg:flex mx-auto justify-center py-6">
+          <Image src="/logo.png" alt="logo" height={55} width={300} />
+        </div>{' '}
         <nav
-          className="-mx-5 -my-2 flex flex-wrap justify-center"
+          className="-mx-5 -my-2 flex flex-wrap justify-center items-center"
           aria-label="Footer"
         >
           {navigation.main.map((item) => (
             <div key={item.name} className="px-5 py-2">
               <a
                 href={item.href}
-                className="text-base text-gray-500 hover:text-gray-900"
+                className="text-base text-black hover:text-wcyan/20"
               >
                 {item.name}
               </a>
@@ -105,7 +111,7 @@ export default function Example() {
             </a>
           ))}
         </div> */}
-        <p className="mt-8 text-center text-base text-gray-400">
+        <p className="mt-8 text-center text-base text-black">
           &copy; 2022 Neurology and Sleep Medicine Associates
           <br />
           All rights reserved.
