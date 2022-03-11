@@ -105,7 +105,6 @@ export const Feature = () => {
               </p>
               <Link href="/" passHref>
                 <a
-                  href="/"
                   aria-label=""
                   className="inline-flex items-center font-semibold transition-colors duration-200 text-sky-500 hover:text-sky-600"
                 >

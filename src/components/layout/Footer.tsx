@@ -63,14 +63,15 @@ export const Footer = () => {
 
         <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4 ">
           <div className="sm:col-span-1 ">
-            <a
-              href="/"
-              aria-label="Go home"
-              title="Company"
-              className="inline-flex items-center"
-            >
-              <Image src="/logo.png" alt="logo" height={55} width={300} />
-            </a>
+            <Link href="/" passHref>
+              <a
+                aria-label="Go home"
+                title="Company"
+                className="inline-flex items-center"
+              >
+                <Image src="/logo.png" alt="logo" height={55} width={300} />
+              </a>
+            </Link>
           </div>
           <div className=" sm:col-span-1  ">
             <div className="mx-auto space-y-2">
