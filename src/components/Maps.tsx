@@ -14,7 +14,6 @@ const posts = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.',
     date: 'Directions',
     imageUrl: '/home/jimmy/Documents/NeurologySite/public/directions.png',
-    directions: [<Mesa1 />],
   },
   {
     title: '2919 S. Ellsworth Road, Suite 135 Mesa, AZ 85212',
@@ -25,9 +24,7 @@ const posts = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.',
     date: 'Directions',
     imageUrl:
-      'https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
-    directions: [<Mesa1 />],
-  },
+      'https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',  },
 
   {
     title: '2919 S. Ellsworth Road, Suite 135 Mesa, AZ 85212',
@@ -39,7 +36,6 @@ const posts = [
     date: 'Directions',
     imageUrl:
       'https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
-    directions: [<Mesa1 />],
   },
 ];
 
