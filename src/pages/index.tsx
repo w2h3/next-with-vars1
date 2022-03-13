@@ -1,7 +1,7 @@
 // import Why from '../components/home/Services';
-import Map2 from '../components/Map2';
+import Map2 from '../components/Maps';
 import Contact from '../components/Contact';
-import Hero from '../components/home/Hero';
+import Hero from '../components/home/NewHero';
 import { Feature } from '@/components/home/Services2';
 const Home = () => {
   return (

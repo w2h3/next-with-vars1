@@ -1,8 +1,8 @@
 const Header = () => {
   return (
     <nav className="flex-row shadow ">
-      <div className="flex  md:flex-row md:items-center lg:justify-evenly bg-gradient-to-t from-slate-100 to-white mx-auto justify-center md:px-10 lg:mx-auto sm:px-2">
-        {/*  */}
+      <div className="flex  md:flex-row md:items-center lg:justify-evenly testImage from-slate-100 to-white mx-auto justify-center md:px-10 lg:mx-auto sm:px-2">
+        {/* bg-gradient-to-t */}
         <div className="flex my-2">
           <button className="flex items-center justify-center px-5 text-md rounded-lg font-small  text-[#107E8E] hover:text-[#5582a6 hover:outline hover:border-[#5582a6]  focus:outline-none space-x-2">
             <svg

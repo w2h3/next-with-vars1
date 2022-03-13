@@ -6,7 +6,8 @@ import { Popover, Transition } from '@headlessui/react';
 
 export default function Hero() {
   return (
-    <div className="relative mt-24 bg-white overflow-hidden lg:border-b-2 mx-auto  border-[#107E8E]">
+    <div className="relative mt-24 bg-white overflow-hidden  mx-auto  border-[#107E8E]">
+      {/* lg:border-b-2 */}
       <div className="max-w-7xl  mx-auto">
         <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 lg:pl-32 xl:pb-32">
           <svg
@@ -84,7 +85,8 @@ export default function Hero() {
         </div>
       </div>
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <div className="border-2 border-wcyan lg:border-0 relative bg-no-repeat  lg:w-full h-80  shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full">
+        <div className=" lg:border-0 relative bg-no-repeat  lg:w-full h-80  shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full">
+        {/* border-2 border-wcyan */}
           <Image
             src={tester.src}
             alt="Office Image"

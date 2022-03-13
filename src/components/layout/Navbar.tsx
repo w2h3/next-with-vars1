@@ -31,7 +31,7 @@ export default function Navbar() {
           <div className="max-w-screen-2xl lg:mx-auto mx-auto">
             <div className="relative flex items-center justify-between h-16 ">
               <div className="absolute inset-y-0 right-0 flex items-center md:hidden  ">
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset  focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-10 w-10" aria-hidden="true" />
@@ -42,7 +42,7 @@ export default function Navbar() {
               </div>
               <div className="flex-1 flex md:items-stretch sm:justify-start ">
                 <div className="flex-shrink-0 flex items-center ">
-                  <div className="flex lg:hidden w-auto">
+                  {/* <div className="flex lg:hidden w-auto">
                     <Link href="/">
                       <Image
                         src="/navlogo.png"
@@ -51,32 +51,31 @@ export default function Navbar() {
                         width={67}
                       />
                     </Link>
-                  </div>
-                  <div className="hidden lg:block pt-3 w-auto">
-                    <Link href="/" passHref>
-                      <a>
-                        <Image
-                          src="/logo.png"
-                          alt="logo"
-                          height={55}
-                          width={300}
-                        />
-                      </a>
+                  </div> */}
+                  <div className="block pt-3 w-auto ">
+                    <Link href="#">
+                      <Image
+                        src="/logo.png"
+                        alt="logo"
+                        height={55}
+                        width={300}
+                        className="hover:cursor-pointer"
+                      />
                     </Link>
                   </div>
                 </div>
-                <div className="md:flex-1 md:my-auto md:mx-auto">
-                  <div className="hidden md:block md:ml-6">
-                    <div className="flex space-x-4 justify-end">
+                <div className="md:flex-1 md:my-auto md:mx-auto ">
+                  <div className="hidden md:block md:ml-6 ">
+                    <div className="flex space-x-4 justify-end items-center">
                       {navigation.map((item) => (
                         <Link href={item.href} key={item.name} passHref>
                           <a
                             className={classNames(
-                              ' px-1 pt-2 text-md font-medium',
+                              ' px-1 text-lg font-heavy',
                               router.route === item.href
                                 ? 'text-wcyan'
                                 : // text-gray-900  border-gray-900
-                                  ' text-gray-400  hover:text-wcyan'
+                                  ' text-gray-500  hover:text-wcyan'
                               // border-transparent
                             )}
                             aria-current={
