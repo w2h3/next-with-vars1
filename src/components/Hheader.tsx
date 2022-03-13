@@ -7,7 +7,7 @@ import { Popover, Transition } from '@headlessui/react';
 
 import tester from '/public/stock.jpg';
 
-export const Hheader = () => {
+export const Hheader = ({ pageName }) => {
   return (
     <div className="relative  ">
       {/* mt-[6rem] */}
@@ -22,7 +22,7 @@ export const Hheader = () => {
           <div className="flex flex-col  justify-center xl:flex-row">
             <div className="w-full max-w-2xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12 text-center">
               <h1 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none mx-auto">
-                About Us{' '}
+                {pageName}{' '}
                 <p className="justify-center text-[#7ba009]">
                   {/* About Us{' '} */}
                 </p>{' '}
