@@ -1,5 +1,6 @@
 import Hheader from '@/components/Hheader';
 import ins from '../../public/server.jpg';
+import tester from 'public/tester.jpg'
 
 export const Insurances = () => {
   return (
@@ -7,7 +8,7 @@ export const Insurances = () => {
       <div className=" pt-24">
         {' '}
         <div className="">
-          <Hheader pageName={'Insurances'}></Hheader>
+          <Hheader pageName={'Insurances'} imageURL={tester.src}></Hheader>
         </div>
         <div className="container sm:text-center">
           <h2 className="mx-auto text-shadow-md ">
