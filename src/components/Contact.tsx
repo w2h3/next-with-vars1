@@ -12,9 +12,10 @@ export default function Contact() {
 
   return (
     <div className="testImage ">
+      <Divider sectionName='Get In Touch'></Divider>
       <div className="container max-w-6xl md:mb-16 ">
         {/*text-3xl  tracking-tight  text-gray-900 sm:text-4xl */}
-        <Divider sectionName='Get In Touch'></Divider>
+        
         <div className=" lg:grid lg:grid-cols-3 mt-14 ">
           <div
             className=" rounded-2xl py-1 px-4 sm:px-6 lg:col-span-1 lg:px-8 lg:py-10 xl:pr-12"
