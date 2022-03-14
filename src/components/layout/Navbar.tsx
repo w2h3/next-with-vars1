@@ -53,7 +53,7 @@ export default function Navbar() {
                     </Link>
                   </div> */}
                   <div className="block pt-3 w-auto ">
-                    <Link href="#">
+                    <Link href="/">
                       <Image
                         src="/logo.png"
                         alt="logo"

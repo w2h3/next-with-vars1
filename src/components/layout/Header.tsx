@@ -26,7 +26,9 @@ const Header = () => {
                 Phone: (480) 967-6888
               </a>
             </Link>
-            <p className="hidden md:flex lg:hidden text-gray-600 ">Phone</p>
+            <Link href="tel:4807478296" passHref>
+              <a className="hidden md:flex lg:hidden text-gray-600 ">Phone</a>
+            </Link>
           </button>
           <button className="flex items-center justify-center px-5 rounded-lg  text-md font-semibold font-small text-[#107E8E] border-black hover:text-[#5582a6] hover:outline hover:border-[#5582a6] focus:outline-none space-x-2">
             <svg
@@ -44,7 +46,7 @@ const Header = () => {
               />
             </svg>
             <Link href="/contact" passHref>
-              <a className="hidden lg:flex text-gray-600 " >
+              <a className="hidden lg:flex text-gray-600 ">
                 Fax: (480) 967-6887
               </a>
             </Link>
