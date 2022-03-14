@@ -1,3 +1,4 @@
+
 export default function Divider({ sectionName }) {
   return (
     <div className="mb-10 container max-w-2xl justify-center items-center flex">
