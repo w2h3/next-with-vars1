@@ -74,13 +74,16 @@ export const Footer = () => {
             </Link>
 
             <p className="mt-5 text-l font-bold tracking-wide text-gray-900 ">
-              Hours: 
-              <span className='tracking-wide font-light text-base text-gray-500'> Monday - Friday 8:00 AM to 5:00 PM </span>
+              Hours:
+              <span className="tracking-wide font-light text-base text-gray-500">
+                {' '}
+                Monday - Friday 8:00 AM to 5:00 PM{' '}
+              </span>
             </p>
           </div>
           <div className=" sm:col-span-1  ">
             <div className="mx-auto space-y-2">
-              <div className="gap-2 grid grid-rows-6 justify-center">
+              <div className="gap-2 grid grid-rows-6 md:justify-center">
                 <p className=" text-base font-bold tracking-wide text-gray-900">
                   Navigate
                 </p>
@@ -211,16 +214,10 @@ export const Footer = () => {
         </div>
         <div className="flex flex-col-reverse justify-between pt-5 lg:-mb-10 border-t border-wcyan lg:flex-row">
           <p className="text-sm text-gray-600">
-            © Copyright 2020 Lorem Inc. All rights reserved.
+            © Copyright 2022 Neurology And Sleep Medicine Associates. All rights
+            reserved.
           </p>
           <ul className="flex flex-col mb-3 space-y-2  lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
-            <li>
-              <Link href="/" passHref>
-                <a className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                  F.A.Q
-                </a>
-              </Link>
-            </li>
             <li>
               <Link href="/" passHref>
                 <a className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
