@@ -1,13 +1,13 @@
 import Hheader from '@/components/Hheader';
 import React from 'react';
-import tester from 'public/tester.jpg'
-
+import tester from 'public/stock.jpg';
+import Map from '@/components/Mesa2';
 const locations = () => {
   return (
     <>
-    <div className="pt-24">
       <Hheader pageName={'Locations'} imageURL={tester.src}></Hheader>
-    </div>
+      <Map></Map>
+      <div className="pt-24"></div>
     </>
   );
 };

@@ -1,15 +1,14 @@
 import Hheader from '@/components/Hheader';
 import ins from '../../public/server.jpg';
-import tester from 'public/tester.jpg'
+import tester from 'public/stock.jpg';
 
 export const Insurances = () => {
   return (
     <>
+      <Hheader pageName={'Insurances'} imageURL={tester.src}></Hheader>
       <div className=" pt-24">
         {' '}
-        <div className="">
-          <Hheader pageName={'Insurances'} imageURL={tester.src}></Hheader>
-        </div>
+        <div className=""></div>
         <div className="container sm:text-center">
           <h2 className="mx-auto text-shadow-md ">
             {/*text-3xl  tracking-tight  text-gray-900 sm:text-4xl */}

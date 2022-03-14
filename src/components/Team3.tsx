@@ -39,7 +39,7 @@ export default function Team() {
       <div className="container">
         <Divider sectionName="Meet Our Team" />
 
-        <div className="space-y-12  ">
+        <div className="space-y-12  mb-12">
           <ul
             role="list"
             className=" space-y-4 sm:grid sm:grid-cols-1 sm:gap-6 sm:space-y-0 lg:grid-cols-4 lg:gap-8"
@@ -47,7 +47,7 @@ export default function Team() {
             {people.map((person) => (
               <li
                 key={person.name}
-                className="py-10 px-6 bg-[#00847D] text-center rounded-lg xl:px-10 xl:text-left"
+                className="py-10 px-6 bg-[#00847D]/30 text-center rounded-3xl xl:px-10 xl:text-left"
               >
                 <div className="space-y-6 xl:space-y-10">
                   <img

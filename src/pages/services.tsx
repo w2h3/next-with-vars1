@@ -1,11 +1,12 @@
 import Hheader from '@/components/Hheader';
 import React from 'react';
-import tester from 'public/tester.jpg';
+import tester from 'public/stock.jpg';
 const services = () => {
   return (
     <>
-      <div className="pt-24">
-        <Hheader pageName={'Services'} imageURL={tester.src}></Hheader>
+            <Hheader pageName={'Services'} imageURL={tester.src}></Hheader>
+      <div className="">
+
       </div>
     </>
   );

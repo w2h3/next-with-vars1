@@ -1,4 +1,3 @@
-import stock from 'public/stock.jpg';
 export default function Hheader({ pageName, imageURL }) {
   return (
     <div className="relative mt-[4rem]">

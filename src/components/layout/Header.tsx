@@ -91,6 +91,8 @@ const Header = () => {
               <p className="hidden lg:flex text-gray-600 ">
                 Medical Professionals
               </p>
+            </Link>
+            <Link href="/medprof">
               <p className="hidden md:flex lg:hidden text-gray-600 ">
                 Medical Professionals
               </p>
