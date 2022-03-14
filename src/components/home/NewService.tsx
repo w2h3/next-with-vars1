@@ -4,6 +4,7 @@ import psych from 'public/psych.jpg';
 import insomnia from 'public/insomnia.jpg';
 import physical from 'public/physical.jpg';
 import { CheckIcon } from '@heroicons/react/outline';
+import Link from 'next/link';
 
 export default function Services() {
   return (
@@ -11,10 +12,7 @@ export default function Services() {
       <Divider sectionName="What We Offer"></Divider>
       <div className="container">
         <div className="grid grid-cols-1 gap-16 sm:grid-cols-2   max-w-screen lg:px-8  mb-20 ">
-          <a
-            href="#"
-            className="flex flex-col items-center bg-white rounded-lg border shadow-xl md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-          >
+          <div className="flex flex-col items-center bg-white rounded-lg border shadow-xl md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
             <img
               className="object-cover w-full h-full rounded-t-lg md:h-full md:w-48 md:rounded-none md:rounded-l-lg"
               src={psychiatry.src}
@@ -67,30 +65,29 @@ export default function Services() {
                       </span>
                     </dd>{' '}
                     <div>
-                      <a
-                        href="/"
-                        aria-label=""
-                        className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-                      >
-                        Learn more
-                        <svg
-                          className="inline-block w-3 ml-2"
-                          fill="currentColor"
-                          viewBox="0 0 12 12"
+                      <Link href="/" passHref>
+                        <a
+                          href="/"
+                          aria-label=""
+                          className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
                         >
-                          <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-                        </svg>
-                      </a>
+                          Learn more
+                          <svg
+                            className="inline-block w-3 ml-2"
+                            fill="currentColor"
+                            viewBox="0 0 12 12"
+                          >
+                            <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
+                          </svg>
+                        </a>
+                      </Link>
                     </div>
                   </dd>
                 </dd>
               </dd>
             </div>
-          </a>
-          <a
-            href="#"
-            className="flex flex-col items-center bg-white rounded-lg border shadow-xl md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-          >
+          </div>
+          <div className="flex flex-col items-center bg-white rounded-lg border shadow-xl md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
             <img
               className="object-cover w-full h-96 rounded-t-lg md:h-full md:w-48 md:rounded-none md:rounded-l-lg"
               src={psych.src}
@@ -137,30 +134,29 @@ export default function Services() {
                       <span className="ml-3 mb-3">Anxiety</span>
                     </dd>{' '}
                     <div>
-                      <a
-                        href="/"
-                        aria-label=""
-                        className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-                      >
-                        Learn more
-                        <svg
-                          className="inline-block w-3 ml-2"
-                          fill="currentColor"
-                          viewBox="0 0 12 12"
+                      <Link href="/" passHref>
+                        <a
+                          href="/"
+                          aria-label=""
+                          className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
                         >
-                          <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-                        </svg>
-                      </a>
+                          Learn more
+                          <svg
+                            className="inline-block w-3 ml-2"
+                            fill="currentColor"
+                            viewBox="0 0 12 12"
+                          >
+                            <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
+                          </svg>
+                        </a>
+                      </Link>
                     </div>
                   </dd>
                 </dd>
               </dd>
             </div>
-          </a>
-          <a
-            href="#"
-            className="flex flex-col items-center bg-white rounded-lg border shadow-xl md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-          >
+          </div>
+          <div className="flex flex-col items-center bg-white rounded-lg border shadow-xl md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
             <img
               className="object-cover w-full h-96 rounded-t-lg md:h-full md:w-48 md:rounded-none md:rounded-l-lg"
               src={physical.src}
@@ -205,30 +201,29 @@ export default function Services() {
                       <span className="ml-3 mb-3">MS recovery</span>
                     </dd>{' '}
                     <div>
-                      <a
-                        href="/"
-                        aria-label=""
-                        className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-                      >
-                        Learn more
-                        <svg
-                          className="inline-block w-3 ml-2"
-                          fill="currentColor"
-                          viewBox="0 0 12 12"
+                      <Link href="/" passHref>
+                        <a
+                          href="/"
+                          aria-label=""
+                          className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
                         >
-                          <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-                        </svg>
-                      </a>
+                          Learn more
+                          <svg
+                            className="inline-block w-3 ml-2"
+                            fill="currentColor"
+                            viewBox="0 0 12 12"
+                          >
+                            <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
+                          </svg>
+                        </a>
+                      </Link>
                     </div>
                   </dd>
                 </dd>
               </dd>
             </div>
-          </a>
-          <a
-            href="#"
-            className="flex flex-col items-center bg-white rounded-lg border shadow-xl md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-          >
+          </div>
+          <div className="flex flex-col items-center bg-white rounded-lg border shadow-xl md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
             <img
               className="object-cover w-full h-96 rounded-t-lg md:h-full md:w-48 md:rounded-none md:rounded-l-lg"
               src={insomnia.src}
@@ -281,26 +276,28 @@ export default function Services() {
                       </span>
                     </dd>{' '}
                     <div>
-                      <a
-                        href="/"
-                        aria-label=""
-                        className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-                      >
-                        Learn more
-                        <svg
-                          className="inline-block w-3 ml-2"
-                          fill="currentColor"
-                          viewBox="0 0 12 12"
+                      <Link href="/" passHref>
+                        <a
+                          href="/"
+                          aria-label=""
+                          className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
                         >
-                          <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-                        </svg>
-                      </a>
+                          Learn more
+                          <svg
+                            className="inline-block w-3 ml-2"
+                            fill="currentColor"
+                            viewBox="0 0 12 12"
+                          >
+                            <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
+                          </svg>
+                        </a>
+                      </Link>
                     </div>
                   </dd>
                 </dd>
               </dd>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </div>

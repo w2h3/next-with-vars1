@@ -43,7 +43,7 @@ const Header = () => {
                 d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
               />
             </svg>
-            <Link href="/contact" passHref>
+            <Link href="/contact/" passHref>
               <a className="hidden lg:flex text-gray-600 " href="/contact">
                 Fax: (480) 967-6887
               </a>
@@ -65,8 +65,8 @@ const Header = () => {
                 d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
               />
             </svg>
-            <Link href="/contact" passHref>
-              <a href="/contact" className="hidden md:flex text-gray-600 ">
+            <Link href="/contact/" passHref>
+              <a href="/contact/" className="hidden md:flex text-gray-600 ">
                 M-F 8:00 AM-5:00 PM
               </a>
             </Link>
