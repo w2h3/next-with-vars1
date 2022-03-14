@@ -9,7 +9,7 @@ export default function Hheader({ pageName, imageURL }) {
           alt=""
         />
         <div
-          className="absolute w-screen inset-0  bg-gradient-to-r from-white via-black/10 to-white"
+          className="absolute  inset-0  bg-gradient-to-r from-white via-black/10 to-white"
           aria-hidden="true"
         />
       </div>

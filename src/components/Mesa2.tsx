@@ -32,17 +32,17 @@ export default function Map() {
         longitude: -111.63458,
       },
     },
-    // {
-    //   id: '3',
-    //   field_address: {
-    //     locality: 'Antwerpen',
-    //     postal_code: '2000',
-    //     address_line1: 'Meir 1',
-    //     address_line2: 'a',
-    //     latitude: 51.21878,
-    //     longitude: 4.40559,
-    //   },
-    // },
+    {
+      id: '3',
+      field_address: {
+        locality: 'Antwerpen',
+        postal_code: '2000',
+        address_line1: 'Meir 1',
+        address_line2: 'a',
+        latitude: 51.21878,
+        longitude: 4.40559,
+      },
+    },
   ];
   const mapRef = React.useRef<any>(null);
   const [selectedOffice, setSelectedOffice] = React.useState<

@@ -1,7 +1,7 @@
 
 export default function Divider({ sectionName }) {
   return (
-    <div className="mb-10 container max-w-2xl justify-center items-center flex">
+    <div className="container max-w-2xl justify-center items-center flex">
       {/* justify-between */}
       <div className="inset-0 w-1/5 " aria-hidden="true">
         <div className=" border-t border-[#5582a6]" />

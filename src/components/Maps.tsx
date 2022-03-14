@@ -42,7 +42,7 @@ const posts = [
 
 export default function Map2() {
   return (
-    <div className="bg-white">
+    <div className="bg-[#f0fdff]">
       {/* relative h-fill py-16 mx-auto sm:max-w-full bg-wcyan/20 z-1 lg:py-20  */}
 
       {/* bg-gray-50 bg-opacity-10 */}
