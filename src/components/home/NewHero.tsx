@@ -34,7 +34,7 @@ export default function Hero() {
               {/* lg:pt-48 */}
               {/* md:px-28 2xl:px-[40rem] */}
               <div className=" max-w-2xl relative bg-[black]  bg-opacity-50  rounded-3xl px-10">
-                <h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl ">
+                <h1 className="text-center text-3xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl ">
                   <span className="block text-[#c2df6c] pt-10">
                     Neurology and Sleep
                   </span>
