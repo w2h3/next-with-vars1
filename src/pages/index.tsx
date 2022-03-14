@@ -2,12 +2,12 @@
 import Map2 from '../components/Maps';
 import Contact from '../components/Contact';
 import Hero from '../components/home/NewHero';
-import { Feature } from '@/components/home/Services2';
+import Services from '@/components/home/NewService';
 const Home = () => {
   return (
     <div>
       <Hero />
-      <Feature />
+      <Services />
       {/* <Why /> */}
       {/* <AccordionFirstExample /> */}
       <Map2 />

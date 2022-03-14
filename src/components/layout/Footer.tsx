@@ -72,6 +72,11 @@ export const Footer = () => {
                 <Image src="/logo.png" alt="logo" height={55} width={300} />
               </a>
             </Link>
+
+            <p className="mt-5 text-l font-bold tracking-wide text-gray-900 ">
+              Hours: 
+              <span className='tracking-wide font-light text-base text-gray-500'> Monday - Friday 8:00 AM to 5:00 PM </span>
+            </p>
           </div>
           <div className=" sm:col-span-1  ">
             <div className="mx-auto space-y-2">

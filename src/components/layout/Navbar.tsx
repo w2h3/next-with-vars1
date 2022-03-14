@@ -30,7 +30,7 @@ export default function Navbar() {
         <>
           <div className="max-w-screen-2xl lg:mx-auto mx-auto">
             <div className="relative flex items-center justify-between h-16 ">
-              <div className="absolute inset-y-0 right-0 flex items-center md:hidden  ">
+              <div className="absolute inset-y-0 right-0 flex items-center lg:hidden  ">
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset  focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -65,7 +65,7 @@ export default function Navbar() {
                   </div>
                 </div>
                 <div className="md:flex-1 md:my-auto md:mx-auto ">
-                  <div className="hidden md:block md:ml-6 ">
+                  <div className="hidden lg:block lg:ml-6 ">
                     <div className="flex space-x-4 justify-end items-center">
                       {navigation.map((item) => (
                         <Link href={item.href} key={item.name} passHref>
@@ -106,7 +106,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="lg:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
                 <Disclosure.Button
@@ -116,7 +116,7 @@ export default function Navbar() {
                   className={classNames(
                     item.current
                       ? 'bg-[#5692B7] text-white'
-                      : 'bg-[#d0e5e8] hover:bg-[#d0e5e8]/70 hover:text-white',
+                      : 'bg-[#d0e5e8] hover:bg-[#5692B7]/70 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}

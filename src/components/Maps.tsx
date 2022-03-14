@@ -4,6 +4,7 @@ import Map from './Chandler';
 import { LocationMarkerIcon } from '@heroicons/react/outline';
 import Mesa1 from './Mesa1';
 import Mesa2 from './Mesa2';
+import Divider from './layout/Dividers';
 const posts = [
   {
     title: '2919 S. Ellsworth Road, Suite 135 Mesa, AZ 85212',
@@ -54,8 +55,7 @@ export default function Map2() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             {/*text-3xl  tracking-tight  text-gray-900 sm:text-4xl */}
-            <h2 className=" font-bold mx-auto">Locations</h2>
-          </div>
+            <Divider sectionName='Where You Can Find Us'></Divider>          </div>
           <div className="mt-12 bg-whitemax-w-lg  mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
             {posts.map((post) => (
               <div
