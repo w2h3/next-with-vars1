@@ -38,7 +38,9 @@ export default function Hero() {
                   <span className="block text-[#c2df6c] pt-10">
                     Neurology and Sleep
                   </span>
-                  <span className="block text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl text-white">Medicine Associates</span>
+                  <span className="block text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl text-white">
+                    Medicine Associates
+                  </span>
                 </h1>
                 <p className="mt-6 max-w-lg mx-auto text-center text-xl font-medium text-white sm:max-w-3xl">
                   Serving the Valley since 2005.
@@ -50,14 +52,14 @@ export default function Hero() {
                       href="#"
                       className="flex items-center justify-center px-4 py-3 border  text-base font-bold rounded-xl shadow-sm text-white bg-wcyan hover:bg-opacity-60  hover:text-white border-white sm:px-8"
                     >
-                      Request An Appointment
+                      REQUEST APPOINTMENT
                     </a>
                     <a
                       href="#"
                       className="flex items-center justify-center px-4 py-3 border border-wcyan text-base font-bold rounded-xl shadow-sm text-wcyan bg-white hover:text-wcyan/60  sm:px-8"
                       // hover:text-white
                     >
-                      New Patient Form
+                      NEW PATIENT FORM
                     </a>
                   </div>
                 </div>
