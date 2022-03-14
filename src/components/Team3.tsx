@@ -1,3 +1,4 @@
+import Divider from './layout/Dividers';
 import dr from '/public/Dr.png';
 
 const people = [
@@ -36,11 +37,7 @@ export default function Team() {
   return (
     <div className="testImage">
       <div className="container">
-        <h2 className="mx-auto text-shadow-md ">
-          {/*text-3xl  tracking-tight  text-gray-900 sm:text-4xl */}
-          <span className="text-[#24598C]/50">Meet Our </span>
-          <span className="font-bold text-[#24598C]/80">Team</span>
-        </h2>
+        <Divider sectionName="Meet Our Team" />
 
         <div className="space-y-12  ">
           <ul
@@ -50,7 +47,7 @@ export default function Team() {
             {people.map((person) => (
               <li
                 key={person.name}
-                className="py-10 px-6 bg-cyan-900/40  text-center rounded-lg xl:px-10 xl:text-left"
+                className="py-10 px-6 bg-[#00847D] text-center rounded-lg xl:px-10 xl:text-left"
               >
                 <div className="space-y-6 xl:space-y-10">
                   <img
@@ -61,7 +58,9 @@ export default function Team() {
                   <div className="space-y-2 xl:flex xl:items-center lg:justify-center">
                     <div className=" font-medium text-lg leading-6 space-y-1">
                       <h3 className="text-white">{person.name}</h3>
-                      <p className="text-slate-200 text-center">{person.role}</p>
+                      <p className="text-slate-200 text-center">
+                        {person.role}
+                      </p>
                     </div>
                   </div>
                 </div>
