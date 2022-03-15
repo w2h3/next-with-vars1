@@ -280,8 +280,8 @@ const Appointment = () => {
                 </div>
               </div>
 
-              <div className="container mx-auto w-11/12 xl:w-full mb-20">
-                <div className="w-full py-4 sm:px-0 bg-white dark:bg-gray-800 flex justify-end">
+              <div className="mx-auto w-11/12 xl:w-full mb-20">
+                <div className="w-full py-4 sm:px-0 bg-white dark:bg-gray-800 flex justify-center">
                   <button className="bg-white border-2 border-wcyan focus:outline-none transition duration-150 ease-in-out hover:bg-wcyan/30 rounded text-wcyan  px-6 py-2 text-xs mr-4">
                     Cancel
                   </button>

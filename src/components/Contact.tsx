@@ -1,7 +1,7 @@
 import {
   MailIcon,
   PhoneIcon,
-  LocationMarkerIcon,
+  LocationMarkerIcon, NewspaperIcon
 } from '@heroicons/react/outline';
 import bgmap from 'public/cactus4.jpg';
 import { useState } from 'react';
@@ -65,7 +65,7 @@ export default function Contact() {
                       aria-hidden="true"
                     />
                     <span className="ml-3 mb-3">
-                      2919 S. Ellsworth Road, Suite 135 Mesa, AZ 85212
+                    2045 S. Vineyard Road, Bldg. N3, Suite 144 Mesa, AZ 85210
                     </span>
                   </dd>
                   <dt className="sr-only">Postal address</dt>
@@ -75,18 +75,28 @@ export default function Contact() {
                       aria-hidden="true"
                     />
                     <span className="ml-3">
-                      2919 S. Ellsworth Road, Suite 135 Mesa, AZ 85212
+                    4001 E Baseline Road, Suite 205 Mesa, AZ 85234
                     </span>
                   </dd>
                 </div>
-                <div className="mt-6">
+                <div className="mt-4">
                   <dt className="sr-only">Phone number</dt>
                   <dd className="flex">
                     <PhoneIcon
                       className="flex-shrink-0 h-6 w-6 text-wcyan"
                       aria-hidden="true"
                     />
-                    <span className="ml-3 mb-3">+1 (480) 967-6888</span>
+                    <span className="ml-3 mb-2">+1 (480) 967-6888</span>
+                  </dd>
+                </div>
+                <div className="mt-3">
+                  <dt className="sr-only">Phone number</dt>
+                  <dd className="flex">
+                    <NewspaperIcon
+                      className="flex-shrink-0 h-6 w-6 text-wcyan"
+                      aria-hidden="true"
+                    />
+                    <span className="ml-3 mb-3">+1 (480) 967-6887</span>
                   </dd>
                 </div>
                 <div className="mt-3 ">
