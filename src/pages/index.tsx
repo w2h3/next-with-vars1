@@ -1,8 +1,8 @@
 // import Why from '../components/home/Services';
-import Map2 from '../components/Maps';
+import Map from '../components/maps/Maps';
 import Contact from '../components/Contact';
-import Hero from '../components/home/NewHero';
-import Services from '@/components/home/NewService';
+import Hero from '../components/home/Hero';
+import Services from '@/components/home/NewServices';
 const Home = () => {
   return (
     <div>
@@ -10,7 +10,7 @@ const Home = () => {
       <Services />
       {/* <Why /> */}
       {/* <AccordionFirstExample /> */}
-      <Map2 />
+      <Map />
       <Contact />
     </div>
   );

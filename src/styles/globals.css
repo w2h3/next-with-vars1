@@ -11,7 +11,7 @@
   body {
     @apply font-inter;
   }
-  }
+}
 .testImage {
   /* background-image: url('/cactus3.jpg'); */
   background-color: white;
@@ -38,8 +38,8 @@
 
 html,
 body {
-  font-family: inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 * {
@@ -66,60 +66,36 @@ body {
   fill: #e8fafc;
 }
 
-
-
-/* CSS 
-bg-[#d0e5e8] 
-button {
-  align-items: center;
-  background-color: #ffe7e7;
-  background-position: 0 0;
-  border: 1px solid #fee0e0;
-  border-radius: 11px;
-  box-sizing: border-box;
-  color: #d33a2c;
-  cursor: pointer;
-  display: flex;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 33.4929px;
-  list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg)
-    none;
-  padding: 2px 12px;
-  text-align: left;
-  text-decoration: none;
-  text-shadow: none;
-  text-underline-offset: 1px;
-  transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  word-break: break-word;
+imgNew {
+  width: 300px;
+  height: 250px;
+  border: 1px solid black;
+  background-color: silver;
+  margin-right: 1em;
+  object-fit: none;
 }
 
-button:active,
-button:hover,
-button:focus {
-  outline: 0;
+#object-position-1 {
+  object-position: 10px;
 }
 
-button:active {
-  background-color: #d33a2c;
-  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
-  color: #ffffff;
+#object-position-2 {
+  object-position: 100% 10%;
 }
 
-button:hover {
-  background-color: #ffe3e3;
-  border-color: #faa4a4;
+/*
+bg-[#d0e5e8] */
+
+.image-container {
+  width: 100%;
+}
+.image-div {
+  position: unset !important;
 }
 
-button:active:hover,
-button:focus:hover,
-button:focus {
-  background-color: #d33a2c;
-  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
-  color: #ffffff;
+.image-image {
+  object-fit: ;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
 }
-*/

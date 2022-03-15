@@ -1,11 +1,11 @@
-import Hheader from '@/components/Hheader';
+import Banner from '@/components/Banner';
 import ins from '../../public/server.jpg';
 import tester from 'public/billing.jpg';
 
 export const Insurances = () => {
   return (
     <>
-      <Hheader pageName={'Insurances'} imageURL={tester.src}></Hheader>
+      <Banner pageName={'Insurances'} imageURL={tester.src}></Banner>
       <div className=" pt-24">
         {' '}
         <div className=""></div>

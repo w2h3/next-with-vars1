@@ -4,7 +4,7 @@ import tester from 'public/servebanner.jpg';
 const services = () => {
   return (
     <>
-      <Banner pageName={'Services'} imageURL={tester.src}></Banner>
+      <Banner pageName={'Book an Appointment'} imageURL={tester.src}></Banner>
       <div className="mt-80"></div>
     </>
   );

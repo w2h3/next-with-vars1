@@ -5,7 +5,6 @@ import {
   Marker,
   InfoWindow,
 } from '@react-google-maps/api';
-import Spots from './home/Spots';
 
 type OfficeNode = {
   id: string;
@@ -19,33 +18,22 @@ type OfficeNode = {
   };
 };
 
-export default function Map() {
+export default function Gilbert() {
   const offices = [
     {
       id: '1',
       field_address: {
-        locality: 'Mesa',
-        postal_code: '85210',
-        address_line1: '2045 S. Vineyard',
-        address_line2: 'Bldg. N3, Suite 144',
-        latitude: 33.41493,
-        longitude: -111.84205,
+        locality: 'Gilbert',
+        postal_code: '85234',
+        address_line1: '4001 E Baseline Road',
+        address_line2: 'Suite 205',
+        latitude: 33.37871296166308,
+        longitude: -111.74695413972648,
+        
       },
     },
-
-    
-    // {
-    //   id: '3',
-    //   field_address: {
-    //     locality: 'Antwerpen',
-    //     postal_code: '2000',
-    //     address_line1: 'Meir 1',
-    //     address_line2: 'a',
-    //     latitude: 51.21878,
-    //     longitude: 4.40559,
-    //   },
-    // },
   ];
+
   const mapRef = React.useRef<any>(null);
   const [selectedOffice, setSelectedOffice] = React.useState<
     OfficeNode | undefined | null
@@ -54,24 +42,32 @@ export default function Map() {
     id: 'google-map-script',
     googleMapsApiKey: 'AIzaSyCAG-NgxDPjapF14JKsWNMfAG5kdsbys_4',
   });
-  const onLoad = React.useCallback(
-    (mapInstance) => {
-      const bounds = new google.maps.LatLngBounds();
-      offices.forEach((office) => {
-        bounds.extend(
-          new google.maps.LatLng(
-            office.field_address.latitude,
-            office.field_address.longitude
-          )
-        );
-      });
-      mapRef.current = mapInstance;
-      mapInstance.fitBounds(bounds);
-    },
-    [offices]
-  );
+  // const onLoad = React.useCallback(
+  //   (mapInstance) => {
+  //     const bounds = new google.maps.LatLngBounds();
+  //     offices.forEach((office) => {
+  //       bounds.extend(
+  //         new google.maps.LatLng(
+  //           office.field_address.latitude,
+  //           office.field_address.longitude
+  //         )
+  //       );
+  //     });
+  //     mapRef.current = mapInstance;
+  //     mapInstance.fitBounds(bounds);
+  //   },
+  //   [offices]
+  // );
   const onClickMarker = (officeId: string) => {
     setSelectedOffice(offices.find((office) => office.id === officeId));
+  };
+  interface newProps {
+    lat: number;
+    lng: number;
+  }
+  const center: newProps = {
+    lat: 33.37871296166308, 
+    lng: -111.74695413972648,
   };
   return (
     <div className="App mx-auto h-[40rem] bg-slate-100  ">
@@ -84,7 +80,9 @@ export default function Map() {
           {/*  */}
           <GoogleMap
             mapContainerClassName="c-office-overview__map"
-            onLoad={onLoad}
+            // onLoad={onLoad}
+            center={center}
+            zoom={15}
           >
             {offices.map((office) => (
               <Marker

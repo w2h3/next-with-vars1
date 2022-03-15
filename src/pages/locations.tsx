@@ -1,11 +1,11 @@
-import Hheader from '@/components/Hheader';
+import Banner from '@/components/Banner';
 import React from 'react';
 import tester from 'public/locationbanner.jpg';
-import Map from '@/components/Mesa2';
+import Map from '@/components/maps/Maps';
 const locations = () => {
   return (
     <>
-      <Hheader pageName={'Locations'} imageURL={tester.src}></Hheader>
+      <Banner pageName={'Locations'} imageURL={tester.src}></Banner>
       <Map></Map>
       <div className="pt-24"></div>
     </>

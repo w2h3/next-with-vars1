@@ -12,10 +12,10 @@ export default function Contact() {
 
   return (
     <div className="testImage ">
-      <Divider sectionName='Get In Touch'></Divider>
+      <Divider sectionName="Get In Touch"></Divider>
       <div className="container max-w-6xl md:mb-16 ">
         {/*text-3xl  tracking-tight  text-gray-900 sm:text-4xl */}
-        
+
         <div className=" lg:grid lg:grid-cols-3 mt-14 ">
           <div
             className=" rounded-2xl py-1 px-4 sm:px-6 lg:col-span-1 lg:px-8 lg:py-10 xl:pr-12"
@@ -105,12 +105,12 @@ export default function Contact() {
             </div>
           </div>
           <div className="bg-[#d0e5e8] py-16 sm:px-6 lg:col-span-2 lg:py-10 lg:px-8 xl:pl-12 rounded-2xl">
-          {/* [#5692B7]/60 */}
+            {/* [#5692B7]/60 */}
             <div className="max-w-lg mx-auto lg:max-w-none py-10">
               <form
                 action="#"
                 method="POST"
-                className="grid grid-cols-1 gap-y-6"
+                className="grid grid-cols-1 gap-y-6 mx-4 sm:mx-0 "
               >
                 <div>
                   <label htmlFor="full-name" className="sr-only">
@@ -121,7 +121,7 @@ export default function Contact() {
                     name="full-name"
                     id="full-name"
                     autoComplete="name"
-                    className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md"
+                    className="block w-full shadow-sm py-3 px-4  placeholder-gray-500 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md"
                     placeholder="Full name"
                   />
                 </div>
@@ -147,7 +147,7 @@ export default function Contact() {
                     name="phone"
                     id="phone"
                     autoComplete="tel"
-                    className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md"
+                    className="w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md"
                     placeholder="Phone"
                   />
                 </div>

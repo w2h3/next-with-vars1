@@ -1,40 +1,69 @@
-import Hheader from '@/components/Hheader';
+import Banner from '@/components/Banner';
 import React from 'react';
-import tester from 'public/stock.jpg';
+import tester from 'public/drtest.jpg';
 
 const faqs = [
   {
     id: 1,
-    question: "What's the best thing about Switzerland?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    question: 'Phone',
+    answer: '(480) 967-6888',
   },
   {
-    id: 1,
-    question: "What's the best thing about Switzerland?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    id: 2,
+    question: 'Fax',
+    answer: '(480) 967-6887',
   },
   {
-    id: 1,
-    question: "What's the best thing about Switzerland?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+    id: 3,
+    question: 'Billing Requests and Information:',
+    answer: 'billing@neurologyandsleep.com',
+  },
+  {
+    id: 3,
+    question: 'Consults Requests and Information:',
+    answer: 'consults@neurologyandsleep.com ',
+  },
+  {
+    id: 3,
+    question: 'Dictation Requests and Information: ',
+    answer: 'dictation@neurologyandsleep.com',
+  },
+  {
+    id: 3,
+    question: 'Labs and Procedures Requests and Information:  ',
+    answer: 'labs@neurologyandsleep.com ',
+  },
+  {
+    id: 3,
+    question: 'Radiology Information: ',
+    answer: 'radiology@neurologyandsleep.com',
+  },
+  {
+    id: 3,
+    question: 'Radiology Information: ',
+    answer: 'radiology@neurologyandsleep.com',
+  },
+  {
+    id: 3,
+    question: 'Referrals Requests and Information:',
+    answer: 'referrals@neurologyandsleep.com',
+  },
+  {
+    id: 3,
+    question: 'Therapy Requests and Information:',
+    answer: 'therapy@neurologyandsleep.com',
   },
 ];
 
 export default function MedProf() {
   return (
     <>
-      <Hheader
-        pageName={'Medical Professionals'}
-        imageURL={tester.src}
-      ></Hheader>
+      <Banner pageName={'Medical Professionals'} imageURL={tester.src}></Banner>
       <div className="pt-24">
         <div className="bg-gray-50">
           <div className="max-w-7xl mx-auto py-12 px-4 divide-y divide-gray-200 sm:px-6 lg:py-16 lg:px-8">
             <h2 className="text-3xl font-extrabold text-gray-900">
-              Frequently asked questions
+              For Medical Professionals
             </h2>
             <div className="mt-8">
               <dl className="divide-y divide-gray-200">
@@ -55,14 +84,6 @@ export default function MedProf() {
             </div>
           </div>
         </div>
-        Phone: (480) 967-6888 Fax: (480) 967-6887 Email Contacts: Billing
-        Requests and Information: billing@neurologyandsleep.com Consults
-        Requests and Information: consults@neurologyandsleep.com Dictation
-        Requests and Information: dictation@neurologyandsleep.com Labs and
-        Procedures Requests and Information: labs@neurologyandsleep.com
-        Radiology Information: radiology@neurologyandsleep.com Referrals
-        Requests and Information: referrals@neurologyandsleep.com Therapy
-        Requests and Information: therapy@neurologyandsleep.com
       </div>
     </>
   );

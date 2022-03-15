@@ -1,5 +1,5 @@
-import Team from '@/components/Team3';
-import Hheader from '@/components/Hheader';
+import Team from '@/components/Team';
+import Banner from '@/components/Banner';
 import tester from 'public/tester.jpg';
 import business from 'public/business.jpg';
 import sleeper from 'public/sleeper.jpg';
@@ -8,10 +8,10 @@ import Divider from '@/components/layout/Dividers';
 export const AboutUs = () => {
   return (
     <>
-      <Hheader pageName="About Us" imageURL={stock.src}></Hheader>
+      <Banner pageName="About Us" imageURL={stock.src}></Banner>
 
       <div className="bg-[#f0fdff]">
-        <Divider sectionName="Our Office"></Divider>
+    
         <div className="container">
           {/* px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 */}
           <div className="grid gap-10 lg:grid-cols-2">

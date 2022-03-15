@@ -11,7 +11,6 @@ const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'About', href: '/about', current: false },
   { name: 'Services', href: '/services', current: false },
-  { name: 'Forms', href: '/forms', current: false },
   { name: 'Insurances', href: '/insurance', current: false },
   { name: 'Locations', href: '/locations', current: false },
   { name: 'Contact', href: '/contact', current: false },
@@ -191,22 +190,22 @@ export const Footer = () => {
               </Link>
             </div>
             <div className="flex items-center mt-1 space-x-3">
-              <Link href="/contact">
-                <button
-                  type="button"
-                  className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 "
-                >
-                  CONTACT US
-                </button>
-              </Link>
-            </div>
-            <div className="flex items-center mt-1 space-x-3">
               <Link href="/medprof">
                 <button
                   type="button"
                   className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 "
                 >
                   MEDICAL PROFESSIONALS
+                </button>
+              </Link>
+            </div>
+            <div className="flex items-center mt-1 space-x-3">
+              <Link href="/contact">
+                <button
+                  type="button"
+                  className="text-wcyan bg-white border border-wcyan hover:bg-wcyan/70 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-3 text-center  mb-2 "
+                >
+                  CONTACT US
                 </button>
               </Link>
             </div>

@@ -30,7 +30,7 @@ export default function Navbar() {
           <div className="max-w-screen-2xl lg:mx-auto mx-auto">
             <div className="relative flex items-center justify-between h-16 ">
               <div className="absolute inset-y-0 right-0 flex items-center lg:hidden  ">
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset  focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-[#5692B7] focus:outline-none focus:ring-2 focus:ring-inset  focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-10 w-10" aria-hidden="true" />

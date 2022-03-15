@@ -1,4 +1,4 @@
-import Hheader from '@/components/Hheader';
+import Banner from '@/components/Banner';
 import React from 'react';
 import tester from 'public/contactBanner.jpg';
 import Contact from '@/components/Contact';
@@ -6,7 +6,7 @@ const contact = () => {
   return (
     <>
       <div className="mt-26">
-        <Hheader pageName={'Contact Us'} imageURL={tester.src}></Hheader>
+        <Banner pageName={'Contact Us'} imageURL={tester.src}></Banner>
 
         <Contact></Contact>
       </div>
