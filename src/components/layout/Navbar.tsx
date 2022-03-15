@@ -114,12 +114,12 @@ export default function Navbar() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current
+                    router.route === item.href
                       ? 'bg-[#5692B7] text-white'
                       : 'bg-[#d0e5e8] hover:bg-[#5692B7]/70 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
-                  aria-current={item.current ? 'page' : undefined}
+                  aria-current={router.route === item.href ? 'page' : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>

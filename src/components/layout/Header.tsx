@@ -107,13 +107,11 @@ const Header = () => {
                   />
                 </svg>
                 <Link href="/medprof">
-                  <p className="hidden lg:flex text-gray-600 ">
-                    Medical Professionals
-                  </p>
+                  <p className="hidden lg:flex text-gray-600 ">For Providers</p>
                 </Link>
                 <Link href="/medprof">
                   <p className="hidden md:flex lg:hidden text-gray-600 ">
-                    Medical Professionals
+                    For Providers
                   </p>
                 </Link>
               </button>

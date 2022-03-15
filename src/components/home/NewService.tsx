@@ -1,7 +1,7 @@
 import Divider from '../layout/Dividers';
-import psychiatry from 'public/psychiatry.jpg';
-import psych from 'public/psych.jpg';
-import insomnia from 'public/insomnia.jpg';
+import neuro from 'public/neuroserve.jpg';
+import psych from 'public/handhold.jpg';
+import insomnia from 'public/sleepserv.jpg';
 import physical from 'public/physical.jpg';
 import { CheckIcon } from '@heroicons/react/outline';
 import Link from 'next/link';
@@ -14,8 +14,8 @@ export default function Services() {
         <div className="grid grid-cols-1 gap-16 sm:grid-cols-2   max-w-screen lg:px-8  mb-20 ">
           <div className="flex flex-col items-center bg-white rounded-lg border shadow-xl md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
             <img
-              className="object-cover w-full h-full rounded-t-lg md:h-full md:w-48 md:rounded-none md:rounded-l-lg"
-              src={psychiatry.src}
+              className="object- w-full h-full rounded-t-lg md:w-48 md:rounded-none md:rounded-l-lg"
+              src={neuro.src}
               alt=""
             />
             <div className="flex flex-col justify-between p-4 leading-normal">
@@ -154,7 +154,8 @@ export default function Services() {
               </dd>
             </div>
           </div>
-          <div className="flex flex-col items-center bg-white rounded-lg border shadow-xl md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+          <div className="flex flex-col  bg-white rounded-lg border shadow-xl md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+            {/* items-center */}
             <img
               className="object-cover w-full h-96 rounded-t-lg md:h-full md:w-48 md:rounded-none md:rounded-l-lg"
               src={physical.src}

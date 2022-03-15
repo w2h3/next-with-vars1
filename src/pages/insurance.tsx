@@ -1,6 +1,6 @@
 import Hheader from '@/components/Hheader';
 import ins from '../../public/server.jpg';
-import tester from 'public/stock.jpg';
+import tester from 'public/billing.jpg';
 
 export const Insurances = () => {
   return (

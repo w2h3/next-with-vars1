@@ -3,7 +3,7 @@ import Hheader from '@/components/Hheader';
 import tester from 'public/tester.jpg';
 import business from 'public/business.jpg';
 import sleeper from 'public/sleeper.jpg';
-import stock from 'public/stock.jpg';
+import stock from 'public/aboutbanner.jpg';
 import Divider from '@/components/layout/Dividers';
 export const AboutUs = () => {
   return (

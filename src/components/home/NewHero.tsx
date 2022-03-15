@@ -1,6 +1,5 @@
-import tester from '/public/drtest.jpg';
+import tester from '/public/banner1.jpg';
 import Image from 'next/image';
-/* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import {
@@ -18,8 +17,8 @@ export default function Hero() {
     <div>
       {/* Hero card */}
       <div className=" mt-[6rem] bg-white">
-        <div className=" max-w-screen mx-auto ">
-          <div className="relative shadow-xl sm:rounded-2xl  ">
+        <div className=" max-w-screen mx-auto  ">
+          <div className="relative shadow-xl sm:rounded-2xl   ">
             <div className="absolute inset-0 ">
               <Image
                 src={tester.src}
@@ -30,10 +29,10 @@ export default function Hero() {
               />
             </div>
 
-            <div className="relative inline-0 flex justify-center px-4 py-16 sm:px-6 sm:py-22  ">
+            <div className="relative inline-0 flex justify-center px-4 py-16 sm:px-6 sm:py-22 bg-black bg-opacity-50  ">
               {/* lg:pt-48 */}
               {/* md:px-28 2xl:px-[40rem] */}
-              <div className=" max-w-2xl relative bg-[black]  bg-opacity-50  rounded-3xl px-10">
+              <div className=" max-w-2xl relative   bg-opacity-50  rounded-3xl px-10">
                 <h1 className="text-center text-3xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl ">
                   <span className="block text-[#c2df6c] pt-10">
                     Neurology and Sleep

@@ -1,12 +1,14 @@
 export default function Hheader({ pageName, imageURL }) {
   return (
     <div className="relative mt-[4rem]">
-      <div className="absolute inset-0  container w-screen ">
-        <img className="w-full h-full object-contain " src={imageURL} alt="" />
+      <div className="absolute inset-0  w-screen ">
+      {/* container  */}
+        <img className="w-full h-full object-cover " src={imageURL} alt="" />
         <div
-          className="absolute  inset-0  bg-gradient-to-r from-white via-black/10 to-white"
+          className="absolute  inset-0  bg-black bg-opacity-40"
           aria-hidden="true"
         />
+        {/* bg-gradient-to-r from-white via-black/10 to-white */}
       </div>
       <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl text-center">

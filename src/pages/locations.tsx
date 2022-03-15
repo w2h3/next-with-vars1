@@ -1,6 +1,6 @@
 import Hheader from '@/components/Hheader';
 import React from 'react';
-import tester from 'public/stock.jpg';
+import tester from 'public/locationbanner.jpg';
 import Map from '@/components/Mesa2';
 const locations = () => {
   return (
