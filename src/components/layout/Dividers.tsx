@@ -7,7 +7,7 @@ export default function Divider({ sectionName }) {
         <div className=" border-t border-gray-700" />
       </div>
       <div className="flex justify-center ">
-        <span className=" w-full bg-transparent text-3xl md:text-5xl font-bold  text-gray-700 heading">
+        <span className=" w-full bg-transparent text-3xl md:text-5xl font-bold  text-gray-700 text-center">
           {sectionName}
         </span>
       </div>
