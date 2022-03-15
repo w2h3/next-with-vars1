@@ -18,8 +18,10 @@ export default function Hero() {
       {/* Hero card */}
       <div className=" mt-[6rem] bg-white">
         <div className=" max-w-screen mx-auto  ">
-          <div className="relative shadow-xl sm:rounded-2xl   ">
-            <div className="absolute inset-0 ">
+           <div className="relative shadow-xl sm:rounded-2xl   ">
+            <div className="absolute inset-0"> 
+          {/* <div className="relative ">
+            <div className=" lg:border-0 absolute inset-0 bg-no-repeat  lg:w-full   shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"> */}
               <Image
                 src={tester.src}
                 alt="Office Image"
