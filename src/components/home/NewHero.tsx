@@ -24,8 +24,7 @@ export default function Hero() {
                 src={tester.src}
                 alt="Office Image"
                 layout="fill"
-                width={1903}
-                height={470}
+                objectFit="cover"
               />
             </div>
 
