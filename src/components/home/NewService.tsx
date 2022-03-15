@@ -1,6 +1,6 @@
 import Divider from '../layout/Dividers';
 import neuro from 'public/neuroserve.jpg';
-import psych from 'public/handhold.jpg';
+import psych from 'public/psychserv.jpg';
 import insomnia from 'public/sleepserv.jpg';
 import physical from 'public/physical.jpg';
 import { CheckIcon } from '@heroicons/react/outline';

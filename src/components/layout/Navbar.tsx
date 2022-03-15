@@ -8,7 +8,6 @@ const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'About', href: '/about', current: false },
   { name: 'Services', href: '/services', current: false },
-  { name: 'Forms', href: '/forms', current: false },
   { name: 'Insurances', href: '/insurance', current: false },
   { name: 'Locations', href: '/locations', current: false },
   { name: 'Contact', href: '/contact', current: false },
