@@ -1,3 +1,8 @@
+import Banner from '@/components/Banner';
+<Banner pageName={'Locations'} imageURL={tester.src}></Banner>
+
+
+
 export const Header = () => {
   return (
     <div className="relative">
