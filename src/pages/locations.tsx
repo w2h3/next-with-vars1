@@ -53,7 +53,7 @@ const posts = [
 
 export default function locations() {
   return (
-    <div className="bg-[#f0fdff]">
+    <div className="testImage">
       <Banner pageName={'Locations'} imageURL={tester.src}></Banner>
 
       {/* relative h-fill py-16 mx-auto sm:max-w-full bg-wcyan/20 z-1 lg:py-20  */}
