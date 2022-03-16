@@ -60,7 +60,7 @@ export default function Hero() {
 
                 <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                   <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 pb-10 px-10">
-                    <Link href="/appointment passHref">
+                    <Link href="/appointment">
                       <a className="flex items-center justify-center px-4 py-3 border  text-base font-bold rounded-xl shadow-sm text-white bg-wcyan hover:bg-opacity-60  hover:text-white border-white sm:px-8 text-center">
                         REQUEST APPOINTMENT
                       </a>
