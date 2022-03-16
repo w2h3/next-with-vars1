@@ -8,7 +8,7 @@ import Link from 'next/link';
 const posts = [
   {
     title: '2919 S. Ellsworth Road, Suite 135 Mesa, AZ 85212',
-    href: 'https://www.google.com/maps/dir//Neurology+%26+Sleep+Medicine,+2919+S+Ellsworth+Rd+%23+135,+Mesa,+AZ+85212/@33.3622762,-111.6701164,13z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x872bb18e45ec2455:0x1a40301da184aa8!2m2!1d-111.6349343!2d33.362211!3e1',
+    href: 'https://www.google.com/maps/place/2919+S+Ellsworth+Rd+%23135,+Mesa,+AZ+85212/@33.3620994,-111.6371875,17z/data=!3m1!4b1!4m5!3m4!1s0x872bb18e61a89343:0xbe659bbab6bcbf35!8m2!3d33.3620994!4d-111.6349988',
     id: 1,
     category: { name: 'Mesa,AZ' },
     description:
@@ -19,7 +19,7 @@ const posts = [
   },
   {
     title: '2045 S. Vineyard, Bldg. N3, Suite 144 Mesa, AZ 85210	',
-    href: 'https://www.google.com/maps/dir//2045+S+Vineyard,+Mesa,+AZ+85210/@33.3771691,-111.8454931,17z/data=!4m17!1m7!3m6!1s0x872ba83ce11b928f:0x35b32023704f2d4f!2s2045+S+Vineyard,+Mesa,+AZ+85210!3b1!8m2!3d33.3771691!4d-111.8433044!4m8!1m0!1m5!1m1!1s0x872ba83ce11b928f:0x35b32023704f2d4f!2m2!1d-111.8433044!2d33.3771691!3e1',
+    href: 'https://www.google.com/maps/place/2045+S+Vineyard+n3+144,+Mesa,+AZ+85210/@33.3771736,-111.8454984,17z/data=!3m1!4b1!4m5!3m4!1s0x872ba83ce11b928f:0x1b871e9b9f8a0f04!8m2!3d33.3771691!4d-111.8433044',
     id: 2,
     category: { name: 'Mesa, AZ' },
     description:
@@ -32,7 +32,7 @@ const posts = [
 
   {
     title: '4001 E Baseline Road Suite 205 Gilbert, AZ 85234',
-    href: 'https://www.google.com/maps/dir//4001+E+Baseline+Rd+Suite+%23205,+Gilbert,+AZ+85234/@33.3785159,-111.7490784,17z/data=!3m1!4b1!4m9!4m8!1m0!1m5!1m1!1s0x872baf13f77b0fc5:0xaf618104a20a2229!2m2!1d-111.7468844!2d33.3785114!3e1',
+    href: 'https://www.google.com/maps/place/4001+E+Baseline+Rd+Suite+%23205,+Gilbert,+AZ+85234/@33.3785159,-111.7490784,17z/data=!3m1!4b1!4m5!3m4!1s0x872baf13f77b0fc5:0xaf618104a20a2229!8m2!3d33.3785114!4d-111.7468844',
     id: 3,
     category: { name: 'Gilbert, AZ' },
     description:
