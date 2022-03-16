@@ -55,7 +55,7 @@ export default function Hero() {
                   </span>
                 </h1>
                 <p className="mt-6 max-w-lg mx-auto text-center text-xl font-medium text-white sm:max-w-3xl">
-                  Serving our community since 2005.
+                  Serving our local community since 2005.
                 </p>
 
                 <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
