@@ -92,6 +92,7 @@ export default function Map() {
                       <div className="">
                         <Link href={post.href}>
                           <a
+                            target="_blank"
                             className="flex items-center justify-center px-4 py-3 border border-wcyan text-base font-bold rounded-xl shadow-sm text-wcyan bg-white hover:text-wcyan/60"
                             // hover:text-white
                           >
