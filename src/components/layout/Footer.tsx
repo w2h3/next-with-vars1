@@ -14,6 +14,7 @@ const navigation = [
   { name: 'Insurances', href: '/insurance', current: false },
   { name: 'Locations', href: '/locations', current: false },
   { name: 'Contact', href: '/contact', current: false },
+  { name: 'For Patients', href: '/patients', current: false },
 ];
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -79,6 +80,26 @@ export const Footer = () => {
                 Monday - Friday 8:00 AM to 5:00 PM{' '}
               </span>
             </p>
+            <p className="mt-5 text-l font-bold tracking-wide text-gray-900 ">
+              Closed for lunch:
+              <span className="tracking-wide font-light text-base text-gray-500">
+                {' '}
+                Monday - Friday 12:00 PM to 1:00 PM{' '}
+              </span>
+            </p>
+            <div className="flex items-center mt-6 space-x-3">
+              <Link href="/appointment">
+                {/* <button className="bg-[#107E8E] hover:bg-[#0B5A66] text-white font-bold py-2 px-4 rounded-full">
+                  Make an appointment
+                </button> */}
+                <button
+                  type="button"
+                  className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 "
+                >
+                  REQUEST APPOINTMENT
+                </button>
+              </Link>
+            </div>
           </div>
           <div className=" sm:col-span-1  ">
             <div className="mx-auto space-y-2">
@@ -177,7 +198,7 @@ export const Footer = () => {
               Quick Links
             </span>
             <div className="flex items-center mt-1 space-x-3">
-              <Link href="https://mycw34.eclinicalweb.com/portal3661/jsp/100mp/login_otp.jsp">
+              <Link href="/patients">
                 {/* <button className="bg-[#107E8E] hover:bg-[#0B5A66] text-white font-bold py-2 px-4 rounded-full">
                   Make an appointment
                 </button> */}
@@ -185,7 +206,7 @@ export const Footer = () => {
                   type="button"
                   className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 "
                 >
-                  MAKE AN APPOINTMENT
+                  FOR PATIENTS
                 </button>
               </Link>
             </div>
@@ -195,11 +216,11 @@ export const Footer = () => {
                   type="button"
                   className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 "
                 >
-                  MEDICAL PROFESSIONALS
+                  FOR PROVIDERS
                 </button>
               </Link>
             </div>
-            <div className="flex items-center mt-1 space-x-3">
+            {/* <div className="flex items-center mt-1 space-x-3">
               <Link href="/contact">
                 <button
                   type="button"
@@ -208,7 +229,7 @@ export const Footer = () => {
                   CONTACT US
                 </button>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="flex flex-col-reverse justify-between pt-5 lg:-mb-10 border-t border-wcyan lg:flex-row">

@@ -61,7 +61,7 @@ export default function Map() {
             {/*text-3xl  tracking-tight  text-gray-900 sm:text-4xl */}
             <Divider sectionName="Where You Can Find Us"></Divider>{' '}
           </div>
-          <div className="mt-12 bg-white max-w-lg  mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+          <div className="mt-12  max-w-lg  mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
             {posts.map((post) => (
               <div
                 key={post.title}

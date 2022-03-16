@@ -1,4 +1,4 @@
-import Divider from '../layout/Dividers';
+import Divider from './src/components/layout/Dividers';
 import neuro from 'public/neuroserve.jpg';
 import psych from 'public/psychserv.jpg';
 import insomnia from 'public/sleepserv.jpg';
@@ -14,10 +14,7 @@ const features = [
     offer2: 'test2',
     offer3: 'test3',
     offer4: 'test4',
-    offer5: 'test1',
-    offer6: 'test2',
-    offer7: 'test3',
-    offer8: 'test4',
+
     image: `${neuro.src}`,
   },
   {
@@ -26,10 +23,7 @@ const features = [
     offer2: 'test2',
     offer3: 'test3',
     offer4: 'test4',
-    offer5: 'test1',
-    offer6: 'test2',
-    offer7: 'test3',
-    offer8: 'test4',
+
     image: `${insomnia.src}`,
   },
   {
@@ -38,10 +32,7 @@ const features = [
     offer2: 'test2',
     offer3: 'test3',
     offer4: 'test4',
-    offer5: 'test1',
-    offer6: 'test2',
-    offer7: 'test3',
-    offer8: 'test4',
+
     image: `${psych.src}`,
   },
   {
@@ -50,10 +41,7 @@ const features = [
     offer2: 'test2',
     offer3: 'test3',
     offer4: 'test4',
-    offer5: 'test1',
-    offer6: 'test2',
-    offer7: 'test3',
-    offer8: 'test4',
+
     image: `${physical.src}`,
   },
 ];
@@ -63,22 +51,22 @@ export default function Services() {
     <div className="testImage">
       <div className="container">
         <Divider sectionName="Our Services"></Divider>
-        <div className="mt-12 testImage max-w-lg  mx-auto grid gap-5 lg:grid-cols-2 lg:max-w-none">
+        <div className="mt-12 testImage max-w-md   mx-auto grid gap-20 lg:grid-cols-2 lg:max-w-6xl relative">
           {features.map((post) => (
             <div
               key={post.name}
-              className="flex border-2 border-wcyan flex-col rounded-lg shadow-xl bg-white overflow-hidden "
+              className="border-2 border-wcyan/10 h-82 flex-col rounded-2xl  shadow-2xl bg-slate-100 "
             >
-              <div className="grid gap-5 row-gap-10 lg:grid-cols-2 ">
-                <div className="flex flex-col mx-4">
-                    {/* items-center */}
-                  <div className="max-w-xl mb-6 ">
-                    <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-wcyan/80  py-10 sm:text-4xl sm:leading-none underline decoration-wcyan/40">
+              <div className=" relative grid gap-20 row-gap-12 lg:grid-cols-2 ">
+                <div className="flex flex-col  mx-4">
+                  {/* items-center */}
+                  <div className="max-w-xl ">
+                    <h2 className="max-w-lg font-extrabold tracking-tight text-wcyan/60  py-10 text-4xl sm:leading-none underline decoration-wcyan/30 text-center">
                       {post.name}
                     </h2>
                   </div>
-                  <div className="justify-between">
-                    <div className="grid space-y-3 sm:gap-2 sm:grid-cols-2 sm:space-y-0 ">
+                  <div className="">
+                    <div className="grid text-center  sm:gap-2 grid-cols-2 sm:space-y-0 ">
                       <ul className="space-y-3">
                         <li className="flex">
                           <span className="mr-1">
@@ -124,7 +112,7 @@ export default function Services() {
                 </div>
                 <div>
                   <img
-                    className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
+                    className="object-cover w-60 h-60 rounded shadow-lg absolute right-0 -mt-2 rounded-2xl border-4 border-wcyan"
                     src={post.image}
                     alt=""
                   />

@@ -1,3 +1,4 @@
+import services from '@/pages/services';
 import Divider from '../layout/Dividers';
 import neuro from 'public/neuroserve.jpg';
 import psych from 'public/psychserv.jpg';
@@ -8,358 +9,123 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const features = [
-  { name: 'Neurology', description: 'Designed by Good Goods, Inc.' },
+  {
+    name: 'Neurology',
+    offer1: 'Headaches, facial pain, dizziness, tremors',
+    offer2: 'Pain in the neck, back, or extremities',
+    offer3: 'Weakness, numbness, or walking difficulty',
+    offer4: 'Syncope or fainting (blackouts)',
+
+    image: `${neuro.src}`,
+  },
   {
     name: 'Sleep',
-    description:
-      'Solid walnut base with rare earth magnets and powder coated steel card cover',
+    offer1: 'Leg jerks or legs uncomfortable at night',
+    offer2: 'Sleepy / fall asleep during the day',
+    offer3: 'Frequent awakening during the night',
+    offer4: 'Sleep walking & other unusual sleep behavior',
+
+    image: `${insomnia.src}`,
   },
-  { name: 'Psychiatry', description: '6.25" x 3.55" x 1.15"' },
+  {
+    name: 'Psychiatry',
+    offer1: 'Confused thinking or inability to concentrate',
+    offer2: 'Significant tiredness, low energy or problems sleeping'  ,
+    offer3: 'Foggy brain',
+    offer4: 'Major changes in eating habits',
+
+    image: `${psych.src}`,
+  },
   {
     name: 'Physical Therapy',
-    description: 'Hand sanded and finished with natural oil',
+    offer1: 'Acute and chronic problems',
+    offer2: 'Pre and post-surgical rehabilitation',
+    offer3: 'Tendonitis',
+    offer4: 'Overuse injuries',
+
+    image: `${physical.src}`,
   },
 ];
 
 export default function Services() {
   return (
-    <div className="bg-white">
-      <Divider sectionName="Our Services"></Divider>
-      <div className="container  grid  grid-cols-1 gap-x-8  lg:grid-cols-2">
-          <dl className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+    <div className="py-12 testImage">
+      <div className="container">
+        <div className="lg:text-center">
+          <h2 className="text-base text-wcyan font-semibold tracking-wide uppercase">
+            Our Services
+          </h2>
+          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            Welcome to
+            <span> Neurology and Sleep</span>
+            <span> Medicine Associates. </span>
+          </p>
+          <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+            Our Providers are trained to provide a broad range of diagnostic &
+            treatment services for adults, including:
+          </p>
+        </div>
+        <div className="mt-10">
+          <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+            {' '}
             {features.map((feature) => (
-              <div key={feature.name} className="border-t border-gray-200 pt-4">
-                <dt className="font-medium text-gray-900">{feature.name}</dt>
-                <dd className="mt-2 text-sm text-gray-500">
-                  {feature.description}
-                </dd>
+              <div key={feature.name} className="pt-16 lg:py-12 mr-2">
+                <div className="pb-16 bg-white border-2 border-wcyan/20 shadow-2xl lg:pb-0 lg:z-10 lg:relative rounded-3xl ">
+                  <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:flex  lg:"> 
+                    <div className="lg:-my-8 lg:-ml-12 ">
+                      {/* <div
+                        aria-hidden="true"
+                        className="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"
+                      /> */}
+                      <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full  ">
+                        <div className="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:w-72 lg:h-72  ">
+                          <img
+                            className="object-cover lg:h-full lg:w-full"
+                            src={feature.image}
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className=" relative mt-12 lg:mt-4 lg:mb-4 lg:col-span-1 lg:pl-8 flex">
+                      <div className=" relative mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:px-0 lg:py-5 lg:max-w-none text-2xl text-wcyan ">
+                        {' '}{feature.name}
+                        <ul className="text-base text-black">
+                          <li className="flex ">
+                            <span className="mr-1">
+                              <CheckIcon className="w-5 h-5 text-wcyan" />
+                            </span>
+                            {feature.offer1}
+                          </li>
+                          <li className="flex">
+                            <span className="mr-1">
+                              <CheckIcon className="w-5 h-5 text-wcyan/80" />
+                            </span>
+                            {feature.offer2}
+                          </li>
+                          <li className="flex">
+                            <span className="mr-1">
+                              <CheckIcon className="w-5 h-5 text-wcyan/80" />
+                            </span>
+                            {feature.offer3}
+                          </li>
+                          <li className="flex">
+                            <span className="mr-1">
+                              <CheckIcon className="w-5 h-5 text-wcyan/80" />
+                            </span>
+                            {feature.offer4}
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             ))}
           </dl>
-        
-        <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
-          <img
-            src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-01.jpg"
-            alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-            className="bg-gray-100 rounded-lg"
-          />
-          <img
-            src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
-            alt="Top down view of walnut card tray with embedded magnets and card groove."
-            className="bg-gray-100 rounded-lg"
-          />
-          <img
-            src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
-            alt="Side of walnut card tray with card groove and recessed card area."
-            className="bg-gray-100 rounded-lg"
-          />
-          <img
-            src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
-            alt="Walnut card tray filled with cards and card angled in dedicated groove."
-            className="bg-gray-100 rounded-lg"
-          />
+          {/* ))} */}
         </div>
-      </div>
+      </div>{' '}
     </div>
   );
 }
-
-// export default function Services() {
-//   return (
-//     <div className="testImage pt-10">
-//       <Divider sectionName="What We Offer"></Divider>
-//       <div className="container">
-//         <div className="grid grid-cols-1 gap-16 sm:grid-cols-2 mb-20 ">
-//         <div className="flex flex-col items-center bg-white rounded-lg border shadow-xl md:flex-row md:max-w-xl">
-//               <img
-//                 className="object-cover w-full h-96 rounded-t-lg md:h-full md:w-48 md:rounded-none md:rounded-l-lg"
-//                 src={neuro.src}
-//                 alt=""
-//               />
-//               <div className="flex flex-col justify-between leading-normal">
-//                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-wcyan  ">
-//                   Sleep
-//                 </h5>
-//                 <dd className="list-disc font-normal text-gray-700 ">
-//                   <dd className="flex">
-//                     <CheckIcon
-//                       className="flex-shrink-0 h-6 w-6 text-wcyan"
-//                       aria-hidden="true"
-//                     />
-//                     <span className="ml-3 mb-3">
-//                       Leg jerks or legs uncomfortable at night
-//                     </span>
-//                   </dd>
-//                   <dd className="mb-3 list-disc font-normal text-gray-700    ">
-//                     <dd className="flex">
-//                       <CheckIcon
-//                         className="flex-shrink-0 h-6 w-6 text-wcyan"
-//                         aria-hidden="true"
-//                       />
-//                       <span className="ml-3">
-//                         Sleepy / fall asleep during the day
-//                       </span>
-//                     </dd>
-//                   </dd>
-
-//                   <dd className="list-disc font-normal text-gray-700    ">
-//                     <dd className="flex">
-//                       <CheckIcon
-//                         className="flex-shrink-0 h-6 w-6 text-wcyan"
-//                         aria-hidden="true"
-//                       />
-//                       <span className="ml-3 mb-3">
-//                         Frequent awakening during the night
-//                       </span>
-//                     </dd>
-//                     <dd className="mb-3 list-disc font-normal text-gray-700    ">
-//                       <dd className="flex">
-//                         <CheckIcon
-//                           className="flex-shrink-0 h-6 w-6 text-wcyan"
-//                           aria-hidden="true"
-//                         />
-//                         <span className="ml-3 mb-3">
-//                           Sleep walking & other unusual sleep behavior
-//                         </span>
-//                       </dd>{' '}
-//                       <div>
-//                         <Link href="/" passHref>
-//                           <a
-//                             aria-label=""
-//                             className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-//                           >
-//                             Learn more
-//                             <svg
-//                               className="inline-block w-3 ml-2"
-//                               fill="currentColor"
-//                               viewBox="0 0 12 12"
-//                             >
-//                               <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-//                             </svg>
-//                           </a>
-//                         </Link>
-//                       </div>
-//                     </dd>
-//                   </dd>
-//                 </dd>
-//               </div>
-//           </div>
-
-//           <div className="flex flex-col items-center bg-white rounded-lg border shadow-xl md:flex-row md:max-w-xl ">
-//               <img
-//                 className="object-cover w-full h-96 rounded-t-lg md:h-full md:w-48 md:rounded-none md:rounded-l-lg"
-//                 src={psych.src}
-//                 alt=""
-//               />
-//               <div className="flex flex-col justify-between p-4 leading-normal">
-//                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-wcyan   ">
-//                   Psychiatry
-//                 </h5>
-//                 <dd className="list-disc font-normal text-gray-700    ">
-//                   <dd className="flex">
-//                     <CheckIcon
-//                       className="flex-shrink-0 h-6 w-6 text-wcyan"
-//                       aria-hidden="true"
-//                     />
-//                     <span className="ml-3 mb-3">Depression</span>
-//                   </dd>
-//                   <dd className="mb-3 list-disc font-normal text-gray-700    ">
-//                     <dd className="flex">
-//                       <CheckIcon
-//                         className="flex-shrink-0 h-6 w-6 text-wcyan"
-//                         aria-hidden="true"
-//                       />
-//                       <span className="ml-3">ADHD</span>
-//                     </dd>
-//                   </dd>
-
-//                   <dd className="list-disc font-normal text-gray-700    ">
-//                     <dd className="flex">
-//                       <CheckIcon
-//                         className="flex-shrink-0 h-6 w-6 text-wcyan"
-//                         aria-hidden="true"
-//                       />
-//                       <span className="ml-3 mb-3">
-//                         Mental health issues as a result of neurological
-//                         disease.
-//                       </span>
-//                     </dd>
-//                     <dd className="mb-3 list-disc font-normal text-gray-700    ">
-//                       <dd className="flex">
-//                         <CheckIcon
-//                           className="flex-shrink-0 h-6 w-6 text-wcyan"
-//                           aria-hidden="true"
-//                         />
-//                         <span className="ml-3 mb-3">Anxiety</span>
-//                       </dd>{' '}
-//                       <div>
-//                         <Link href="/" passHref>
-//                           <a
-//                             aria-label=""
-//                             className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-//                           >
-//                             Learn more
-//                             <svg
-//                               className="inline-block w-3 ml-2"
-//                               fill="currentColor"
-//                               viewBox="0 0 12 12"
-//                             >
-//                               <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-//                             </svg>
-//                           </a>
-//                         </Link>
-//                       </div>
-//                     </dd>
-//                   </dd>
-//                 </dd>
-//               </div>
-//           </div>
-
-//           <div className="flex flex-col  bg-white rounded-lg border shadow-xl md:flex-row md:max-w-xl ">
-//               {/* items-center */}
-//               <img
-//                 className="object-cover w-full h-96 rounded-t-lg md:h-full md:w-48 md:rounded-none md:rounded-l-lg"
-//                 src={physical.src}
-//                 alt=""
-//               />
-//               <div className="flex flex-col justify-between p-4 leading-normal">
-//                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-wcyan   ">
-//                   Physical Therapy
-//                 </h5>
-//                 <dd className="list-disc font-normal text-gray-700    ">
-//                   <dd className="flex">
-//                     <CheckIcon
-//                       className="flex-shrink-0 h-6 w-6 text-wcyan"
-//                       aria-hidden="true"
-//                     />
-//                     <span className="ml-3 mb-3">Muscle soreness</span>
-//                   </dd>
-//                   <dd className="mb-3 list-disc font-normal text-gray-700    ">
-//                     <dd className="flex">
-//                       <CheckIcon
-//                         className="flex-shrink-0 h-6 w-6 text-wcyan"
-//                         aria-hidden="true"
-//                       />
-//                       <span className="ml-3">Stretching</span>
-//                     </dd>
-//                   </dd>
-
-//                   <dd className="list-disc font-normal text-gray-700    ">
-//                     <dd className="flex">
-//                       <CheckIcon
-//                         className="flex-shrink-0 h-6 w-6 text-wcyan"
-//                         aria-hidden="true"
-//                       />
-//                       <span className="ml-3 mb-3">Rehab</span>
-//                     </dd>
-//                     <dd className="mb-3 list-disc font-normal text-gray-700    ">
-//                       <dd className="flex">
-//                         <CheckIcon
-//                           className="flex-shrink-0 h-6 w-6 text-wcyan"
-//                           aria-hidden="true"
-//                         />
-//                         <span className="ml-3 mb-3">MS recovery</span>
-//                       </dd>{' '}
-//                       <div>
-//                         <Link href="/" passHref>
-//                           <a
-//                             aria-label=""
-//                             className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-//                           >
-//                             Learn more
-//                             <svg
-//                               className="inline-block w-3 ml-2"
-//                               fill="currentColor"
-//                               viewBox="0 0 12 12"
-//                             >
-//                               <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-//                             </svg>
-//                           </a>
-//                         </Link>
-//                       </div>
-//                     </dd>
-//                   </dd>
-//                 </dd>
-//               </div>
-//           </div>
-
-//           <div className="flex flex-col items-center bg-white rounded-lg border shadow-xl md:flex-row md:max-w-xl">
-//               <img
-//                 className="object-cover w-full h-96 rounded-t-lg md:h-full md:w-48 md:rounded-none md:rounded-l-lg"
-//                 src={insomnia.src}
-//                 alt=""
-//               />
-//               <div className="flex flex-col justify-between leading-normal">
-//                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-wcyan  ">
-//                   Sleep
-//                 </h5>
-//                 <dd className="list-disc font-normal text-gray-700 ">
-//                   <dd className="flex">
-//                     <CheckIcon
-//                       className="flex-shrink-0 h-6 w-6 text-wcyan"
-//                       aria-hidden="true"
-//                     />
-//                     <span className="ml-3 mb-3">
-//                       Leg jerks or legs uncomfortable at night
-//                     </span>
-//                   </dd>
-//                   <dd className="mb-3 list-disc font-normal text-gray-700    ">
-//                     <dd className="flex">
-//                       <CheckIcon
-//                         className="flex-shrink-0 h-6 w-6 text-wcyan"
-//                         aria-hidden="true"
-//                       />
-//                       <span className="ml-3">
-//                         Sleepy / fall asleep during the day
-//                       </span>
-//                     </dd>
-//                   </dd>
-
-//                   <dd className="list-disc font-normal text-gray-700    ">
-//                     <dd className="flex">
-//                       <CheckIcon
-//                         className="flex-shrink-0 h-6 w-6 text-wcyan"
-//                         aria-hidden="true"
-//                       />
-//                       <span className="ml-3 mb-3">
-//                         Frequent awakening during the night
-//                       </span>
-//                     </dd>
-//                     <dd className="mb-3 list-disc font-normal text-gray-700    ">
-//                       <dd className="flex">
-//                         <CheckIcon
-//                           className="flex-shrink-0 h-6 w-6 text-wcyan"
-//                           aria-hidden="true"
-//                         />
-//                         <span className="ml-3 mb-3">
-//                           Sleep walking & other unusual sleep behavior
-//                         </span>
-//                       </dd>{' '}
-//                       <div>
-//                         <Link href="/" passHref>
-//                           <a
-//                             aria-label=""
-//                             className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-//                           >
-//                             Learn more
-//                             <svg
-//                               className="inline-block w-3 ml-2"
-//                               fill="currentColor"
-//                               viewBox="0 0 12 12"
-//                             >
-//                               <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-//                             </svg>
-//                           </a>
-//                         </Link>
-//                       </div>
-//                     </dd>
-//                   </dd>
-//                 </dd>
-//               </div>
-//           </div>
-
-//           </div>
-//         </div>
-//       </div>
-//   );
-//

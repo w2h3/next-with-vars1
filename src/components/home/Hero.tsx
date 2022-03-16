@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import tester from '/public/banner1.jpg';
 import Image from 'next/image';
 import { Fragment } from 'react';
@@ -11,6 +12,7 @@ import {
   XIcon,
 } from '@heroicons/react/outline';
 import { ChevronDownIcon } from '@heroicons/react/solid';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -53,12 +55,14 @@ export default function Hero() {
 
                 <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                   <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 pb-10 px-10">
+                    <Link href="/appointment passHref">
                     <a
                       href="/appointment"
                       className="flex items-center justify-center px-4 py-3 border  text-base font-bold rounded-xl shadow-sm text-white bg-wcyan hover:bg-opacity-60  hover:text-white border-white sm:px-8 text-center"
                     >
                       REQUEST AN APPOINTMENT
                     </a>
+                    </Link>
                     <a
                       href="#"
                       className="flex items-center justify-center px-4 py-3 border border-wcyan text-base font-bold rounded-xl shadow-sm text-wcyan bg-white hover:text-wcyan/60  sm:px-8"

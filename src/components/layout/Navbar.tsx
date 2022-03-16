@@ -11,6 +11,7 @@ const navigation = [
   { name: 'Insurances', href: '/insurance', current: false },
   { name: 'Locations', href: '/locations', current: false },
   { name: 'Contact', href: '/contact', current: false },
+  { name: 'For Patients', href: '/patients', current: false },
 ];
 
 function classNames(...classes) {
@@ -123,6 +124,19 @@ export default function Navbar() {
                   {item.name}
                 </Disclosure.Button>
               ))}
+              <div className="flex items-center mt-1 space-x-3">
+                <Link href="https://mycw34.eclinicalweb.com/portal3661/jsp/100mp/login_otp.jsp">
+                  {/* <button className="bg-[#107E8E] hover:bg-[#0B5A66] text-white font-bold py-2 px-4 rounded-full">
+                  Make an appointment
+                </button> */}
+                  <button
+                    type="button"
+                    className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 focus:ring-4 focus:ring-blue-300 font-medium rounded-xl text-sm px-5 py-2.5 text-center mr-2 mb-2 w-full "
+                  >
+                    Patient Portal
+                  </button>
+                </Link>
+              </div>
             </div>
           </Disclosure.Panel>
         </>

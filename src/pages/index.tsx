@@ -2,7 +2,7 @@
 import Map from '../components/maps/Maps';
 import Contact from '../components/Contact';
 import Hero from '../components/home/Hero';
-import Services from '@/components/home/NewServices';
+import Services from '@/components/home/Services';
 const Home = () => {
   return (
     <div>
