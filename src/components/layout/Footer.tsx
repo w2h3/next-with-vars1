@@ -220,7 +220,7 @@ export const Footer = () => {
                     aria-hidden="true"
                   />
                   <span className="ml-3  text-gray-600 ">
-                    clinic@drwang.com
+                    billing@neurologyandsleep.com
                   </span>
                 </dd>
               </div>
