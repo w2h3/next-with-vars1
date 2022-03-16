@@ -23,11 +23,11 @@ const Appointment = () => {
 
         <div className="container">
           <form id="login" onSubmit={handleSubmit}>
-            <div className="bg-white dark:bg-gray-800">
+            <div className="bg-white ">
               <div className=" mx-auto bg-white  mt-10 rounded px-4">
-                <div className="xl:w-full border-b border-gray-300 dark:border-gray-700 py-5">
+                <div className="xl:w-full border-b border-gray-300 py-5">
                   <div className="flex w-11/12 mx-auto xl:w-full xl:mx-0 items-center">
-                    <p className="text-lg text-gray-800 dark:text-gray-100 font-bold">
+                    <p className="text-lg text-gray-800  font-bold">
                       To Request an Appointment Online with Neurology and Sleep
                       Medicine Associates, please use the form below, and our
                       scheduling coordinator will contact you by phone within
@@ -45,7 +45,7 @@ const Appointment = () => {
                     <div className="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
                       <label
                         htmlFor="FirstName"
-                        className="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100"
+                        className="pb-2 text-sm font-bold text-gray-800 "
                       >
                         First Name
                       </label>
@@ -54,13 +54,13 @@ const Appointment = () => {
                         id="FirstName"
                         name="firstName"
                         required
-                        className="border border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-500 dark:text-gray-400"
+                        className="border border-gray-300  pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-500 "
                       />
                     </div>
                     <div className="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
                       <label
                         htmlFor="LastName"
-                        className="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100"
+                        className="pb-2 text-sm font-bold text-gray-800 "
                       >
                         Last Name
                       </label>
@@ -69,13 +69,13 @@ const Appointment = () => {
                         id="LastName"
                         name="lastName"
                         required
-                        className="border border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-500 dark:text-gray-400"
+                        className="border border-gray-300  pl-3 py-3 shadow-sm bg-transparent rounded text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-500 "
                       />
                     </div>
                     <div className="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
                       <label
                         htmlFor="LastName"
-                        className="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100"
+                        className="pb-2 text-sm font-bold text-gray-800 "
                       >
                         Gender
                       </label>
@@ -127,7 +127,7 @@ const Appointment = () => {
                     <div className="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
                       <label
                         htmlFor="StreetAddress"
-                        className="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100"
+                        className="pb-2 text-sm font-bold text-gray-800 "
                       >
                         Name of Primary Insurance
                       </label>
@@ -136,13 +136,13 @@ const Appointment = () => {
                         id="StreetAddress"
                         name="streetAddress"
                         required
-                        className="border border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm rounded bg-transparent text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-500 dark:text-gray-400"
+                        className="border border-gray-300  pl-3 py-3 shadow-sm rounded bg-transparent text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-500 "
                       />
                     </div>
                     <div className="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
                       <label
                         htmlFor="StreetAddress"
-                        className="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100"
+                        className="pb-2 text-sm font-bold text-gray-800  "
                       >
                         ID Number Insurance
                       </label>
@@ -151,13 +151,13 @@ const Appointment = () => {
                         id="StreetAddress"
                         name="streetAddress"
                         required
-                        className="border border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm rounded bg-transparent text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-500 dark:text-gray-400"
+                        className="border border-gray-300   pl-3 py-3 shadow-sm rounded bg-transparent text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-500  "
                       />
                     </div>
                     <div className="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
                       <label
                         htmlFor="StreetAddress"
-                        className="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100"
+                        className="pb-2 text-sm font-bold text-gray-800  "
                       >
                         Your Email
                       </label>
@@ -166,13 +166,13 @@ const Appointment = () => {
                         id="StreetAddress"
                         name="streetAddress"
                         required
-                        className="border border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm rounded bg-transparent text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-500 dark:text-gray-400"
+                        className="border border-gray-300   pl-3 py-3 shadow-sm rounded bg-transparent text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-500  "
                       />
                     </div>
                     <div className="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
                       <label
                         htmlFor="StreetAddress"
-                        className="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100"
+                        className="pb-2 text-sm font-bold text-gray-800  "
                       >
                         Best Contact Number
                       </label>
@@ -181,13 +181,13 @@ const Appointment = () => {
                         id="StreetAddress"
                         name="streetAddress"
                         required
-                        className="border border-gray-300 dark:border-gray-700 pl-3 py-3 shadow-sm rounded bg-transparent text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-500 dark:text-gray-400"
+                        className="border border-gray-300   pl-3 py-3 shadow-sm rounded bg-transparent text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-500  "
                       />
                     </div>
                     <div className="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
                       <label
                         htmlFor="LastName"
-                        className="pb-2 text-sm font-bold text-gray-800 dark:text-gray-100"
+                        className="pb-2 text-sm font-bold text-gray-800  "
                       >
                         Is it okay to leave a voicemail at above phone number?
                       </label>
@@ -230,11 +230,11 @@ const Appointment = () => {
                       <div className="flex items-center pb-2">
                         <label
                           htmlFor="ZIP"
-                          className="text-sm font-bold text-gray-800 dark:text-gray-100"
+                          className="text-sm font-bold text-gray-800  "
                         >
                           ZIP/Postal Code
                         </label>
-                        <div className="ml-2 cursor-pointer text-gray-600 dark:text-gray-400">
+                        <div className="ml-2 cursor-pointer text-gray-600  ">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
@@ -254,7 +254,7 @@ const Appointment = () => {
                         name="zip"
                         required
                         id="ZIP"
-                        className="bg-transparent border border-red-400 pl-3 py-3 shadow-sm rounded text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-500 dark:text-gray-400"
+                        className="bg-transparent border border-red-400 pl-3 py-3 shadow-sm rounded text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-500  "
                       />
                       <div className="flex justify-between items-center pt-1 text-red-400">
                         <p className="text-xs">Incorrect Zip Code</p>
@@ -281,7 +281,7 @@ const Appointment = () => {
               </div>
 
               <div className="mx-auto w-11/12 xl:w-full mb-20">
-                <div className="w-full py-4 sm:px-0 bg-white dark:bg-gray-800 flex justify-center">
+                <div className="w-full py-4 sm:px-0 bg-white   flex justify-center">
                   <button className="bg-white border-2 border-wcyan focus:outline-none transition duration-150 ease-in-out hover:bg-wcyan/30 rounded text-wcyan  px-6 py-2 text-xs mr-4">
                     Cancel
                   </button>
