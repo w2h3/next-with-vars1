@@ -28,6 +28,16 @@ const features = [
     image: `${insomnia.src}`,
   },
   {
+    name: 'Physical Therapy',
+    offer1: 'Acute and chronic problems',
+    offer2: 'Pre and post-surgical rehabilitation',
+    offer3: 'Tendonitis',
+    offer4:
+      'Injuries related to neurological diseases and other various injuries',
+
+    image: `${physical.src}`,
+  },
+  {
     name: 'Psychiatry',
     offer1: 'Confused thinking or inability to concentrate',
     offer2: 'Significant tiredness, low energy or problems sleeping',
@@ -35,15 +45,6 @@ const features = [
     offer4: 'Major changes in eating habits',
 
     image: `${psych.src}`,
-  },
-  {
-    name: 'Physical Therapy',
-    offer1: 'Acute and chronic problems',
-    offer2: 'Pre and post-surgical rehabilitation',
-    offer3: 'Tendonitis',
-    offer4: 'Injuries related to neurological diseases and other various injuries',
-
-    image: `${physical.src}`,
   },
 ];
 

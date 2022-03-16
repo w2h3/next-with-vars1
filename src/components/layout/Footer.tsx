@@ -156,8 +156,8 @@ export const Footer = () => {
                     aria-hidden="true"
                   />
                   <span className="ml-3 mb-3">
-                    2919 S. Ellsworth Road, Suite 135
-                    <br /> Mesa, AZ 85212
+                    4001 E Baseline Road, Suite 205
+                    <br /> Gilbert, AZ 85234
                   </span>
                 </dd>
                 <dt className="sr-only">Postal address</dt>
@@ -167,8 +167,8 @@ export const Footer = () => {
                     aria-hidden="true"
                   />
                   <span className="ml-3 mb-3">
-                    2919 S. Ellsworth Road, Suite 135
-                    <br /> Mesa, AZ 85212
+                    2045 S. Vineyard Drive, Bldg. N3, Suite 144
+                    <br /> Mesa, AZ 85210
                   </span>
                 </dd>
               </div>
