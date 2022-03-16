@@ -5,7 +5,9 @@ const services = () => {
   return (
     <>
       <Banner pageName={'Services'} imageURL={tester.src}></Banner>
-      <div className="mt-80"></div>
+      <div className="testImage">
+        <div className="container"></div>
+      </div>
     </>
   );
 };

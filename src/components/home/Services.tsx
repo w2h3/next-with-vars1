@@ -30,7 +30,7 @@ const features = [
   {
     name: 'Psychiatry',
     offer1: 'Confused thinking or inability to concentrate',
-    offer2: 'Significant tiredness, low energy or problems sleeping'  ,
+    offer2: 'Significant tiredness, low energy or problems sleeping',
     offer3: 'Foggy brain',
     offer4: 'Major changes in eating habits',
 
@@ -41,7 +41,7 @@ const features = [
     offer1: 'Acute and chronic problems',
     offer2: 'Pre and post-surgical rehabilitation',
     offer3: 'Tendonitis',
-    offer4: 'Overuse injuries',
+    offer4: 'Injuries related to neurological diseases and other various injuries',
 
     image: `${physical.src}`,
   },
@@ -51,8 +51,8 @@ export default function Services() {
   return (
     <div className="py-12 testImage">
       <div className="container">
-        <div className="lg:text-center">
-          <h2 className="text-base text-wcyan font-semibold tracking-wide uppercase">
+        <div className="text-center">
+          <h2 className="text-base text-wcyan font-semibold tracking-wide uppercase text-center">
             Our Services
           </h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -66,59 +66,49 @@ export default function Services() {
           </p>
         </div>
         <div className="mt-10">
-          <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+          <dl className="space-y-10 sm:grid xl:space-y-0 xl:grid-cols-2 xl:gap-x-8 xl:gap-y-10">
             {' '}
             {features.map((feature) => (
-              <div key={feature.name} className="pt-16 lg:py-12 mr-2">
-                <div className="pb-16 bg-white border-2 border-wcyan/20 shadow-2xl lg:pb-0 lg:z-10 lg:relative rounded-3xl ">
-                  <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:flex  lg:"> 
-                    <div className="lg:-my-8 lg:-ml-12 ">
-                      {/* <div
-                        aria-hidden="true"
-                        className="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden"
-                      /> */}
-                      <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full  ">
-                        <div className="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:w-72 lg:h-72  ">
-                          <img
-                            className="object-cover lg:h-full lg:w-full"
-                            src={feature.image}
-                            alt=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div className=" relative mt-12 lg:mt-4 lg:mb-4 lg:col-span-1 lg:pl-8 flex">
-                      <div className=" relative mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:px-0 lg:py-5 lg:max-w-none text-2xl text-wcyan ">
-                        {' '}{feature.name}
-                        <ul className="text-base text-black">
-                          <li className="flex ">
-                            <span className="mr-1">
-                              <CheckIcon className="w-5 h-5 text-wcyan" />
-                            </span>
-                            {feature.offer1}
-                          </li>
-                          <li className="flex">
-                            <span className="mr-1">
-                              <CheckIcon className="w-5 h-5 text-wcyan/80" />
-                            </span>
-                            {feature.offer2}
-                          </li>
-                          <li className="flex">
-                            <span className="mr-1">
-                              <CheckIcon className="w-5 h-5 text-wcyan/80" />
-                            </span>
-                            {feature.offer3}
-                          </li>
-                          <li className="flex">
-                            <span className="mr-1">
-                              <CheckIcon className="w-5 h-5 text-wcyan/80" />
-                            </span>
-                            {feature.offer4}
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+              <div
+                key={feature.name}
+                className="flex flex-col items-center rounded-lg border-2 shadow-2xl md:flex-row md:max-w-xl border-wcyan/30 bg-slate-100"
+              >
+                <img
+                  className="object-cover w-full h-96 rounded-t-lg md:h-52 md:w-48 md:rounded-none md:rounded-l-lg"
+                  src={feature.image}
+                  alt=""
+                />
+                <div className="flex flex-col justify-between p-4 leading-normal ">
+                  <h5 className="mb-2 text-2xl font-extrabold tracking-tight text-wcyan text-center">
+                    {feature.name}
+                  </h5>
+
+                  <ul className="text-base text-black text-left mt-1 ">
+                    <li className="flex items-center mb-1 ">
+                      <span className="mr-1">
+                        <CheckIcon className="w-5 h-5 text-wcyan" />
+                      </span>
+                      {feature.offer1}
+                    </li>
+                    <li className="flex items-center mb-1">
+                      <span className="mr-1">
+                        <CheckIcon className="w-5 h-5 text-wcyan/80" />
+                      </span>
+                      {feature.offer2}
+                    </li>
+                    <li className="flex items-center mb-1">
+                      <span className="mr-1">
+                        <CheckIcon className="w-5 h-5 text-wcyan/80" />
+                      </span>
+                      {feature.offer3}
+                    </li>
+                    <li className="flex">
+                      <span className="mr-1">
+                        <CheckIcon className="w-5 h-5 text-wcyan/80" />
+                      </span>
+                      {feature.offer4}
+                    </li>
+                  </ul>
                 </div>
               </div>
             ))}

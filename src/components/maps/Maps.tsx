@@ -72,7 +72,7 @@ export default function Map() {
                   {/* object-cover
                   <Image src={directions} alt="" layout="fixed" height={200} /> */}
                 </div>
-                <div className="flex-1 p-6 flex flex-col justify-between">
+                <div className="flex-1 ml-4 mb-4 flex flex-col justify-between">
                   <div className="flex-1">
                     <p className="flex gap-2 items-baseline text-sm font-medium text-slate-500 ">
                       <LocationMarkerIcon
