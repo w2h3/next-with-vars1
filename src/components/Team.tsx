@@ -5,7 +5,7 @@ import kat from '/public/kat.jpg';
 
 const people = [
   {
-    name: 'Dr. Wang',
+    name: 'George Wang, MD',
     role: 'Dr. Wang’s expertise includes the diagnosis & medical treatment of disorders and diseases of the nervous system, which include the brain, spinal cord, nerves, and muscles. In addition, Dr. Wang has special training in Sleep Medicine. He is an expert in diagnosis & treatment of a variety of sleep disorders including sleep apnea, excessive daytime sleepiness and insomnia.',
     imageUrl: `${dr.src}`,
   },
@@ -15,7 +15,7 @@ const people = [
     imageUrl: `${kate.src}`,
   },
   {
-    name: 'Dr. Wang',
+    name: 'George Wang, MD',
     role: 'Dr. Wang’s expertise includes the diagnosis & medical treatment of disorders and diseases of the nervous system, which include the brain, spinal cord, nerves, and muscles. In addition, Dr. Wang has special training in Sleep Medicine. He is an expert in diagnosis & treatment of a variety of sleep disorders including sleep apnea, excessive daytime sleepiness and insomnia.',
     imageUrl: `${dr.src}`,
   },
