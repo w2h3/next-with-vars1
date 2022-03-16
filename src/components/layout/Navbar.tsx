@@ -31,7 +31,7 @@ export default function Navbar() {
           <div className="max-w-screen-2xl lg:mx-auto mx-auto">
             <div className="relative flex items-center justify-between h-16 ">
               <div className="absolute inset-y-0 right-0 flex items-center lg:hidden  ">
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-[#5692B7] focus:outline-none focus:ring-2 focus:ring-inset  focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-[#00847D] focus:outline-none focus:ring-2 focus:ring-inset  focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-10 w-10" aria-hidden="true" />
@@ -115,7 +115,7 @@ export default function Navbar() {
                   href={item.href}
                   className={classNames(
                     router.route === item.href
-                      ? 'bg-[#5692B7] text-white'
+                      ? 'bg-wcyan text-white'
                       : 'bg-[#d0e5e8] hover:bg-[#5692B7]/70 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
