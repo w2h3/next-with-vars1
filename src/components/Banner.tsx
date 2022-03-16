@@ -32,7 +32,7 @@ export default function Banner({ pageName, imageURL }) {
                 href="/appointment"
                 className="flex items-center justify-center px-4 py-3 border  text-base font-bold rounded-xl shadow-sm text-white bg-wcyan hover:bg-opacity-60  hover:text-white border-white sm:px-8 text-center"
               >
-                REQUEST AN APPOINTMENT
+                REQUEST APPOINTMENT
               </a>
             </Link>
             <a

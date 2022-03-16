@@ -74,23 +74,23 @@ export const Footer = () => {
                 <Image src="/logo.png" alt="logo" height={55} width={300} />
               </a>
             </Link>
-            <p className="mt-5 text-l font-bold tracking-wide text-gray-900 ">
+            <div className="mt-5  font-bold tracking-wide text-gray-900 ">
               Hours:
-              <span className="tracking-wide font-light text-base text-gray-500">
-                {' '}
-                Monday - Friday 8:00 AM to 5:00 PM{' '}
-              </span>
-            </p>
-            <p className="mt-5 text-l font-bold tracking-wide text-gray-900 ">
+            </div>
+            <div className="tracking-wide text-gray-600">
+              {' '}
+              Monday - Friday 8:00 AM to 5:00 PM{' '}
+            </div>
+            <div className="mt-5 text-l font-bold tracking-wide text-gray-900 ">
               Closed for lunch:
-              <span className="tracking-wide font-light text-base text-gray-500">
-                {' '}
-                Monday - Friday 12:00 PM to 1:00 PM{' '}
-              </span>
-            </p>{' '}
+            </div>
+            <div className="tracking-wide text-base  text-gray-600">
+              {' '}
+              Monday - Friday 12:00 PM to 1:00 PM{' '}
+            </div>{' '}
             <div className="mt-4 ">
               <dt className="sr-only">Phone number</dt>
-              <dd className="flex">
+              <div className="flex">
                 <Link href="tel:4807478296" passHref>
                   <a>
                     <PhoneIcon
@@ -99,21 +99,33 @@ export const Footer = () => {
                     />
                   </a>
                 </Link>
-                <span className="ml-3 mb-3"> 
+                <span className="ml-1 mb-3">
                   <Link href="tel:4807478296" passHref>
-                    <a className="flex text-gray-600">
-                      Phone: (480) 967-6888
+                    <a className="flex ">
+                      <span className="text-gray-900 font-bold">
+                        Phone: &nbsp;
+                      </span>
+                      <span className="text-base text-gray-600">
+                        (480) 967-6888
+                      </span>
                     </a>
                   </Link>
                 </span>
-              </dd>
-              <dd className="flex">
+              </div>
+              <div className="flex ">
                 <NewspaperIcon
                   className="flex-shrink-0 h-6 w-6 text-wcyan"
                   aria-hidden="true"
                 />
-                <span className="ml-3">Fax: (480) 967-6887</span>
-              </dd>
+                <div className="flex    ml-1">
+                  <span className="text-gray-900 text-base font-bold">
+                    Fax: &nbsp;
+                  </span>{' '}
+                  <span className="text-gray-600 text-base">
+                    (480) 967-6887
+                  </span>
+                </div>{' '}
+              </div>
             </div>
             <div className="flex items-center mt-6 space-x-3">
               <Link href="/appointment">
@@ -144,7 +156,7 @@ export const Footer = () => {
                           router.route === item.href
                             ? 'text-wcyan'
                             : // text-gray-900  border-gray-900
-                              ' text-gray-500  hover:text-wcyan'
+                              '  text-gray-600  hover:text-wcyan'
                           // border-transparent
                         )}
                         aria-current={
@@ -163,7 +175,7 @@ export const Footer = () => {
             <p className="text-base font-bold tracking-wide text-gray-900 ">
               Contacts
             </p>
-            <dl className="text-base text-gray-500">
+            <dl className="text-base  text-gray-600">
               <div>
                 <dt className="sr-only">Postal address</dt>
                 <dd className="flex">
@@ -207,7 +219,9 @@ export const Footer = () => {
                     className="flex-shrink-0 h-6 w-6 text-wcyan"
                     aria-hidden="true"
                   />
-                  <span className="ml-3 text-gray-500 ">clinic@drwang.com</span>
+                  <span className="ml-3  text-gray-600 ">
+                    clinic@drwang.com
+                  </span>
                 </dd>
               </div>
             </dl>

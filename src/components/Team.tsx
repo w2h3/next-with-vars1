@@ -15,9 +15,9 @@ const people = [
     imageUrl: `${kate.src}`,
   },
   {
-    name: 'Kat Deng PA-C',
-    role: 'Kat loves hanging out with her boyfriend and their dog Jax. She is passionate for neurology and all things medicine!',
-    imageUrl: `${kat.src}`,
+    name: 'Dr. Wang',
+    role: 'Dr. Wang’s expertise includes the diagnosis & medical treatment of disorders and diseases of the nervous system, which include the brain, spinal cord, nerves, and muscles. In addition, Dr. Wang has special training in Sleep Medicine. He is an expert in diagnosis & treatment of a variety of sleep disorders including sleep apnea, excessive daytime sleepiness and insomnia.',
+    imageUrl: `${dr.src}`,
   },
 
   // More people...

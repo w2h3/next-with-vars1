@@ -1,6 +1,6 @@
 import Banner from '@/components/Banner';
 import React from 'react';
-import tester from 'public/servebanner.jpg';
+import tester from 'public/forptbanner.jpg';
 import { DotsVerticalIcon } from '@heroicons/react/solid';
 
 const links = [
