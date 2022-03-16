@@ -99,9 +99,9 @@ export const Footer = () => {
                     />
                   </a>
                 </Link>
-                <span className="ml-3 mb-3">
+                <span className="ml-3 mb-3"> 
                   <Link href="tel:4807478296" passHref>
-                    <a className="hidden lg:flex text-gray-600">
+                    <a className="flex text-gray-600">
                       Phone: (480) 967-6888
                     </a>
                   </Link>

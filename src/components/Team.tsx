@@ -8,8 +8,8 @@ const people = [
     imageUrl: `${dr.src}`,
   },
   {
-    name: 'Dr. Wang',
-    role: 'Dr. Wang’s expertise includes the diagnosis & medical treatment of disorders and diseases of the nervous system, which include the brain, spinal cord, nerves, and muscles. In addition, Dr. Wang has special training in Sleep Medicine. He is an expert in diagnosis & treatment of a variety of sleep disorders including sleep apnea, excessive daytime sleepiness and insomnia.',
+    name: 'Kate Maine PA-C',
+    role: 'Kate Maine, PA-C is a board certified Physician Assistant specializing in Neurology. Originally from Massachusetts, Kate now calls Arizona home. She graduated from the University of Arizona in 2002 with a Bachelor of Science Degree in Molecular and Cellular Biology. She completed her Masters of Science in Physician Assistant Studies from Arizona School of Health Sciences in 2006. In addition to her Arizona state license, she is also certified by the National Commission on Certification of Physician Assistants. In her spare time, she loves spending time with her husband and son.',
     imageUrl: `${dr.src}`,
   },
   {
