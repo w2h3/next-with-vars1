@@ -1,6 +1,6 @@
 export default function Divider({ sectionName }) {
   return (
-    <h2 className=" text-wcyan font-semibold tracking-wide uppercase text-center text-2xl">
+    <h2 className="pt-12 text-wcyan font-semibold tracking-wide uppercase text-center text-3xl ">
       {sectionName}
     </h2>
     // <div className="container max-w-2xl justify-center items-center flex">

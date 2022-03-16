@@ -47,7 +47,7 @@ export default function Team() {
             {people.map((person) => (
               <li
                 key={person.name}
-                className="py-10 px-6 bg-[#00847D]/30 text-center rounded-3xl xl:px-10 xl:text-left"
+                className="py-10 px-6 bg-[#00847D]/20 text-center rounded-3xl xl:px-10 xl:text-left"
               >
                 <div className="space-y-6 xl:space-y-10">
                   <img
@@ -57,8 +57,8 @@ export default function Team() {
                   />
                   <div className="space-y-2 xl:flex xl:items-center lg:justify-center">
                     <div className=" font-medium text-lg leading-6 space-y-1">
-                      <h3 className="text-white">{person.name}</h3>
-                      <p className="text-slate-200 text-center">
+                      <h3 className="text-slate-900">{person.name}</h3>
+                      <p className="text-slate-700 text-center">
                         {person.role}
                       </p>
                     </div>
