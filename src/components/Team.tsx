@@ -4,7 +4,7 @@ import dr from '/public/Dr.png';
 const people = [
   {
     name: 'Dr. Wang',
-    role: 'Doctor',
+    role: 'Dr. Wang’s expertise includes the diagnosis & medical treatment of disorders and diseases of the nervous system, which include the brain, spinal cord, nerves, and muscles. In addition, Dr. Wang has special training in Sleep Medicine. He is an expert in diagnosis & treatment of a variety of sleep disorders including sleep apnea, excessive daytime sleepiness and insomnia.',
     imageUrl: `${dr.src}`,
     twitterUrl: '#',
     linkedinUrl: '#',
@@ -23,13 +23,7 @@ const people = [
     twitterUrl: '#',
     linkedinUrl: '#',
   },
-  {
-    name: 'Dr. Wang',
-    role: 'Doctor',
-    imageUrl: `${dr.src}`,
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
+
   // More people...
 ];
 
