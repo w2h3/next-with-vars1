@@ -1,4 +1,5 @@
 import {
+  HeartIcon,
   LocationMarkerIcon,
   MailIcon,
   PhoneIcon,
@@ -236,6 +237,10 @@ export const Footer = () => {
           <p className="text-sm text-gray-600">
             © Copyright 2022 Neurology And Sleep Medicine Associates. All rights
             reserved.
+            <span className="text-sm"> Site made by</span>
+            <span className="text-wcyan">
+              <Link href="https://www.wingertproject.com"> James Wingert</Link>
+            </span>
           </p>
           <ul className="flex flex-col mb-3 space-y-2  lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
             <li>
