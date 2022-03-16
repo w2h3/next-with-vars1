@@ -1,7 +1,8 @@
 import {
   MailIcon,
   PhoneIcon,
-  LocationMarkerIcon, NewspaperIcon
+  LocationMarkerIcon,
+  NewspaperIcon,
 } from '@heroicons/react/outline';
 import bgmap from 'public/cactus4.jpg';
 import { useState } from 'react';
@@ -65,7 +66,7 @@ export default function Contact() {
                       aria-hidden="true"
                     />
                     <span className="ml-3 mb-3">
-                    2045 S. Vineyard Road, Bldg. N3, Suite 144 Mesa, AZ 85210
+                      2045 S. Vineyard Road, Bldg. N3, Suite 144 Mesa, AZ 85210
                     </span>
                   </dd>
                   <dt className="sr-only">Postal address</dt>
@@ -75,7 +76,7 @@ export default function Contact() {
                       aria-hidden="true"
                     />
                     <span className="ml-3">
-                    4001 E Baseline Road, Suite 205 Mesa, AZ 85234
+                      4001 E Baseline Road, Suite 205 Mesa, AZ 85234
                     </span>
                   </dd>
                 </div>
@@ -182,7 +183,7 @@ export default function Contact() {
                     YOU HAVE A MEDICAL EMERGENCY, PLEASE CALL 911.
                     <button
                       type="submit"
-                      className="px-10 mt-8 py-2 border-2 border-wcyan bg-[#00847D]/80 text-white font-bold rounded-md text-lg flex flex-row items-center hover:bg-wcyan/50"
+                      className="px-10 mt-8 py-2  text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 hover:border hover:border-wcyan font-bold rounded-md text-lg flex flex-row items-center"
                     >
                       {buttonText}
                       {/* <svg

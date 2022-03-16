@@ -187,7 +187,6 @@ export default function Contact() {
                       YOU HAVE A MEDICAL EMERGENCY, PLEASE CALL 911.
                       <button
                         type="submit"
-                        className="px-10 mt-8 py-2 border-2 border-wcyan bg-[#00847D]/80 text-white font-bold rounded-md text-lg flex flex-row items-center hover:bg-wcyan/50"
                       >
                         {buttonText}
                         {/* <svg

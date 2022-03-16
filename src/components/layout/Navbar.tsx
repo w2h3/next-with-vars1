@@ -87,7 +87,7 @@ export default function Navbar() {
                         </Link>
                       ))}
                       <Link href="https://mycw34.eclinicalweb.com/portal3661/jsp/100mp/login_otp.jsp">
-                        <button className="bg-[#107E8E] hover:bg-[#0B5A66] text-white font-bold py-2 px-4 rounded-full">
+                        <button className="bg-wcyan border border-wcyan hover:bg-wcyan/70 hover:border hover:border-wcyan text-white font-bold py-2 px-4 rounded-full">
                           {/* className=" md:text-center md:px-1 md:pt-1 md:text-md font-medium md:inline-flex md:bg-cyan-700 md:p-1 md:rounded-full md:text-white md:hover:text-gray-200  md:focus:outline-none md:focus:ring-2 md:focus:ring-offset-2 md:focus:ring-offset-gray-800 md:focus:ring-white" */}
                           {/* > */}
                           Patient Portal
@@ -131,7 +131,7 @@ export default function Navbar() {
                 </button> */}
                   <button
                     type="button"
-                    className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 focus:ring-4 focus:ring-blue-300 font-medium rounded-xl text-sm px-5 py-2.5 text-center mr-2 mb-2 w-full "
+                    className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/90 focus:ring-4 focus:ring-blue-300 font-medium rounded-xl text-sm px-5 py-2.5 text-center mr-2 mb-2 w-full "
                   >
                     Patient Portal
                   </button>

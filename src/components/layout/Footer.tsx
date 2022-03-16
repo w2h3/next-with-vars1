@@ -134,7 +134,7 @@ export const Footer = () => {
                 </button> */}
                 <button
                   type="button"
-                  className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 "
+                  className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 hover:border hover:border-wcyan font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 "
                 >
                   REQUEST APPOINTMENT
                 </button>
@@ -237,7 +237,7 @@ export const Footer = () => {
                 </button> */}
                 <button
                   type="button"
-                  className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 "
+                  className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 hover:border hover:border-wcyan font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 "
                 >
                   FOR PATIENTS
                 </button>
@@ -247,7 +247,7 @@ export const Footer = () => {
               <Link href="/medprof">
                 <button
                   type="button"
-                  className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 "
+                  className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 hover:border hover:border-wcyan font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 "
                 >
                   FOR PROVIDERS
                 </button>
