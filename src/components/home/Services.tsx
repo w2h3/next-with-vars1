@@ -50,17 +50,18 @@ const features = [
 
 export default function Services() {
   return (
-    <div className="py-12 testImage">
+    <div className="testImage">
       <div className="container">
         <div className="text-center">
-          <h2 className="text-base text-wcyan font-semibold tracking-wide uppercase text-center">
+          <Divider sectionName={'Our Services'}></Divider>
+          {/* <h2 className="text-base text-wcyan font-semibold tracking-wide uppercase text-center">
             Our Services
-          </h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          </h2> */}
+          {/* <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             Welcome to
             <span> Neurology and Sleep</span>
             <span> Medicine Associates. </span>
-          </p>
+          </p> */}
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
             Our Providers are trained to provide a broad range of diagnostic &
             treatment services for adults, including:

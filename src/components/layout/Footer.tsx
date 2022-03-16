@@ -2,6 +2,7 @@ import {
   HeartIcon,
   LocationMarkerIcon,
   MailIcon,
+  NewspaperIcon,
   PhoneIcon,
 } from '@heroicons/react/outline';
 import Image from 'next/image';
@@ -73,7 +74,6 @@ export const Footer = () => {
                 <Image src="/logo.png" alt="logo" height={55} width={300} />
               </a>
             </Link>
-
             <p className="mt-5 text-l font-bold tracking-wide text-gray-900 ">
               Hours:
               <span className="tracking-wide font-light text-base text-gray-500">
@@ -87,7 +87,34 @@ export const Footer = () => {
                 {' '}
                 Monday - Friday 12:00 PM to 1:00 PM{' '}
               </span>
-            </p>
+            </p>{' '}
+            <div className="mt-4 ">
+              <dt className="sr-only">Phone number</dt>
+              <dd className="flex">
+                <Link href="tel:4807478296" passHref>
+                  <a>
+                    <PhoneIcon
+                      className="flex-shrink-0 h-6 w-6 text-wcyan"
+                      aria-hidden="true"
+                    />
+                  </a>
+                </Link>
+                <span className="ml-3 mb-3">
+                  <Link href="tel:4807478296" passHref>
+                    <a className="hidden lg:flex text-gray-600">
+                      Phone: (480) 967-6888
+                    </a>
+                  </Link>
+                </span>
+              </dd>
+              <dd className="flex">
+                <NewspaperIcon
+                  className="flex-shrink-0 h-6 w-6 text-wcyan"
+                  aria-hidden="true"
+                />
+                <span className="ml-3">Fax: (480) 967-6887</span>
+              </dd>
+            </div>
             <div className="flex items-center mt-6 space-x-3">
               <Link href="/appointment">
                 {/* <button className="bg-[#107E8E] hover:bg-[#0B5A66] text-white font-bold py-2 px-4 rounded-full">
@@ -172,16 +199,7 @@ export const Footer = () => {
                   </span>
                 </dd>
               </div>
-              <div className="">
-                <dt className="sr-only">Phone number</dt>
-                <dd className="flex">
-                  <PhoneIcon
-                    className="flex-shrink-0 h-6 w-6 text-wcyan"
-                    aria-hidden="true"
-                  />
-                  <span className="ml-3 mb-3">+1 (480) 967-6888</span>
-                </dd>
-              </div>
+
               <div className="mt-3 ">
                 <dt className="sr-only">Email</dt>
                 <dd className="flex">
