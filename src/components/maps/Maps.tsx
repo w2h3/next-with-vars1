@@ -71,7 +71,7 @@ export default function Map() {
             {posts.map((post) => (
               <div
                 key={post.title}
-                className="flex border-2 border-wcyan flex-col rounded-lg shadow-xl bg-white overflow-hidden "
+                className="flex border-2 border-wcyan/40 flex-col rounded-lg shadow-xl bg-white overflow-hidden "
               >
                 <div className="flex-shrink-0 h-48 w-full mb-32">
                   {post.con}
