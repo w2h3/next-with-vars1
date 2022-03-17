@@ -69,7 +69,7 @@ export default function Chandler() {
     lng: -111.6344741291186,
   };
   return (
-    <div className="App mx-auto h-[40rem] bg-slate-100  ">
+    <div className="App mx-auto h-[40rem] bg-white  ">
       {/* bg-slate-100 */}
       {/*outline   outline-[#22707C] */}
       {/* <div className="text-6xl font-bold">Our Locations</div> */}

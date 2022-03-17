@@ -70,7 +70,7 @@ export default function Gilbert() {
     lng: -111.74695413972648,
   };
   return (
-    <div className="App mx-auto h-[40rem] bg-slate-100  ">
+    <div className="App mx-auto h-[40rem] bg-white ">
       {/* bg-slate-100 */}
       {/*outline   outline-[#22707C] */}
       {/* <div className="text-6xl font-bold">Our Locations</div> */}
