@@ -73,7 +73,7 @@ export default function Services() {
             {features.map((feature) => (
               <div
                 key={feature.name}
-                className="flex flex-col items-center rounded-lg border-2 shadow-2xl md:flex-row md:max-w-xl border-wcyan/30 bg-slate-100"
+                className="flex flex-col items-center rounded-lg border-2 shadow-2xl md:flex-row md:max-w-xl border-wcyan/30 bg-white"
               >
                 <img
                   className="object-cover w-full h-96 rounded-t-lg md:h-52 md:w-48 md:rounded-none md:rounded-l-lg"
