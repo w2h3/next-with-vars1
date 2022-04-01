@@ -20,7 +20,7 @@
     },
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/maps/Chandler.jsx", "src/components/maps/Mesa.jsx", "src/components/maps/Mesa.jsx", "src/components/maps/Mesa.jsx", "src/components/maps/Mesa.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/maps/Chandler.jsx", "src/components/maps/Mesa.jsx", "src/components/maps/Mesa.jsx", "src/components/maps/Mesa.jsx", "src/components/maps/Mesa.js", "src/components/swiper/Swiper.jsx"],
   "exclude": ["node_modules"],
   "moduleResolution": ["node_modules", ".next", "node"]
 }

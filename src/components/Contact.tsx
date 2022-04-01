@@ -47,7 +47,7 @@ export default function Contact() {
                 CARE, PLEASE CALL OUR OFFICE AT (480) 967-6888. IF YOU HAVE A
                 MEDICAL EMERGENCY, PLEASE CALL 911.
               </p> */}
-              <dl className="mt-6 text-base text-gray-500">
+              <dl className="mt-6 text-base text-gray-800 lg:text-gray-500">
                 <div>
                   <dt className="sr-only">Postal address</dt>
                   <dd className="flex">
@@ -107,7 +107,7 @@ export default function Contact() {
                       className="flex-shrink-0 h-6 w-6 text-wcyan"
                       aria-hidden="true"
                     />
-                    <span className="ml-3 mb-32 md:mb-20 text-gray-500 ">
+                    <span className="ml-3 mb-32 md:mb-20 text-gray-800 lg:text-gray-500">
                       clinic@drwang.com
                     </span>
                   </dd>

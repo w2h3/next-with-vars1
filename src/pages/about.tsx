@@ -5,6 +5,7 @@ import business from 'public/business.jpg';
 import sleeper from 'public/sleeper.jpg';
 import stock from 'public/aboutbanner.jpg';
 import Divider from '@/components/layout/Dividers';
+import Swipe from '@/components/swiper/Swiper';
 export const AboutUs = () => {
   return (
     <>
@@ -80,8 +81,10 @@ export const AboutUs = () => {
                 </p>
               </div>
             </div>
-            <div className="flex items-center justify-center -mx-4 lg:pl-8">
-              <div className="flex flex-col items-end px-3">
+            <div className="  ">
+            {/* <div className="flex items-center justify-center -mx-4 lg:pl-8"> */}
+              <Swipe></Swipe>
+              {/* <div className="flex flex-col items-end px-3">
                 <img
                   className="object-cover mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
                   src={business.src}
@@ -99,7 +102,7 @@ export const AboutUs = () => {
                   src={tester.src}
                   alt=""
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Layout from '../components/layout/Layout';
 import '../styles/globals.css';
-
+import '../components/swiper/swiper.css';
 function MyApp({ Component, pageProps }) {
   return (
     <>
