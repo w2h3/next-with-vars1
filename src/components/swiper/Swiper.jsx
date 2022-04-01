@@ -19,6 +19,11 @@ export default function Swipe() {
   return (
     <>
       <Swiper
+        style={{
+          '--swiper-navigation-color': '#fff',
+          '--swiper-pagination-color': '#fff',
+          // #D6F775
+        }}
         effect={'coverflow'}
         slidesPerView={1.2}
         // spaceBetween={10}
@@ -36,7 +41,7 @@ export default function Swipe() {
           stretch: 40, // Stretch space between slides (in px)
           depth: 300, // Depth offset in px (slides translate in Z axis)
           modifier: 1, // Effect multipler
-          slideShadows: true
+          slideShadows: true,
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="mySwiper"

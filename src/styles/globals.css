@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400&display=swap');
 @layer components {
   .container {
-    @apply mx-auto px-8 py-8 2xl:max-w-[1500px];
+    @apply mx-auto px-8 py-8  max-w-6xl 2xl:max-w-[1700px];
   }
 }
 @layer base {

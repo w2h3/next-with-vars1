@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import services from '@/pages/services';
 import Divider from '../layout/Dividers';
 import neuro from 'public/neuroserve.jpg';
@@ -62,13 +63,13 @@ export default function Services() {
             <span> Neurology and Sleep</span>
             <span> Medicine Associates. </span>
           </p> */}
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+          <p className="mt-4 max-w-6xl text-xl text-gray-500 lg:mx-auto text-center">
             Our Providers are trained to provide a broad range of diagnostic &
             treatment services for adults, including:
           </p>
         </div>
         <div className="mt-10">
-          <dl className="space-y-10 sm:grid xl:space-y-0 xl:grid-cols-2 xl:gap-x-8 xl:gap-y-10">
+          <dl className="space-y-10 justify-center sm:grid  xl:space-y-0 xl:grid-cols-2 xl:gap-x-8 xl:gap-y-10">
             {' '}
             {features.map((feature) => (
               <div

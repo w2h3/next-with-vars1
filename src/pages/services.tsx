@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 import Banner from '@/components/Banner';
 import React from 'react';
 import tester from 'public/servebanner.jpg';
@@ -55,11 +57,11 @@ const services = () => {
       <div className="testImage">
         <div className="container">
           <div className="bg-wcyan/30 rounded-3xl mb-20">
-            <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8">
+            <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8 text-center">
               <h2 className="text-3xl font-extrabold text-wcyan tracking-tight">
                 Advanced Diagnostic Services
               </h2>
-              <p className="mt-4 max-w-3xl text-lg text-slate-600">
+              <p className="mt-4 max-w-6xl text-lg text-slate-600 text-center">
                 Our experienced team works together to evaluate your condition.
                 Our advanced diagnostic services utilize state-of-the-art
                 medical technology, providing referring physicians and patients
