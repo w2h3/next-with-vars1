@@ -95,10 +95,7 @@ const Service = () => {
                 <CheckIcon className="w-5 h-5 text-wcyan mr-2" /> Sleep walking,
                 sleep talking
               </li>
-              <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan mr-2" /> Seizure,
-                epilepsy, passing out, blackouts
-              </li>
+  
             </ul>
             <Link href="/services" passHref>
               <button className="bg-wcyan border border-wcyan hover:bg-wcyan/70 hover:border hover:border-wcyan text-white font-bold py-2 px-4 rounded-full ">
