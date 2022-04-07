@@ -152,7 +152,7 @@ export const Footer = () => {
                     <Link href={item.href} key={item.name} passHref>
                       <a
                         className={classNames(
-                          'text-md ',
+                          'text-lg font-bold ',
                           router.route === item.href
                             ? 'text-wcyan'
                             : // text-gray-900  border-gray-900

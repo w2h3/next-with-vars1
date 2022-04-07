@@ -20,6 +20,8 @@ module.exports = {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
         sans: ['Sora'],
+        nexa: ['NexaDemo-Bold'],
+        roboto: ['Roboto Slab', 'serif'],
       },
     },
   },

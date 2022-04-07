@@ -15,6 +15,22 @@ const Service = () => {
   return (
     <div className="testImage">
       <section className="container mx-auto  ">
+        {' '}
+        <div className="text-center mb-5">
+          <Divider sectionName={'Our Services'}></Divider>
+          {/* <h2 className="text-base text-wcyan font-semibold tracking-wide uppercase text-center">
+            Our Services
+          </h2> */}
+          {/* <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            Welcome to
+            <span> Neurology and Sleep</span>
+            <span> Medicine Associates. </span>
+          </p> */}
+          {/* <p className="mt-4 max-w-6xl text-2xl text-gray-500 lg:mx-auto text-center">
+            Our Providers are trained to provide a broad range of diagnostic &
+            treatment services for adults, including:
+          </p> */}
+        </div>
         <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-white p-2 md:p-5 rounded-2xl shadow-lg border border-wcyan/20">
           <div className="">
             <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-6xl">

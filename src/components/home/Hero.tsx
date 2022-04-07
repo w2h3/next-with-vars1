@@ -42,16 +42,16 @@ export default function Hero() {
               {/* lg:pt-48 */}
               {/* md:px-28 2xl:px-[40rem] */}
               <div className=" max-w-2xl relative   bg-opacity-50  rounded-3xl px-10">
-                <h1 className="text-center text-3xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl ">
-                  <span className="block text-[#c2df6c] pt-10">
+                <h1 className="text-center text-3xl font-extrabold tracking-tighter sm:text-5xl lg:text-6xl ">
+                  <span className="block text-[#c2df6c] pt-10 font-nexa">
                     Neurology and Sleep
                   </span>
-                  <span className="block text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl text-white">
+                  <span className="block text-3xl font-thin tracking-widest sm:text-4xl lg:text-5xl  text-white font-roboto align-text-bottom">
                     Medicine Associates
                   </span>
                 </h1>
                 <p className="mt-6 max-w-lg mx-auto text-center text-xl font-medium text-white sm:max-w-3xl">
-                  Serving our local community since 2005.
+                  Serving our local community since 2002.
                 </p>
 
                 <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
