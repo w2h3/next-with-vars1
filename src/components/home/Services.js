@@ -12,7 +12,11 @@ import Image from 'next/image';
 const features = [
   {
     name: 'Neurology',
-    offer1: 'Headaches, facial pain, dizziness, tremors',
+    // offer: {
+    //   bob: 'Headaches, facial pain, dizziness, tremors',
+    //   sally: 'Pain in the neck, back, or extremitie',
+    //   bill: 'Pain in the neck, back, or extremitie',
+    // },
     offer2: 'Pain in the neck, back, or extremities',
     offer3: 'Weakness, numbness, or walking difficulty',
     offer4: 'Syncope or fainting (blackouts)',
@@ -21,7 +25,11 @@ const features = [
   },
   {
     name: 'Sleep',
-    offer1: 'Leg jerks or legs uncomfortable at night',
+    offer: [
+      'Sleep walking & other unusual sleep behavior',
+      'Injuries related to neurological diseases and other various injuries',
+      'Frequent awakening during the night',
+    ],
     offer2: 'Sleepy / fall asleep during the day',
     offer3: 'Frequent awakening during the night',
     offer4: 'Sleep walking & other unusual sleep behavior',
@@ -48,8 +56,50 @@ const features = [
     image: `${psych.src}`,
   },
 ];
-
+const neurOffer = [
+  'headache, migraine ',
+  'pain in neck, back, and extremities ',
+  'dizziness, balance problems ',
+  'multiple sclerosis ',
+  'Parkinson’s disease, tremor, restless leg syndrome ',
+  'memory problems, Alzheimer’s ',
+];
+const psychOffer = [
+  'headache, migraine ',
+  'pain in neck, back, and extremities ',
+  'dizziness, balance problems ',
+  'multiple sclerosis ',
+  'Parkinson’s disease, tremor, restless leg syndrome ',
+  'memory problems, Alzheimer’s ',
+];
+const ptOffer = [
+  'headache, migraine ',
+  'pain in neck, back, and extremities ',
+  'dizziness, balance problems ',
+  'multiple sclerosis ',
+  'Parkinson’s disease, tremor, restless leg syndrome ',
+  'memory problems, Alzheimer’s ',
+];
+const sleepOffer = [
+  'headache, migraine ',
+  'pain in neck, back, and extremities ',
+  'dizziness, balance problems ',
+  'multiple sclerosis ',
+  'Parkinson’s disease, tremor, restless leg syndrome ',
+  'memory problems, Alzheimer’s ',
+];
 export default function Services() {
+  const feat = features.map((feature) => {
+    return feature.offer;
+  });
+  // console.log(feat);
+
+  const bob = feat[1].map((barry) => {
+    return barry;
+  });
+  console.log(bob);
+  let newBob = bob.concat([bob]);
+
   return (
     <div className="testImage">
       <div className="container">
@@ -70,46 +120,36 @@ export default function Services() {
         </div>
         <div className="mt-10">
           <dl className="space-y-10 justify-center sm:grid  xl:space-y-0 xl:grid-cols-2 xl:gap-x-8 xl:gap-y-10">
-            {' '}
             {features.map((feature) => (
               <div
                 key={feature.name}
                 className="flex flex-col items-center rounded-lg border-2 shadow-2xl md:flex-row md:max-w-xl border-wcyan/30 bg-white"
               >
-                <img
-                  className="object-cover w-full h-96 rounded-t-lg md:h-52 md:w-48 md:rounded-none md:rounded-l-lg"
-                  src={feature.image}
-                  alt=""
-                />
+                <div className="relative w-full h-96 rounded-t-lg md:h-52 md:w-48 md:rounded-none md:rounded-l-lg">
+                  <Image
+                    src={feature.image}
+                    alt=""
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
                 <div className="flex flex-col justify-between p-4 leading-normal ">
                   <h5 className="mb-2 text-2xl font-extrabold tracking-tight text-wcyan text-center">
                     {feature.name}
                   </h5>
-
                   <ul className="text-base text-black text-left mt-1 ">
                     <li className="flex items-center mb-1 ">
-                      <span className="mr-1">
-                        <CheckIcon className="w-5 h-5 text-wcyan" />
-                      </span>
-                      {feature.offer1}
-                    </li>
-                    <li className="flex items-center mb-1">
-                      <span className="mr-1">
-                        <CheckIcon className="w-5 h-5 text-wcyan/80" />
-                      </span>
-                      {feature.offer2}
-                    </li>
-                    <li className="flex items-center mb-1">
-                      <span className="mr-1">
-                        <CheckIcon className="w-5 h-5 text-wcyan/80" />
-                      </span>
-                      {feature.offer3}
-                    </li>
-                    <li className="flex">
-                      <span className="mr-1">
-                        <CheckIcon className="w-5 h-5 text-wcyan/80" />
-                      </span>
-                      {feature.offer4}
+                      <div className="mr-1">
+                        {feat[1].map((barry) => {
+                          <span
+                            key={barry}
+                            className="flex items-center"
+                          >
+                            <CheckIcon className="w-5 h-5 text-wcyan" />
+                            {bob}
+                          </span>;
+                        })}
+                      </div>
                     </li>
                   </ul>
                 </div>

@@ -2,12 +2,12 @@
 import Map from '../components/maps/Maps';
 import Contact from '../components/Contact';
 import Hero from '../components/home/Hero';
-import Services from '@/components/home/Services';
+import Service from '@/components/home/Service';
 const Home = () => {
   return (
     <div>
       <Hero />
-      <Services />
+      <Service />
       {/* <Why /> */}
       {/* <AccordionFirstExample /> */}
       <Map />
