@@ -15,7 +15,7 @@ const Service = () => {
   return (
     <div className="testImage">
       <section className="container mx-auto  ">
-        <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-white p-10 rounded-2xl shadow-lg border border-wcyan/20">
+        <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-white p-2 md:p-10 rounded-2xl shadow-lg border border-wcyan/20">
           <div className="">
             <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-6xl">
               Neurology
@@ -73,7 +73,7 @@ const Service = () => {
             {/* md:h-52 md:w-48 h-96  */}
           </div>
         </div>
-        <div className="grid items-center flex-col-reverse grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-white p-10 rounded-2xl shadow-lg border-wcyan/20 border">
+        <div className="grid items-center flex-col-reverse grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-white p-2 md:p-10 rounded-2xl shadow-lg border-wcyan/20 border">
           <div className="order-none md:order-2">
             <h2 className="mb-4 text-2xl font-extrabold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-6xl">
               Sleep
@@ -116,7 +116,7 @@ const Service = () => {
             {/* md:h-52 md:w-48 h-96  */}
           </div>
         </div>
-        <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-white p-10 rounded-2xl shadow-lg border-wcyan/20 border">
+        <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-white p-2 md:p-10 rounded-2xl shadow-lg border-wcyan/20 border">
           <div>
             <h2 className="mb-4 text-2xl font-extrabold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-6xl">
               Neuro Rehabilitation
@@ -158,7 +158,7 @@ const Service = () => {
             {/* md:h-52 md:w-48 h-96  */}
           </div>
         </div>
-        <div className="grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-white p-10 rounded-2xl shadow-lg border-wcyan/20 border">
+        <div className="grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-white p-2 md:p-10 rounded-2xl shadow-lg border-wcyan/20 border">
           <div className="order-none md:order-2">
             <h2 className="mb-4 text-2xl font-extrabold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-6xl">
               Psychiatry
