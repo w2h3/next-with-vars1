@@ -95,7 +95,7 @@ const Service = () => {
         </div>
         <div className="grid items-center flex-col-reverse grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-white p-2 md:p-5 rounded-2xl shadow-lg border-wcyan/20 border">
           <div className="order-none md:order-2">
-            <h2 className="mb-4 text-2xl font-extrabold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-6xl">
+            <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-6xl">
               Sleep
             </h2>
             <ul className="mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg">
@@ -137,7 +137,7 @@ const Service = () => {
         </div>
         <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-white p-2 md:p-5 rounded-2xl shadow-lg border-wcyan/20 border">
           <div>
-            <h2 className="mb-4 text-2xl font-extrabold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-6xl">
+            <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-6xl">
               Neuro Rehabilitation
             </h2>
             <ul className="mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg">
@@ -179,7 +179,7 @@ const Service = () => {
         </div>
         <div className="grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-white p-2 md:p-5 rounded-2xl shadow-lg border-wcyan/20 border">
           <div className="order-none md:order-2">
-            <h2 className="mb-4 text-2xl font-extrabold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-6xl">
+            <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-6xl">
               Psychiatry
             </h2>
             <ul className="mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg">
