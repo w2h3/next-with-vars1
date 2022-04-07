@@ -9,6 +9,8 @@ import { CheckIcon } from '@heroicons/react/outline';
 import Link from 'next/link';
 import Image from 'next/image';
 
+//TODO make component, DRY
+
 const Service = () => {
   return (
     <div className="testImage">

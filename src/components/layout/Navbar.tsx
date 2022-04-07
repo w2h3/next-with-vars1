@@ -53,7 +53,7 @@ export default function Navbar() {
                     </Link>
                   </div> */}
                   <div className="block pt-3 w-auto ">
-                    <Link href="/">
+                    <Link href="/" passHref>
                       <Image
                         src="/logo.png"
                         alt="logo"
@@ -86,7 +86,10 @@ export default function Navbar() {
                           </a>
                         </Link>
                       ))}
-                      <Link href="https://mycw34.eclinicalweb.com/portal3661/jsp/100mp/login_otp.jsp">
+                      <Link
+                        href="https://mycw34.eclinicalweb.com/portal3661/jsp/100mp/login_otp.jsp"
+                        passHref
+                      >
                         <button className="bg-wcyan border border-wcyan hover:bg-wcyan/70 hover:border hover:border-wcyan text-white font-bold py-2 px-4 rounded-full">
                           {/* className=" md:text-center md:px-1 md:pt-1 md:text-md font-medium md:inline-flex md:bg-cyan-700 md:p-1 md:rounded-full md:text-white md:hover:text-gray-200  md:focus:outline-none md:focus:ring-2 md:focus:ring-offset-2 md:focus:ring-offset-gray-800 md:focus:ring-white" */}
                           {/* > */}
@@ -125,7 +128,10 @@ export default function Navbar() {
                 </Disclosure.Button>
               ))}
               <div className="flex items-center mt-1 space-x-3">
-                <Link href="https://mycw34.eclinicalweb.com/portal3661/jsp/100mp/login_otp.jsp">
+                <Link
+                  href="https://mycw34.eclinicalweb.com/portal3661/jsp/100mp/login_otp.jsp"
+                  passHref
+                >
                   {/* <button className="bg-[#107E8E] hover:bg-[#0B5A66] text-white font-bold py-2 px-4 rounded-full">
                   Make an appointment
                 </button> */}
