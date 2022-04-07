@@ -1,31 +1,27 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import tester from '/public/banner1.jpg';
 import Image from 'next/image';
-import { Fragment } from 'react';
-import { Popover, Transition } from '@headlessui/react';
-import {
-  AnnotationIcon,
-  ChatAlt2Icon,
-  InboxIcon,
-  MenuIcon,
-  QuestionMarkCircleIcon,
-  XIcon,
-} from '@heroicons/react/outline';
-import { ChevronDownIcon } from '@heroicons/react/solid';
 import Link from 'next/link';
 
 export default function Hero() {
   return (
     <div>
-      {/* Hero card */}
+      {/* w-full h-full */}
       <div className=" mt-[6rem]">
         <div className=" max-w-screen mx-auto  ">
           <div className="relative shadow-xl sm:rounded-2xl   ">
-            <img
-              src={tester.src}
-              className="absolute inset-0 object-cover object-right w-full h-full"
-              alt=""
-            />
+            <div style={{ width: '9px', height: '1px' }}>
+              <Image
+                src={tester.src}
+                className=" inset-0 object-right "
+                alt=""
+                layout="fill"
+                priority
+                objectFit="cover"
+                // width={103}
+                // height={70}
+              />
+            </div>
             {/* <div className=" image-container image-div">
               <Image
                 className="image-image"
@@ -65,13 +61,14 @@ export default function Hero() {
                         REQUEST APPOINTMENT
                       </a>
                     </Link>
-                    <a
-                      href="#"
-                      className="flex items-center justify-center px-4 py-3 border border-wcyan text-base font-bold rounded-xl shadow-sm text-wcyan bg-white hover:text-wcyan/60  sm:px-8"
-                      // hover:text-white
-                    >
-                      NEW PATIENT FORM
-                    </a>
+                    <Link href="/">
+                      <a
+                        className="flex items-center justify-center px-4 py-3 border border-wcyan text-base font-bold rounded-xl shadow-sm text-wcyan bg-white hover:text-wcyan/60  sm:px-8 text-center"
+                        // hover:text-white
+                      >
+                        NEW PATIENT FORM
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>

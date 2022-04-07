@@ -64,7 +64,7 @@ export const AboutUs = () => {
           </div>
         </div>
       </div>
-      <Team></Team>
+      {/* <Team></Team> */}
     </>
   );
 };
