@@ -6,7 +6,7 @@ import {
 } from '@heroicons/react/outline';
 import bgmap from 'public/cactus4.jpg';
 import { useState } from 'react';
-import Divider from './layout/Dividers';
+import Divider from '../layout/Dividers';
 
 export default function Contact() {
   const [buttonText, setButtonText] = useState('Send');
