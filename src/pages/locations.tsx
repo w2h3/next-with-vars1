@@ -5,7 +5,7 @@ import Mesa from '../components/maps/Mesa';
 import Gilbert from '../components/maps/Gilbert';
 import Link from 'next/link';
 import tester from 'public/locationbanner.jpg';
-import Banner from '@/components/Banner';
+import Banner from '@/components/layout/Banner';
 const posts = [
   {
     title: '2919 S. Ellsworth Road',

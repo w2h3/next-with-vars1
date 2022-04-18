@@ -16,7 +16,7 @@ export default function Hero() {
                 className=" inset-0 object-right "
                 alt=""
                 layout="fill"
-                // priority
+                priority={true}
                 objectFit="cover"
                 // width={103}
                 // height={70}

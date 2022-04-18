@@ -1,4 +1,4 @@
-import Banner from '@/components/Banner';
+import Banner from '@/components/layout/Banner';
 import React, { useRef } from 'react';
 import tester from 'public/servebanner.jpg';
 import Divider from '@/components/layout/Dividers';

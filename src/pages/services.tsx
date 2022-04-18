@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-import Banner from '@/components/Banner';
+import Banner from '@/components/layout/Banner';
 import React from 'react';
 import tester from 'public/servebanner.jpg';
 import Services from '@/components/home/Services';

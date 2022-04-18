@@ -1,4 +1,4 @@
-import Banner from '@/components/Banner';
+import Banner from '@/components/layout/Banner';
 import ins from '../../public/server.jpg';
 import tester from 'public/billing.jpg';
 import { PaperClipIcon } from '@heroicons/react/outline';

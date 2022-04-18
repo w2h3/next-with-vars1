@@ -1,5 +1,5 @@
 import Team from '@/components/Team';
-import Banner from '@/components/Banner';
+import Banner from '@/components/layout/Banner';
 import tester from 'public/tester.jpg';
 import business from 'public/business.jpg';
 import sleeper from 'public/sleeper.jpg';

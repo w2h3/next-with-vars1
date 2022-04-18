@@ -1,4 +1,4 @@
-import Banner from '@/components/Banner';
+import Banner from '@/components/layout/Banner';
 import React from 'react';
 import tester from 'public/drtest.jpg';
 
