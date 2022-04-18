@@ -3,8 +3,8 @@
 
 import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import swiper1 from 'public/wang/swiper1.jpg';
-import newFront from 'public/wang/newFront.jpeg';
+import swiper1 from 'public/wang/swiper1.jpeg';
+import newFront from 'public/wang/newFront.jpg';
 import swiper2 from 'public/wang/swiper2.jpg';
 import swiper3 from 'public/wang/swiper3.jpg';
 import swiper4 from 'public/wang/swiper4.jpg';
