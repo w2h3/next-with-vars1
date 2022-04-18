@@ -231,7 +231,7 @@ export const Footer = () => {
               Quick Links
             </span>
             <div className="flex items-center mt-1 space-x-3">
-              <Link href="/patients">
+              <Link href="/patients" passHref>
                 {/* <button className="bg-[#107E8E] hover:bg-[#0B5A66] text-white font-bold py-2 px-4 rounded-full">
                   Make an appointment
                 </button> */}
@@ -244,7 +244,7 @@ export const Footer = () => {
               </Link>
             </div>
             <div className="flex items-center mt-1 space-x-3">
-              <Link href="/medprof">
+              <Link href="/medprof" passHref>
                 <button
                   type="button"
                   className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 hover:border hover:border-wcyan font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 "
@@ -269,7 +269,10 @@ export const Footer = () => {
           <p className="text-sm text-gray-600">
             <span className="text-sm"> Site made by</span>
             <span className="text-wcyan">
-              <Link href="https://www.wingertproject.com"> James Wingert </Link>
+              <Link href="https://www.wingertproject.com" passHref>
+                {' '}
+                James Wingert{' '}
+              </Link>
             </span>
             © Copyright 2022 Neurology And Sleep Medicine Associates. All rights
             reserved.

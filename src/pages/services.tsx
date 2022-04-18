@@ -1,9 +1,7 @@
-/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import Banner from '@/components/layout/Banner';
 import React from 'react';
 import tester from 'public/servebanner.jpg';
-import Services from '@/components/home/Services';
 import icon1 from 'public/ser_icon1.png';
 import icon2 from 'public/ser_icon2.png';
 import icon3 from 'public/ser_icon3.png';
@@ -78,6 +76,7 @@ const services = () => {
                           className="h-30 w-30 text-slate-600"
                           aria-hidden="true"
                           src={feature.icon}
+                          alt="service"
                         />
                       </span>
                     </div>
@@ -94,7 +93,6 @@ const services = () => {
               </div>
             </div>
           </div>
-      
         </div>
       </div>
     </>

@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Chandler from '../components/maps/Chandler';
 import { LocationMarkerIcon } from '@heroicons/react/outline';
 import Mesa from '../components/maps/Mesa';
@@ -56,19 +55,8 @@ export default function locations() {
     <div className="testImage">
       <Banner pageName={'Locations'} imageURL={tester.src}></Banner>
 
-      {/* relative h-fill py-16 mx-auto sm:max-w-full bg-wcyan/20 z-1 lg:py-20  */}
-
-      {/* bg-gray-50 bg-opacity-10 */}
-      {/* <div className="absolute inset-0">
-        {/* <div className=" h-1/3 sm:h-2/3 " /> */}
-      {/* bg-white */}
-      {/* </div>  */}
       <div className="container">
-        {/* bg-opacity-70 */}
         <div className=" mx-auto mb-20">
-          {/* <div className="text-center">
-            {/*text-3xl  tracking-tight  text-gray-900 sm:text-4xl */}
-          {/* </div> */} 
           <div className="mt-12  max-w-2xl  mx-auto grid gap-14  md:max-w-md  lg:grid-cols-3 lg:max-w-none text-center ">
             {posts.map((post) => (
               <div
@@ -77,8 +65,6 @@ export default function locations() {
               >
                 <div className="flex-shrink-0 h-48 w-full mb-32 bg-white ">
                   {post.con}
-                  {/* object-cover
-                  <Image src={directions} alt="" layout="fixed" height={200} /> */}
                 </div>
                 <div className="flex-1 mx-auto mb-4 flex flex-col justify-between ">
                   <div className="flex-1">
@@ -108,11 +94,8 @@ export default function locations() {
                           <a
                             target="_blank"
                             className="flex items-center justify-center px-4 py-3 border border-wcyan text-base font-bold rounded-xl shadow-sm text-wcyan bg-white hover:text-wcyan/60"
-                            // hover:text-white
                           >
                             <time dateTime={post.date}>{post.date}</time>
-                            {/* <span aria-hidden="true">&middot;</span>
-                        <span>{post.readingTime} read</span> */}
                           </a>
                         </Link>
                       </div>

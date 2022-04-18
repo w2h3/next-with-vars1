@@ -1,7 +1,6 @@
 import Banner from '@/components/layout/Banner';
 import React from 'react';
 import tester from 'public/forptbanner.jpg';
-import { DotsVerticalIcon } from '@heroicons/react/solid';
 import Link from 'next/link';
 
 const links = [
@@ -124,5 +123,3 @@ const patients = () => {
 };
 
 export default patients;
-
-/* This example requires Tailwind CSS v2.0+ */

@@ -1,4 +1,3 @@
-// import Why from '../components/home/Services';
 import Map from '../components/maps/Maps';
 import Contact from '../components/home/Contact';
 import Hero from '../components/home/Hero';
@@ -8,8 +7,7 @@ const Home = () => {
     <div>
       <Hero />
       <Service />
-      {/* <Why /> */}
-      {/* <AccordionFirstExample /> */}
+
       <Map />
       <Contact />
     </div>

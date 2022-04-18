@@ -18,8 +18,6 @@ export default function Contact() {
       <div className="">
         <Banner pageName={'Contact Us'} imageURL={tester.src}></Banner>
         <div className="container max-w-6xl md:pb-16 ">
-          {/*text-3xl  tracking-tight  text-gray-900 sm:text-4xl */}
-
           <div className=" lg:grid lg:grid-cols-3 mt-14 ">
             <div
               className=" rounded-2xl py-1 px-4 sm:px-6 lg:col-span-1 lg:px-8 lg:py-10 xl:pr-12"
@@ -32,24 +30,9 @@ export default function Contact() {
                 backgroundPosition: 'bottom center',
               }}
             >
-              {' '}
-              {/* <Image
-              src="/public/bgmap.jpg"
-              alt=""
-              layout="fill"
-              objectFit="cover"
-              className="bgImage"
-            /> */}
               <div className="max-w-lg  mx-auto">
-                <h1 className="text-center text-2xl font-extrabold tracking-tight text-[#00847D]/80 sm:text-4xl">
-                  {/* Contact Us */}
-                </h1>
+                <h1 className="text-center text-2xl font-extrabold tracking-tight text-[#00847D]/80 sm:text-4xl"></h1>
 
-                {/* <p className="text-center mt-3 text-xs leading-6 text-red-500">
-                NOTE: DO NOT USE THIS FORM FOR ANY QUESTIONS RELATED TO PATIENT
-                CARE, PLEASE CALL OUR OFFICE AT (480) 967-6888. IF YOU HAVE A
-                MEDICAL EMERGENCY, PLEASE CALL 911.
-              </p> */}
                 <dl className="mt-6 text-base text-gray-500">
                   <div>
                     {' '}
@@ -194,33 +177,6 @@ export default function Contact() {
                         className="px-10 mt-8 py-2  text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 hover:border hover:border-wcyan font-bold rounded-md text-lg flex flex-row items-center"
                       >
                         Send
-                        {/* <svg
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        className="text-cyan-500 ml-2"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M9.00967 5.12761H11.0097C12.1142 5.12761 13.468 5.89682 14.0335 6.8457L16.5089 11H21.0097C21.562 11 22.0097 11.4477 22.0097 12C22.0097 12.5523 21.562 13 21.0097 13H16.4138L13.9383 17.1543C13.3729 18.1032 12.0191 18.8724 10.9145 18.8724H8.91454L12.4138 13H5.42485L3.99036 15.4529H1.99036L4.00967 12L4.00967 11.967L2.00967 8.54712H4.00967L5.44417 11H12.5089L9.00967 5.12761Z"
-                          fill="currentColor"
-                        />
-                      </svg> */}
-                        {/* <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-4 w-4 ml-1"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
-                        />
-                      </svg> */}
                       </button>
                     </div>
                   </div>

@@ -12,8 +12,6 @@ const Appointment = () => {
     form_data.forEach(function (value, key) {
       payload[key] = value;
     });
-    // console.log("payload", payload);
-    // Place your API call here to submit your payload.
   };
   return (
     <>
@@ -32,13 +30,13 @@ const Appointment = () => {
                       Medicine Associates, please use the form below, and our
                       scheduling coordinator will contact you by phone within
                       the next 48 hours (not including weekends or holidays) to
-                      find an appointment that best meets your needs. 
-                    
+                      find an appointment that best meets your needs.
                     </p>
-             
                   </div>
-                  <p className='text-red-600 text-center'>If you are
-                      experiencing a medical emergency, please call 911.</p>
+                  <p className="text-red-600 text-center">
+                    If you are experiencing a medical emergency, please call
+                    911.
+                  </p>
                 </div>
                 <div className="mx-auto pt-4">
                   <div className="items-center">
@@ -226,56 +224,6 @@ const Appointment = () => {
                     you would like to provide any additional information to the
                     scheduling coordinator, please do so when you are contacted
                     via telephone.
-                    {/* <div className="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
-                      <div className="flex items-center pb-2">
-                        <label
-                          htmlFor="ZIP"
-                          className="text-sm font-bold text-gray-800  "
-                        >
-                          ZIP/Postal Code
-                        </label>
-                        <div className="ml-2 cursor-pointer text-gray-600  ">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            width={16}
-                            height={16}
-                          >
-                            <path
-                              className="heroicon-ui"
-                              d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm0-9a1 1 0 0 1 1 1v4a1 1 0 0 1-2 0v-4a1 1 0 0 1 1-1zm0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                      <input
-                        type="text"
-                        name="zip"
-                        required
-                        id="ZIP"
-                        className="bg-transparent border border-red-400 pl-3 py-3 shadow-sm rounded text-sm focus:outline-none focus:border-indigo-700 placeholder-gray-500 text-gray-500  "
-                      />
-                      <div className="flex justify-between items-center pt-1 text-red-400">
-                        <p className="text-xs">Incorrect Zip Code</p>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width={16}
-                          height={16}
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="feather feather-x-circle"
-                        >
-                          <circle cx={12} cy={12} r={10} />
-                          <line x1={15} y1={9} x2={9} y2={15} />
-                          <line x1={9} y1={9} x2={15} y2={15} />
-                        </svg>
-                      </div>
-                    </div> */}
                   </div>
                 </div>
               </div>
