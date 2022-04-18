@@ -270,8 +270,7 @@ export const Footer = () => {
             <span className="text-sm"> Site made by</span>
             <span className="text-wcyan">
               <Link href="https://www.wingertproject.com" passHref>
-                {' '}
-                James Wingert{' '}
+                James Wingert
               </Link>
             </span>
             © Copyright 2022 Neurology And Sleep Medicine Associates. All rights

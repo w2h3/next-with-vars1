@@ -43,7 +43,7 @@ export default function Hero() {
               {/* md:px-28 2xl:px-[40rem] */}
               <div className=" max-w-7xl relative   bg-opacity-50  rounded-3xl px-10">
                 <h1 className="text-center text-4xl md:text-5xl font-extrabold tracking-tighter lg:text-6xl ">
-                  <span className="block text-[#c2df6c] pt-10 font-madi ">
+                  <span className="block text-[#c2df6c] pt-10 font-nexa ">
                     {/* font-nexa */}
                     Neurology and Sleep Medicine
                   </span>
