@@ -68,7 +68,7 @@ export default function Contact() {
                       className="flex-shrink-0 h-6 w-6 text-wcyan"
                       aria-hidden="true"
                     />
-                    <span className="ml-3 mb-3">
+                    <span className="ml-3 mb-3 font-bold">
                       2919 S. Ellsworth Road, Suite 135 Mesa, AZ 85212
                     </span>
                   </dd>
@@ -78,7 +78,7 @@ export default function Contact() {
                       className="flex-shrink-0 h-6 w-6 text-wcyan"
                       aria-hidden="true"
                     />
-                    <span className="ml-3 mb-3">
+                    <span className="ml-3 mb-3 font-bold">
                       2045 S. Vineyard Road, Bldg. N3, Suite 144 Mesa, AZ 85210
                     </span>
                   </dd>
@@ -88,7 +88,7 @@ export default function Contact() {
                       className="flex-shrink-0 h-6 w-6 text-wcyan"
                       aria-hidden="true"
                     />
-                    <span className="ml-3">
+                    <span className="ml-3 font-bold">
                       4001 E Baseline Road, Suite 205 Mesa, AZ 85234
                     </span>
                   </dd>
@@ -100,7 +100,9 @@ export default function Contact() {
                       className="flex-shrink-0 h-6 w-6 text-wcyan"
                       aria-hidden="true"
                     />
-                    <span className="ml-3 mb-3">+1 (480) 967-6887</span>
+                    <span className="ml-3 mb-3 font-bold">
+                      +1 (480) 967-6887
+                    </span>
                   </dd>
                 </div>
                 <div className="mt-3 ">
@@ -110,7 +112,7 @@ export default function Contact() {
                       className="flex-shrink-0 h-6 w-6 text-wcyan"
                       aria-hidden="true"
                     />
-                    <span className="ml-3 mb-32 md:mb-20 text-gray-800 lg:text-gray-500">
+                    <span className="ml-3 mb-32 md:mb-20 text-gray-800 lg:text-gray-500 font-bold">
                       billing@neurologyandsleep.com
                     </span>
                   </dd>
