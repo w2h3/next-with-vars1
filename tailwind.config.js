@@ -22,6 +22,8 @@ module.exports = {
         sans: ['Sora'],
         nexa: ['NexaDemo-Bold'],
         roboto: ['Roboto Slab', 'serif'],
+        madi: ['cursive'],
+        oxygen: ['Oxygen', 'sans-serif'],
       },
     },
   },

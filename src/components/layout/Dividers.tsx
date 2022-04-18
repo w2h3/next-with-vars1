@@ -1,8 +1,11 @@
 export default function Divider({ sectionName }) {
   return (
-    <h2 className="pt-12 text-wcyan font-semibold tracking-widest uppercase text-center text-4xl ">
-      {sectionName}
-    </h2>
+    <>
+      <h2 className="pt-12 text-wcyan/60 font-semibold tracking-widest uppercase text-center text-5xl font-oxygen">
+        {sectionName}
+      </h2>
+      <div className="border-b border-2 rounded-2xl opacity-25 inline-block w-[300px] border-wcyan"></div>
+    </>
     // <div className="container max-w-2xl justify-center items-center flex">
     //   {/* justify-between */}
     //   <div className="inset-0 w-1/5 " aria-hidden="true">

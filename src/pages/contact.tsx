@@ -15,9 +15,9 @@ export default function Contact() {
 
   return (
     <>
-      <div className="testImage">
+      <div className="">
         <Banner pageName={'Contact Us'} imageURL={tester.src}></Banner>
-        <div className="container max-w-6xl md:mb-16 ">
+        <div className="container max-w-6xl md:pb-16 ">
           {/*text-3xl  tracking-tight  text-gray-900 sm:text-4xl */}
 
           <div className=" lg:grid lg:grid-cols-3 mt-14 ">
@@ -52,6 +52,19 @@ export default function Contact() {
               </p> */}
                 <dl className="mt-6 text-base text-gray-500">
                   <div>
+                    {' '}
+                    <div className="mt-4">
+                      <dt className="sr-only">Phone number</dt>
+                      <dd className="flex">
+                        <PhoneIcon
+                          className="flex-shrink-0 h-6 w-6 text-wcyan"
+                          aria-hidden="true"
+                        />
+                        <span className="ml-3 mb-2 font-bold text-lg">
+                          +1 (480) 967-6888
+                        </span>
+                      </dd>
+                    </div>
                     <dt className="sr-only">Postal address</dt>
                     <dd className="flex">
                       <LocationMarkerIcon
@@ -84,16 +97,7 @@ export default function Contact() {
                       </span>
                     </dd>
                   </div>
-                  <div className="mt-4">
-                    <dt className="sr-only">Phone number</dt>
-                    <dd className="flex">
-                      <PhoneIcon
-                        className="flex-shrink-0 h-6 w-6 text-wcyan"
-                        aria-hidden="true"
-                      />
-                      <span className="ml-3 mb-2">+1 (480) 967-6888</span>
-                    </dd>
-                  </div>
+
                   <div className="mt-3">
                     <dt className="sr-only">Phone number</dt>
                     <dd className="flex">
@@ -112,7 +116,7 @@ export default function Contact() {
                         aria-hidden="true"
                       />
                       <span className="ml-3 mb-32 md:mb-20 text-gray-500 ">
-                        clinic@drwang.com
+                        billing@sleepandneurology.com
                       </span>
                     </dd>
                   </div>

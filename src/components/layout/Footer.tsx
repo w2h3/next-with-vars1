@@ -38,7 +38,7 @@ export const Footer = () => {
 
   return (
     <div className="bg-[#E8FAFC] relative mt-10  ">
-      <div className="container">
+      <div className="mx-auto px-8 pt-8  max-w-6xl 2xl:max-w-[1700px]">
         <div className="custom-shape-divider-bottom-1647011816 absolute right-32 w-fill top-0  h-6 -mt-5 sm:-mt-10 sm:h-14 z-10">
           <svg
             data-name="Layer 1"
@@ -128,7 +128,7 @@ export const Footer = () => {
               </div>
             </div>
             <div className="flex items-center mt-6 space-x-3">
-              <Link href="/appointment">
+              <Link href="/appointment" passHref>
                 {/* <button className="bg-[#107E8E] hover:bg-[#0B5A66] text-white font-bold py-2 px-4 rounded-full">
                   Make an appointment
                 </button> */}
@@ -265,7 +265,7 @@ export const Footer = () => {
             </div> */}
           </div>
         </div>
-        <div className="flex flex-col-reverse justify-between pt-5 lg:-mb-10 border-t border-wcyan lg:flex-row">
+        <div className="flex flex-col-reverse justify-between pt-5 lg:-mb-10 border-t border-wcyan lg:flex-row pb-5">
           <p className="text-sm text-gray-600">
             <span className="text-sm"> Site made by</span>
             <span className="text-wcyan">

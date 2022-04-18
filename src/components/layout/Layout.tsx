@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './Header';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
@@ -14,7 +13,7 @@ const Layout = (props) => {
           alt="hello"
         /> */}
       <nav className="fixed z-50 w-full top-0">
-        <Header />
+        
         <Navbar />
       </nav>
       {props.children}

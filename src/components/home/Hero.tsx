@@ -16,7 +16,7 @@ export default function Hero() {
                 className=" inset-0 object-right "
                 alt=""
                 layout="fill"
-                priority
+                // priority
                 objectFit="cover"
                 // width={103}
                 // height={70}
@@ -41,13 +41,14 @@ export default function Hero() {
             <div className="relative inline-0 flex justify-center px-4 py-16 sm:px-6 sm:py-22 bg-black bg-opacity-50  ">
               {/* lg:pt-48 */}
               {/* md:px-28 2xl:px-[40rem] */}
-              <div className=" max-w-2xl relative   bg-opacity-50  rounded-3xl px-10">
-                <h1 className="text-center text-3xl font-extrabold tracking-tighter sm:text-5xl lg:text-6xl ">
-                  <span className="block text-[#c2df6c] pt-10 font-nexa">
-                    Neurology and Sleep
+              <div className=" max-w-7xl relative   bg-opacity-50  rounded-3xl px-10">
+                <h1 className="text-center text-4xl md:text-5xl font-extrabold tracking-tighter lg:text-6xl ">
+                  <span className="block text-[#c2df6c] pt-10 font-madi ">
+                    {/* font-nexa */}
+                    Neurology and Sleep Medicine
                   </span>
-                  <span className="block text-3xl font-thin tracking-widest sm:text-4xl lg:text-5xl  text-white font-roboto align-text-bottom">
-                    Medicine Associates
+                  <span className="block text-3xl mx:text-4xl font-thin tracking-widest  lg:text-5xl  text-white font-roboto align-text-bottom">
+                    Associates
                   </span>
                 </h1>
                 <p className="mt-6 max-w-lg mx-auto text-center text-xl font-medium text-white sm:max-w-3xl">

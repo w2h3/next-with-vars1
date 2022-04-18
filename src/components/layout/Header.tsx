@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Header = () => {
   return (
-    <nav className="flex-row shadow ">
+    <nav className="flex-row ">
       <div className="flex  md:flex-row md:items-center lg:justify-evenly bg-[#f0fdff] mx-auto justify-center md:px-10 lg:mx-auto  sm:px-2">
         {/* bg-gradient-to-t from-slate-100 to-white*/}
         <div className="flex my-2">
