@@ -69,17 +69,12 @@ export default function Chandler() {
     lng: -111.84205,
   };
   return (
-    <div className="App mx-auto h-[40rem] bg-white  ">
-      {/* bg-slate-100 */}
-      {/*outline   outline-[#22707C] */}
-      {/* <div className="text-6xl font-bold">Our Locations</div> */}
-      {/* <Spots /> */}
+    <div className="App mx-auto rounded-2xl  bg-white ">
+      {/* h-[40rem] */}
       {isLoaded && (
-        <div className="  mx-auto  border-wcyan">
-          {/*  */}
+        <div className="  mx-auto rounded-2xl  ">
           <GoogleMap
             mapContainerClassName="c-office-overview__map"
-            // onLoad={onLoad}
             center={center}
             zoom={15}
           >

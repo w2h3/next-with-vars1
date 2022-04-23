@@ -1,10 +1,8 @@
-import Image from 'next/image';
 import Chandler from './Chandler';
 import { LocationMarkerIcon } from '@heroicons/react/outline';
 import Mesa from './Mesa';
 import Gilbert from './Gilbert';
 import Divider from '../layout/Dividers';
-import Link from 'next/link';
 import Button from '../button/Button';
 const posts = [
   {
@@ -53,65 +51,65 @@ const posts = [
 
 export default function Map() {
   return (
-    <div className="bg-[#264454]">
+    <div className="bg-[#f0fdff] text-center">
       <Divider sectionName="Locations"></Divider>
       <section className="container mx-auto space-y-12">
-        <div className="grid items-center grid-cols-1 md:grid-cols-2  bg-gray-50  rounded-2xl mb-6">
-          <div className=" h-fill rounded-2xl ">
+        <div className="grid items-center grid-cols-1 md:grid-cols-4  bg-white  rounded-2xl mb-6">
+          <div className=" h-fill rounded-3xl col-span-3">
             <Chandler />
           </div>
-          <div className="flex flex-col justify-center flex-1 p-6 bg-gray-50">
-            <span className="flex text-s uppercase gap-2 items-center">
+          <div className="flex flex-col justify-center flex-1 p-6 ">
+            <span className="flex  uppercase gap-2 items-center justify-center ">
               <LocationMarkerIcon
                 className="flex-shrink-0 h-6 w-6 text-[#00847D]/80"
                 aria-hidden="true"
               />
               Mesa, AZ
             </span>
-            <h3 className="text-3xl font-bold">2919 S. Ellsworth Road</h3>
-            <p className="my-2">Suite 135</p>
-            <p className="my-2">Mesa, AZ 85212</p>
-            <Button variant="primary" className="self-start text-white ">
+            <h3 className="text-xl font-bold my-2">2919 S. Ellsworth Road</h3>
+            <p className="my-2 font-bold">Suite 135</p>
+            <p className="my-2 font-bold">Mesa, AZ 85212</p>
+            <Button variant="primary" className="justify-center text-white my-2">
               Directions
             </Button>
           </div>
         </div>
-        <div className="grid items-center grid-cols-1 md:grid-cols-2  bg-gray-50  rounded-2xl mb-6">
-          <div className="w-fill h-fill rounded-2xl order-none md:order-2">
+        <div className="grid items-center grid-cols-1 md:grid-cols-4  bg-white rounded-2xl mb-6 ">
+          <div className="w-fill h-fill rounded-2xl order-none md:order-2 col-span-3">
             <Gilbert />
           </div>
-          <div className="flex flex-col justify-center flex-1 p-6 bg-gray-50">
-            <span className="flex text-s uppercase gap-2 items-center">
+          <div className="flex flex-col justify-center flex-1 p-6 ">
+            <span className="flex text-s uppercase gap-2  items-center justify-center">
               <LocationMarkerIcon
                 className="flex-shrink-0 h-6 w-6 text-[#00847D]/80"
                 aria-hidden="true"
               />
               Gilbert, AZ
             </span>
-            <h3 className="text-3xl font-bold my-2">2919 S. Ellsworth Road</h3>
-            <p className="my-2">Suite 135</p>
-            <p className="my-2">Gilbert, AZ 85234</p>
-            <Button variant="primary" className="self-start text-white ">
+            <h3 className="text-xl font-bold my-2">2919 S. Ellsworth Road</h3>
+            <p className="my-2 font-bold">Suite 135</p>
+            <p className="my-2 font-bold">Gilbert, AZ 85234</p>
+            <Button variant="primary" className="justify-center text-white my-2">
               Directions
             </Button>
           </div>
         </div>
-        <div className="grid items-center grid-cols-1 md:grid-cols-2  bg-gray-50  rounded-2xl mb-6">
-          <div className="w-fill h-fill rounded-2xl">
+        <div className="grid items-center grid-cols-1 md:grid-cols-4  bg-white  rounded-2xl mb-6">
+          <div className="w-fill h-fill rounded-2xl col-span-3">
             <Mesa />
           </div>
-          <div className="flex flex-col justify-center flex-1 p-6 bg-gray-50">
-            <span className="flex text-s uppercase gap-2 items-center">
+          <div className="flex flex-col justify-center flex-1 p-6 bg-white">
+            <span className="flex text-s uppercase gap-2 items-center justify-center">
               <LocationMarkerIcon
                 className="flex-shrink-0 h-6 w-6 text-[#00847D]/80"
                 aria-hidden="true"
               />
               Mesa, AZ
             </span>
-            <h3 className="text-3xl font-bold my-2">2919 S. Ellsworth Road</h3>
-            <p className="my-2">Suite 135</p>
-            <p className="my-2">Mesa, AZ 85212</p>
-            <Button variant="primary" className="self-start text-white ">
+            <h3 className="text-xl font-bold my-2">2919 S. Ellsworth Rd.</h3>
+            <p className="my-2 font-bold">Suite 135</p>
+            <p className="my-2 font-bold">Mesa, AZ 85212</p>
+            <Button variant="primary" className="text-white justify-center my-2 ">
               Directions
             </Button>
           </div>

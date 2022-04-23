@@ -24,7 +24,7 @@ const Header = () => {
                   />
                 </svg>
 
-                <Link href="tel:4807478296" passHref>
+                <Link href="tel:4809676888" passHref>
                   <a className="hidden lg:flex text-gray-600">
                     Phone: (480) 967-6888
                   </a>

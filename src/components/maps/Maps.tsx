@@ -65,7 +65,7 @@ export default function Map() {
         <div className=" mx-auto ">
           <div className="text-center ">
             {/*text-3xl  tracking-tight  text-gray-900 sm:text-4xl */}
-            <Divider sectionName="Where To Find Us"></Divider>{' '}
+            <Divider sectionName="Our Locations"></Divider>{' '}
           </div>
           <div className="mt-12  max-w-2xl  mx-auto grid gap-14  md:max-w-md  lg:grid-cols-3 lg:max-w-none text-center ">
             {posts.map((post) => (

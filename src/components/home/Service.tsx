@@ -13,7 +13,7 @@ import Image from 'next/image';
 
 const Service = () => {
   return (
-    <div className="testImage">
+    <div className="">
       <section className="container mx-auto  ">
         {' '}
         <div className="text-center mb-5">
@@ -21,45 +21,48 @@ const Service = () => {
         </div>
         <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-slate-50 p-2 md:p-5 rounded-2xl shadow-lg border border-wcyan/20">
           <div className="">
-            <h2 className="mb-4 text-4xl font-semibold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-5xl">
+            <h2 className="mb-4 text-3xl font-semibold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-4xl">
               Neurology
             </h2>
             <ul className="mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg">
               <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan mr-2" />
+                <CheckIcon className="w-5 h-5 text-wcyan" />
                 Headache, migraine
               </li>
               <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan mr-2" /> Pain in neck,
-                back, and extremities
+                <CheckIcon className="w-5 h-5 text-wcyan" /> Pain in neck, back,
+                and extremities
               </li>
               <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan mr-2" />
+                <CheckIcon className="w-5 h-5 text-wcyan " />
                 Dizziness, balance problems
               </li>
               <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan mr-2" /> Multiple
+                <CheckIcon className="w-5 h-5 text-wcyan " /> Multiple
                 sclerosis, tremors
               </li>
               <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan mr-2" /> Seizure,
-                epilepsy, passing out, blackouts
+                <CheckIcon className="w-5 h-5 text-wcyan " /> Seizures
               </li>
               <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan mr-2" /> Parkinson’s
+                <CheckIcon className="w-5 h-5 text-wcyan " /> Epilepsy, passing
+                out, blackouts
+              </li>
+              <li className="flex items-center text-center">
+                <CheckIcon className="w-5 h-5 text-wcyan " /> Parkinson’s
                 disease
               </li>
               <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan mr-2" /> Restless leg
+                <CheckIcon className="w-5 h-5 text-wcyan " /> Restless leg
                 syndrome
               </li>
               <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan mr-2" /> Stroke,
-                transient ischemic attack
+                <CheckIcon className="w-5 h-5 text-wcyan " /> Stroke, transient
+                ischemic attack
               </li>
               <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan mr-2" /> Memory
-                problems, Alzheimer’s
+                <CheckIcon className="w-5 h-5 text-wcyan " /> Memory problems,
+                Alzheimer’s
               </li>
             </ul>
             <Link href="/services" passHref>
@@ -83,24 +86,27 @@ const Service = () => {
         </div>
         <div className="grid items-center flex-col-reverse grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-slate-50 p-2 md:p-5 rounded-2xl shadow-lg border-wcyan/20 border">
           <div className="order-none md:order-2">
-            <h2 className="mb-4 text-4xl font-semibold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-5xl">
+            <h2 className="mb-4 text-3xl font-semibold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-4xl">
               Sleep
             </h2>
             <ul className="mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg">
               <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan mr-2" />
+                <CheckIcon className="w-5 h-5 text-wcyan " />
                 Obstructive sleep apnea; snoring
               </li>
               <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan mr-2" /> Excessive
-                daytime sleepiness, narcolepsy
+                <CheckIcon className="w-5 h-5 text-wcyan " /> Excessive daytime
+                sleepiness
               </li>
               <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan mr-2" />
+                <CheckIcon className="w-5 h-5 text-wcyan " /> Narcolepsy
+              </li>
+              <li className="flex items-center text-center">
+                <CheckIcon className="w-5 h-5 text-wcyan " />
                 Frequent awakening, insomnia
               </li>
               <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan mr-2" /> Sleep walking,
+                <CheckIcon className="w-5 h-5 text-wcyan " /> Sleep walking,
                 sleep talking
               </li>
             </ul>
@@ -125,25 +131,28 @@ const Service = () => {
         </div>
         <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-slate-50 p-2 md:p-5 rounded-2xl shadow-lg border-wcyan/20 border">
           <div>
-            <h2 className="mb-4 text-4xl font-semibold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-5xl">
+            <h2 className="mb-4 text-3xl font-semibold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-4xl">
               Neuro Rehabilitation
             </h2>
             <ul className="mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg">
               <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan mr-2" />
+                <CheckIcon className="w-5 h-5 text-wcyan " />
                 Post stroke rehab
               </li>
               <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan mr-2" /> Pain in neck,
+                <CheckIcon className="w-5 h-5 text-wcyan " /> Pain in neck,
                 back, and extremities
               </li>
               <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan mr-2" />
-                Parkinson’s disease, balance problems
+                <CheckIcon className="w-5 h-5 text-wcyan " />
+                Parkinson’s diseas
               </li>
               <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan mr-2" /> Dizziness,
-                vertigo
+                <CheckIcon className="w-5 h-5 text-wcyan " />
+                Balance problems
+              </li>
+              <li className="flex items-center text-center">
+                <CheckIcon className="w-5 h-5 text-wcyan " /> Dizziness, vertigo
               </li>
             </ul>
             <Link href="/services" passHref>
@@ -167,29 +176,32 @@ const Service = () => {
         </div>
         <div className="grid flex-col-reverse items-center grid-cols-1 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-slate-50 p-2 md:p-5 rounded-2xl shadow-lg border-wcyan/20 border">
           <div className="order-none md:order-2">
-            <h2 className="mb-4 text-4xl font-semibold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-5xl">
+            <h2 className="mb-4 text-3xl font-semibold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-4xl">
               Psychiatry
             </h2>
             <ul className="mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg">
               <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan mr-2" />
+                <CheckIcon className="w-5 h-5 text-wcyan " />
                 Depression, anxiety
               </li>
               <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan mr-2" /> Memory
-                problems
+                <CheckIcon className="w-5 h-5 text-wcyan " /> Memory problems
               </li>
               <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan mr-2" /> Cognitive
+                <CheckIcon className="w-5 h-5 text-wcyan " /> Cognitive
                 impatiemment
               </li>
               <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan mr-2" />
-                Mental status changes, Alzheimer’s
+                <CheckIcon className="w-5 h-5 text-wcyan " />
+                Mental status changes
               </li>
               <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan mr-2" /> Traumatic
-                brain injury
+                <CheckIcon className="w-5 h-5 text-wcyan " />
+              Alzheimer’s
+              </li>
+              <li className="flex items-center text-center">
+                <CheckIcon className="w-5 h-5 text-wcyan " /> Traumatic brain
+                injury
               </li>
             </ul>
             <Link href="/services" passHref>

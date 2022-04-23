@@ -145,7 +145,7 @@ export const Footer = () => {
             <div className="mx-auto space-y-2">
               <div className="gap-2 grid grid-rows-6 md:justify-center">
                 <p className=" text-base font-bold tracking-wide text-gray-900">
-                  Navigate
+                  Navigate:
                 </p>
                 <div className="text-base row-span-6 ">
                   {navigation.map((item) => (
@@ -156,7 +156,7 @@ export const Footer = () => {
                           router.route === item.href
                             ? 'text-wcyan'
                             : // text-gray-900  border-gray-900
-                              '  text-gray-600  hover:text-wcyan'
+                              '  text-gray-500  hover:text-wcyan'
                           // border-transparent
                         )}
                         aria-current={
@@ -173,7 +173,7 @@ export const Footer = () => {
           </div>
           <div className="space-y-4">
             <p className="text-base font-bold tracking-wide text-gray-900 ">
-              Contacts
+              Contacts:
             </p>
             <dl className="text-base  text-gray-600">
               <div>
@@ -183,8 +183,8 @@ export const Footer = () => {
                     className="flex-shrink-0 h-6 w-6 text-wcyan"
                     aria-hidden="true"
                   />
-                  <span className="ml-3 mb-3">
-                    2919 S. Ellsworth Road, Suite 135 <br />
+                  <span className="text-center mb-3">
+                    2919 S. Ellsworth Road<br></br> Suite 135 <br />
                     Mesa, AZ 85212
                   </span>
                 </dd>
@@ -194,8 +194,8 @@ export const Footer = () => {
                     className="flex-shrink-0 h-6 w-6 text-wcyan"
                     aria-hidden="true"
                   />
-                  <span className="ml-3 mb-3">
-                    4001 E Baseline Road, Suite 205
+                  <span className="text-center mb-3">
+                    4001 E Baseline Road<br></br> Suite 205
                     <br /> Gilbert, AZ 85234
                   </span>
                 </dd>
@@ -205,8 +205,8 @@ export const Footer = () => {
                     className="flex-shrink-0 h-6 w-6 text-wcyan"
                     aria-hidden="true"
                   />
-                  <span className="ml-3 mb-3">
-                    2045 S. Vineyard Drive, Bldg. N3, Suite 144
+                  <span className="text-center mb-3">
+                    2045 S. Vineyard Drive<br></br> Bldg. N3, Suite 144
                     <br /> Mesa, AZ 85210
                   </span>
                 </dd>
@@ -219,7 +219,7 @@ export const Footer = () => {
                     className="flex-shrink-0 h-6 w-6 text-wcyan"
                     aria-hidden="true"
                   />
-                  <span className="ml-3  text-gray-600 ">
+                  <span className="  text-gray-600 ">
                     billing@neurologyandsleep.com
                   </span>
                 </dd>
@@ -228,13 +228,10 @@ export const Footer = () => {
           </div>
           <div>
             <span className="text-base font-bold tracking-wide text-gray-900">
-              Quick Links
+              Quick Links:
             </span>
             <div className="flex items-center mt-1 space-x-3">
               <Link href="/patients" passHref>
-                {/* <button className="bg-[#107E8E] hover:bg-[#0B5A66] text-white font-bold py-2 px-4 rounded-full">
-                  Make an appointment
-                </button> */}
                 <button
                   type="button"
                   className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 hover:border hover:border-wcyan font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 "
@@ -253,16 +250,7 @@ export const Footer = () => {
                 </button>
               </Link>
             </div>
-            {/* <div className="flex items-center mt-1 space-x-3">
-              <Link href="/contact">
-                <button
-                  type="button"
-                  className="text-wcyan bg-white border border-wcyan hover:bg-wcyan/70 focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-3 text-center  mb-2 "
-                >
-                  CONTACT US
-                </button>
-              </Link>
-            </div> */}
+
           </div>
         </div>
         <div className="flex flex-col-reverse justify-between pt-5 lg:-mb-10 border-t border-wcyan lg:flex-row pb-5">

@@ -4,6 +4,7 @@ import {
   LocationMarkerIcon,
   NewspaperIcon,
 } from '@heroicons/react/outline';
+import Link from 'next/link';
 import bgmap from 'public/cactus4.jpg';
 import { useState } from 'react';
 import Divider from '../layout/Dividers';
@@ -12,11 +13,9 @@ export default function Contact() {
   const [buttonText, setButtonText] = useState('Send');
 
   return (
-    <div className="testImage text-center">
+    <div className=" text-center">
       <Divider sectionName="Get In Touch"></Divider>
       <div className="container max-w-6xl md:pb-24 ">
-        {/*text-3xl  tracking-tight  text-gray-900 sm:text-4xl */}
-
         <div className=" lg:grid lg:grid-cols-3 mt-14 ">
           <div
             className=" rounded-2xl py-1 px-4 sm:px-6 lg:col-span-1 lg:px-8 lg:py-10 xl:pr-12"
@@ -29,90 +28,78 @@ export default function Contact() {
               backgroundPosition: 'bottom center',
             }}
           >
-            {' '}
-            {/* <Image
-              src="/public/bgmap.jpg"
-              alt=""
-              layout="fill"
-              objectFit="cover"
-              className="bgImage"
-            /> */}
             <div className="max-w-lg  mx-auto">
-              <h1 className="text-center text-2xl font-extrabold tracking-tight text-[#00847D]/80 sm:text-4xl">
+              <h1 className="text-center font-extrabold tracking-tight text-[#00847D]/80 text-4xl">
                 Contact Us
               </h1>
-
-              {/* <p className="text-center mt-3 text-xs leading-6 text-red-500">
-                NOTE: DO NOT USE THIS FORM FOR ANY QUESTIONS RELATED TO PATIENT
-                CARE, PLEASE CALL OUR OFFICE AT (480) 967-6888. IF YOU HAVE A
-                MEDICAL EMERGENCY, PLEASE CALL 911.
-              </p> */}
-              <dl className="mt-6 text-base text-gray-800 lg:text-gray-500">
-                {' '}
+              <dl className="mt-6 text-base  text-gray-800  ">
                 <div className="mt-4">
                   <dt className="sr-only">Phone number</dt>
-                  <dd className="flex">
+                  <dd className="flex justify-center cursor-pointer">
                     <PhoneIcon
                       className="flex-shrink-0 h-6 w-6 text-wcyan"
                       aria-hidden="true"
                     />
-                    <span className="ml-3 mb-2 font-bold text-lg">
-                      +1 (480) 967-6888
-                    </span>
+                    <Link href="tel:+14809676888" passHref>
+                      <span className=" mb-2 font-bold text-lg">
+                        +1 (480) 967-6888
+                      </span>
+                    </Link>
                   </dd>
                 </div>
                 <div>
                   <dt className="sr-only">Postal address</dt>
-                  <dd className="flex">
+                  <dd className="flex justify-center">
                     <LocationMarkerIcon
                       className="flex-shrink-0 h-6 w-6 text-wcyan"
                       aria-hidden="true"
                     />
-                    <span className="ml-3 mb-3 font-bold">
-                      2919 S. Ellsworth Road, Suite 135 Mesa, AZ 85212
+                    <span className=" mb-3 font-bold">
+                      2919 S. Ellsworth Road
+                      <br></br>Suite 135 <br></br>Mesa, AZ 85212
                     </span>
                   </dd>
                   <dt className="sr-only">Postal address</dt>
-                  <dd className="flex">
+                  <dd className="flex justify-center">
                     <LocationMarkerIcon
                       className="flex-shrink-0 h-6 w-6 text-wcyan"
                       aria-hidden="true"
                     />
-                    <span className="ml-3 mb-3 font-bold">
-                      2045 S. Vineyard Road, Bldg. N3, Suite 144 Mesa, AZ 85210
+                    <span className=" mb-3 font-bold">
+                      2045 S. Vineyard Road
+                      <br></br>Bldg. N3, Suite 144 <br></br>Mesa, AZ 85210
                     </span>
                   </dd>
                   <dt className="sr-only">Postal address</dt>
-                  <dd className="flex">
+                  <dd className="flex justify-center">
                     <LocationMarkerIcon
                       className="flex-shrink-0 h-6 w-6 text-wcyan"
                       aria-hidden="true"
                     />
-                    <span className="ml-3 font-bold">
-                      4001 E Baseline Road, Suite 205 Mesa, AZ 85234
+                    <span className=" font-bold">
+                      4001 E Baseline Road<br></br> Suite 205 <br></br>Mesa, AZ
+                      85234
                     </span>
                   </dd>
                 </div>
                 <div className="mt-3">
                   <dt className="sr-only">Phone number</dt>
-                  <dd className="flex">
+                  <dd className="flex justify-center">
                     <NewspaperIcon
                       className="flex-shrink-0 h-6 w-6 text-wcyan"
                       aria-hidden="true"
                     />
-                    <span className="ml-3 mb-3 font-bold">
-                      +1 (480) 967-6887
-                    </span>
+                    <span className="mb-3 font-bold">+1 (480) 967-6887</span>
                   </dd>
                 </div>
                 <div className="mt-3 ">
                   <dt className="sr-only">Email</dt>
-                  <dd className="flex">
+                  <dd className="flex justify-center">
                     <MailIcon
                       className="flex-shrink-0 h-6 w-6 text-wcyan"
                       aria-hidden="true"
                     />
-                    <span className="ml-3 mb-32 md:mb-20 text-gray-800 lg:text-gray-500 font-bold">
+                    <span className="ml-3 mb-32 md:mb-20 text-gray-800 font-bold">
                       billing@neurologyandsleep.com
                     </span>
                   </dd>
