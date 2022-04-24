@@ -37,7 +37,7 @@ export default function Hero() {
               />{' '}
             </div> */}
 
-              <div className="relative flex justify-center px-4  sm:px-6  bg-black bg-opacity-50 sm:h-[90vh] items-center ">
+              <div className="relative flex justify-center px-4  sm:px-6  bg-black bg-opacity-50 h-[90vh] items-center ">
                 {/* lg:pt-48 */}
                 {/* md:px-28 2xl:px-[40rem] */}
                 <div className=" max-w-7xl relative rounded-3xl px-10">
