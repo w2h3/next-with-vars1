@@ -15,7 +15,7 @@ export default function Contact() {
   return (
     <div className=" text-center">
       <Divider sectionName="Get In Touch"></Divider>
-      <div className="container max-w-6xl md:pb-24 ">
+      <div className="container max-w-6xl pb-24 ">
         <div className=" lg:grid lg:grid-cols-3 mt-14 ">
           <div
             className=" rounded-2xl py-1 px-4 sm:px-6 lg:col-span-1 lg:px-8 lg:py-10 xl:pr-12"

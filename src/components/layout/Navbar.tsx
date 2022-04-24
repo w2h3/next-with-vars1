@@ -12,7 +12,7 @@ const navigation = [
   { name: 'Insurances', href: '/insurance', current: false },
   { name: 'Locations', href: '/locations', current: false },
   { name: 'Contact', href: '/contact', current: false },
-  { name: 'For Patients', href: '/patients', current: false },
+  { name: 'Patients', href: '/patients', current: false },
 ];
 
 function classNames(...classes) {
@@ -75,9 +75,9 @@ export default function Navbar() {
                             className={classNames(
                               ' px-1 text-lg font-heavy',
                               router.route === item.href
-                                ? 'text-wcyan'
+                                ? 'text-wcyan border-b border-wcyan'
                                 : // text-gray-900  border-gray-900
-                                  ' text-gray-500  hover:text-wcyan'
+                                  ' text-gray-600  hover:text-wcyan hover:border-b hover:border-wcyan'
                               // border-transparent
                             )}
                             aria-current={
@@ -93,8 +93,7 @@ export default function Navbar() {
                         passHref
                       >
                         <button className="bg-wcyan border border-wcyan hover:bg-wcyan/70 hover:border hover:border-wcyan text-white font-bold p-1 xl:p-3 rounded-full">
-                          {/* className=" md:text-center md:px-1 md:pt-1 md:text-md font-medium md:inline-flex md:bg-cyan-700 md:p-1 md:rounded-full md:text-white md:hover:text-gray-200  md:focus:outline-none md:focus:ring-2 md:focus:ring-offset-2 md:focus:ring-offset-gray-800 md:focus:ring-white" */}
-                          {/* > */}
+
                           Patient Portal
                         </button>
                       </Link>
@@ -102,12 +101,7 @@ export default function Navbar() {
                   </div>
                 </div>
               </div>
-              {/* <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button
-                  type="button"
-                  className=" md:bg-gray-800 md:p-1 md:rounded-full md:text-gray-400 md:hover:text-white md:focus:outline-none md:focus:ring-2 md:focus:ring-offset-2 md:focus:ring-offset-gray-800 md:focus:ring-white"
-                ></button> */}
-              {/* </div> */}
+
             </div>
           </div>
 

@@ -75,7 +75,7 @@ const Service = () => {
             <div className="relative w-full h-96  md:h-140 ">
               <Image
                 src={neuro.src}
-                className="md:rounded-3xl"
+                className="rounded-2xl"
                 alt=""
                 layout="fill"
                 objectFit="cover"
@@ -89,8 +89,8 @@ const Service = () => {
             <h2 className="mb-4 text-3xl font-semibold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-4xl">
               Sleep
             </h2>
-            <ul className="mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg">
-              <li className="flex items-center text-center">
+            <ul className="mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg ">
+              <li className="flex items-center text-center ">
                 <CheckIcon className="w-5 h-5 text-wcyan " />
                 Obstructive sleep apnea; snoring
               </li>
@@ -120,7 +120,7 @@ const Service = () => {
             <div className="relative w-full h-96  md:h-140 ">
               <Image
                 src={insomnia.src}
-                className="md:rounded-3xl"
+                className="rounded-2xl"
                 alt=""
                 layout="fill"
                 objectFit="cover"
@@ -165,7 +165,7 @@ const Service = () => {
             <div className="relative w-full h-96  md:h-140 ">
               <Image
                 src={physical.src}
-                className="md:rounded-3xl"
+                className="rounded-2xl"
                 alt=""
                 layout="fill"
                 objectFit="cover"
@@ -214,7 +214,7 @@ const Service = () => {
             <div className="relative w-full h-96  md:h-140 ">
               <Image
                 src={psych.src}
-                className="md:rounded-3xl"
+                className="rounded-2xl"
                 alt=""
                 layout="fill"
                 objectFit="cover"

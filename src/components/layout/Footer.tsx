@@ -129,9 +129,6 @@ export const Footer = () => {
             </div>
             <div className="flex items-center mt-6 space-x-3">
               <Link href="/appointment" passHref>
-                {/* <button className="bg-[#107E8E] hover:bg-[#0B5A66] text-white font-bold py-2 px-4 rounded-full">
-                  Make an appointment
-                </button> */}
                 <button
                   type="button"
                   className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 hover:border hover:border-wcyan font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 "
@@ -226,11 +223,11 @@ export const Footer = () => {
               </div>
             </dl>
           </div>
-          <div>
+          <div className="md:text-center lg:text-left ">
             <span className="text-base font-bold tracking-wide text-gray-900">
               Quick Links:
             </span>
-            <div className="flex items-center mt-1 space-x-3">
+            <div className="flex items-center mt-4 space-x-3 md:justify-center lg:justify-start">
               <Link href="/patients" passHref>
                 <button
                   type="button"
@@ -240,7 +237,7 @@ export const Footer = () => {
                 </button>
               </Link>
             </div>
-            <div className="flex items-center mt-1 space-x-3">
+            <div className="flex items-center mt-1 space-x-3 md:justify-center lg:justify-start">
               <Link href="/medprof" passHref>
                 <button
                   type="button"
@@ -250,21 +247,14 @@ export const Footer = () => {
                 </button>
               </Link>
             </div>
-
           </div>
         </div>
-        <div className="flex flex-col-reverse justify-between pt-5 lg:-mb-10 border-t border-wcyan lg:flex-row pb-5">
-          <p className="text-sm text-gray-600">
-            <span className="text-sm"> Site made by</span>
-            <span className="text-wcyan">
-              <Link href="https://www.wingertproject.com" passHref>
-                James Wingert
-              </Link>
-            </span>
+        <div className="flex flex-col justify-between pt-5 lg:-mb-10 border-t border-wcyan lg:flex-col pb-2">
+          <p className="text-sm text-gray-600 pb-2">
             © Copyright 2022 Neurology And Sleep Medicine Associates. All rights
             reserved.
           </p>
-          <ul className="flex flex-col mb-3 space-y-2  lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
+          {/* <ul className="flex flex-col mb-3 space-y-2  lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
             <li>
               <Link href="/" passHref>
                 <a className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
@@ -279,7 +269,16 @@ export const Footer = () => {
                 </a>
               </Link>
             </li>
-          </ul>
+          </ul> */}
+          
+        <span className="text-sm mb-2 text-gray-600 ">
+          Site made by &nbsp;
+          <span className="text-wcyan text-sm">
+            <Link href="https://www.wingertproject.com" passHref>
+              James Wingert
+            </Link>
+          </span>
+        </span>
         </div>
       </div>
     </div>
