@@ -1,4 +1,7 @@
 {
+  "name": "neurology-and-sleep-medicine-associates",
+  "description": "Neurology and Sleep Medicine website.",
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "next",
     "build": "next build",
