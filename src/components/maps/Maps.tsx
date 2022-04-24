@@ -12,7 +12,7 @@ const posts = [
     title3: 'Mesa, AZ 85212',
     href: 'https://www.google.com/maps/place/2919+S+Ellsworth+Rd+%23135,+Mesa,+AZ+85212/@33.3620994,-111.6371875,17z/data=!3m1!4b1!4m5!3m4!1s0x872bb18e61a89343:0xbe659bbab6bcbf35!8m2!3d33.3620994!4d-111.6349988',
     id: 1,
-    category: { name: 'Mesa,AZ' },
+    category: { name: 'Mesa, AZ' },
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.',
     date: 'Directions',
@@ -80,9 +80,9 @@ export default function Map() {
                 </div>
                 <div className="flex-1 mx-auto mb-4 flex flex-col justify-between ">
                   <div className="flex-1">
-                    <p className="flex gap-2 items-center justify-center text-xl font-medium text-[#00847D] ">
+                    <p className="flex gap-2 items-center justify-center text-xl font-medium text-wcyan ">
                       <LocationMarkerIcon
-                        className="flex-shrink-0 h-6 w-6 text-[#00847D]/80"
+                        className="flex-shrink-0 h-6 w-6 text-wcyan"
                         aria-hidden="true"
                       />
                       {post.category.name}

@@ -13,7 +13,7 @@ import Image from 'next/image';
 
 const Service = () => {
   return (
-    <div className="">
+    <div className="testImage">
       <section className="container mx-auto  ">
         {' '}
         <div className="text-center mb-5">

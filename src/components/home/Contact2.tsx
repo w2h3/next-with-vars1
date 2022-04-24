@@ -5,17 +5,17 @@ import Divider from '../layout/Dividers';
 
 export default function Contact() {
   return (
-    <div>
+    <div className='testImage'>
       <Divider sectionName="How did we do?" />
       <div className="container max-w-6xl pb-24 ">
-        <div className="relative bg-slate-50 rounded-2xl">
+        <div className="relative bg-[#f0fdff]/80 rounded-2xl">
           <div className="relative max-w-7xl mx-auto lg:grid lg:grid-cols-5">
             <div className=" py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
               <div className="max-w-lg mx-auto">
                 <h2 className="text-2xl font-extrabold tracking-tight text-wcyan sm:text-3xl">
                   Get in touch
                 </h2>
-                <p className="mt-3 text-lg leading-6 text-gray-500">
+                <p className="mt-3 text-lg leading-6 text-gray-700">
                   Suggestion? <br />
                   Good Experience? <br />
                   Bad Experience? <br />
@@ -26,7 +26,7 @@ export default function Contact() {
                   <br /> We value all forms of feedback and can't wait to hear
                   from you!
                 </p>
-                <dl className="mt-8 text-base text-gray-500">
+                <dl className="mt-8 text-base text-gray-700">
                   <div className="mt-6">
                     <dt className="sr-only">Phone number</dt>
                     <dd className="flex">
@@ -44,13 +44,13 @@ export default function Contact() {
                         className="flex-shrink-0 h-6 w-6 text-wcyan"
                         aria-hidden="true"
                       />
-                      <span className="ml-3">
+                      <span className="ml-3 text-gray-700">
                         billing@neurologyandsleep.com
                       </span>
                     </dd>
                   </div>
                 </dl>
-                <p className="mt-6 text-base text-gray-500">
+                <p className="mt-6 text-base text-gray-700">
                   Looking for basic contact form and info?{' '}
                   <br/>
                   <Link href="/contact" passHref>

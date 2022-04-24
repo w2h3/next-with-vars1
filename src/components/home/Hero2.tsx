@@ -51,12 +51,12 @@ export default function Hero() {
                     </span>
                   </h1>
 
-                  <p className="mt-6 max-w-lg mx-auto text-center text-xl font-medium text-white sm:max-w-3xl">
-                    Serving our local community since 2002.
+                  <p className="mt-6  mx-auto text-center text-4xl font-medium text-white">
+                    Specializing in Neurology, Neuro Rehabilitation(Physical Therapy), Psychiatry,
+                  and Sleep.
                   </p>
                   <p className="mt-6 max-w-lg mx-auto text-center text-xl font-medium text-white sm:max-w-3xl">
-                    Specializing in Neurology, Neuro Rehabilitation(Physical Therapy), Psychiatry
-                  and Sleep.
+                    Serving our local community since 2002.
                   </p>
 
                   <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
@@ -66,7 +66,7 @@ export default function Hero() {
                           REQUEST APPOINTMENT
                         </a>
                       </Link>
-                      <Link href="/">
+                      <Link href="https://app.formdr.com/practice/MjE0Mjg=/form/K5ixNCi0wAsH8UKm1OIxGddyP-sLyZbr">
                         <a
                           className="flex items-center justify-center px-4 py-3 border border-wcyan text-base font-bold rounded-xl shadow-sm text-wcyan bg-white hover:text-wcyan/60  sm:px-8 text-center"
                           // hover:text-white
