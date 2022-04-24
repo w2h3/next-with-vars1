@@ -1,17 +1,19 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
-import tester from '/public/banner1.jpg';
+import tester from '/public/banner2.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
-
+import { GoPrimitiveDot } from 'react-icons/go';
+import { BiBrain } from 'react-icons/bi';
 export default function Hero() {
   return (
     <div>
       <div className=" mt-[6.5rem]">
-        <div className=" max-w-screen mx-auto max-h-screen ">
+        <div className="relative h-[90vh]">
+          {/* <div className=" max-w-screen mx-auto max-h-screen "> */}
           <div className="relative  ">
             <Image
               src={tester.src}
-              className="  object-right "
+              className="tiny-hero  "
               alt=""
               layout="fill"
               priority={true}
@@ -19,7 +21,7 @@ export default function Hero() {
               // width={103}
               // height={70}
             />
-            <div className="relative flex justify-center px-4  sm:px-6  bg-black bg-opacity-50 h-[90vh] items-center ">
+            <div className="relative flex justify-center px-4  sm:px-6  bg-black bg-opacity-60 h-[90vh] items-center ">
               <div className=" max-w-7xl relative rounded-3xl ">
                 <h1 className="text-center text-4xl md:text-5xl font-extrabold tracking-tighter lg:text-6xl ">
                   <span className="block text-[#c2df6c] pt-10 font-nexa ">
@@ -31,12 +33,18 @@ export default function Hero() {
                   </span>
                 </h1>
 
-                <p className="mt-6  mx-auto text-center text-4xl font-medium text-white">
-                  Specializing in Neurology, Neuro Rehabilitation(Physical
-                  Therapy), Psychiatry, and Sleep.
-                </p>
-                <p className="mt-6 max-w-lg mx-auto text-center text-xl font-medium text-white sm:max-w-3xl">
-                  Serving our local community since 2002.
+                <div className="mt-12  max-w-lg sm:max-w-3xl mx-auto text-center text-2xl font-medium text-white flex flex-col sm:flex-row items-center justify-center">
+                  {/* <GoPrimitiveDot className="text-[#c2df6c] text-center items-center" /> */}
+                  Neurology
+                  <BiBrain className="text-[#c2df6c] mx-2" />
+                  Physical Therapy
+                  <BiBrain className="text-[#c2df6c] mx-2" />
+                  Psychiatry
+                  <BiBrain className="text-[#c2df6c] mx-2" />
+                  Sleep
+                </div>
+                <p className="mt-12 max-w-lg mx-auto text-center text-xl font-medium font-widest text-white sm:max-w-3xl">
+                  Serving our local community since <span className='text-[#c2df6c]'>2002</span>.
                 </p>
 
                 <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">

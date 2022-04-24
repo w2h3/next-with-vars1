@@ -25,7 +25,7 @@ export const Insurances = () => {
                 <th className="py-5 w-1/3 text-xl text-gray-800">
                   Contracted
                 </th>
-                <th className="py-5 w-1/3 xl text-gray-800 text-center">
+                <th className="py-5 w-1/3 text-xl text-gray-800 text-center">
                   Not Contracted
                 </th>
               </tr>
