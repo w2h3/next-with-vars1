@@ -1,8 +1,8 @@
-import AlzA from 'public/logos/AlzA.png';
-import Head from 'public/logos/AmericanHeadache.png';
-import Epi from 'public/logos/Epilepsy.png';
-import MS from 'public/logos/MS.png';
-import Park from 'public/logos/Park.png';
+import AlzA from 'public/logos/alz.png';
+import Head from 'public/logos/ah.png';
+import Epi from 'public/logos/ep.png';
+import MS from 'public/logos/ms.png';
+import Park from 'public/logos/pk.png';
 import Image from 'next/image';
 import Link from 'next/link';
 
