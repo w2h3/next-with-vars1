@@ -8,7 +8,7 @@ export const Insurances = () => {
     <>
       <Banner pageName={'Insurances'} imageURL={tester.src}></Banner>
       <div className="testImage">
-        <div className="container">
+        <div className="mx-auto  py-8  max-w-6xl 2xl:max-w-[1700px]">
           <div className="text-center text-4xl text-wcyan mb-10">
             Contracted Insurance Information
             <p className="text-xl text-slate-800 mt-2">
@@ -22,9 +22,7 @@ export const Insurances = () => {
                 <th className="py-5 sm:pl-10 pl-2 w-1/3 text-xl text-gray-800 ">
                   Insurance
                 </th>
-                <th className="py-5 w-1/3 text-xl text-gray-800">
-                  Contracted
-                </th>
+                <th className="py-5 w-1/3 text-xl text-gray-800">Contracted</th>
                 <th className="py-5 w-1/3 text-xl text-gray-800 text-center">
                   Not Contracted
                 </th>
