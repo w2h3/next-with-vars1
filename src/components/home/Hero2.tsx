@@ -3,7 +3,6 @@ import tester from '/public/banner2.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
 import { GoPrimitiveDot } from 'react-icons/go';
-// import { BiBrain } from 'react-icons/bi';
 export default function Hero() {
   return (
     <div>

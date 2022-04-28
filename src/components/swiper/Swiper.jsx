@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
 
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import swiper1 from 'public/wang/swiper1.jpeg';
 import newFront from 'public/wang/newFront.jpg';
@@ -16,6 +15,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
+import Image from 'next/image';
 export default function Swipe() {
   return (
     <>
@@ -48,25 +48,25 @@ export default function Swipe() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={newFront.src} />
+          <Image src={newFront} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={swiper1.src} />
+          <Image src={swiper1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={swiper2.src} />
+          <Image src={swiper2} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={swiper3.src} />
+          <Image src={swiper3} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={swiper4.src} />
+          <Image src={swiper4} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={swiper5.src} />
+          <Image src={swiper5} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={swiper6.src} />
+          <Image src={swiper6} />
         </SwiperSlide>
       </Swiper>
     </>
