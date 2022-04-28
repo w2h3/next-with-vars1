@@ -48,25 +48,25 @@ export default function Swipe() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <Image src={newFront} />
+          <Image layout="fill" objectFit="cover" src={newFront} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={swiper1} />
+          <Image layout="fill" objectFit="cover" src={swiper1} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={swiper2} />
+          <Image layout="fill" objectFit="cover" src={swiper2} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={swiper3} />
+          <Image layout="fill" objectFit="cover" src={swiper3} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={swiper4} />
+          <Image layout="fill" objectFit="cover" src={swiper4} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={swiper5} />
+          <Image layout="fill" objectFit="cover" src={swiper5} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={swiper6} />
+          <Image layout="fill" objectFit="cover" src={swiper6} />
         </SwiperSlide>
       </Swiper>
     </>
