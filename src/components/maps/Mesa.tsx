@@ -41,22 +41,7 @@ export default function Chandler() {
     id: 'google-map-script',
     googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY,
   });
-  // const onLoad = React.useCallback(
-  //   (mapInstance) => {
-  //     const bounds = new google.maps.LatLngBounds();
-  //     offices.forEach((office) => {
-  //       bounds.extend(
-  //         new google.maps.LatLng(
-  //           office.field_address.latitude,
-  //           office.field_address.longitude
-  //         )
-  //       );
-  //     });
-  //     mapRef.current = mapInstance;
-  //     mapInstance.fitBounds(bounds);
-  //   },
-  //   [offices]
-  // );
+
   const onClickMarker = (officeId: string) => {
     setSelectedOffice(offices.find((office) => office.id === officeId));
   };
