@@ -29,7 +29,6 @@ export default function Gilbert() {
         address_line2: 'Suite 205',
         latitude: 33.37871296166308,
         longitude: -111.74695413972648,
-        
       },
     },
   ];
@@ -40,7 +39,7 @@ export default function Gilbert() {
   >(null);
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: 'AIzaSyCAG-NgxDPjapF14JKsWNMfAG5kdsbys_4',
+    googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY,
   });
 
   const onClickMarker = (officeId: string) => {
@@ -51,12 +50,11 @@ export default function Gilbert() {
     lng: number;
   }
   const center: newProps = {
-    lat: 33.37871296166308, 
+    lat: 33.37871296166308,
     lng: -111.74695413972648,
   };
   return (
     <div className="App mx-auto  bg-white ">
-
       {isLoaded && (
         <div className="  mx-auto  ">
           {/*  */}

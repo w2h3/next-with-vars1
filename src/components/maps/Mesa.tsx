@@ -39,7 +39,7 @@ export default function Chandler() {
   >(null);
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: 'AIzaSyCAG-NgxDPjapF14JKsWNMfAG5kdsbys_4',
+    googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY,
   });
   // const onLoad = React.useCallback(
   //   (mapInstance) => {
@@ -70,7 +70,6 @@ export default function Chandler() {
   };
   return (
     <div className="App mx-auto bg-white  ">
-
       {isLoaded && (
         <div className="  mx-auto  ">
           {/*  */}
