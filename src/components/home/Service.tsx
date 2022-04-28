@@ -144,7 +144,7 @@ const Service = () => {
               </li>
               <li className="flex items-center text-center">
                 <CheckIcon className="w-5 h-5 text-wcyan " />
-                Parkinson’s diseas
+                Parkinson’s disease
               </li>
               <li className="flex items-center text-center">
                 <CheckIcon className="w-5 h-5 text-wcyan " /> Dizziness, vertigo
