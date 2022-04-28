@@ -6,7 +6,7 @@ const Header = () => {
       <div className="flex  md:flex-row md:items-center lg:justify-evenly bg-[#f0fdff] mx-auto justify-center md:px-10 lg:mx-auto  sm:px-2">
         {/* bg-gradient-to-t from-slate-100 to-white*/}
         <div className="flex my-2">
-          <Link href="tel:4807478296" passHref>
+          <Link href="tel:4809676888" passHref>
             <a>
               <button className="flex items-center justify-center px-5 text-md font-semibold rounded-lg font-small  text-[#107E8E] hover:text-[#5582a6] hover:outline hover:border-[#5582a6]   focus:outline-none space-x-2">
                 <svg
@@ -29,7 +29,7 @@ const Header = () => {
                     Phone: (480) 967-6888
                   </a>
                 </Link>
-                <Link href="tel:4807478296" passHref>
+                <Link href="tel:4809676888" passHref>
                   <a className="hidden md:flex lg:hidden text-gray-600 ">
                     Phone
                   </a>

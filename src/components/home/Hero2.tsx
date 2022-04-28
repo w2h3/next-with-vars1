@@ -3,7 +3,7 @@ import tester from '/public/banner2.jpg';
 import Image from 'next/image';
 import Link from 'next/link';
 import { GoPrimitiveDot } from 'react-icons/go';
-import { BiBrain } from 'react-icons/bi';
+// import { BiBrain } from 'react-icons/bi';
 export default function Hero() {
   return (
     <div>
@@ -36,15 +36,14 @@ export default function Hero() {
                 <div className="mt-12  max-w-lg sm:max-w-3xl mx-auto text-center text-2xl font-medium text-white flex flex-col sm:flex-row items-center justify-center">
                   {/* <GoPrimitiveDot className="text-[#c2df6c] text-center items-center" /> */}
                   Neurology
-                  <BiBrain className="text-[#c2df6c] mx-2" />
+                  <GoPrimitiveDot className="text-[#c2df6c] mx-2" />
                   Physical Therapy
-                  <BiBrain className="text-[#c2df6c] mx-2" />
-                  Psychiatry
-                  <BiBrain className="text-[#c2df6c] mx-2" />
+                  <GoPrimitiveDot className="text-[#c2df6c] mx-2" />
                   Sleep
                 </div>
                 <p className="mt-12 max-w-lg mx-auto text-center text-xl font-medium font-widest text-white sm:max-w-3xl">
-                  Serving our local community since <span className='text-[#c2df6c]'>2002</span>.
+                  Serving our local community since{' '}
+                  <span className="text-[#c2df6c]">2002</span>.
                 </p>
 
                 <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
