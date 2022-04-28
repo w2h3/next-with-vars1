@@ -4,7 +4,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 module.exports = withBundleAnalyzer({
   swcMinify: true,
   images: {
-    formats: ['image/avif', 'image/webp'],
+    formats: ['image/webp'],
   },
   eslint: {
     dirs: ['src'],
