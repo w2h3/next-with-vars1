@@ -1,5 +1,5 @@
 import Map from '../components/maps/Maps';
-import Contact from '../components/home/Contact2';
+import Contact from '../components/home/Contact';
 import Hero from '../components/home/Hero2';
 import Service from '@/components/home/Service';
 const Home = () => {
