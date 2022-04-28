@@ -75,8 +75,7 @@ export default function Map() {
               >
                 <div className="flex-shrink-0 h-48 w-full mb-32 bg-white ">
                   {post.con}
-                  {/* object-cover
-                  <Image src={directions} alt="" layout="fixed" height={200} /> */}
+
                 </div>
                 <div className="flex-1 mx-auto mb-4 flex flex-col justify-between ">
                   <div className="flex-1">
@@ -86,7 +85,7 @@ export default function Map() {
                         aria-hidden="true"
                       />
                       {post.category.name}
-                      {/* <p className='text-wcyan justify-center'> */}
+           
                     </p>
                     <p className="block mt-2">
                       <p className="text-2xl font-semibold text-gray-700">
@@ -106,11 +105,10 @@ export default function Map() {
                           <a
                             target="_blank"
                             className="flex items-center justify-center px-4 py-3 border border-wcyan text-base font-bold rounded-xl shadow-sm text-wcyan bg-white hover:text-wcyan/60"
-                            // hover:text-white
+                        
                           >
                             <time dateTime={post.date}>{post.date}</time>
-                            {/* <span aria-hidden="true">&middot;</span>
-                        <span>{post.readingTime} read</span> */}
+         
                           </a>
                         </Link>
                       </div>
