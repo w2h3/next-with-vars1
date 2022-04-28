@@ -12,10 +12,10 @@ import Image from 'next/image';
 const Service = () => {
   return (
     <div className="testImage">
-      <section className="container mx-auto  ">
+      <section className="mx-auto px-8 py-8  max-w-6xl">
         {' '}
         <div className="text-center mb-5">
-          <Divider sectionName={'Our Services'}/>
+          <Divider sectionName={'Our Services'} />
         </div>
         <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-slate-50 p-2 md:p-5 rounded-2xl shadow-lg border border-wcyan/20">
           <div className="">
@@ -30,6 +30,14 @@ const Service = () => {
               <li className="flex items-center text-center">
                 <CheckIcon className="w-5 h-5 text-wcyan" /> Pain in neck, back,
                 and extremities
+              </li>{' '}
+              <li className="flex items-center text-center">
+                <CheckIcon className="w-5 h-5 text-wcyan " /> Memory problems,
+                Alzheimer’s
+              </li>{' '}
+              <li className="flex items-center text-center">
+                <CheckIcon className="w-5 h-5 text-wcyan " /> Stroke, transient
+                ischemic attack
               </li>
               <li className="flex items-center text-center">
                 <CheckIcon className="w-5 h-5 text-wcyan " />
@@ -54,14 +62,6 @@ const Service = () => {
                 <CheckIcon className="w-5 h-5 text-wcyan " /> Restless leg
                 syndrome
               </li>
-              <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan " /> Stroke, transient
-                ischemic attack
-              </li>
-              <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan " /> Memory problems,
-                Alzheimer’s
-              </li>
             </ul>
             <Link href="/services" passHref>
               <button className="bg-wcyan border border-wcyan hover:bg-wcyan/70 hover:border hover:border-wcyan text-white font-bold py-2 px-4 rounded-full ">
@@ -83,7 +83,7 @@ const Service = () => {
           </div>
         </div>
         <div className="grid items-center flex-col-reverse grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-slate-50 p-2 md:p-5 rounded-2xl shadow-lg border-wcyan/20 border">
-          <div className="order-none md:order-2">
+          <div className="order-none md:order-2  ">
             <h2 className="mb-4 text-3xl font-semibold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-4xl">
               Sleep
             </h2>
@@ -133,10 +133,11 @@ const Service = () => {
               Neuro Rehabilitation
             </h2>
             <ul className="mb-5 text-base text-center text-gray-600 sm:text-left md:text-lg">
+              {' '}
               <li className="flex items-center text-center">
                 <CheckIcon className="w-5 h-5 text-wcyan " />
-                Post stroke rehab
-              </li>
+                Balance problems
+              </li>{' '}
               <li className="flex items-center text-center">
                 <CheckIcon className="w-5 h-5 text-wcyan " /> Pain in neck,
                 back, and extremities
@@ -146,11 +147,11 @@ const Service = () => {
                 Parkinson’s diseas
               </li>
               <li className="flex items-center text-center">
-                <CheckIcon className="w-5 h-5 text-wcyan " />
-                Balance problems
-              </li>
-              <li className="flex items-center text-center">
                 <CheckIcon className="w-5 h-5 text-wcyan " /> Dizziness, vertigo
+              </li>{' '}
+              <li className="flex items-center text-center">
+                <CheckIcon className="w-5 h-5 text-wcyan " />
+                Post stroke rehab
               </li>
             </ul>
             <Link href="/services" passHref>

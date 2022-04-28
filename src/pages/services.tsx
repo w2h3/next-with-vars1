@@ -8,6 +8,8 @@ import icon3 from 'public/ser_icon3.png';
 import icon4 from 'public/ser_icon4.png';
 import icon5 from 'public/ser_icon5.png';
 import icon6 from 'public/ser_icon6.png';
+import icon7 from 'public/ser_icon9.png';
+import icon8 from 'public/ser_icon8.png';
 
 const features = [
   {
@@ -45,6 +47,18 @@ const features = [
     description:
       'VNG is a series of tests designed to evaluate the etiologies causing dizziness or balance problem.',
     icon: `${icon6.src}`,
+  },
+  {
+    name: 'Botox',
+    description:
+      'Botox is used for migraine headaches because it blocks neurotransmitters that carry pain signals from your brain. It stops the chemicals before they get to the nerve endings around your head and neck.  ',
+    icon: `${icon7.src}`,
+  },
+  {
+    name: 'SUDOSCAN',
+    description:
+      'SUDOSCAN is a noninvasive, highly sensitive, and reproducible tool for the early detection of peripheral neuropathy. ',
+    icon: `${icon8.src}`,
   },
 ];
 

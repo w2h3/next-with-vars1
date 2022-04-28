@@ -37,13 +37,13 @@ export const Footer = () => {
   </svg>;
 
   return (
-    <div className="bg-[#E8FAFC] relative mt-10  ">
+    <div className="bg-[#E8FAFC] relative ">
       <div className="mx-auto px-8 pt-8  max-w-6xl 2xl:max-w-[1700px]">
         <div className="custom-shape-divider-bottom-1647011816 absolute right-32 w-fill top-0  h-6 -mt-5 sm:-mt-10 sm:h-14 z-10">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
+            viewBox="0 0 1200 250"
             preserveAspectRatio="none"
           >
             <path
@@ -63,7 +63,7 @@ export const Footer = () => {
           </svg>
         </div>
 
-        <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4 ">
+        <div className="grid gap-10 row-gap-6 mb-8 md:grid-cols-2 lg:grid-cols-4 justify-center">
           <div className="sm:col-span-1 ">
             <Link href="/" passHref>
               <a
@@ -140,7 +140,7 @@ export const Footer = () => {
           </div>
           <div className=" sm:col-span-1  ">
             <div className="mx-auto space-y-2">
-              <div className="gap-2 grid grid-rows-6 md:justify-center">
+              <div className="gap-2 hidden lg:grid lg:grid-rows-6 lg:justify-center">
                 <p className=" text-base font-bold tracking-wide text-gray-900">
                   Navigate:
                 </p>
@@ -169,9 +169,9 @@ export const Footer = () => {
             </div>
           </div>
           <div className="space-y-4">
-            <p className="text-base font-bold tracking-wide text-gray-900 ">
+            {/* <p className="text-base font-bold tracking-wide text-gray-900 ">
               Contacts:
-            </p>
+            </p> */}
             <dl className="text-base  text-gray-600">
               <div>
                 <dt className="sr-only">Postal address</dt>
@@ -224,9 +224,9 @@ export const Footer = () => {
             </dl>
           </div>
           <div className="md:text-center lg:text-left ">
-            <span className="text-base font-bold tracking-wide text-gray-900">
+            {/* <span className="text-base font-bold tracking-wide text-gray-900">
               Quick Links:
-            </span>
+            </span> */}
             <div className="flex items-center mt-4 space-x-3 md:justify-center lg:justify-start">
               <Link href="/patients" passHref>
                 <button
