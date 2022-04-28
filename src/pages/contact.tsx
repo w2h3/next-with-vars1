@@ -16,7 +16,7 @@ export default function Contact() {
   return (
     <div className="testImage">
       {' '}
-      <Banner pageName={'Services'} imageURL={tester}></Banner>
+      <Banner pageName={'Contact Us'} imageURL={tester}></Banner>
       <div className="container pt-24 max-w-6xl pb-24 ">
         <div className=" lg:grid lg:grid-cols-3 mt-14 ">
           <div
