@@ -7,24 +7,14 @@
     "build": "next build",
     "start": "next start",
     "prod": "next export",
-    "lint": "next lint",
-    "analyze": "cross-env ANALYZE=true next build",
-    "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
-    "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.8.2",
-    "@emotion/styled": "^11.8.1",
     "@headlessui/react": "^1.5.0",
     "@heroicons/react": "^1.0.5",
-    "@iconify/icons-mdi": "^1.2.1",
-    "@iconify/react": "^3.1.4",
-    "@next/bundle-analyzer": "^12.1.0",
     "@react-google-maps/api": "^2.7.0",
     "@tailwindcss/aspect-ratio": "^0.4.0",
     "@tailwindcss/forms": "^0.5.0",
-    "@types/google.maps": "^3.48.2",
-    "@types/googlemaps": "^3.43.3",
     "@types/react": "^17.0.38",
     "cross-env": "^7.0.3",
     "framer-motion": "^5.6.0",
@@ -33,12 +23,10 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
-    "reactcomponent": "^1.0.0",
     "sharp": "^0.30.4",
     "swiper": "^8.0.7"
   },
   "devDependencies": {
-    "@types/node": "^17.0.21",
     "autoprefixer": "^10.4.2",
     "eslint": "8.10.0",
     "eslint-config-next": "12.1.0",
