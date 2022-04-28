@@ -15,7 +15,7 @@ const Appointment = () => {
   };
   return (
     <>
-      <Banner pageName={'Book an Appointment'} imageURL={tester.src}></Banner>
+      <Banner pageName={'Book an Appointment'} imageURL={tester}></Banner>
       <div className="testImage">
         <Divider sectionName="Request an Appointment"></Divider>
 

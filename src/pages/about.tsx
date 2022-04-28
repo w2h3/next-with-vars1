@@ -5,7 +5,7 @@ import Swipe from '@/components/swiper/Swiper';
 export const AboutUs = () => {
   return (
     <>
-      <Banner pageName="About Us" imageURL={stock.src}></Banner>
+      <Banner pageName="About Us" imageURL={stock}></Banner>
       <div className="container py-20">
         <div className="grid grid-cols-1  md:grid-cols-2 ">
           <div className="flex flex-col  justify-center lg:max-w-6xl">

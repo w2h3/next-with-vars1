@@ -12,7 +12,7 @@ export default function Hero() {
           {/* <div className=" max-w-screen mx-auto max-h-screen "> */}
           <div className="relative  ">
             <Image
-              src={tester.src}
+              src={tester}
               className="tiny-hero  "
               alt=""
               layout="fill"

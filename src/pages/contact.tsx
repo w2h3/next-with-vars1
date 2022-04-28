@@ -18,7 +18,7 @@ export default function Contact() {
           <div
             className=" rounded-2xl py-1 px-4 sm:px-6 lg:col-span-1 lg:px-8 lg:py-10 xl:pr-12"
             style={{
-              backgroundImage: `url(${bgmap.src})`,
+              backgroundImage: `url(${bgmap})`,
               width: '100%',
               height: '100%',
               backgroundRepeat: 'no-repeat',
