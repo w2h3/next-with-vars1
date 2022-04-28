@@ -23,7 +23,7 @@ export default function Swipe() {
         style={{
           '--swiper-navigation-color': '#fff',
           '--swiper-pagination-color': '#fff',
-          
+
           // #D6F775
         }}
         effect={'coverflow'}
@@ -49,25 +49,68 @@ export default function Swipe() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <Image layout="responsive" objectFit="cover" height='100%' width='100%' src={newFront} />
+          <Image
+            layout="responsive"
+            objectFit="cover"
+            height="100%"
+            width="100%"
+            src={newFront}
+            priority={true}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image layout="responsive" objectFit="cover" height='100%' width='100%' src={swiper1} />
+          <Image
+            layout="responsive"
+            objectFit="cover"
+            height="100%"
+            width="100%"
+            src={swiper1}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image layout="responsive" objectFit="cover" height='100%' width='100%' src={swiper2} />
+          <Image
+            layout="responsive"
+            objectFit="cover"
+            height="100%"
+            width="100%"
+            src={swiper2}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image layout="responsive" objectFit="cover" height='100%' width='100%' src={swiper3} />
+          <Image
+            layout="responsive"
+            objectFit="cover"
+            height="100%"
+            width="100%"
+            src={swiper3}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image layout="responsive" objectFit="cover" height='100%' width='100%' src={swiper4} />
+          <Image
+            layout="responsive"
+            objectFit="cover"
+            height="100%"
+            width="100%"
+            src={swiper4}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image layout="responsive" objectFit="cover" height='100%' width='100%' src={swiper5} />
+          <Image
+            layout="responsive"
+            objectFit="cover"
+            height="100%"
+            width="100%"
+            src={swiper5}
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image layout="responsive" objectFit="cover" height='100%' width='100%' src={swiper6} />
+          <Image
+            layout="responsive"
+            objectFit="cover"
+            height="100%"
+            width="100%"
+            src={swiper6}
+          />
         </SwiperSlide>
       </Swiper>
     </div>

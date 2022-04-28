@@ -59,7 +59,7 @@ export default function MedProf() {
   return (
     <>
       <Banner pageName={'Medical Professionals'} imageURL={tester}></Banner>
-      <div className="pt-24">
+      <div className="pt-24 container">
         <div className="bg-gray-50">
           <div className="max-w-7xl mx-auto py-12 px-4 divide-y divide-gray-200 sm:px-6 lg:py-16 lg:px-8">
             <h2 className="text-3xl font-extrabold text-gray-900">
