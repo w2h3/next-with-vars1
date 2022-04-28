@@ -7,12 +7,16 @@ import {
 import Link from 'next/link';
 import bgmap from 'public/cactus4.jpg';
 import { useState } from 'react';
+import Banner from '@/components/layout/Banner';
+import tester from 'public/contactBanner.jpg';
 
 export default function Contact() {
   const [buttonText, setButtonText] = useState('Send');
 
   return (
     <div className="testImage">
+      {' '}
+      <Banner pageName={'Services'} imageURL={tester}></Banner>
       <div className="container pt-24 max-w-6xl pb-24 ">
         <div className=" lg:grid lg:grid-cols-3 mt-14 ">
           <div
@@ -87,7 +91,9 @@ export default function Contact() {
                       className="flex-shrink-0 h-6 w-6 text-wcyan"
                       aria-hidden="true"
                     />
-                    <span className="mb-3 ml-3 font-bold">+1 (480) 967-6887</span>
+                    <span className="mb-3 ml-3 font-bold">
+                      +1 (480) 967-6887
+                    </span>
                   </dd>
                 </div>
                 <div className="mt-3 ">
