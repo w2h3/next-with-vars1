@@ -74,7 +74,7 @@ export default function locations() {
                         aria-hidden="true"
                       />
                       {post.category.name}
-                      {/* <p className='text-wcyan justify-center'> */}
+                     
                     </p>
                     <p className="block mt-2">
                       <p className="text-2xl font-semibold text-gray-700">
