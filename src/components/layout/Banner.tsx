@@ -6,8 +6,8 @@ export default function Banner({ pageName, imageURL }) {
   return (
     <div className="relative mt-[4rem]">
       <div className="absolute inset-0">
-        {/* container  */}
-        <div style={{ width: '9px', height: '1px' }}>
+      {/* style={{ width: '9px', height: '1px' }} */}
+        <div >
               <Image
                 src={imageURL}
                 className="inset-0 object-center "
@@ -30,11 +30,6 @@ export default function Banner({ pageName, imageURL }) {
           {pageName}
         </h1>
 
-        {/* <p className="mt-6 text-xl text-indigo-100 max-w-3xl">
-          Mattis amet hendrerit dolor, quisque lorem pharetra. Pellentesque
-          lacus nisi urna, arcu sociis eu. Orci vel lectus nisl eget eget ut
-          consectetur. Sit justo viverra non adipisicing elit distinctio.
-        </p> */}
         <div className="pt-20"></div>
 
         <div className="max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
