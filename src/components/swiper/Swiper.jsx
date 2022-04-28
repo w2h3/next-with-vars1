@@ -18,11 +18,12 @@ import 'swiper/css/effect-coverflow';
 import Image from 'next/image';
 export default function Swipe() {
   return (
-    <>
+    <div className="">
       <Swiper
         style={{
           '--swiper-navigation-color': '#fff',
           '--swiper-pagination-color': '#fff',
+          
           // #D6F775
         }}
         effect={'coverflow'}
@@ -48,27 +49,27 @@ export default function Swipe() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <Image layout="fill" objectFit="cover" src={newFront} />
+          <Image layout="responsive" objectFit="cover" height='100%' width='100%' src={newFront} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image layout="fill" objectFit="cover" src={swiper1} />
+          <Image layout="responsive" objectFit="cover" height='100%' width='100%' src={swiper1} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image layout="fill" objectFit="cover" src={swiper2} />
+          <Image layout="responsive" objectFit="cover" height='100%' width='100%' src={swiper2} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image layout="fill" objectFit="cover" src={swiper3} />
+          <Image layout="responsive" objectFit="cover" height='100%' width='100%' src={swiper3} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image layout="fill" objectFit="cover" src={swiper4} />
+          <Image layout="responsive" objectFit="cover" height='100%' width='100%' src={swiper4} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image layout="fill" objectFit="cover" src={swiper5} />
+          <Image layout="responsive" objectFit="cover" height='100%' width='100%' src={swiper5} />
         </SwiperSlide>
         <SwiperSlide>
-          <Image layout="fill" objectFit="cover" src={swiper6} />
+          <Image layout="responsive" objectFit="cover" height='100%' width='100%' src={swiper6} />
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }

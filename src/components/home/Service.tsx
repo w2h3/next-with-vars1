@@ -15,7 +15,7 @@ const Service = () => {
       <section className="container mx-auto  ">
         {' '}
         <div className="text-center mb-5">
-          <Divider sectionName={'Our Services'}></Divider>
+          <Divider sectionName={'Our Services'}/>
         </div>
         <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-slate-50 p-2 md:p-5 rounded-2xl shadow-lg border border-wcyan/20">
           <div className="">

@@ -6,10 +6,10 @@ export const AboutUs = () => {
   return (
     <>
       <Banner pageName="About Us" imageURL={stock}></Banner>
-      <div className="container py-20">
-        <div className="grid grid-cols-1  md:grid-cols-2 ">
-          <div className="flex flex-col  justify-center lg:max-w-6xl">
-            <h2 className=" mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none text-center md:text-left  ">
+      <div className="container pb-20">
+        <div className="grid grid-cols-1  lg:grid-cols-2 ">
+          <div className="flex flex-col justify-center lg:max-w-6xl md:flex-col ">
+            <h2 className=" mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl md:text-5xl sm:leading-none text-center lg:text-left  ">
               Welcome to
               <br />
               <p className="block text-[#7ba009]">Neurology and Sleep </p>
@@ -27,8 +27,8 @@ export const AboutUs = () => {
               individual needs and concerns.
             </p>
           </div>
-          <div className="">
-            <Swipe></Swipe>
+          <div className="grid-cols-1 grid-flow-col  ">
+            <Swipe />
           </div>
         </div>
       </div>
