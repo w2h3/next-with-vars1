@@ -53,18 +53,11 @@ const posts = [
 export default function Map() {
   return (
     <div className="bg-[#f0fdff]/80">
-      {/* relative h-fill py-16 mx-auto sm:max-w-full bg-wcyan/20 z-1 lg:py-20  */}
 
-      {/* bg-gray-50 bg-opacity-10 */}
-      {/* <div className="absolute inset-0">
-        {/* <div className=" h-1/3 sm:h-2/3 " /> */}
-      {/* bg-white */}
-      {/* </div>  */}
       <div className="container">
-        {/* bg-opacity-70 */}
-        <div className=" mx-auto ">
+                <div className=" mx-auto ">
           <div className="text-center ">
-            {/*text-3xl  tracking-tight  text-gray-900 sm:text-4xl */}
+          
             <Divider sectionName="Our Locations"></Divider>{' '}
           </div>
           <div className="mt-12  max-w-2xl  mx-auto grid gap-14  md:max-w-md  lg:grid-cols-3 lg:max-w-none text-center ">

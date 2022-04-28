@@ -76,9 +76,9 @@ export default function Navbar() {
                               ' px-1 text-lg font-heavy',
                               router.route === item.href
                                 ? 'text-wcyan border-b border-wcyan'
-                                : // text-gray-900  border-gray-900
+                                : 
                                   ' text-gray-600  hover:text-wcyan hover:border-b hover:border-wcyan'
-                              // border-transparent
+                         
                             )}
                             aria-current={
                               router.route === item.href ? 'page' : undefined
@@ -128,9 +128,7 @@ export default function Navbar() {
                   href="https://mycw34.eclinicalweb.com/portal3661/jsp/100mp/login_otp.jsp"
                   passHref
                 >
-                  {/* <button className="bg-[#107E8E] hover:bg-[#0B5A66] text-white font-bold py-2 px-4 rounded-full">
-                  Make an appointment
-                </button> */}
+          
                   <button
                     type="button"
                     className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/90 focus:ring-4 focus:ring-blue-300 font-medium rounded-xl text-sm px-5 py-2.5 text-center mr-2 mb-2 w-full "

@@ -1,7 +1,4 @@
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-});
-module.exports = withBundleAnalyzer({
+module.exports = {
   swcMinify: true,
   images: {
     formats: ['image/webp'],
@@ -10,7 +7,8 @@ module.exports = withBundleAnalyzer({
     dirs: ['src'],
   },
   env: {
-    NEXT_PUBLIC_GOOGLE_MAPS_API_KEY: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+    NEXT_PUBLIC_GOOGLE_MAPS_API_KEY:
+      process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
   },
   reactStrictMode: true,
 
@@ -31,4 +29,4 @@ module.exports = withBundleAnalyzer({
 
     return config;
   },
-});
+};

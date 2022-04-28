@@ -8,7 +8,6 @@ export default function Hero() {
     <div>
       <div className=" mt-[6.5rem]">
         <div className="relative h-[90vh]">
-          {/* <div className=" max-w-screen mx-auto max-h-screen "> */}
           <div className="relative  ">
             <Image
               src={tester}
@@ -24,7 +23,6 @@ export default function Hero() {
               <div className=" max-w-7xl relative rounded-3xl ">
                 <h1 className="text-center text-4xl md:text-5xl font-extrabold tracking-tighter lg:text-6xl ">
                   <span className="block text-[#c2df6c] pt-10 font-nexa ">
-                    {/* font-nexa */}
                     Neurology and Sleep Medicine
                   </span>
                   <span className="block text-3xl mx:text-4xl font-thin tracking-widest  lg:text-5xl  text-white font-roboto align-text-bottom">
@@ -33,7 +31,6 @@ export default function Hero() {
                 </h1>
 
                 <div className="mt-12  max-w-lg sm:max-w-3xl mx-auto text-center text-2xl font-medium text-white flex flex-col sm:flex-row items-center justify-center">
-                  {/* <GoPrimitiveDot className="text-[#c2df6c] text-center items-center" /> */}
                   Neurology
                   <GoPrimitiveDot className="text-[#c2df6c] mx-2" />
                   Physical Therapy

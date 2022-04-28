@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
         <title>Neurology & Sleep Medicine Associates</title>
         <link rel="icon" type="image/icon" sizes="16x16" href="/favicon.ico" />
         <meta
-          name="description"
+          name="Neurology and Sleep Medicine Associates"
           content="Neurology/Sleep/Physical Therapy/Psychiatry in Arizona"
         />
         <meta name="author" content="James Wingert" />

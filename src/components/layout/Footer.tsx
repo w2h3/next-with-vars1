@@ -224,9 +224,7 @@ export const Footer = () => {
             </dl>
           </div>
           <div className="md:text-center lg:text-left ">
-            {/* <span className="text-base font-bold tracking-wide text-gray-900">
-              Quick Links:
-            </span> */}
+
             <div className="flex items-center mt-4 space-x-3 md:justify-center lg:justify-start">
               <Link href="/patients" passHref>
                 <button
@@ -254,22 +252,7 @@ export const Footer = () => {
             © Copyright 2022 Neurology And Sleep Medicine Associates. All rights
             reserved.
           </p>
-          {/* <ul className="flex flex-col mb-3 space-y-2  lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
-            <li>
-              <Link href="/" passHref>
-                <a className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                  Privacy Policy
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/" passHref>
-                <a className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">
-                  Terms &amp; Conditions
-                </a>
-              </Link>
-            </li>
-          </ul> */}
+  
           
         <span className="text-sm mb-2 text-gray-600 ">
           Site made by &nbsp;
