@@ -6,19 +6,19 @@ export default function Banner({ pageName, imageURL }) {
   return (
     <div className="relative mt-[4rem]">
       <div className="absolute inset-0">
-      {/* style={{ width: '9px', height: '1px' }} */}
-        <div >
-              <Image
-                src={imageURL}
-                className="inset-0 object-center "
-                alt=""
-                layout="fill"
-                priority={true}
-                objectFit="cover"
-                // width={103}
-                // height={70}
-              />
-            </div>
+        {/* style={{ width: '9px', height: '1px' }} */}
+        <div>
+          <Image
+            src={imageURL}
+            className="inset-0 object-center "
+            alt=""
+            layout="fill"
+            priority
+            objectFit="cover"
+            // width={103}
+            // height={70}
+          />
+        </div>
         <div
           className="absolute  inset-0  bg-black bg-opacity-40"
           aria-hidden="true"
