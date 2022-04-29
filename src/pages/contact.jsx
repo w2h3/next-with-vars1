@@ -4,6 +4,7 @@ import {
   LocationMarkerIcon,
   NewspaperIcon,
 } from '@heroicons/react/outline';
+import emailjs from '@emailjs/browser';
 import Link from 'next/link';
 import bgmap from 'public/cactus4.jpg';
 import { useState } from 'react';
