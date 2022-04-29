@@ -2,18 +2,19 @@ import Banner from '@/components/layout/Banner';
 import React, { useState } from 'react';
 import tester from 'public/servebanner.jpg';
 import Divider from '@/components/layout/Dividers';
+import emailjs from '@emailjs/browser';
 
-const Appointment = () => {
+export default function Appointment() {
   const [first, setFirst] = useState('');
   const [last, setLast] = useState('');
   const [gender, setGender] = useState('');
-  const [insurname, setInsurname] = useState('');
-  const [insurnum, setInsurnum] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [voicemail, setVoicemail] = useState('');
   const [errors, setErrors] = useState({});
   const [subject, setSubject] = useState('Appointment Request');
+  const [insurname, setInsurname] = useState('');
+  const [insurnum, setInsurnum] = useState('');
 
   //   Setting button text on form submission
   const [buttonText, setButtonText] = useState('Submit');
@@ -21,6 +22,22 @@ const Appointment = () => {
   // Setting success or failure messages states
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [showFailureMessage, setShowFailureMessage] = useState(false);
+
+  const handleMaleChange = () => {
+    setGender('male');
+  };
+  const handleFemaleChange = () => {
+    setGender('female');
+  };
+  const handleNoneChange = () => {
+    setGender('none');
+  };
+  const handleYesChange = () => {
+    setVoicemail('yes');
+  };
+  const handleNoChange = () => {
+    setVoicemail('no');
+  };
 
   // Validation check method
   // Validation check method
@@ -67,74 +84,119 @@ const Appointment = () => {
 
     if (isValidForm) {
       setButtonText('Sending');
-      const res = await fetch('/api/sendapt', {
-        body: JSON.stringify({
-          first: first,
-          last: last,
-          gender: gender,
-          insurname: insurname,
-          insurnum: insurnum,
-          email: email,
-          phone: phone,
-          voicemail: voicemail,
-          subject: subject,
-        }),
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        method: 'POST',
-      });
+      let templateParams = {
+        first: first,
+        last: last,
+        gender: gender,
+        insurname: insurname,
+        insurnum: insurnum,
+        email: email,
+        phone: phone,
+        voicemail: voicemail,
+        subject: subject,
+      };
+      emailjs
+        .send(
+          `${process.env.NEXT_PUBLIC_SERVICE_ID}`,
+          `${process.env.NEXT_PUBLIC_TEMPLATE_APPOINTMENT}`,
+          templateParams,
+          `${process.env.NEXT_PUBLIC_USER_ID}`
+        )
+        .then(
+          (response) => {
+            console.log(response.text);
+            setShowSuccessMessage(true);
+            setShowFailureMessage(false);
+            setButtonText('Submit');
+            // Reset form fields
+            setFullname('');
+            setEmail('');
+            setPhone('');
+            setMessage('');
+          },
+          (error) => {
+            console.log(error.text);
+            setShowSuccessMessage(false);
+            setShowFailureMessage(true);
+            setButtonText('Submit');
 
-      const { error } = await res.json();
-      if (error) {
-        console.log(error);
-        setShowSuccessMessage(false);
-        setShowFailureMessage(true);
-        setButtonText('Submit');
-
-        // Reset form fields
-        setFirst('');
-        setLast('');
-        setGender('');
-        setInsurname: '';
-        setInsurnum: '';
-        setEmail('');
-        setPhone('');
-        setVoicemail('');
-        return;
-      }
-      setShowSuccessMessage(true);
-      setShowFailureMessage(false);
-      setButtonText('Submit');
-      // Reset form fields
-      setFirst('');
-      setLast('');
-      setGender('');
-      setInsurname: '';
-      setInsurnum: '';
-      setEmail('');
-      setPhone('');
-      setVoicemail('');
+            setFullname('');
+            setEmail('');
+            setPhone('');
+            setMessage('');
+            return;
+          }
+        );
     }
+    // const res = await fetch('https://formspree.io/f/mzbokaqv', {
+    //   body: JSON.stringify({
+    //     first: first,
+    //     last: last,
+    //     gender: gender,
+    //     insurname: insurname,
+    //     insurnum: insurnum,
+    //     email: email,
+    //     phone: phone,
+    //     voicemail: voicemail,
+    //     subject: subject,
+    //   }),
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    //   method: 'POST',
+    // });
+
+    // const { error } = await res.json();
+    // if (error) {
+    //     console.log(error);
+    //     setShowSuccessMessage(false);
+    //     setShowFailureMessage(true);
+    //     setButtonText('Submit');
+
+    //     // Reset form fields
+    //     setFirst('');
+    //     setLast('');
+    //     setGender('');
+    //     setEmail('');
+    //     setPhone('');
+    //     setInsurname('');
+    //     setInsurnum('');
+    //     setVoicemail('');
+    //     return;
+    //   }
+    //   setShowSuccessMessage(true);
+    //   setShowFailureMessage(false);
+    //   setButtonText('Submit');
+    //   // Reset form fields
+    //   setFirst('');
+    //   setLast('');
+    //   setGender('');
+    //   setInsurname('');
+    //   setInsurnum('');
+    //   setEmail('');
+    //   setPhone('');
+    //   setVoicemail('');
+    // }
     console.log(
       first,
       last,
+      email,
+      phone,
       gender,
       insurname,
       insurnum,
-      email,
-      phone,
       voicemail
     );
   };
   return (
     <>
-      <Banner pageName={'Book an Appointment'} imageURL={tester}></Banner>
+      <Banner pageName={'Book an Appointment'} imageURL={tester} />
       <div className="testImage">
-        <Divider sectionName="Request an Appointment"></Divider>
+        <Divider sectionName="Request an Appointment" />
 
         <div className="container">
           <form id="submit" onSubmit={handleSubmit}>
+            <input type="hidden" name="_subject" value="New Appointment" />
             <div className="bg-white ">
               <div className=" mx-auto bg-white  mt-10 rounded px-4">
                 <div className="xl:w-full border-b border-gray-300 py-5">
@@ -156,7 +218,7 @@ const Appointment = () => {
                   <div className="items-center">
                     <div className="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
                       <label
-                        htmlFor="f"
+                        htmlFor="first"
                         className="pb-2 text-sm font-bold text-gray-800 "
                       >
                         First name
@@ -216,11 +278,13 @@ const Appointment = () => {
                             id="gender"
                             name="gender"
                             type="radio"
+                            // checked="male"
                             className="focus:ring-wcyan h-4 w-4 text-wcyan border-gray-300"
                             value={gender === 'male'}
-                            onChange={(e) => {
-                              setGender(e.target.value);
-                            }}
+                            onChange={handleMaleChange}
+                            // onChange={(e) => {
+                            //   setGender(e.target.value);
+                            // }}
                           />{' '}
                           {errors?.gender && (
                             <p className="text-red-500">
@@ -239,11 +303,13 @@ const Appointment = () => {
                             id="gender"
                             name="gender"
                             type="radio"
+                            // checked="female"
                             className="focus:ring-wcyan h-4 w-4 text-wcyan border-gray-300"
                             value={gender === 'female'}
-                            onChange={(e) => {
-                              setGender(e.target.value);
-                            }}
+                            onChange={handleFemaleChange}
+                            // onChange={(e) => {
+                            //   setGender(e.target.value);
+                            // }}
                           />{' '}
                           {errors?.gender && (
                             <p className="text-red-500">
@@ -262,11 +328,13 @@ const Appointment = () => {
                             id="gender"
                             name="gender"
                             type="radio"
+                            // checked="none"
                             className="focus:ring-wcyan h-4 w-4 text-wcyan border-gray-300"
                             value={gender === 'none'}
-                            onChange={(e) => {
-                              setGender(e.target.value);
-                            }}
+                            onChange={handleNoneChange}
+                            // onChange={(e) => {
+                            //   setGender(e.target.value);
+                            // }}
                           />{' '}
                           {errors?.gender && (
                             <p className="text-red-500">
@@ -284,7 +352,7 @@ const Appointment = () => {
                     </div>
                     <div className="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
                       <label
-                        htmlFor="insurname"
+                        htmlFor="Insurance Name"
                         className="pb-2 text-sm font-bold text-gray-800 "
                       >
                         Name of Primary Insurance
@@ -308,7 +376,7 @@ const Appointment = () => {
                     </div>
                     <div className="xl:w-1/4 lg:w-1/2 md:w-1/2 flex flex-col mb-6">
                       <label
-                        htmlFor="insurnum"
+                        htmlFor="Insurance Number"
                         className="pb-2 text-sm font-bold text-gray-800  "
                       >
                         Insurance ID Number
@@ -316,9 +384,9 @@ const Appointment = () => {
                       <input
                         type="text"
                         id="insurnum"
-                        name="insurnum"
+                        name="Insurance ID"
                         className="border border-gray-300   pl-3 py-3 shadow-sm rounded bg-transparent text-sm focus:outline-none focus:border-wcyan placeholder-gray-500 text-gray-500  "
-                        placeholder="Insurance ID Number"
+                        placeholder="Insurance ID"
                         value={insurnum}
                         onChange={(e) => {
                           setInsurnum(e.target.value);
@@ -389,9 +457,10 @@ const Appointment = () => {
                             type="radio"
                             className="focus:ring-wcyan h-4 w-4 text-wcyan border-gray-300"
                             value={voicemail === 'yes'}
-                            onChange={(e) => {
-                              setVoicemail(e.target.value);
-                            }}
+                            onChange={handleYesChange}
+                            // onChange={(e) => {
+                            //   setVoicemail(e.target.value);
+                            // }}
                           />{' '}
                           {errors?.voicemail && (
                             <p className="text-red-500">
@@ -412,9 +481,10 @@ const Appointment = () => {
                             type="radio"
                             className="focus:ring-wcyan h-4 w-4 text-wcyan border-gray-300"
                             value={voicemail === 'no'}
-                            onChange={(e) => {
-                              setVoicemail(e.target.value);
-                            }}
+                            onChange={handleNoChange}
+                            // onChange={(e) => {
+                            //   setVoicemail(e.target.value);
+                            // }}
                           />{' '}
                           {errors?.voicemail && (
                             <p className="text-red-500">
@@ -469,5 +539,4 @@ const Appointment = () => {
       </div>
     </>
   );
-};
-export default Appointment;
+}

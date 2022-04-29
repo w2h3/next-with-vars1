@@ -9,7 +9,6 @@ import bgmap from 'public/cactus4.jpg';
 import { useState } from 'react';
 import Banner from '@/components/layout/Banner';
 import tester from 'public/contactBanner.jpg';
-
 export default function Contact() {
   const [fullname, setFullname] = useState('');
   const [email, setEmail] = useState('');
@@ -52,6 +51,52 @@ export default function Contact() {
     console.log('errors', errors);
     return isValid;
   };
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+
+  //   let isValidForm = handleValidation();
+
+  //   if (isValidForm) {
+  //     setButtonText('Sending');
+  //     const res = await fetch('https://formspree.io/f/xoqrpnzk', {
+  //       body: JSON.stringify({
+  //         fullname: fullname,
+  //         email: email,
+  //         phone: phone,
+  //         subject: subject,
+  //         message: message,
+  //       }),
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       method: 'POST',
+  //     });
+
+  //     const { error } = await res.json();
+  //     if (error) {
+  //       console.log(error);
+  //       setShowSuccessMessage(false);
+  //       setShowFailureMessage(true);
+  //       setButtonText('Submit');
+
+  //       // Reset form fields
+  //       setFullname('');
+  //       setEmail('');
+  //       setPhone('');
+  //       setMessage('');
+  //       return;
+  //     }
+  //     setShowSuccessMessage(true);
+  //     setShowFailureMessage(false);
+  //     setButtonText('Submit');
+  //     // Reset form fields
+  //     setFullname('');
+  //     setEmail('');
+  //     setPhone('');
+  //     setMessage('');
+  //   }
+  //   console.log(fullname, email, phone, message);
+  // };
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -59,48 +104,51 @@ export default function Contact() {
 
     if (isValidForm) {
       setButtonText('Sending');
-      const res = await fetch('/api/sendgrid', {
-        body: JSON.stringify({
-          fullname: fullname,
-          email: email,
-          phone: phone,
-          subject: subject,
-          message: message,
-        }),
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        method: 'POST',
-      });
 
-      const { error } = await res.json();
-      if (error) {
-        console.log(error);
-        setShowSuccessMessage(false);
-        setShowFailureMessage(true);
-        setButtonText('Submit');
+      let templateParams = {
+        fullname: fullname,
+        email: email,
+        phone: phone,
+        subject: subject,
+        message: message,
+      };
+      emailjs
+        .send(
+          `${process.env.NEXT_PUBLIC_SERVICE_ID}`,
+          `${process.env.NEXT_PUBLIC_TEMPLATE_CONTACT}`,
+          templateParams,
+          `${process.env.NEXT_PUBLIC_USER_ID}`
+        )
+        .then(
+          (response) => {
+            console.log(response.text);
+            setShowSuccessMessage(true);
+            setShowFailureMessage(false);
+            setButtonText('Submit');
+            // Reset form fields
+            setFullname('');
+            setEmail('');
+            setPhone('');
+            setMessage('');
+          },
+          (error) => {
+            console.log(error.text);
+            setShowSuccessMessage(false);
+            setShowFailureMessage(true);
+            setButtonText('Submit');
 
-        // Reset form fields
-        setFullname('');
-        setEmail('');
-        setPhone('');
-        setMessage('');
-        return;
-      }
-      setShowSuccessMessage(true);
-      setShowFailureMessage(false);
-      setButtonText('Submit');
-      // Reset form fields
-      setFullname('');
-      setEmail('');
-      setPhone('');
-      setMessage('');
+            setFullname('');
+            setEmail('');
+            setPhone('');
+            setMessage('');
+            return;
+          }
+        );
     }
     console.log(fullname, email, phone, message);
   };
   return (
     <div className="testImage">
-      {' '}
       <Banner pageName={'Contact Us'} imageURL={tester} />
       <div className="container pt-4 sm:pt-12 max-w-6xl pb-24 ">
         <div className=" lg:grid lg:grid-cols-3 mt-14 ">
@@ -200,11 +248,11 @@ export default function Contact() {
             {/* [#5692B7]/60 */}
             <div className="max-w-lg mx-auto lg:max-w-none py-10">
               <form
-                action="#"
-                method="POST"
+                onSubmit={handleSubmit}
                 className="grid grid-cols-1 gap-y-6 mx-4 sm:mx-0 "
               >
                 <div>
+                  <input type="hidden" name="_subject" value="Contact Form" />
                   <label htmlFor="fullname" className="sr-only">
                     Full name
                   </label>

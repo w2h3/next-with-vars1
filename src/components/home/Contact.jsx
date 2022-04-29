@@ -1,7 +1,8 @@
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState} from 'react';
 import Divider from '../layout/Dividers';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const [fullname, setFullname] = useState('');
@@ -52,49 +53,89 @@ export default function Contact() {
 
     if (isValidForm) {
       setButtonText('Sending');
-      const res = await fetch('/api/sendgrid', {
-        body: JSON.stringify({
-          fullname: fullname,
-          email: email,
-          phone: phone,
-          subject: subject,
-          message: message,
-        }),
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        method: 'POST',
-      });
+      // https://formspree.io/f/mgedplbp
+      // /api/sendgrid
+      // const res = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+      //   body: JSON.stringify({
+      //     fullname: fullname,
+      //     email: email,
+      //     phone: phone,
+      //     subject: subject,
+      //     message: message,
+      //   }),
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //   },
+      //   method: 'POST',
+      // });
+      let templateParams = {
+        fullname: fullname,
+        email: email,
+        phone: phone,
+        subject: subject,
+        message: message,
+      };
+      emailjs
+        .send(
+          `${process.env.NEXT_PUBLIC_SERVICE_ID}`,
+          `${process.env.NEXT_PUBLIC_TEMPLATE_CONTACT}`,
+          templateParams,
+          `${process.env.NEXT_PUBLIC_USER_ID}`
+        )
+        .then(
+          (response) => {
+            console.log(response.text);
+            setShowSuccessMessage(true);
+            setShowFailureMessage(false);
+            setButtonText('Submit');
+            // Reset form fields
+            setFullname('');
+            setEmail('');
+            setPhone('');
+            setMessage('');
+          },
+          (error) => {
+            console.log(error.text);
+            setShowSuccessMessage(false);
+            setShowFailureMessage(true);
+            setButtonText('Submit');
 
-      const { error } = await res.json();
-      if (error) {
-        console.log(error);
-        setShowSuccessMessage(false);
-        setShowFailureMessage(true);
-        setButtonText('Submit');
+            setFullname('');
+            setEmail('');
+            setPhone('');
+            setMessage('');
+            return;
+          }
+        );
+      // const { error } = await response.json();
+      //   if (error) {
+      //     console.log(error);
+      //     setShowSuccessMessage(false);
+      //     setShowFailureMessage(true);
+      //     setButtonText('Submit');
 
-        // Reset form fields
-        setFullname('');
-        setEmail('');
-        setPhone('');
-        setMessage('');
-        return;
-      }
-      setShowSuccessMessage(true);
-      setShowFailureMessage(false);
-      setButtonText('Submit');
-      // Reset form fields
-      setFullname('');
-      setEmail('');
-      setPhone('');
-      setMessage('');
+      //     // Reset form fields
+      //     setFullname('');
+      //     setEmail('');
+      //     setPhone('');
+      //     setMessage('');
+      //     return;
+      //   }
+      //   setShowSuccessMessage(true);
+      //   setShowFailureMessage(false);
+      //   setButtonText('Submit');
+      //   // Reset form fields
+      //   setFullname('');
+      //   setEmail('');
+      //   setPhone('');
+      //   setMessage('');
     }
     console.log(fullname, email, phone, message);
   };
   return (
     <div className="testImage">
       <Divider sectionName="How did we do?" />
-      <div className="container max-w-6xl pb-24 ">
+      <div className="container max-w-6xl pb-24">
         <div className="relative bg-[#f0fdff]/80 rounded-2xl">
           <div className="relative max-w-7xl mx-auto lg:grid lg:grid-cols-5">
             <div className=" py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
@@ -156,6 +197,12 @@ export default function Contact() {
                   className="grid grid-cols-1 gap-y-6"
                 >
                   <div>
+                    {' '}
+                    <input
+                      type="hidden"
+                      name="_subject"
+                      value="Feedback Form"
+                    />
                     <label htmlFor="fullname" className="sr-only">
                       Full name
                     </label>
@@ -234,25 +281,25 @@ export default function Contact() {
                       <p className="text-red-500">Message cannot be empty.</p>
                     )}
                   </div>
-                  <div className='flex gap-4'>
+                  <div className="flex gap-4">
                     <button
                       type="submit"
                       className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-wcyan hover:bg-wcyan/80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-wcyan/60"
                     >
                       {buttonText}
                     </button>
-                  <div className="text-left">
-                    {showSuccessMessage && (
-                      <p className="text-green-500 font-semibold text-lg my-2">
-                        Thank you! Your Message has been delivered.
-                      </p>
-                    )}
-                    {showFailureMessage && (
-                      <p className="text-red-500">
-                        Oops! Something went wrong, please try again.
-                      </p>
-                    )}
-                  </div>
+                    <div className="text-left">
+                      {showSuccessMessage && (
+                        <p className="text-green-500 font-semibold text-lg my-2">
+                          Thank you! Your Message has been delivered.
+                        </p>
+                      )}
+                      {showFailureMessage && (
+                        <p className="text-red-500">
+                          Oops! Something went wrong, please try again.
+                        </p>
+                      )}
+                    </div>
                   </div>{' '}
                 </form>
               </div>
