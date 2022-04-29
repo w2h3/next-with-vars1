@@ -1,14 +1,12 @@
 import Banner from '@/components/layout/Banner';
-import ins from '../../public/server.jpg';
 import tester from 'public/billing.jpg';
-import { PaperClipIcon } from '@heroicons/react/outline';
 
 export const Insurances = () => {
   return (
     <>
       <Banner pageName={'Insurances'} imageURL={tester}></Banner>
       <div className="testImage">
-        <div className="mx-auto  py-8  max-w-6xl 2xl:max-w-[1700px]">
+        <div className="mx-auto  py-8 max-w-screen sm:max-w-6xl 2xl:max-w-[1700px]">
           <div className="text-center text-4xl text-wcyan mb-10">
             Contracted Insurance Information
             <p className="text-xl text-slate-800 mt-2">

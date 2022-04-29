@@ -102,7 +102,7 @@ export default function Contact() {
     <div className="testImage">
       {' '}
       <Banner pageName={'Contact Us'} imageURL={tester} />
-      <div className="container pt-24 max-w-6xl pb-24 ">
+      <div className="container pt-4 sm:pt-12 max-w-6xl pb-24 ">
         <div className=" lg:grid lg:grid-cols-3 mt-14 ">
           <div
             className=" rounded-2xl py-1 px-4 sm:px-6 lg:col-span-1 lg:px-8 lg:py-10 xl:pr-12"
