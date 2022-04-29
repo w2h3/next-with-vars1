@@ -17,7 +17,7 @@ export const Insurances = () => {
           <table className="w-full shadow text-left bg-white  mb-20">
             <thead>
               <tr className="border-b border-gray-300 ">
-                <th className="py-5 sm:pl-10 pl-2 w-1/3 text-xl text-gray-800 ">
+                <th className="py-5 sm:pl-10 mx-auto w-1/3 text-xl text-gray-800 ">
                   Insurance
                 </th>
                 <th className="py-5 w-1/3 text-xl text-gray-800">Contracted</th>
@@ -28,142 +28,142 @@ export const Insurances = () => {
             </thead>
             <tbody>
               <tr>
-                <td className="sm:pl-10 pl-2 pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="sm:pl-10 mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   Aetna
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   HMO/PPO
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg text-center">
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg text-center">
                   Banner Choice Plus, Axel, Select Network, HMO Prime
                 </td>
               </tr>
               <tr className="bg-gray-200 ">
-                <td className="sm:pl-10 pl-2 pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="sm:pl-10  mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   Arizona Foundation
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   PPO
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg text-center">
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg text-center">
                   Schaller Anderson EPO
                 </td>
               </tr>
               <tr>
-                <td className="sm:pl-10 pl-2 pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="sm:pl-10  mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   BCBS
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   HMO/PPO
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg text-center">
+                <td className="py-5 text-gray-800  text-md sm:text-lg text-center">
                   Advantage. Allegiance, Secure Select, HMO, Blue High
                   Performance, Everyday Maricopa Focus
                 </td>
               </tr>
               <tr className="bg-gray-200 ">
-                <td className="sm:pl-10 pl-2 pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="sm:pl-10 mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   Cigna
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   HMO/PPO
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg text-center">
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg text-center">
                   Local Plus
                 </td>
               </tr>
               <tr>
-                <td className="sm:pl-10 pl-2 pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="sm:pl-10 mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   PHCS/Great West/ HNA
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   PPO
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg text-center"></td>
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg text-center"></td>
               </tr>
               <tr className="bg-gray-200 ">
-                <td className="sm:pl-10 pl-2 pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="sm:pl-10 mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   Health Net
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   HMO/PPO
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg text-center"></td>
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg text-center"></td>
               </tr>
 
               <tr>
-                <td className="sm:pl-10 pl-2 pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="sm:pl-10 mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   Humana
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   HMO/PPO
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg text-center"></td>
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg text-center"></td>
               </tr>
               <tr className="bg-gray-200 ">
-                <td className="sm:pl-10 pl-2 pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="sm:pl-10 mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   Medicaid/AHCCCS
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="py-5 text-gray-800  text-md sm:text-lg">
                   Bridgeway/Bridgeway Adv., Care 1st/ One care, Health
                   Choice/Health Choice Generations, Health Net AHCCCS, Mercy
                   Care/Mercy Care Advv, UHC Community Plan (APIPA, Personal Care
                   Plus), Phoenix Health Plan/Abrazo
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg text-center"></td>
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg text-center"></td>
               </tr>
               <tr>
-                <td className="sm:pl-10 pl-2 pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="sm:pl-10 mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   Medicare
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg"></td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg text-center">
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg"></td>
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg text-center">
                   Railroad Medicare
                 </td>
               </tr>
               <tr className="bg-gray-200 ">
-                <td className="sm:pl-10 pl-2 pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="sm:pl-10 mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   Pacificare
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   PPO/HMO, Lifeprint, Phoenix Direct Network
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg text-center"></td>
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg text-center"></td>
               </tr>
               <tr>
-                <td className="sm:pl-10 pl-2 pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="sm:pl-10 mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   TriWest/TriCare
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg"></td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg text-center"></td>
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg"></td>
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg text-center"></td>
               </tr>
               <tr className="bg-gray-200 ">
-                <td className="sm:pl-10 pl-2 pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="sm:pl-10 mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   United Healthcare
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   PPO
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg text-center">
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg text-center">
                   UHC Banner, AZ Compass, UHC Exchanged Market
                 </td>
               </tr>
               <tr>
-                <td className="sm:pl-10 pl-2 pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="sm:pl-10 mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   Workman's Compensation
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   Requires approval from adjustor
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg text-center"></td>
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg text-center"></td>
               </tr>
 
               <tr className="bg-gray-200 ">
-                <td className="sm:pl-10 pl-2 pr-2 py-5 text-gray-800  text-md sm:text-lg">
+                <td className="sm:pl-10 mx-auto py-5 text-gray-800  text-md sm:text-lg">
                   Miscellaneous Non-Contracted Plans
                 </td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg"></td>
-                <td className="pr-2 py-5 text-gray-800  text-md sm:text-lg text-center">
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg"></td>
+                <td className="mx-auto py-5 text-gray-800  text-md sm:text-lg text-center">
                   Oscar Health, Bright Health, Devoted Health, Molina HMO
                 </td>
               </tr>
