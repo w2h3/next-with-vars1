@@ -11,12 +11,97 @@ import Banner from '@/components/layout/Banner';
 import tester from 'public/contactBanner.jpg';
 
 export default function Contact() {
-  const [buttonText, setButtonText] = useState('Send');
+  const [fullname, setFullname] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState('');
+  const [errors, setErrors] = useState({});
+  const [subject, setSubject] = useState('Contact Form');
 
+  //   Setting button text on form submission
+  const [buttonText, setButtonText] = useState('Submit');
+
+  // Setting success or failure messages states
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [showFailureMessage, setShowFailureMessage] = useState(false);
+
+  // Validation check method
+  // Validation check method
+  const handleValidation = () => {
+    let tempErrors = {};
+    let isValid = true;
+
+    if (fullname.length <= 0) {
+      tempErrors['fullname'] = true;
+      isValid = false;
+    }
+    if (email.length <= 0) {
+      tempErrors['email'] = true;
+      isValid = false;
+    }
+    if (phone.length <= 0) {
+      tempErrors['phone'] = true;
+      isValid = false;
+    }
+    if (message.length <= 0) {
+      tempErrors['message'] = true;
+      isValid = false;
+    }
+
+    setErrors({ ...tempErrors });
+    console.log('errors', errors);
+    return isValid;
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    let isValidForm = handleValidation();
+
+    if (isValidForm) {
+      setButtonText('Sending');
+      const res = await fetch('/api/sendgrid', {
+        body: JSON.stringify({
+          fullname: fullname,
+          email: email,
+          phone: phone,
+          subject: subject,
+          message: message,
+        }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        method: 'POST',
+      });
+
+      const { error } = await res.json();
+      if (error) {
+        console.log(error);
+        setShowSuccessMessage(false);
+        setShowFailureMessage(true);
+        setButtonText('Submit');
+
+        // Reset form fields
+        setFullname('');
+        setEmail('');
+        setPhone('');
+        setMessage('');
+        return;
+      }
+      setShowSuccessMessage(true);
+      setShowFailureMessage(false);
+      setButtonText('Submit');
+      // Reset form fields
+      setFullname('');
+      setEmail('');
+      setPhone('');
+      setMessage('');
+    }
+    console.log(fullname, email, phone, message);
+  };
   return (
     <div className="testImage">
       {' '}
-      <Banner pageName={'Contact Us'} imageURL={tester}/>
+      <Banner pageName={'Contact Us'} imageURL={tester} />
       <div className="container pt-24 max-w-6xl pb-24 ">
         <div className=" lg:grid lg:grid-cols-3 mt-14 ">
           <div
@@ -120,17 +205,24 @@ export default function Contact() {
                 className="grid grid-cols-1 gap-y-6 mx-4 sm:mx-0 "
               >
                 <div>
-                  <label htmlFor="full-name" className="sr-only">
+                  <label htmlFor="fullname" className="sr-only">
                     Full name
                   </label>
                   <input
                     type="text"
-                    name="full-name"
-                    id="full-name"
+                    name="fullname"
+                    id="fullname"
                     autoComplete="name"
                     className="block w-full shadow-sm py-3 px-4  placeholder-gray-500 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md"
                     placeholder="Full name"
+                    value={fullname}
+                    onChange={(e) => {
+                      setFullname(e.target.value);
+                    }}
                   />
+                  {errors?.fullname && (
+                    <p className="text-red-500">Full name cannot be empty.</p>
+                  )}
                 </div>
                 <div>
                   <label htmlFor="email" className="sr-only">
@@ -143,7 +235,14 @@ export default function Contact() {
                     autoComplete="email"
                     className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md"
                     placeholder="Email"
-                  />
+                    value={email}
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                    }}
+                  />{' '}
+                  {errors?.email && (
+                    <p className="text-red-500">Email cannot be empty.</p>
+                  )}
                 </div>
                 <div>
                   <label htmlFor="phone" className="sr-only">
@@ -156,7 +255,14 @@ export default function Contact() {
                     autoComplete="tel"
                     className="w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-cyan-500 focus:border-cyan-500 border-gray-300 rounded-md"
                     placeholder="Phone"
-                  />
+                    value={phone}
+                    onChange={(e) => {
+                      setPhone(e.target.value);
+                    }}
+                  />{' '}
+                  {errors?.phone && (
+                    <p className="text-red-500">Phone cannot be empty.</p>
+                  )}
                 </div>
                 <div>
                   <label htmlFor="message" className="sr-only">
@@ -168,8 +274,14 @@ export default function Contact() {
                     rows={4}
                     className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-cyan-500 focus:border-cyan-500 border border-gray-300 rounded-md"
                     placeholder="Message"
-                    defaultValue={''}
-                  />
+                    value={message}
+                    onChange={(e) => {
+                      setMessage(e.target.value);
+                    }}
+                  />{' '}
+                  {errors?.message && (
+                    <p className="text-red-500">Message cannot be empty.</p>
+                  )}
                 </div>
                 <div>
                   <div className="flex flex-col justify-between items-center ">
@@ -183,6 +295,18 @@ export default function Contact() {
                     >
                       {buttonText}
                     </button>
+                    <div className="text-left">
+                      {showSuccessMessage && (
+                        <p className="text-green-500 font-semibold text-lg my-2">
+                          Thank you! Your Message has been delivered.
+                        </p>
+                      )}
+                      {showFailureMessage && (
+                        <p className="text-red-500">
+                          Oops! Something went wrong, please try again.
+                        </p>
+                      )}
+                    </div>
                   </div>
                 </div>
               </form>
