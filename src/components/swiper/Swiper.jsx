@@ -56,6 +56,7 @@ export default function Swipe() {
             width="100%"
             src={newFront}
             priority={true}
+            quality={75}
           />
         </SwiperSlide>
         <SwiperSlide>
