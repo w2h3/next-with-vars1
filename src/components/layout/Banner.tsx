@@ -35,7 +35,7 @@ export default function Banner({ pageName, imageURL }) {
       /> */}
       <div className="absolute inset-0  bg-black bg-opacity-30 w-screen">
         {/* py-20  */}
-        <h1 className="text-6xl font-extrabold tracking-tight text-white sm:text-7xl text-center mt-18 sm:mt-20">
+        <h1 className="text-6xl font-extrabold tracking-tight text-white sm:text-7xl text-center mt-16 sm:mt-20">
           {pageName}
         </h1>
 
