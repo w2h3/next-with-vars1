@@ -9,7 +9,8 @@ import Link from 'next/link';
 import bgmap from 'public/cactus4.jpg';
 import { useState } from 'react';
 import Banner from '@/components/layout/Banner';
-import tester from 'public/contactBanner1.jpeg';
+import tester from 'public/contactBanner9.jpeg';
+// import tester from 'public/contactBanner1.jpeg';
 export default function Contact() {
   const [fullname, setFullname] = useState('');
   const [email, setEmail] = useState('');

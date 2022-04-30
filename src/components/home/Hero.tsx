@@ -16,6 +16,7 @@ export default function Hero() {
               layout="fill"
               priority={true}
               objectFit="cover"
+              quality={75}
               // width={103}
               // height={70}
             />
