@@ -7,14 +7,15 @@ import BlurImage from '../util/Blur';
 export default function Banner({ pageName, imageURL }) {
   return (
     <div className="relative  mt-[4rem]">
-      <BlurImage
+      <Image
         src={imageURL}
         className="inset-0 object-center "
         alt=""
-        layout="fill"
-        priority={true}
+        // layout="fill"
+        // priority={true}
         objectFit="cover"
         quality={75}
+        loading="eager"
         // placeholder="blur"
         // width={380}
         // height={1080}
