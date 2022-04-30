@@ -13,7 +13,7 @@ export default function Banner({ pageName, imageURL }) {
             className="inset-0 object-center "
             alt=""
             layout="fill"
-            priority
+      
             objectFit="cover"
             quality={1}
             // width={103}
