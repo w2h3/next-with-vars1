@@ -3,7 +3,7 @@ import { LocationMarkerIcon } from '@heroicons/react/outline';
 import Mesa from '../components/maps/Mesa';
 import Gilbert from '../components/maps/Gilbert';
 import Link from 'next/link';
-import tester from 'public/locationbanner1.jpeg';
+import tester from 'public/locationbanner3.jpeg';
 import Banner from '@/components/layout/Banner';
 const posts = [
   {
@@ -53,7 +53,7 @@ const posts = [
 export default function locations() {
   return (
     <div className="testImage">
-      <Banner pageName={'Locations'} imageURL={tester.src}/>
+      <Banner pageName={'Locations'} imageURL={tester.src} />
 
       <div className="container">
         <div className=" mx-auto mb-20">
@@ -74,7 +74,6 @@ export default function locations() {
                         aria-hidden="true"
                       />
                       {post.category.name}
-                     
                     </p>
                     <p className="block mt-2">
                       <p className="text-2xl font-semibold text-gray-700">
