@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Header from './Header';
 
 const Layout = (props) => {
   return (
@@ -12,8 +13,8 @@ const Layout = (props) => {
           src={background2}
           alt="hello"
         /> */}
-      <nav className="z-50 w-full top-0  sticky">
-        
+      <nav className="z-50 w-full top-0 fixed">
+        {/* <Header/> */}
         <Navbar />
       </nav>
       {props.children}

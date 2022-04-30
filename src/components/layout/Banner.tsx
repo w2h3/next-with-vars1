@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 export default function Banner({ pageName, imageURL }) {
   return (
-    <div className="relative">
-      <div className="relative bg-black bg-opacity-50 h-[41vh] inset-0">
+    <div className="relative mt-[6.5rem]">
+      <div className=" bg-opacity-50 h-[41vh] ">
         <Image
           src={imageURL}
           layout="fill"
@@ -13,6 +13,7 @@ export default function Banner({ pageName, imageURL }) {
           alt="Hero Image"
           priority={true}
           placeholder="blur"
+          className="relative inset-0 object-center"
           // alt=""
           // layout="fill"
           // priority={true}
@@ -38,7 +39,7 @@ export default function Banner({ pageName, imageURL }) {
           {pageName}
         </h1>
 
-        <div className="pt-20" />
+        <div className="pt-16 sm:pt-20" />
 
         <div className="max-w-sm mx-auto sm:max-w-none  flex justify-center ">
           <div className=" justify-center space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-7 px-10">

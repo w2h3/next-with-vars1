@@ -29,8 +29,8 @@ export default function Navbar() {
     >
       {({ open }) => (
         <>
-        <Header />
-          <div className="max-w-screen-2xl lg:mx-auto mx-auto">
+          <Header />
+          <div className="max-w-screen-2xl lg:mx-auto mx-auto ">
             <div className="relative flex items-center justify-between h-16 ">
               <div className="absolute inset-y-0 right-0 flex items-center lg:hidden  ">
                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-[#00847D] focus:outline-none focus:ring-2 focus:ring-inset  focus:ring-white">
@@ -76,9 +76,7 @@ export default function Navbar() {
                               ' px-1 text-lg font-heavy',
                               router.route === item.href
                                 ? 'text-wcyan border-b border-wcyan'
-                                : 
-                                  ' text-gray-600  hover:text-wcyan hover:border-b hover:border-wcyan'
-                         
+                                : ' text-gray-600  hover:text-wcyan hover:border-b hover:border-wcyan'
                             )}
                             aria-current={
                               router.route === item.href ? 'page' : undefined
@@ -93,7 +91,6 @@ export default function Navbar() {
                         passHref
                       >
                         <button className="bg-wcyan border border-wcyan hover:bg-wcyan/70 hover:border hover:border-wcyan text-white font-bold p-1 xl:p-3 rounded-full">
-
                           Patient Portal
                         </button>
                       </Link>
@@ -101,11 +98,10 @@ export default function Navbar() {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
 
-          <Disclosure.Panel className="lg:hidden">
+          <Disclosure.Panel className="lg:hidden ">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
                 <Disclosure.Button
@@ -128,7 +124,6 @@ export default function Navbar() {
                   href="https://mycw34.eclinicalweb.com/portal3661/jsp/100mp/login_otp.jsp"
                   passHref
                 >
-          
                   <button
                     type="button"
                     className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/90 focus:ring-4 focus:ring-blue-300 font-medium rounded-xl text-sm px-5 py-2.5 text-center mr-2 mb-2 w-full "

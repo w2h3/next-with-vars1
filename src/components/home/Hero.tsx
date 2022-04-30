@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { GoPrimitiveDot } from 'react-icons/go';
 export default function Hero() {
   return (
-    <div>
+    <div className='mt-[6.5rem]'>
       <div className="relative h-[90vh]">
         <div className="relative  ">
           <Image
