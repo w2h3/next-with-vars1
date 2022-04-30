@@ -5,6 +5,7 @@ import '../components/swiper/swiper.css';
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      {' '}
       <Head>
         <title>Neurology & Sleep Medicine Associates</title>
         <link rel="icon" type="image/icon" sizes="16x16" href="/favicon.ico" />
@@ -14,7 +15,6 @@ function MyApp({ Component, pageProps }) {
         />
         <meta name="author" content="James Wingert" />
       </Head>
-
       <Layout>
         <Component {...pageProps} />
       </Layout>

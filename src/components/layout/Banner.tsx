@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Banner({ pageName, imageURL }) {
   return (
     <div className="relative mt-[4rem]">
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 ">
         {/* style={{ width: '9px', height: '1px' }} */}
         <div>
           <Image
@@ -13,12 +13,13 @@ export default function Banner({ pageName, imageURL }) {
             className="inset-0 object-center "
             alt=""
             layout="fill"
-            priority={true}
-            objectFit="cover"
+            // priority={true}
+            // objectFit="cover"
             quality={75}
-            placeholder="blur"
-            // width={103}
-            // height={70}
+            // placeholder="blur"
+            // width={40}
+            // height={11.83}
+            // layout="responsive"
           />
         </div>
         <div
