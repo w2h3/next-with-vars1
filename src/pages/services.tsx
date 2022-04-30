@@ -65,7 +65,7 @@ const features = [
 const services = () => {
   return (
     <>
-      <Banner pageName={'Services'} imageURL={tester}></Banner>
+      <Banner pageName={'Services'} imageURL={tester.src} />
       <div className="testImage">
         <div className="container">
           <div className="bg-wcyan/30 rounded-3xl mb-20">

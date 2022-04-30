@@ -150,7 +150,7 @@ export default function Contact() {
   };
   return (
     <div className="testImage">
-      <Banner pageName={'Contact Us'} imageURL={tester} />
+      <Banner pageName={'Contact Us'} imageURL={tester.src} />
       <div className="container pt-4 sm:pt-12 max-w-6xl pb-24 ">
         <div className=" lg:grid lg:grid-cols-3 mt-14 ">
           <div

@@ -2,6 +2,7 @@ module.exports = {
   swcMinify: true,
   images: {
     formats: ['image/webp'],
+    minimumCacheTTL: 31536000,
   },
   eslint: {
     dirs: ['src'],

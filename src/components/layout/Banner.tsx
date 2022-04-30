@@ -15,7 +15,7 @@ export default function Banner({ pageName, imageURL }) {
             layout="fill"
             priority
             objectFit="cover"
-            quality="60"
+            quality={1}
             // width={103}
             // height={70}
           />
@@ -24,7 +24,6 @@ export default function Banner({ pageName, imageURL }) {
           className="absolute  inset-0  bg-black bg-opacity-40"
           aria-hidden="true"
         />
-
       </div>
       <div className="relative max-w-7xl mx-auto py-20 px-4   sm:px-6 lg:px-8">
         <h1 className="text-6xl font-extrabold tracking-tight text-white sm:text-7xl text-center mt-20">
