@@ -191,7 +191,7 @@ export default function Appointment() {
   };
   return (
     <>
-      <Banner pageName={'Book an Appointment'} imageURL={tester.src} />
+      <Banner pageName={'Book an Appointment'} imageURL={tester} />
       <div className="testImage">
         <Divider sectionName="Request an Appointment" />
 

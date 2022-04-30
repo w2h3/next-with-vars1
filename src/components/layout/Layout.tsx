@@ -12,7 +12,7 @@ const Layout = (props) => {
           src={background2}
           alt="hello"
         /> */}
-      <nav className="fixed z-50 w-full top-0">
+      <nav className="z-50 w-full top-0  sticky">
         
         <Navbar />
       </nav>

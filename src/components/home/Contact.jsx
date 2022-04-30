@@ -133,7 +133,7 @@ export default function Contact() {
     console.log(fullname, email, phone, message);
   };
   return (
-    <div className="testImage">
+    <div className="">
       <Divider sectionName="How did we do?" />
       <div className="container max-w-6xl pb-24">
         <div className="relative bg-[#f0fdff]/80 rounded-2xl">

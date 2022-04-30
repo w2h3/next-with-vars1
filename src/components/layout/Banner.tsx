@@ -2,34 +2,38 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import BlurImage from '../util/Blur';
-
 export default function Banner({ pageName, imageURL }) {
   return (
-    <div className="relative  mt-[4rem]">
-      <Image
-        src={imageURL}
-        className="inset-0 object-center "
-        alt=""
-        // layout="fill"
-        // priority={true}
-        // objectFit="cover"
-        // quality={75}
-        loading="eager"
-        // placeholder="blur"
-        // width={380}
-        // height={1080}
-        // placeholder="blur"
-        // width={40}
-        // height={11.83}
-        // layout="responsive"
-      />
-      <div
-        className="absolute  inset-0  bg-black bg-opacity-40"
+    <div className="relative">
+      <div className="relative bg-black bg-opacity-50 h-[41vh] inset-0">
+        <Image
+          src={imageURL}
+          layout="fill"
+          objectFit="cover"
+          alt="Hero Image"
+          priority={true}
+          placeholder="blur"
+          // alt=""
+          // layout="fill"
+          // priority={true}
+          // objectFit="cover"
+          // quality={75}
+          // loading="eager"
+          // placeholder="blur"
+          // width={1900}
+          // height={400}
+          // placeholder="blur"
+          // width={40}
+          // height={11.83}
+          // layout="responsive"
+        />
+      </div>
+      {/* <div
+        className="relative w-full inset-0  bg-black bg-opacity-40"
         aria-hidden="true"
-      />
-
-      <div className="relative max-w-7xl mx-auto py-20 ">
+      /> */}
+      <div className="absolute inset-0  bg-black bg-opacity-30 w-screen">
+        {/* py-20  */}
         <h1 className="text-6xl font-extrabold tracking-tight text-white sm:text-7xl text-center mt-20">
           {pageName}
         </h1>

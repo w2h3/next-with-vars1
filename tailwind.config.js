@@ -25,6 +25,8 @@ module.exports = {
         roboto: ['Roboto Slab', 'serif'],
         madi: ['cursive'],
         oxygen: ['Oxygen', 'sans-serif'],
+        equinox: ['EquinoxRegular', 'serif'],
+        work: ['Work Sans', 'sans-serif'],
       },
     },
   },

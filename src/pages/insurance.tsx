@@ -5,7 +5,7 @@ import tester from 'public/billing9.jpeg';
 export const Insurances = () => {
   return (
     <>
-      <Banner pageName={'Insurances'} imageURL={tester.src}></Banner>
+      <Banner pageName={'Insurances'} imageURL={tester}></Banner>
       <div className="testImage">
         <div className="mx-auto  py-8 max-w-screen sm:max-w-6xl 2xl:max-w-[1700px]">
           <div className="text-center text-4xl text-wcyan mb-10">

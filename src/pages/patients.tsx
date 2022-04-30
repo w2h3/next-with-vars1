@@ -33,7 +33,7 @@ function classNames(...classes) {
 const patients = () => {
   return (
     <>
-      <Banner pageName={'For Patients'} imageURL={tester.src} />
+      <Banner pageName={'For Patients'} imageURL={tester} />
       <Divider sectionName="Patient Resources" />
       <div className="container mb-20">
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">

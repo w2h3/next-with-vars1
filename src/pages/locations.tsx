@@ -54,7 +54,7 @@ const posts = [
 export default function locations() {
   return (
     <div className="testImage">
-      <Banner pageName={'Locations'} imageURL={tester.src} />
+      <Banner pageName={'Locations'} imageURL={tester} />
 
       <div className="container">
         <div className=" mx-auto mb-20">

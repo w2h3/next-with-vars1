@@ -5,8 +5,8 @@ import Swipe from '@/components/swiper/Swiper';
 
 export const AboutUs = () => {
   return (
-    <div className="relative">
-      <Banner pageName="About Us" imageURL={stock.src} />
+    <div className="">
+      <Banner pageName="About Us" imageURL={stock} />
       <div className="container pb-20">
         <div className="grid grid-cols-1  lg:grid-cols-2 ">
           <div className="flex flex-col justify-center lg:max-w-6xl md:flex-col ">

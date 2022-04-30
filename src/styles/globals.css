@@ -5,9 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,600&display=swap');
+
 @font-face {
   font-family: 'NexaDemo-Bold';
   src: url('../../public/NexaBold.otf');
+}
+@font-face {
+  font-family: 'EquinoxRegular';
+  src: url('../../public/Equinox/EquinoxRegular.otf');
 }
 @layer components {
   .container {
