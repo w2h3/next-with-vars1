@@ -13,9 +13,9 @@ export default function Banner({ pageName, imageURL }) {
             className="inset-0 object-center "
             alt=""
             layout="fill"
-      
+            loading="eager"
             objectFit="cover"
-            quality={1}
+            quality={75}
             // width={103}
             // height={70}
           />
