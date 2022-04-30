@@ -1,14 +1,12 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import Link from 'next/link';
 import Image from 'next/image';
-import NextImage from '../util/NextImage';
+
 import BlurImage from '../util/Blur';
 
 export default function Banner({ pageName, imageURL }) {
   return (
     <div className="relative  mt-[4rem]">
-      {/* style={{ width: '9px', height: '1px' }} */}
-
       <BlurImage
         src={imageURL}
         className="inset-0 object-center "
@@ -16,7 +14,7 @@ export default function Banner({ pageName, imageURL }) {
         layout="fill"
         priority={true}
         objectFit="cover"
-        // quality={75}
+        quality={75}
         // placeholder="blur"
         // width={380}
         // height={1080}
