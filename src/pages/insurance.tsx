@@ -1,5 +1,5 @@
 import Banner from '@/components/layout/Banner';
-import tester from 'public/billing.jpg';
+import tester from 'public/billing1.jpeg';
 
 export const Insurances = () => {
   return (

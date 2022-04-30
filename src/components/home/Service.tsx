@@ -11,7 +11,7 @@ import Image from 'next/image';
 
 const Service = () => {
   return (
-    <div className="testImage">
+    <div className="bg-white">
       <section className="mx-auto px-8 py-8  max-w-6xl">
         {' '}
         <div className="text-center mb-5">

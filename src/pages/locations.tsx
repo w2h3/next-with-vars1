@@ -3,7 +3,7 @@ import { LocationMarkerIcon } from '@heroicons/react/outline';
 import Mesa from '../components/maps/Mesa';
 import Gilbert from '../components/maps/Gilbert';
 import Link from 'next/link';
-import tester from 'public/locationbanner.jpg';
+import tester from 'public/locationbanner1.jpeg';
 import Banner from '@/components/layout/Banner';
 const posts = [
   {

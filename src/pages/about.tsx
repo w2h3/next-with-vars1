@@ -1,5 +1,5 @@
 import Banner from '@/components/layout/Banner';
-import stock from 'public/aboutbanner.jpg';
+import stock from 'public/handhold1.jpeg';
 import Swipe from '@/components/swiper/Swiper';
 
 export const AboutUs = () => {

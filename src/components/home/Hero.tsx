@@ -1,12 +1,12 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
-import tester from '/public/banner2.jpg';
+import tester from '/public/banner2.jpeg';
 import Image from 'next/image';
 import Link from 'next/link';
 import { GoPrimitiveDot } from 'react-icons/go';
 export default function Hero() {
   return (
     <div>
-      <div className="mt-[4.5rem] sm:mt-[6.5rem]">
+      <div className="mt-[6.5rem]">
         <div className="relative h-[90vh]">
           <div className="relative  ">
             <Image
@@ -22,7 +22,7 @@ export default function Hero() {
             <div className="relative flex justify-center px-4  sm:px-6  bg-black bg-opacity-60 h-[90vh] items-center ">
               <div className=" max-w-7xl relative rounded-3xl ">
                 <h1 className="text-center text-4xl md:text-5xl font-extrabold tracking-tighter lg:text-6xl ">
-                  <span className="block text-[#c2df6c] pt-10 font-nexa ">
+                  <span className="block text-[#c2df6c] pt-4 sm:pt-10 font-nexa ">
                     Neurology and Sleep Medicine
                   </span>
                   <span className="block text-3xl mx:text-4xl font-thin tracking-widest  lg:text-5xl  text-white font-roboto align-text-bottom">

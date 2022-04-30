@@ -1,6 +1,6 @@
 import Banner from '@/components/layout/Banner';
 import React from 'react';
-import tester from 'public/forptbanner.jpg';
+import tester from 'public/forptbanner1.jpeg';
 import Link from 'next/link';
 import Logo from '@/components/Logos';
 import Divider from '@/components/layout/Dividers';
