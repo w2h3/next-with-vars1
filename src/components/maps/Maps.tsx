@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Chandler from './Chandler';
 import { LocationMarkerIcon } from '@heroicons/react/outline';
 import Mesa from './Mesa';
@@ -92,7 +91,7 @@ export default function Map() {
                       </p>
                     </p>
                     <div className="mt-6 flex justify-center">
-                      <div className="flex-shrink-0"></div>
+                      <div className="flex-shrink-0"/>
                       <div className="w-full">
                         <Link href={post.href}>
                           <a
