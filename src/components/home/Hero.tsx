@@ -23,7 +23,7 @@ export default function Hero() {
             <div className="relative flex justify-center px-4  sm:px-6  bg-black bg-opacity-60 h-[90vh] items-center ">
               <div className=" max-w-7xl relative rounded-3xl ">
                 <h1 className="text-center text-4xl md:text-5xl font-extrabold tracking-tighter lg:text-6xl ">
-                  <span className="block text-[#c2df6c] pt-4 sm:pt-10 font-nexa ">
+                  <span className="block text-[#c2df6c]  sm:pt-10 font-nexa ">
                     Neurology and Sleep Medicine
                   </span>
                   <span className="block text-3xl mx:text-4xl font-thin tracking-widest  lg:text-5xl  text-white font-roboto align-text-bottom">
