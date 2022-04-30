@@ -1,6 +1,6 @@
 import Banner from '@/components/layout/Banner';
 import React from 'react';
-import tester from 'public/drtest9.jpg';
+import tester from 'public/drtest9.jpeg';
 // import tester from 'public/drtest.jpg';
 
 const faqs = [
@@ -59,7 +59,7 @@ const faqs = [
 export default function MedProf() {
   return (
     <>
-      <Banner pageName={'Medical Professionals'} imageURL={tester.src}/>
+      <Banner pageName={'Medical Professionals'} imageURL={tester.src} />
       <div className="pt-24 container">
         <div className="bg-gray-50">
           <div className="max-w-7xl mx-auto py-12 px-4 divide-y divide-gray-200 sm:px-6 lg:py-16 lg:px-8">
