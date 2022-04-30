@@ -102,7 +102,7 @@ export default function Navbar() {
           </div>
 
           <Disclosure.Panel className="lg:hidden ">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+            <div className="px-2 pt-2 pb-3 space-y-1 w-1/2">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
