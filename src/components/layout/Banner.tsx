@@ -35,11 +35,11 @@ export default function Banner({ pageName, imageURL }) {
       /> */}
       <div className="absolute inset-0  bg-black bg-opacity-30 w-screen">
         {/* py-20  */}
-        <h1 className="text-6xl font-extrabold tracking-tight text-white sm:text-7xl text-center mt-20">
+        <h1 className="text-6xl font-extrabold tracking-tight text-white sm:text-7xl text-center mt-18 sm:mt-20">
           {pageName}
         </h1>
 
-        <div className="pt-16 sm:pt-20" />
+        <div className="pt-12 sm:pt-20" />
 
         <div className="max-w-sm mx-auto sm:max-w-none  flex justify-center ">
           <div className=" justify-center space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-7 px-10">
