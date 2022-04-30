@@ -13,8 +13,8 @@ export default function Banner({ pageName, imageURL }) {
         alt=""
         // layout="fill"
         // priority={true}
-        objectFit="cover"
-        quality={75}
+        // objectFit="cover"
+        // quality={75}
         loading="eager"
         // placeholder="blur"
         // width={380}
