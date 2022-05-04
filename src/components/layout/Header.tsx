@@ -1,9 +1,9 @@
 import Link from 'next/link';
-
+// f0fdff
 const Header = () => {
   return (
     <nav className="flex-row sticky">
-      <div className="flex  md:flex-row md:items-center lg:justify-evenly bg-[#f0fdff] mx-auto justify-center md:px-10 lg:mx-auto  sm:px-2">
+      <div className="flex  md:flex-row md:items-center lg:justify-evenly bg-[#F7FDFE] mx-auto justify-center md:px-10 lg:mx-auto  sm:px-2">
         <div className="flex my-2">
           <Link href="tel:4809676888" passHref>
             <a>

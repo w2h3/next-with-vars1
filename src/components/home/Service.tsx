@@ -17,7 +17,7 @@ const Service = () => {
         <div className="text-center mb-5">
           <Divider sectionName={'Our Services'} />
         </div>
-        <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-slate-50 p-2 md:p-5 rounded-2xl shadow-lg border border-wcyan/20">
+        <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-slate-50 p-2 md:p-5 rounded-2xl shadow-xl border border-wcyan/20">
           <div className="">
             <h2 className="mb-4 text-3xl font-semibold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-4xl font-equinox">
               Neurology
@@ -82,7 +82,7 @@ const Service = () => {
             {/* md:h-52 md:w-48 h-96  */}
           </div>
         </div>
-        <div className="grid items-center flex-col-reverse grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-slate-50 p-2 md:p-5 rounded-2xl shadow-lg border-wcyan/20 border">
+        <div className="grid items-center flex-col-reverse grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-slate-50 p-2 md:p-5 rounded-2xl shadow-xl border-wcyan/20 border">
           <div className="order-none md:order-2  ">
             <h2 className="mb-4 text-3xl font-semibold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-4xl font-equinox">
               Sleep
@@ -127,7 +127,7 @@ const Service = () => {
             {/* md:h-52 md:w-48 h-96  */}
           </div>
         </div>
-        <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-slate-50 p-2 md:p-5 rounded-2xl shadow-lg border-wcyan/20 border">
+        <div className="grid items-center grid-cols-1 mb-24 md:grid-cols-2 gap-y-10 md:gap-y-32 gap-x-10 md:gap-x-24 bg-slate-50 p-2 md:p-5 rounded-2xl shadow-xl border-wcyan/20 border ">
           <div>
             <h2 className="mb-4 text-3xl font-semibold tracking-tight text-center text-wcyan md:leading-tight sm:text-left md:text-4xl font-equinox">
               Neuro rehabilitation

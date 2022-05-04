@@ -51,7 +51,7 @@ const posts = [
 
 export default function Map() {
   return (
-    <div className="bg-[#f0fdff]/80">
+    <div className="testImage">
 
       <div className="container">
                 <div className=" mx-auto ">
@@ -71,7 +71,7 @@ export default function Map() {
                 </div>
                 <div className="flex-1 mx-auto mb-4 flex flex-col justify-between ">
                   <div className="flex-1">
-                    <p className="flex gap-2 items-center justify-center text-xl font-medium text-wcyan ">
+                    <p className="flex gap-2 items-center justify-center text-2xl font-medium text-wcyan ">
                       <LocationMarkerIcon
                         className="flex-shrink-0 h-6 w-6 text-wcyan"
                         aria-hidden="true"

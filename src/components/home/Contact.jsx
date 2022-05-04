@@ -135,8 +135,8 @@ export default function Contact() {
   return (
     <div className="">
       <Divider sectionName="How did we do?" />
-      <div className="container max-w-6xl pb-24">
-        <div className="relative bg-[#f0fdff]/80 rounded-2xl">
+      <div className="container max-w-6xl pb-24 ">
+        <div className="relative bg-[#f0fdff]/80 rounded-2xl shadow-2xl">
           <div className="relative max-w-7xl mx-auto lg:grid lg:grid-cols-5">
             <div className=" py-12 px-4 sm:px-6 lg:col-span-2 lg:px-8 xl:pr-12">
               <div className="max-w-lg mx-auto">
@@ -190,7 +190,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-white border-2 rounded-2xl border-[#f0fdff]/80 py-12 px-4 sm:px-6 lg:col-span-3  lg:px-8 xl:pl-12">
+            <div className="bg-white rounded-2xl  py-12 px-4 sm:px-6 lg:col-span-3  lg:px-8 xl:pl-12">
               <div className="max-w-lg mx-auto lg:max-w-none">
                 <form
                   onSubmit={handleSubmit}
