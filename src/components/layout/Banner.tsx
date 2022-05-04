@@ -11,12 +11,15 @@ export default function Banner({ pageName, imageURL }) {
           <Image
             src={imageURL}
             alt=""
-            // layout="fill"
+            layout="fill"
             priority={true}
-            // objectFit="cover"
-            quality={75}
+            objectFit="cover"
+            quality={60}
             placeholder="blur"
             loading="eager"
+    
+        
+         
           />
           {/* <img
             className="absolute"
