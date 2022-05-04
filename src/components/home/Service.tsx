@@ -1,7 +1,7 @@
 import React from 'react';
 import Divider from '../layout/Dividers';
-import neuro from 'public/neuroserve.jpg';
-import insomnia from 'public/sleepserv.jpg';
+import neuro from 'public/neuroserve1223.jpeg';
+import insomnia from 'public/sleepserv1223.jpeg';
 import physical from 'public/physical.jpg';
 import { CheckIcon } from '@heroicons/react/outline';
 import Link from 'next/link';

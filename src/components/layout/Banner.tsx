@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Banner({ pageName, imageURL }) {
   return (
     <div className="relative mt-[6.5rem]">
-      <div className=" bg-opacity-50 h-[41vh] ">
+      <div className="h-[41vh]">
         <Image
           src={imageURL}
           layout="fill"
@@ -13,7 +13,10 @@ export default function Banner({ pageName, imageURL }) {
           alt="Hero Image"
           priority={true}
           placeholder="blur"
+          // height={300}
+          // width={900}
           className="relative inset-0 object-center"
+
           // alt=""
           // layout="fill"
           // priority={true}
@@ -33,7 +36,7 @@ export default function Banner({ pageName, imageURL }) {
         className="relative w-full inset-0  bg-black bg-opacity-40"
         aria-hidden="true"
       /> */}
-      <div className="absolute inset-0  bg-black bg-opacity-30 w-screen">
+      <div className="absolute inset-0  bg-black bg-opacity-30 w-fill">
         {/* py-20  */}
         <h1 className="text-6xl font-extrabold tracking-tight text-white sm:text-7xl text-center mt-16 sm:mt-20">
           {pageName}

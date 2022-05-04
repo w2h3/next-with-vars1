@@ -10,14 +10,12 @@ export default function Hero() {
         <div className="relative  ">
           <Image
             src={tester}
-            className="tiny-hero  "
+            className="tiny-hero"
             alt=""
             layout="fill"
             priority={true}
             objectFit="cover"
             quality={75}
-            // width={103}
-            // height={70}
           />
           <div className="relative flex justify-center px-4  sm:px-6  bg-black bg-opacity-60 h-[90vh] items-center ">
             <div className=" max-w-7xl relative rounded-3xl ">
