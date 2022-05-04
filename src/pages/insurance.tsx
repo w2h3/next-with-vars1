@@ -1,11 +1,11 @@
 import Banner from '@/components/layout/Banner';
-import tester from 'public/billing9.jpeg';
+import tester from '/public/insuranceB1.jpeg';
 // import tester from 'public/billing1.jpeg';
 
 export const Insurances = () => {
   return (
     <>
-      <Banner pageName={'Insurances'} imageURL={tester}></Banner>
+      <Banner pageName={'Insurances'} imageURL={tester} />
       <div className="testImage">
         <div className="mx-auto  py-8 max-w-screen sm:max-w-6xl 2xl:max-w-[1700px]">
           <div className="text-center text-4xl text-wcyan mb-10">

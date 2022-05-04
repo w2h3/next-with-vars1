@@ -3,11 +3,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function Banner({ pageName, imageURL }) {
+export default function Banner({ pageName, imageURL, ...props }) {
   return (
     <div className=" mt-[6.5rem]">
       <div className="relative  h-[41vh]">
-        <div className="relative ">
+        <div className="relative">
           <Image
             src={imageURL}
             alt=""
@@ -16,38 +16,9 @@ export default function Banner({ pageName, imageURL }) {
             objectFit="cover"
             quality={75}
             placeholder="blur"
+        
           />
-          {/* h-[41vh] */}
-          {/* style={{ height: '41vh' }} */}
-          {/* <Image
-          src={imageURL}
-          layout="responsive"
-          objectFit="cover"
-          alt="Hero Image"
-          priority={true}
-          loading="eager"
-          placeholder="blur"
-         height={620}
-          width={1905}
-          className="relative inset-0 object-center " */}
-          {/* alt=""
-           layout="fill"
-           priority={true}
-           objectFit="cover"
-           quality={75}
-         loading="eager"
-         placeholder="blur"
-         width={1900}
-           height={400}
-           placeholder="blur"
-           width={40}
-           height={11.83}
-           layout="responsive" */}
-          {/* /> */}
-          {/* <div
-        className="relative w-full inset-0  bg-black bg-opacity-40"
-        aria-hidden="true"
-      /> */}
+
           <div className="relative justify-center px-4  sm:px-6 pt-1 bg-black bg-opacity-50 h-[41vh] items-center">
             {/* py-20  */}
             <h1 className="text-6xl font-extrabold tracking-tight text-white sm:text-7xl text-center mt-16 sm:mt-20 ">
