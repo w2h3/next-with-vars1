@@ -2,7 +2,7 @@
 import Banner from '@/components/layout/Banner';
 import React from 'react';
 // import tester from 'public/servebanner1.jpeg';
-import tester from 'public/servebanner9.jpeg';
+import tester from 'public/servebanner9.webp';
 import icon1 from 'public/ser_icon1.png';
 import icon2 from 'public/ser_icon2.png';
 import icon3 from 'public/ser_icon3.png';

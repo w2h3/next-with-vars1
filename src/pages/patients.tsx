@@ -1,7 +1,7 @@
 import Banner from '@/components/layout/Banner';
 import React from 'react';
 // import tester from 'public/forptbanner1.jpeg';
-import tester from 'public/forptbanner9.jpeg';
+import tester from 'public/forptbanner9.webp';
 import Link from 'next/link';
 import Logo from '@/components/Logos';
 import Divider from '@/components/layout/Dividers';
