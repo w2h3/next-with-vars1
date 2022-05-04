@@ -1,5 +1,5 @@
 import Banner from '@/components/layout/Banner';
-import stock from '/public/handhold9.webp';
+import stock from '/public/resized/handhold.jpg';
 // import stock from 'public/handhold1.jpeg';
 import Swipe from '@/components/swiper/Swiper';
 
