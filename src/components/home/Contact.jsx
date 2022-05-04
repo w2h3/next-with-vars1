@@ -138,7 +138,7 @@ export default function Contact() {
       <div className="container max-w-6xl pb-24">
         <div className="relative bg-[#f0fdff]/80 rounded-2xl">
           <div className="relative max-w-7xl mx-auto lg:grid lg:grid-cols-5">
-            <div className=" py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
+            <div className=" py-12 px-4 sm:px-6 lg:col-span-2 lg:px-8 xl:pr-12">
               <div className="max-w-lg mx-auto">
                 <h2 className="text-3xl font-extrabold tracking-tight text-wcyan sm:text-3xl">
                   Get in touch
@@ -190,7 +190,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
+            <div className="bg-white border-2 rounded-2xl border-[#f0fdff]/80 py-12 px-4 sm:px-6 lg:col-span-3  lg:px-8 xl:pl-12">
               <div className="max-w-lg mx-auto lg:max-w-none">
                 <form
                   onSubmit={handleSubmit}

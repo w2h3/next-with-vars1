@@ -181,10 +181,10 @@ export const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="space-y-11 text-center items-center justify-center ">
-              <p className="font-bold tracking-wider text-[#191716]  text-lg">
-                Locations:
-              </p>
+          <div className="sm:space-y-11 text-center items-center justify-center ">
+            <p className="font-bold tracking-wider text-[#191716]  text-lg">
+              Locations:
+            </p>
             <dl className="text-base font-bold tracking-wide text-[#191716] ">
               <div className="mt-2 ">
                 <dt className="sr-only">Postal address</dt>
