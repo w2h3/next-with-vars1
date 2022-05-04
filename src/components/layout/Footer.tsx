@@ -16,7 +16,7 @@ const navigation = [
   { name: 'Insurances', href: '/insurance', current: false },
   { name: 'Locations', href: '/locations', current: false },
   { name: 'Contact', href: '/contact', current: false },
-  { name: 'For Patients', href: '/patients', current: false },
+  { name: 'Patients', href: '/patients', current: false },
 ];
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -38,8 +38,8 @@ export const Footer = () => {
 
   return (
     <div className="bg-[#E8FAFC] relative ">
-      <div className="mx-auto px-8 pt-8  max-w-6xl 2xl:max-w-[1700px]">
-        <div className="custom-shape-divider-bottom-1647011816 absolute right-32 w-fill top-0  h-6 -mt-5 sm:-mt-10 sm:h-14 z-10">
+      <div className="mx-auto pt-8 max-w-7xl text-center  ">
+        <div className="custom-shape-divider-bottom-1647011816 absolute right-32 w-fill top-0  h-6 -mt-5 sm:-mt-10 sm:h-14  z-10">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -63,8 +63,8 @@ export const Footer = () => {
           </svg>
         </div>
 
-        <div className="grid gap-10 row-gap-6 mb-8 md:grid-cols-2 lg:grid-cols-4 justify-center">
-          <div className="sm:col-span-1 ">
+        <div className="grid mb-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 justify-center sm:grid-flow-col space-y-5 ">
+          <div className="sm:col-span-2">
             <Link href="/" passHref>
               <a
                 aria-label="Go home"
@@ -74,194 +74,192 @@ export const Footer = () => {
                 <Image src="/logo.png" alt="logo" height={55} width={300} />
               </a>
             </Link>
-            <div className="mt-5  font-bold tracking-wide text-gray-900 ">
+            <div className="mt-5  font-bold tracking-wide text-[#191716] ">
               Hours:
             </div>
-            <div className="tracking-wide text-gray-600">
+            <div className="tracking-wide text-[#191716] ">
               {' '}
               Monday - Friday 8:00 AM to 5:00 PM{' '}
             </div>
-            <div className="mt-5 text-l font-bold tracking-wide text-gray-900 ">
+            <div className="mt-5 text-l font-bold tracking-wide text-[#191716]  ">
               Closed for lunch:
             </div>
-            <div className="tracking-wide text-base  text-gray-600">
+            <div className="tracking-wide text-base  text-[#191716] ">
               {' '}
               Monday - Friday 12:00 PM to 1:00 PM{' '}
             </div>{' '}
-            <div className="mt-4 ">
+            <div className="mt-4 text-center items-center justify-center space-y-3">
               <dt className="sr-only">Phone number</dt>
-              <div className="flex">
-                <Link href="tel:4807478296" passHref>
+              <div className="flex items-center text-center justify-center">
+                <Link href="tel:4809676888" passHref>
                   <a>
                     <PhoneIcon
-                      className="flex-shrink-0 h-6 w-6 text-wcyan"
+                      className="flex-shrink-0 h-6 w-6 text-wcyan items-center text-center justify-center"
                       aria-hidden="true"
                     />
                   </a>
                 </Link>
-                <span className="ml-1 mb-3">
-                  <Link href="tel:4807478296" passHref>
-                    <a className="flex ">
-                      <span className="text-gray-900 font-bold">
+                <span className="ml-1 text-center items-center justify-center self-center">
+                  <Link href="tel:4809676888" passHref>
+                    <a className="flex text-center items-center justify-center ">
+                      <span className="text-[#191716]  font-bold ">
                         Phone: &nbsp;
                       </span>
-                      <span className="text-base text-gray-600">
+                      <span className="text-base text-[#191716] ">
                         (480) 967-6888
                       </span>
                     </a>
                   </Link>
                 </span>
               </div>
-              <div className="flex ">
+              <div className="flex justify-center">
                 <NewspaperIcon
                   className="flex-shrink-0 h-6 w-6 text-wcyan"
                   aria-hidden="true"
                 />
-                <div className="flex    ml-1">
-                  <span className="text-gray-900 text-base font-bold">
+                <div className="flex ml-1">
+                  <span className="text-[#191716] text-base font-bold">
                     Fax: &nbsp;
                   </span>{' '}
-                  <span className="text-gray-600 text-base">
+                  <span className="text-[#191716]  text-base">
                     (480) 967-6887
                   </span>
                 </div>{' '}
+              </div>{' '}
+              <div className="text-center items-center justify-center">
+                <dt className="sr-only">Email</dt>
+                <dd className="flex items-center text-center justify-center">
+                  <span className="text-[#191716] text-base font-bold items-center text-center justify-center flex">
+                    <MailIcon
+                      className="flex-shrink-0 h-6 w-6 text-wcyan mr-1"
+                      aria-hidden="true"
+                    />{' '}
+                    Email: &nbsp;
+                  </span>{' '}
+                  <span className="text-base text-[#191716] ">
+                    billing@neurologyandsleep.com
+                  </span>
+                </dd>
               </div>
             </div>
-            <div className="flex items-center mt-6 space-x-3">
+            <div className="flex justify-center items-center mt-6">
               <Link href="/appointment" passHref>
                 <button
                   type="button"
-                  className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 hover:border hover:border-wcyan font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 "
+                  className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 hover:border hover:border-wcyan font-medium rounded-full text-md px-5 py-2.5 text-center "
                 >
                   REQUEST APPOINTMENT
                 </button>
               </Link>
             </div>
           </div>
-          <div className=" sm:col-span-1  ">
-            <div className="mx-auto space-y-2">
-              <div className="gap-2 hidden lg:grid lg:grid-rows-6 lg:justify-center">
-                <p className=" text-base font-bold tracking-wide text-gray-900">
-                  Navigate:
-                </p>
-                <div className="text-base row-span-6 ">
-                  {navigation.map((item) => (
-                    <Link href={item.href} key={item.name} passHref>
-                      <a
-                        className={classNames(
-                          'text-lg font-bold ',
-                          router.route === item.href
-                            ? 'text-wcyan'
-                            : // text-gray-900  border-gray-900
-                              '  text-gray-500  hover:text-wcyan'
-                          // border-transparent
-                        )}
-                        aria-current={
-                          router.route === item.href ? 'page' : undefined
-                        }
-                      >
-                        <div className="mb-3">{item.name}</div>
-                      </a>
-                    </Link>
-                  ))}
-                </div>
+          <div className="mx-auto hidden lg:grid lg:col-span-1 text-center justify-center  ">
+            <div className="lg:grid lg:grid-rows-6 lg:justify-center">
+              <p className="font-bold tracking-wider text-[#191716] text-lg ">
+                Navigate:
+              </p>
+              <div className="text-base row-span-6 ">
+                {navigation.map((item) => (
+                  <Link href={item.href} key={item.name} passHref>
+                    <a
+                      className={classNames(
+                        'text-lg font-bold tracking-wider',
+                        router.route === item.href
+                          ? 'text-wcyan underline underline-offset-4 decoration-wcyan'
+                          : // text-gray-900  border-gray-900
+                            '  text-[#191716]   hover:text-wcyan'
+                        // border-transparent
+                      )}
+                      aria-current={
+                        router.route === item.href ? 'page' : undefined
+                      }
+                    >
+                      <div className="mb-3">{item.name}</div>
+                    </a>
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
-          <div className="space-y-4">
-            {/* <p className="text-base font-bold tracking-wide text-gray-900 ">
-              Contacts:
-            </p> */}
-            <dl className="text-base  text-gray-600">
-              <div>
+          <div className="space-y-11 text-center items-center justify-center ">
+              <p className="font-bold tracking-wider text-[#191716]  text-lg">
+                Locations:
+              </p>
+            <dl className="text-base font-bold tracking-wide text-[#191716] ">
+              <div className="mt-2 ">
                 <dt className="sr-only">Postal address</dt>
-                <dd className="flex">
+                <dd className="text-center justify-center flex">
                   <LocationMarkerIcon
-                    className="flex-shrink-0 h-6 w-6 text-wcyan"
+                    className="flex-shrink-0 h-6 w-6 text-wcyan "
                     aria-hidden="true"
                   />
-                  <span className="text-center mb-3">
-                    2919 S. Ellsworth Road<br></br> Suite 135 <br />
+                  <span className="text-center items-center mb-3">
+                    2919 S. Ellsworth Rd.<br></br> Suite 135 <br />
                     Mesa, AZ 85212
                   </span>
                 </dd>
                 <dt className="sr-only">Postal address</dt>
-                <dd className="flex">
+                <dd className="text-center justify-center flex">
                   <LocationMarkerIcon
                     className="flex-shrink-0 h-6 w-6 text-wcyan"
                     aria-hidden="true"
                   />
-                  <span className="text-center mb-3">
-                    4001 E Baseline Road<br></br> Suite 205
+                  <span className="text-center items-center mb-3">
+                    4001 E Baseline Rd.<br></br> Suite 205
                     <br /> Gilbert, AZ 85234
                   </span>
                 </dd>
                 <dt className="sr-only">Postal address</dt>
-                <dd className="flex">
+                <dd className="text-center justify-center flex">
                   <LocationMarkerIcon
                     className="flex-shrink-0 h-6 w-6 text-wcyan"
                     aria-hidden="true"
                   />
-                  <span className="text-center mb-3">
-                    2045 S. Vineyard Drive<br></br> Bldg. N3, Suite 144
+                  <span className="text-center items-center mb-3">
+                    2045 S. Vineyard Dr.<br></br> Bldg. N3, Suite 144
                     <br /> Mesa, AZ 85210
-                  </span>
-                </dd>
-              </div>
-
-              <div className="mt-3 ">
-                <dt className="sr-only">Email</dt>
-                <dd className="flex">
-                  <MailIcon
-                    className="flex-shrink-0 h-6 w-6 text-wcyan"
-                    aria-hidden="true"
-                  />
-                  <span className="  text-gray-600 ">
-                    billing@neurologyandsleep.com
                   </span>
                 </dd>
               </div>
             </dl>
           </div>
-          <div className="md:text-center lg:text-left ">
-
-            <div className="flex items-center mt-4 space-x-3 md:justify-center lg:justify-start">
+          <div className="flex items-center sm:flex-col text-center justify-center sm:justify-start sm:col-start-4 lg:col-start-5  gap-3">
+            <div className="flex items-center mt-1 ">
               <Link href="/patients" passHref>
                 <button
                   type="button"
-                  className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 hover:border hover:border-wcyan font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 "
+                  className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 hover:border hover:border-wcyan font-medium rounded-full text-,d px-5 py-2.5 text-center  "
                 >
-                  FOR PATIENTS
+                  PATIENTS
                 </button>
               </Link>
             </div>
-            <div className="flex items-center mt-1 space-x-3 md:justify-center lg:justify-start">
+            <div className="flex items-center mt-1 md:justify-center">
               <Link href="/medprof" passHref>
                 <button
                   type="button"
-                  className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 hover:border hover:border-wcyan font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 "
+                  className="text-white bg-wcyan border border-wcyan hover:bg-wcyan/70 hover:border hover:border-wcyan font-medium rounded-full text-md px-5 py-2.5 text-center  "
                 >
-                  FOR PROVIDERS
+                  PROVIDERS
                 </button>
               </Link>
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-between pt-5 lg:-mb-10 border-t border-wcyan lg:flex-col pb-2">
+        <div className="flex flex-col  justify-between pt-5 lg:-mb-10 border-t border-wcyan md:flex-row pb-2 ">
           <p className="text-sm text-gray-600 pb-2">
             © Copyright 2022 Neurology And Sleep Medicine Associates. All rights
             reserved.
           </p>
-  
-          
-        <span className="text-sm mb-2 text-gray-600 ">
-          Site made by &nbsp;
-          <span className="text-wcyan text-sm">
-            <Link href="https://www.wingertproject.com" passHref>
-              James Wingert
-            </Link>
+
+          <span className="text-sm mb-2 text-gray-600 ">
+            Site made by &nbsp;
+            <span className="text-wcyan text-sm">
+              <Link href="https://www.wingertproject.com" passHref>
+                James Wingert
+              </Link>
+            </span>
           </span>
-        </span>
         </div>
       </div>
     </div>
