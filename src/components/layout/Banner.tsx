@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function Banner({ pageName, imageURL, ...props }) {
   return (
     <div className=" mt-[6.5rem]">
-      <div className="relative  h-[41vh]">
+      <div className="relative  h-[41vh] w-full">
         <div className="relative">
           <Image
             src={imageURL}
@@ -16,9 +16,7 @@ export default function Banner({ pageName, imageURL, ...props }) {
             objectFit="cover"
             quality={75}
             placeholder="blur"
-        
           />
-
           <div className="relative justify-center px-4  sm:px-6 pt-1 bg-black bg-opacity-50 h-[41vh] items-center">
             {/* py-20  */}
             <h1 className="text-6xl font-extrabold tracking-tight text-white sm:text-7xl text-center mt-16 sm:mt-20 ">
