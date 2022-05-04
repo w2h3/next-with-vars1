@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/no-html-link-for-pages */
 import Link from 'next/link';
 import Image from 'next/image';
@@ -5,17 +6,18 @@ import Image from 'next/image';
 export default function Banner({ pageName, imageURL }) {
   return (
     <div className="relative mt-[6.5rem]">
-      <div className="h-[41vh]">
-        <Image
-          src={imageURL}
-          layout="fill"
-          objectFit="cover"
+      <div className="h-[41vh] w-full">
+        {/* h-[41vh] */}
+        <img
+          src={imageURL.src}
+          // layout="fill"
+          // objectFit="cover"
           alt="Hero Image"
-          priority={true}
+          // priority={true}
           placeholder="blur"
-          // height={300}
-          // width={900}
-          className="relative inset-0 object-center"
+          // height={390}
+          // width={1905}
+          className="relative inset-0 object-center h-[100%] w-[100%] "
 
           // alt=""
           // layout="fill"

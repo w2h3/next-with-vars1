@@ -1,6 +1,6 @@
 import Banner from '@/components/layout/Banner';
 import React from 'react';
-import tester from 'public/banner/drtest1.jpeg';
+import tester from 'public/drtest9.jpeg';
 // import tester from 'public/drtest.jpg';
 
 const faqs = [

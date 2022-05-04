@@ -3,10 +3,10 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import swiper1 from 'public/wang/swiper1.jpeg';
-import newFront from 'public/wang/newFront11.jpeg';
+import newFront from 'public/wang/newFront1.jpeg';
 import swiper2 from 'public/wang/swiper21.jpeg';
 import swiper3 from 'public/wang/swiper31.jpeg';
-import swiper4 from 'public/wang/swiper41.jpeg';
+import swiper4 from 'public/wang/swiper4.jpg';
 import swiper5 from 'public/wang/swiper51.jpeg';
 import swiper6 from 'public/wang/swiper61.jpeg';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper';
@@ -56,7 +56,7 @@ export default function Swipe() {
             width="100%"
             src={newFront}
             priority={true}
-            quality={75}
+            // quality={75}
           />
         </SwiperSlide>
         <SwiperSlide>
