@@ -8,17 +8,17 @@ export default function Banner({ pageName, imageURL }) {
     <div className=" mt-[6.5rem]">
       <div className="relative  h-[41vh] w-full">
         <div className="relative">
-          {/* <Image
+          <Image
             src={imageURL}
             alt=""
-            layout="fill"
+            // layout="fill"
             priority={true}
-            objectFit="cover"
+            // objectFit="cover"
             quality={75}
             placeholder="blur"
-            loading='eager'
-          /> */}
-          <img
+            loading="eager"
+          />
+          {/* <img
             className="absolute"
             alt=""
             src={imageURL.src}
@@ -28,7 +28,7 @@ export default function Banner({ pageName, imageURL }) {
               height: '41vh',
               objectFit: 'cover',
             }}
-          />
+          /> */}
           <div className="relative justify-center px-4  sm:px-6 pt-1 bg-black bg-opacity-50 h-[41vh] items-center">
             {/* py-20  */}
             <h1 className="text-6xl font-extrabold tracking-tight text-white sm:text-7xl text-center mt-16 sm:mt-20 ">
