@@ -3,12 +3,12 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function Banner({ pageName, imageURL, ...props }) {
+export default function Banner({ pageName, imageURL }) {
   return (
     <div className=" mt-[6.5rem]">
       <div className="relative  h-[41vh] w-full">
         <div className="relative">
-          <Image
+          {/* <Image
             src={imageURL}
             alt=""
             layout="fill"
@@ -16,6 +16,18 @@ export default function Banner({ pageName, imageURL, ...props }) {
             objectFit="cover"
             quality={75}
             placeholder="blur"
+            loading='eager'
+          /> */}
+          <img
+            className="absolute"
+            alt=""
+            src={imageURL.src}
+            style={{
+              // float: "inline-start",
+              width: '100%',
+              height: '41vh',
+              objectFit: 'cover',
+            }}
           />
           <div className="relative justify-center px-4  sm:px-6 pt-1 bg-black bg-opacity-50 h-[41vh] items-center">
             {/* py-20  */}
