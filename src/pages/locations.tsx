@@ -3,7 +3,7 @@ import { LocationMarkerIcon } from '@heroicons/react/outline';
 import Mesa from '../components/maps/Mesa';
 import Gilbert from '../components/maps/Gilbert';
 import Link from 'next/link';
-import tester from 'public/loss/locationbanner.webp';
+import tester from 'public/resized/locationbanner.jpg';
 import Banner from '@/components/layout/Banner';
 import ExportedImage from 'next-image-export-optimizer';
 

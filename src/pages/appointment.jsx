@@ -1,6 +1,6 @@
 import Banner from '@/components/layout/Banner';
 import React, { useState } from 'react';
-import tester from 'public/loss/servebanner.webp';
+import tester from 'public/resized/servebanner.jpg';
 
 import Divider from '@/components/layout/Dividers';
 import emailjs from '@emailjs/browser';

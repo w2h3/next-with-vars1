@@ -1,5 +1,5 @@
 import Banner from '@/components/layout/Banner';
-import stock from '/public/loss/handhold.webp';
+import stock from '/public/resized/handhold.jpg';
 import Swipe from '@/components/swiper/Swiper';
 
 export const AboutUs = () => {
