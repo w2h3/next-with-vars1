@@ -1,10 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/no-html-link-for-pages */
 import Link from 'next/link';
-
+import React from 'react';
+import { AdvancedImage } from '@cloudinary/react';
+import { Cloudinary } from '@cloudinary/url-gen';
 import Image from 'next/image';
 
 export default function Banner({ pageName, imageURL }) {
+  
   return (
     <div className=' mt-[6.5rem]'>
       <div className='relative '>
@@ -13,7 +16,6 @@ export default function Banner({ pageName, imageURL }) {
             layout='fill'
             src={imageURL}
             alt=''
-            
             // width={1600}
             // height='auto'
             priority

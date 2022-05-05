@@ -59,7 +59,7 @@ export default function locations() {
       <Banner
         pageName={'Locations'}
         imageURL={
-          'https://res.cloudinary.com/jameswingert/image/upload/c_fill,g_south_east,h_400,o_100,q_59,w_1600,x_0/v1651729614/locationbanner_zrd8yb.webp'
+          'https://res.cloudinary.com/jameswingert/image/upload/c_lfill,f_auto,g_south,h_360,q_auto:low,w_1600/v1651729614/locationbanner_zrd8yb.webp'
         }
       />
 

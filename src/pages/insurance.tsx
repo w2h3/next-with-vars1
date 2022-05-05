@@ -5,7 +5,12 @@ import tester from '/public/resized/insuranceBanner.jpg';
 export const Insurances = () => {
   return (
     <>
-      <Banner pageName='Insurances' imageURL={'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/insuranceBanner_ljpfam.jpg'} />
+      <Banner
+        pageName='Insurances'
+        imageURL={
+          'https://res.cloudinary.com/jameswingert/image/upload/c_lfill,f_auto,g_south,h_360,q_auto:low,w_1600/v1651729614/insuranceBanner_ljpfam.jpg'
+        }
+      />
       <div className='testImage'>
         <div className='max-w-screen  mx-auto py-8 sm:max-w-6xl 2xl:max-w-[1700px]'>
           <div className='mb-10 text-center text-4xl text-wcyan'>

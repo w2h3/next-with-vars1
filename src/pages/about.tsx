@@ -6,7 +6,12 @@ import stock from '/public/resized/handhold.jpg';
 export const AboutUs = () => {
   return (
     <div className=''>
-      <Banner pageName='About Us' imageURL={'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/handhold_qo4inn.jpg'} />
+      <Banner
+        pageName='About Us'
+        imageURL={
+          'https://res.cloudinary.com/jameswingert/image/upload/c_lfill,f_auto,g_south,h_360,q_auto:low,w_1600/v1651729614/handhold_qo4inn.jpg'
+        }
+      />
       <div className='container pb-20'>
         <div className='grid grid-cols-1  lg:grid-cols-2 '>
           <div className='flex flex-col justify-center md:flex-col lg:max-w-6xl '>

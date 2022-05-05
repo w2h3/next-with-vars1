@@ -60,7 +60,12 @@ const faqs = [
 export default function MedProf() {
   return (
     <>
-      <Banner pageName='Medical Professionals' imageURL={'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/drtest_t3fzum.jpg'} />
+      <Banner
+        pageName='Medical Professionals'
+        imageURL={
+          'https://res.cloudinary.com/jameswingert/image/upload/c_lfill,f_auto,g_south,h_360,q_auto:low,w_1600/v1651729614/drtest_t3fzum.jpg'
+        }
+      />
       <div className='container pt-24'>
         <div className='bg-gray-50'>
           <div className='mx-auto max-w-7xl divide-y divide-gray-200 py-12 px-4 sm:px-6 lg:py-16 lg:px-8'>
