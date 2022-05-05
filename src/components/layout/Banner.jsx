@@ -11,7 +11,7 @@ export default function Banner({ pageName, imageURL }) {
         <div className='relative'>
           <NextImage
             useSkeleton={true}
-            layout='fill'
+            // layout='fill'
             src={imageURL}
             alt=''
             // width={1600}
@@ -20,7 +20,7 @@ export default function Banner({ pageName, imageURL }) {
             quality={60}
             // unoptimized={true}
             // placeholder="blur"
-            loading='eager'
+            // loading='eager'
           />
           {/* <img
             className="absolute"
