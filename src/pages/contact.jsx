@@ -107,7 +107,7 @@ export default function Contact() {
   };
   return (
     <div className='testImage'>
-      <Banner pageName='ContactUs' imageURL={tester} />
+      <Banner pageName='ContactUs' imageURL={'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/contactBanner_wzhdfp.jpg'} />
       <div className='container max-w-6xl pt-4 pb-24 sm:pt-12'>
         <div className=' mt-14 lg:grid lg:grid-cols-3'>
           <div

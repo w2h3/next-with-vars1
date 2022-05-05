@@ -34,7 +34,7 @@ function classNames(...classes) {
 const patients = () => {
   return (
     <>
-      <Banner pageName='For Patients' imageURL={tester} />
+      <Banner pageName='For Patients' imageURL={'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/forptbanner_hik3k6.jpg'} />
       <Divider sectionName='Patient Resources' />
       <div className='container mb-20'>
         <div className='mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-2xl'>

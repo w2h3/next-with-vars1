@@ -200,7 +200,12 @@ export default function Appointment() {
   };
   return (
     <>
-      <Banner pageName='Book an Appointment' imageURL={tester} />
+      <Banner
+        pageName='Book an Appointment'
+        imageURL={
+          'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/servebanner_bmunho.jpg'
+        }
+      />
       <div className='testImage'>
         <Divider sectionName='Request an Appointment' />
 

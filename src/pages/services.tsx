@@ -67,7 +67,7 @@ const features = [
 const services = () => {
   return (
     <>
-      <Banner pageName='Services' imageURL={tester} />
+      <Banner pageName='Services' imageURL={'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/servebanner_bmunho.jpg'} />
       <div className='testImage'>
         <div className='container'>
           <div className='mb-20 rounded-3xl bg-wcyan/30'>
