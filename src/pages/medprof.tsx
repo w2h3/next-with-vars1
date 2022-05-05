@@ -1,8 +1,9 @@
 import React from 'react';
 
 import Banner from '@/components/layout/Banner';
-
+import { Cloudinary } from '@cloudinary/url-gen';
 import tester from '/public/resized/drtest.jpg';
+import { m } from 'framer-motion';
 
 const faqs = [
   {
@@ -58,13 +59,18 @@ const faqs = [
 ];
 
 export default function MedProf() {
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: 'demo',
+    },
+  });
+  const myImage = cld.image('v1651729614/locationbanner_zrd8yb');
   return (
     <>
       <Banner
         pageName='Medical Professionals'
-        imageURL={
-          'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/drtest_t3fzum'
-        }
+        imageURL={myImage}
+        // 'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/drtest_t3fzum'
       />
       <div className='container pt-24'>
         <div className='bg-gray-50'>

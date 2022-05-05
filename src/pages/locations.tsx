@@ -3,7 +3,7 @@ import { LocationMarkerIcon } from '@heroicons/react/outline';
 import Image from 'next/image';
 import Link from 'next/link';
 import tester from 'public/resized/locationbanner.jpg';
-
+import { Cloudinary } from '@cloudinary/url-gen';
 import Chandler from '../components/maps/Chandler';
 import Gilbert from '../components/maps/Gilbert';
 import Mesa from '../components/maps/Mesa';
@@ -54,13 +54,18 @@ const posts = [
 ];
 
 export default function locations() {
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: 'demo',
+    },
+  });
+  const myImage = cld.image('v1651729614/locationbanner_zrd8yb');
   return (
     <div className='testImage'>
       <Banner
         pageName={'Locations'}
-        imageURL={
-          'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/locationbanner_zrd8yb'
-        }
+        imageURL={myImage}
+        // 'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/locationbanner_zrd8yb'
       />
 
       <div className='container'>

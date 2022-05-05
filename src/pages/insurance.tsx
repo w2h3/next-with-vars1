@@ -1,15 +1,20 @@
 import Banner from '@/components/layout/Banner';
-
+import { Cloudinary } from '@cloudinary/url-gen';
 import tester from '/public/resized/insuranceBanner.jpg';
 
 export const Insurances = () => {
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: 'demo',
+    },
+  });
+  const myImage = cld.image('v1651729614/insuranceBanner_ljpfam');
   return (
     <>
       <Banner
         pageName='Insurances'
-        imageURL={
-          'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/insuranceBanner_ljpfam'
-        }
+        imageURL={myImage}
+        // 'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/insuranceBanner_ljpfam'
       />
       <div className='testImage'>
         <div className='max-w-screen  mx-auto py-8 sm:max-w-6xl 2xl:max-w-[1700px]'>

@@ -4,7 +4,7 @@ import React from 'react';
 import Banner from '@/components/layout/Banner';
 import Divider from '@/components/layout/Dividers';
 import Logo from '@/components/Logos';
-
+import { Cloudinary } from '@cloudinary/url-gen';
 import tester from '/public/resized/forptbanner.jpg';
 
 const links = [
@@ -32,13 +32,18 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 const patients = () => {
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: 'demo',
+    },
+  });
+  const myImage = cld.image('v1651729614/forptbanner_hik3k6');
   return (
     <>
       <Banner
         pageName='For Patients'
-        imageURL={
-          'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/forptbanner_hik3k6'
-        }
+        imageURL={myImage}
+        // 'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/forptbanner_hik3k6'
       />
       <Divider sectionName='Patient Resources' />
       <div className='container mb-20'>

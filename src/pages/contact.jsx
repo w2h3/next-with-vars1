@@ -8,7 +8,7 @@ import {
 import Link from 'next/link';
 import bgmap from 'public/cactus4.jpg';
 import { useState } from 'react';
-
+import { Cloudinary } from '@cloudinary/url-gen';
 import Banner from '@/components/layout/Banner';
 
 import tester from '/public/resized/contactBanner.jpg';
@@ -105,13 +105,18 @@ export default function Contact() {
     }
     console.log(fullname, email, phone, message);
   };
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: 'demo',
+    },
+  });
+  const myImage = cld.image('v1651729614/contactBanner_wzhdfp');
   return (
     <div className='testImage'>
       <Banner
         pageName='ContactUs'
-        imageURL={
-          'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/contactBanner_wzhdfp'
-        }
+        imageURL={myImage}
+        // 'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/contactBanner_wzhdfp'
       />
       <div className='container max-w-6xl pt-4 pb-24 sm:pt-12'>
         <div className=' mt-14 lg:grid lg:grid-cols-3'>

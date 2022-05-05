@@ -8,7 +8,7 @@ import icon6 from 'public/ser_icon6.png';
 import icon8 from 'public/ser_icon8.png';
 import icon7 from 'public/ser_icon9.png';
 import React from 'react';
-
+import { Cloudinary } from '@cloudinary/url-gen';
 import Banner from '@/components/layout/Banner';
 
 import tester from '/public/resized/servebanner.jpg';
@@ -65,13 +65,18 @@ const features = [
 ];
 
 const services = () => {
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: 'demo',
+    },
+  });
+  const myImage = cld.image('v1651729614/servebanner_bmunho');
   return (
     <>
       <Banner
         pageName='Services'
-        imageURL={
-          'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/servebanner_bmunho'
-        }
+        imageURL={myImage}
+        // 'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/servebanner_bmunho'
       />
       <div className='testImage'>
         <div className='container'>

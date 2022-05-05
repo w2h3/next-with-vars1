@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { AdvancedImage } from '@cloudinary/react';
-import { Cloudinary } from '@cloudinary/url-gen';
+
 import Image from 'next/image';
 
 export default function Banner({ pageName, imageURL }) {
@@ -18,8 +18,8 @@ export default function Banner({ pageName, imageURL }) {
             alt=''
             // width={1600}
             // height='auto'
-            priority
-            objectFit='cover'
+            // priority
+            // objectFit='cover'
             // quality={60}
             // unoptimized={true}
             // placeholder="blur"

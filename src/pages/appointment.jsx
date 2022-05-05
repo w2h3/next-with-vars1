@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 import Banner from '@/components/layout/Banner';
 import Divider from '@/components/layout/Dividers';
-
+import { Cloudinary } from '@cloudinary/url-gen';
 import tester from '/public/resized/servebanner.jpg';
 
 export default function Appointment() {
@@ -198,13 +198,19 @@ export default function Appointment() {
       voicemail
     );
   };
+
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: 'demo',
+    },
+  });
+  const myImage = cld.image('v1651729614/servebanner_bmunho');
   return (
     <>
       <Banner
         pageName='Book an Appointment'
-        imageURL={
-          'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/servebanner_bmunho'
-        }
+        imageURL={myImage}
+        // https://res.cloudinary.com/jameswingert/image/upload/v1651729614/servebanner_bmunho
       />
       <div className='testImage'>
         <Divider sectionName='Request an Appointment' />
