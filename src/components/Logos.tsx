@@ -3,7 +3,8 @@ import ah from '/public/logos/ah.png';
 import ep from '/public/logos/ep2.png';
 import ms from '/public/logos/ms.jpeg';
 import pk from '/public/logos/pk.png';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
+
 import Link from 'next/link';
 
 export default function Logo() {

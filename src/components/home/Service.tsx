@@ -5,7 +5,7 @@ import insomnia from 'public/sleepserv1223.jpeg';
 import physical from 'public/physical.jpg';
 import { CheckIcon } from '@heroicons/react/outline';
 import Link from 'next/link';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
 
 //TODO make component, DRY
 

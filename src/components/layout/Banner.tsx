@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/no-html-link-for-pages */
 import Link from 'next/link';
-// import Image from 'next/image';
-import ExportedImage from "next-image-export-optimizer";
+// import ExportedImage from "next-image-export-optimizer";
 
+import ExportedImage from 'next-image-export-optimizer';
 
 export default function Banner({ pageName, imageURL }) {
   return (
@@ -20,9 +20,6 @@ export default function Banner({ pageName, imageURL }) {
             // unoptimized={true}
             // placeholder="blur"
             // loading="eager"
-    
-        
-         
           />
           {/* <img
             className="absolute"

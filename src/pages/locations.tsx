@@ -5,7 +5,8 @@ import Gilbert from '../components/maps/Gilbert';
 import Link from 'next/link';
 import tester from 'public/loss/locationbanner.webp';
 import Banner from '@/components/layout/Banner';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
+
 const posts = [
   {
     title: '2919 S. Ellsworth Road',

@@ -2,7 +2,8 @@ import Link from 'next/link';
 import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { useRouter } from 'next/router';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
+
 import Header from './Header';
 
 const navigation = [

@@ -15,7 +15,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
+
 export default function Swipe() {
   return (
     <div className="">

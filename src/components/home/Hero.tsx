@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import tester from '/public/banner2.jpeg';
-import Image from 'next/image';
+import ExportedImage from 'next-image-export-optimizer';
+
 import Link from 'next/link';
 import { GoPrimitiveDot } from 'react-icons/go';
 export default function Hero() {
