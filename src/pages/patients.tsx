@@ -1,36 +1,11 @@
+import { Cloudinary } from '@cloudinary/url-gen';
 import Link from 'next/link';
 import React from 'react';
 
 import Banner from '@/components/layout/Banner';
 import Divider from '@/components/layout/Dividers';
 import Logo from '@/components/Logos';
-import { Cloudinary } from '@cloudinary/url-gen';
-import tester from '/public/resized/forptbanner.jpg';
 
-const links = [
-  {
-    name: 'Patient Portal',
-    initials: 'PP',
-    href: 'https://mycw34.eclinicalweb.com/portal3661/jsp/100mp/login_otp.jsp',
-    bgColor: 'bg-wcyan',
-  },
-  {
-    name: 'Online New Patient Form',
-    initials: 'ONP',
-    href: '#',
-    bgColor: 'bg-purple-600',
-  },
-  {
-    name: 'Print New Patient Form',
-    initials: 'PNP',
-    href: 'https://neurologyandsleep.com/wp-content/uploads/2020/03/New-Patient-Packet_3-2020.pdf',
-    bgColor: 'bg-yellow-500',
-  },
-];
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
-}
 const patients = () => {
   const cld = new Cloudinary({
     cloud: {
@@ -43,7 +18,7 @@ const patients = () => {
       <Banner
         pageName='For Patients'
         imageURL={myImage}
-        // 'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/forptbanner_hik3k6'
+     
       />
       <Divider sectionName='Patient Resources' />
       <div className='container mb-20 '>

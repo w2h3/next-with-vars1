@@ -1,5 +1,5 @@
 import Link from 'next/link';
-// f0fdff
+
 const Header = () => {
   return (
     <nav className='sticky flex-row'>
@@ -58,7 +58,7 @@ const Header = () => {
                     Fax: (480) 967-6887
                   </a>
                 </Link>
-                {/* <p className="hidden md:flex lg:hidden text-black">Fax</p> */}
+             
               </button>
             </a>
           </Link>

@@ -33,7 +33,6 @@ export default function Gilbert() {
     },
   ];
 
-  const mapRef = React.useRef<any>(null);
   const [selectedOffice, setSelectedOffice] = React.useState<
     OfficeNode | undefined | null
   >(null);

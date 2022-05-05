@@ -1,3 +1,4 @@
+import { Cloudinary } from '@cloudinary/url-gen';
 import emailjs from '@emailjs/browser';
 import {
   LocationMarkerIcon,
@@ -8,10 +9,8 @@ import {
 import Link from 'next/link';
 import bgmap from 'public/cactus4.jpg';
 import { useState } from 'react';
-import { Cloudinary } from '@cloudinary/url-gen';
-import Banner from '@/components/layout/Banner';
 
-import tester from '/public/resized/contactBanner.jpg';
+import Banner from '@/components/layout/Banner';
 
 export default function Contact() {
   const [fullname, setFullname] = useState('');
@@ -116,7 +115,7 @@ export default function Contact() {
       <Banner
         pageName='ContactUs'
         imageURL={myImage}
-        // 'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/contactBanner_wzhdfp'
+     
       />
       <div className='container max-w-6xl pt-4 pb-24 sm:pt-12'>
         <div className=' mt-14 lg:grid lg:grid-cols-3'>

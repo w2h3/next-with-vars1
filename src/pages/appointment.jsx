@@ -1,10 +1,9 @@
+import { Cloudinary } from '@cloudinary/url-gen';
 import emailjs from '@emailjs/browser';
 import React, { useState } from 'react';
 
 import Banner from '@/components/layout/Banner';
 import Divider from '@/components/layout/Dividers';
-import { Cloudinary } from '@cloudinary/url-gen';
-import tester from '/public/resized/servebanner.jpg';
 
 export default function Appointment() {
   const [first, setFirst] = useState('');
@@ -138,55 +137,6 @@ export default function Appointment() {
           }
         );
     }
-    // const res = await fetch('https://formspree.io/f/mzbokaqv', {
-    //   body: JSON.stringify({
-    //     first: first,
-    //     last: last,
-    //     gender: gender,
-    //     insurname: insurname,
-    //     insurnum: insurnum,
-    //     email: email,
-    //     phone: phone,
-    //     voicemail: voicemail,
-    //     subject: subject,
-    //   }),
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    //   method: 'POST',
-    // });
-
-    // const { error } = await res.json();
-    // if (error) {
-    //     console.log(error);
-    //     setShowSuccessMessage(false);
-    //     setShowFailureMessage(true);
-    //     setButtonText('Submit');
-
-    //     // Reset form fields
-    //     setFirst('');
-    //     setLast('');
-    //     setGender('');
-    //     setEmail('');
-    //     setPhone('');
-    //     setInsurname('');
-    //     setInsurnum('');
-    //     setVoicemail('');
-    //     return;
-    //   }
-    //   setShowSuccessMessage(true);
-    //   setShowFailureMessage(false);
-    //   setButtonText('Submit');
-    //   // Reset form fields
-    //   setFirst('');
-    //   setLast('');
-    //   setGender('');
-    //   setInsurname('');
-    //   setInsurnum('');
-    //   setEmail('');
-    //   setPhone('');
-    //   setVoicemail('');
-    // }
     console.log(
       first,
       last,
@@ -210,7 +160,7 @@ export default function Appointment() {
       <Banner
         pageName='Book an Appointment'
         imageURL={myImage}
-        // https://res.cloudinary.com/jameswingert/image/upload/v1651729614/servebanner_bmunho
+     
       />
       <div className='testImage'>
         <Divider sectionName='Request an Appointment' />

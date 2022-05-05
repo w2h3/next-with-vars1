@@ -1,7 +1,7 @@
+import { Cloudinary } from '@cloudinary/url-gen';
+
 import Banner from '@/components/layout/Banner';
 import Swipe from '@/components/swiper/Swiper';
-import { Cloudinary } from '@cloudinary/url-gen';
-import stock from '/public/resized/handhold.jpg';
 
 export const AboutUs = () => {
   const cld = new Cloudinary({
@@ -15,7 +15,7 @@ export const AboutUs = () => {
       <Banner
         pageName='About Us'
         imageURL={myImage}
-        // 'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/handhold_qo4inn'
+
       />
       <div className='container pb-20'>
         <div className='grid grid-cols-1  lg:grid-cols-2 '>

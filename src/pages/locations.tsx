@@ -1,9 +1,9 @@
-import Banner from '@/components/layout/Banner';
-import { LocationMarkerIcon } from '@heroicons/react/outline';
-import Image from 'next/image';
-import Link from 'next/link';
-import tester from 'public/resized/locationbanner.jpg';
 import { Cloudinary } from '@cloudinary/url-gen';
+import { LocationMarkerIcon } from '@heroicons/react/outline';
+import Link from 'next/link';
+
+import Banner from '@/components/layout/Banner';
+
 import Chandler from '../components/maps/Chandler';
 import Gilbert from '../components/maps/Gilbert';
 import Mesa from '../components/maps/Mesa';
@@ -63,9 +63,9 @@ export default function locations() {
   return (
     <div className='testImage'>
       <Banner
-        pageName={'Locations'}
+        pageName='Locations'
         imageURL={myImage}
-        // 'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/locationbanner_zrd8yb'
+     
       />
 
       <div className='container'>

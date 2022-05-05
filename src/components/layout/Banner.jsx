@@ -1,52 +1,26 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/no-html-link-for-pages */
+import { AdvancedImage } from '@cloudinary/react';
 import Link from 'next/link';
 import React from 'react';
-import { AdvancedImage, placeholder } from '@cloudinary/react';
-
-import Image from 'next/image';
 
 export default function Banner({ pageName, imageURL }) {
   return (
-    // cldImg={myImage} plugins={[placeholder({mode: 'blur'})]}
     <div className=' mt-[6.5rem]'>
       <div className='relative'>
         <div
           className='relative inset-0  z-10 bg-white'
           style={{
-            // objectFit: 'cover',
-            // objectPosition: 'center',
             height: '41vh',
           }}
         >
           <AdvancedImage
-            // plugins={[placeholder({ mode: 'blur' })]}
-            // layout='fill'
             cldImg={imageURL}
             alt=''
-            // width={1600}
-
             className='absolute h-full w-full object-cover'
-            // priority
-            // objectFit='cover'
-            // quality={60}
-            // unoptimized={true}
-            // placeholder="blur"
-            // loading='eager'
           />
-          {/* <img
-            className="absolute"
-            alt=""
-            src={imageURL.src}
-            style={{
-              // float: "inline-start",
-              width: '100%',
-              height: '41vh',
-              objectFit: 'cover',
-            }}
-          /> */}{' '}
+
           <div className='relative h-[41vh] items-center  justify-center bg-black bg-opacity-50 px-4 pt-1 sm:px-6'>
-            {/* py-20  */}
             <h1 className='mt-16 text-center text-6xl font-extrabold tracking-tight text-white sm:mt-20 sm:text-7xl '>
               {pageName}
             </h1>
@@ -64,17 +38,14 @@ export default function Banner({ pageName, imageURL }) {
                   href='https://app.formdr.com/practice/MjE0Mjg=/form/K5ixNCi0wAsH8UKm1OIxGddyP-sLyZbr'
                   passHref
                 >
-                  <button
-                    className='duration-450  flex items-center  justify-center rounded-xl border border-wcyan bg-white px-9 py-3 text-base font-bold text-wcyan  shadow-sm transition hover:text-[#052429] '
-                    // hover:text-white
-                  >
+                  <button className='duration-450  flex items-center  justify-center rounded-xl border border-wcyan bg-white px-9 py-3 text-base font-bold text-wcyan  shadow-sm transition hover:text-[#052429] '>
                     NEW PATIENT FORM
                   </button>
                 </Link>
               </div>
             </div>
           </div>
-        </div>{' '}
+        </div>
       </div>
     </div>
   );
