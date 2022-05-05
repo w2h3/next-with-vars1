@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="relative h-[90vh]">
         <div className="relative  ">
           <ExportedImage
-            src={tester}
+            src={tester.src}
             className="tiny-hero"
             alt=""
             layout="fill"
