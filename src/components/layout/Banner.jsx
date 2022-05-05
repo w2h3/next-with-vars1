@@ -7,17 +7,18 @@ import Image from 'next/image';
 export default function Banner({ pageName, imageURL }) {
   return (
     <div className=' mt-[6.5rem]'>
-      <div className='relative h-[41vh]'>
-        <div className='relative'>
+      <div className='relative '>
+        <div style={{ position: 'relative', width: '100%', height: '370px' }}>
           <Image
-            useSkeleton={true}
-            // layout='fill'
+            layout='fill'
             src={imageURL}
             alt=''
+            
             // width={1600}
-            priority={true}
+            // height='auto'
+            priority
             objectFit='cover'
-            quality={60}
+            // quality={60}
             // unoptimized={true}
             // placeholder="blur"
             // loading='eager'
@@ -33,7 +34,7 @@ export default function Banner({ pageName, imageURL }) {
               objectFit: 'cover',
             }}
           /> */}
-          <div className='relative h-[41vh] items-center  justify-center bg-black bg-opacity-50 px-4 pt-1 sm:px-6'>
+          <div className='relative h-full items-center  justify-center bg-black bg-opacity-50 px-4 pt-1 sm:px-6'>
             {/* py-20  */}
             <h1 className='mt-16 text-center text-6xl font-extrabold tracking-tight text-white sm:mt-20 sm:text-7xl '>
               {pageName}

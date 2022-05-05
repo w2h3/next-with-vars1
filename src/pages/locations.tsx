@@ -56,8 +56,13 @@ const posts = [
 export default function locations() {
   return (
     <div className='testImage'>
-      <Banner pageName={'Locations'} imageURL={'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/locationbanner_zrd8yb.jpg'} />
-    
+      <Banner
+        pageName={'Locations'}
+        imageURL={
+          'https://res.cloudinary.com/jameswingert/image/upload/c_fill,g_south_east,h_400,o_100,q_59,w_1600,x_0/v1651729614/locationbanner_zrd8yb.webp'
+        }
+      />
+
       <div className='container'>
         <div className=' mx-auto mb-20'>
           <div className='mx-auto  mt-12  grid max-w-2xl gap-14  text-center  md:max-w-md lg:max-w-none lg:grid-cols-3 '>
