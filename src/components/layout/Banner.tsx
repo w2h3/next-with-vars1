@@ -1,21 +1,23 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/no-html-link-for-pages */
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
+import ExportedImage from "next-image-export-optimizer";
+
 
 export default function Banner({ pageName, imageURL }) {
   return (
     <div className=" mt-[6.5rem]">
       <div className="relative w-[100vw] h-[41vh]">
         <div className="relative">
-          <Image
+          <ExportedImage
             src={imageURL}
             alt=""
             layout="fill"
             priority={true}
             objectFit="cover"
             quality={60}
-            unoptimized={true}
+            // unoptimized={true}
             // placeholder="blur"
             // loading="eager"
     
