@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Header from './Header';
 
-const Layout = ({props}) => {
+const Layout = ({props}:any) => {
   return (
     <>
 

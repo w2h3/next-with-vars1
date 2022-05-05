@@ -20,7 +20,7 @@
     },
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/maps/Chandler.jsx", "src/components/maps/Mesa.jsx", "src/components/maps/Mesa.jsx", "src/components/maps/Mesa.jsx", "src/components/maps/Mesa.js", "src/components/swiper/Swiper.jsx", "src/components/home/Services.js", "src/components/util/Blur.js", "src/pages/appointment.jsx", "src/pages/appointment.jsx", "src/pages/contact.jsx", "src/components/home/Contact.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/maps/Chandler.jsx", "src/components/maps/Mesa.jsx", "src/components/maps/Mesa.jsx", "src/components/maps/Mesa.jsx", "src/components/maps/Mesa.js", "src/components/swiper/Swiper.jsx", "src/components/home/Services.js", "src/components/util/Blur.js", "src/pages/appointment.jsx", "src/pages/appointment.jsx", "src/pages/contact.jsx", "src/components/home/Contact.jsx", "src/components/layout/Banner.jsx"],
   "exclude": ["node_modules"],
   "moduleResolution": ["node_modules", ".next", "node"]
 }
