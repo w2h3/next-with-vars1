@@ -7,12 +7,11 @@ import { Cloudinary } from '@cloudinary/url-gen';
 import Image from 'next/image';
 
 export default function Banner({ pageName, imageURL }) {
-  
   return (
     <div className=' mt-[6.5rem]'>
       <div className='relative '>
         <div style={{ position: 'relative', width: '100%', height: '370px' }}>
-          <Image
+          <AdvancedImage
             // layout='fill'
             src={imageURL}
             alt=''
