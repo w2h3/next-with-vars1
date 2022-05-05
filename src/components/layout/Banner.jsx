@@ -8,12 +8,13 @@ import Image from 'next/image';
 
 export default function Banner({ pageName, imageURL }) {
   return (
+    // cldImg={myImage} plugins={[placeholder({mode: 'blur'})]}
     <div className=' mt-[6.5rem]'>
       <div className='relative '>
         <div style={{ position: 'relative', width: '100%', height: '370px' }}>
           <AdvancedImage
             // layout='fill'
-            src={imageURL}
+            cldImg={imageURL}
             alt=''
             // width={1600}
             // height='auto'
