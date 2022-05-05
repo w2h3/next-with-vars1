@@ -115,7 +115,10 @@ export default function Appointment() {
             setLast('');
             setEmail('');
             setPhone('');
-            setMessage('');
+            setGender('');
+            setInsurname('');
+            setInsurnum('');
+            setVoicemail('');
           },
           (error) => {
             console.log(error.text);
@@ -127,7 +130,10 @@ export default function Appointment() {
             setLast('');
             setEmail('');
             setPhone('');
-            setMessage('');
+            setGender('');
+            setInsurname('');
+            setInsurnum('');
+            setVoicemail('');
             return;
           }
         );
