@@ -3,12 +3,10 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Header from './Header';
 
-const Layout = ({props}:any) => {
+const Layout = (props: any) => {
   return (
     <>
-
-      <nav className="z-50 w-full top-0 fixed">
-     
+      <nav className='fixed top-0 z-50 w-full'>
         <Navbar />
       </nav>
       {props.children}
