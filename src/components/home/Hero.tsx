@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import tester from '/public/banner2.jpeg';
-import ExportedImage from 'next-image-export-optimizer';
+import Image from 'next/image';
 
 import Link from 'next/link';
 import { GoPrimitiveDot } from 'react-icons/go';
@@ -9,7 +9,7 @@ export default function Hero() {
     <div className="mt-[6.5rem]">
       <div className="relative h-[90vh]">
         <div className="relative  ">
-          <ExportedImage
+          <Image
             src={tester.src}
             className="tiny-hero"
             alt=""

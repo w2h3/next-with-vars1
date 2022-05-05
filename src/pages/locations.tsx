@@ -5,7 +5,7 @@ import Gilbert from '../components/maps/Gilbert';
 import Link from 'next/link';
 import tester from 'public/resized/locationbanner.jpg';
 import Banner from '@/components/layout/Banner';
-import ExportedImage from 'next-image-export-optimizer';
+import Image from 'next/image';
 
 const posts = [
   {
@@ -59,8 +59,8 @@ export default function locations() {
       <div className=" mt-[6.5rem]">
         <div className="relative  h-[41vh]">
           <div className="relative">
-            <ExportedImage
-              src={tester.src}
+            <Image
+              src={tester}
               alt=""
               layout="fill"
               priority={true}

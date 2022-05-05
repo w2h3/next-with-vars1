@@ -2,20 +2,20 @@
 
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import swiper1 from 'public/wang/swiper1.jpeg';
-import newFront from 'public/wang/newFront1.jpeg';
-import swiper2 from 'public/wang/swiper21.jpeg';
-import swiper3 from 'public/wang/swiper31.jpeg';
-import swiper4 from 'public/wang/swiper4.jpg';
-import swiper5 from 'public/wang/swiper51.jpeg';
-import swiper6 from 'public/wang/swiper61.jpeg';
+import swiper1 from '/public/wang/swiper1.jpeg';
+import newFront from '/public/wang/newFront1.jpeg';
+import swiper2 from '/public/wang/swiper21.jpeg';
+import swiper3 from '/public/wang/swiper31.jpeg';
+import swiper4 from '/public/wang/swiper4.jpg';
+import swiper5 from '/public/wang/swiper51.jpeg';
+import swiper6 from '/public/wang/swiper61.jpeg';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
-import ExportedImage from 'next-image-export-optimizer';
+import Image from 'next/image';
 
 export default function Swipe() {
   return (
@@ -50,7 +50,7 @@ export default function Swipe() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <ExportedImage
+          <Image
             layout="responsive"
             objectFit="cover"
             height="100%"
@@ -61,7 +61,7 @@ export default function Swipe() {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <ExportedImage
+          <Image
             layout="responsive"
             objectFit="cover"
             height="100%"
@@ -70,7 +70,7 @@ export default function Swipe() {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <ExportedImage
+          <Image
             layout="responsive"
             objectFit="cover"
             height="100%"
@@ -79,7 +79,7 @@ export default function Swipe() {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <ExportedImage
+          <Image
             layout="responsive"
             objectFit="cover"
             height="100%"
@@ -88,7 +88,7 @@ export default function Swipe() {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <ExportedImage
+          <Image
             layout="responsive"
             objectFit="cover"
             height="100%"
@@ -97,7 +97,7 @@ export default function Swipe() {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <ExportedImage
+          <Image
             layout="responsive"
             objectFit="cover"
             height="100%"
@@ -106,7 +106,7 @@ export default function Swipe() {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <ExportedImage
+          <Image
             layout="responsive"
             objectFit="cover"
             height="100%"

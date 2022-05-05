@@ -4,11 +4,10 @@
   "license": "UNLICENSED",
   "scripts": {
     "dev": "next",
-    "build": "next build && next export && next-image-export-optimizer",
+    "build": "next build",
     "start": "next start",
-    "prod": "next build && next export && next-image-export-optimizer",
-    "lint": "next lint",
-    "export": "next build && next export && next-image-export-optimizer"
+    "prod": "next build ",
+    "lint": "next lint"
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
@@ -24,8 +23,6 @@
     "emailjs": "^4.0.0",
     "framer-motion": "^5.6.0",
     "next": "^12.0.8",
-    "next-image-export-optimizer": "^0.9.6",
-    "postcss-import": "^14.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",

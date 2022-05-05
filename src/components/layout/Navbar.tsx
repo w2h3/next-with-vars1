@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { useRouter } from 'next/router';
-import ExportedImage from 'next-image-export-optimizer';
+import Image from 'next/image';
 
 import Header from './Header';
 
@@ -45,19 +45,9 @@ export default function Navbar() {
               </div>
               <div className="flex-1 flex md:items-stretch sm:justify-start ">
                 <div className="flex-shrink-0 flex items-center ">
-                  {/* <div className="flex lg:hidden w-auto">
-                    <Link href="/">
-                      <ExportedImage
-                        src="/navlogo.png"
-                        alt="logo"
-                        height={55}
-                        width={67}
-                      />
-                    </Link>
-                  </div> */}
                   <div className="block pt-3 w-auto ">
                     <Link href="/" passHref>
-                      <ExportedImage
+                      <Image
                         src="/logo.png"
                         alt="logo"
                         height={55}

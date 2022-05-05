@@ -98,21 +98,3 @@ imgNew {
 .tiny-hero {
   object-position: 84%;
 }
-
-/*
-bg-[#d0e5e8] 
-.image-container {
-  > div {
-    position: unset !important;
-  }
- 
-  
-  .image {
-    object-fit: contain;
-    width: 100% !important;
-    position: relative !important;
-    height: unset !important;
-    object-position: top !important;
-  }
-}
-*/

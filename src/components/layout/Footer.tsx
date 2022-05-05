@@ -5,7 +5,7 @@ import {
   NewspaperIcon,
   PhoneIcon,
 } from '@heroicons/react/outline';
-import ExportedImage from 'next-image-export-optimizer';
+import Image from 'next/image';
 
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -72,12 +72,7 @@ export const Footer = () => {
                 title="Company"
                 className="inline-flex items-center"
               >
-                <ExportedImage
-                  src="/logo.png"
-                  alt="logo"
-                  height={55}
-                  width={300}
-                />
+                <Image src="/logo.png" alt="logo" height={55} width={300} />
               </a>
             </Link>
             <div className="mt-5  font-bold tracking-wide text-[#191716] ">

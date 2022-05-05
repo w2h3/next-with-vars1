@@ -1,17 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/no-html-link-for-pages */
 import Link from 'next/link';
-// import ExportedImage from "next-image-export-optimizer";
-
-import ExportedImage from 'next-image-export-optimizer';
+import Image from 'next/image';
 
 export default function Banner({ pageName, imageURL }) {
   return (
     <div className=" mt-[6.5rem]">
       <div className="relative h-[41vh]">
         <div className="relative">
-          <ExportedImage
-            src={imageURL.src}
+          <Image
+            src={imageURL}
             alt=""
             layout="fill"
             priority={true}
