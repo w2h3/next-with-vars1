@@ -19,7 +19,7 @@ export default function Banner({ pageName, imageURL }) {
             // quality={60}
             // unoptimized={true}
             // placeholder="blur"
-            // loading="eager"
+            loading="eager"
           />
           {/* <img
             className="absolute"
