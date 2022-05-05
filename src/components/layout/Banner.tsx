@@ -8,7 +8,7 @@ import ExportedImage from 'next-image-export-optimizer';
 export default function Banner({ pageName, imageURL }) {
   return (
     <div className=" mt-[6.5rem]">
-      <div className="relative w-[100vw] h-[41vh]">
+      <div className="relative h-[41vh]">
         <div className="relative">
           <ExportedImage
             src={imageURL.src}
@@ -16,7 +16,7 @@ export default function Banner({ pageName, imageURL }) {
             layout="fill"
             priority={true}
             objectFit="cover"
-            quality={60}
+            // quality={60}
             // unoptimized={true}
             // placeholder="blur"
             // loading="eager"
