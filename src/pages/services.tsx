@@ -70,7 +70,7 @@ const services = () => {
       <Banner
         pageName='Services'
         imageURL={
-          'https://res.cloudinary.com/jameswingert/image/upload/c_lfill,g_south,h_360,q_auto:low,w_1600/v1651729614/servebanner_bmunho.webp'
+          'https://res.cloudinary.com/jameswingert/image/upload/c_fit,g_south,h_360,q_auto:low,w_1600/v1651729614/servebanner_bmunho.webp'
         }
       />
       <div className='testImage'>
