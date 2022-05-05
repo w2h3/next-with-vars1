@@ -8,7 +8,7 @@ export const Insurances = () => {
       <Banner
         pageName='Insurances'
         imageURL={
-          'https://res.cloudinary.com/jameswingert/image/upload/c_fit,g_south,h_360,q_auto:low,w_1600/v1651729614/insuranceBanner_ljpfam.webp'
+          'https://res.cloudinary.com/jameswingert/image/upload/c_fit,g_south,h_360,q_auto:low,w_1600/v1651729614/insuranceBanner_ljpfam'
         }
       />
       <div className='testImage'>
