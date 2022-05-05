@@ -25,7 +25,7 @@ export default function Banner({ pageName, imageURL }) {
             cldImg={imageURL}
             alt=''
             // width={1600}
-      
+
             className='absolute h-full w-full object-cover'
             // priority
             // objectFit='cover'

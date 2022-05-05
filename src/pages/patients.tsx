@@ -46,14 +46,10 @@ const patients = () => {
         // 'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/forptbanner_hik3k6'
       />
       <Divider sectionName='Patient Resources' />
-      <div className='container mb-20'>
-        <div className='mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-2xl'>
-          <h2 className='mb-6 max-w-lg font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto'>
-            <span className='relative inline-block'>
-              <span className='relative text-wcyan'>Forms/Portal Access</span>
-            </span>{' '}
-          </h2>
-        </div>
+      <div className='container mb-20 '>
+        <h2 className='mb-6 text-center font-sans text-3xl font-bold leading-none tracking-tight text-wcyan  md:mx-auto'>
+          Forms and Portal Access
+        </h2>
         <div className='row-gap-5 md:row-gap-8 mb-8 grid gap-8 sm:grid-cols-3 lg:grid-cols-3'>
           <Link href='/' passHref>
             <button
@@ -107,7 +103,7 @@ const patients = () => {
             </button>
           </Link>
         </div>{' '}
-        <h2 className='mb-6 text-center font-sans text-3xl font-bold leading-none tracking-tight text-wcyan sm:text-4xl md:mx-auto'>
+        <h2 className='mb-6 text-center font-sans text-3xl font-bold leading-none tracking-tight text-wcyan  md:mx-auto'>
           Patient Education{' '}
         </h2>
         <p className='mb-6  text-center font-sans text-lg font-bold leading-none tracking-tight text-gray-900 md:mx-auto'>
