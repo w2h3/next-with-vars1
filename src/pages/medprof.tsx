@@ -61,7 +61,7 @@ const faqs = [
 export default function MedProf() {
   const cld = new Cloudinary({
     cloud: {
-      cloudName: 'demo',
+      cloudName: 'jameswingert',
     },
   });
   const myImage = cld.image('v1651729614/locationbanner_zrd8yb');

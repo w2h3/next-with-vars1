@@ -107,7 +107,7 @@ export default function Contact() {
   };
   const cld = new Cloudinary({
     cloud: {
-      cloudName: 'demo',
+      cloudName: 'jameswingert',
     },
   });
   const myImage = cld.image('v1651729614/contactBanner_wzhdfp');

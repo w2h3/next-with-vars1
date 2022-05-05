@@ -67,7 +67,7 @@ const features = [
 const services = () => {
   const cld = new Cloudinary({
     cloud: {
-      cloudName: 'demo',
+      cloudName: 'jameswingert',
     },
   });
   const myImage = cld.image('v1651729614/servebanner_bmunho');

@@ -6,7 +6,7 @@ import stock from '/public/resized/handhold.jpg';
 export const AboutUs = () => {
   const cld = new Cloudinary({
     cloud: {
-      cloudName: 'demo',
+      cloudName: 'jameswingert',
     },
   });
   const myImage = cld.image('v1651729614/handhold_qo4inn');
