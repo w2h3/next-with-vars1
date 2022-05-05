@@ -60,7 +60,7 @@ export default function locations() {
         <div className="relative  h-[41vh]">
           <div className="relative">
             <ExportedImage
-              src={tester}
+              src={tester.src}
               alt=""
               layout="fill"
               priority={true}
