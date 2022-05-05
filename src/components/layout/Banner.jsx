@@ -13,7 +13,7 @@ export default function Banner({ pageName, imageURL }) {
       <div className='relative '>
         <div style={{ position: 'relative', width: '100%', height: '370px' }}>
           <Image
-            layout='fill'
+            // layout='fill'
             src={imageURL}
             alt=''
             // width={1600}

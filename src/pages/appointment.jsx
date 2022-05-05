@@ -203,7 +203,7 @@ export default function Appointment() {
       <Banner
         pageName='Book an Appointment'
         imageURL={
-          'https://res.cloudinary.com/jameswingert/image/upload/c_lfill,f_auto,g_south,h_360,q_auto:low,w_1600/v1651729614/servebanner_bmunho.jpg'
+          'https://res.cloudinary.com/jameswingert/image/upload/c_lfill,g_south,h_360,q_auto:low,w_1600/v1651729614/servebanner_bmunho'
         }
       />
       <div className='testImage'>

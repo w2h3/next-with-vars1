@@ -37,7 +37,7 @@ const patients = () => {
       <Banner
         pageName='For Patients'
         imageURL={
-          'https://res.cloudinary.com/jameswingert/image/upload/c_lfill,f_auto,g_south,h_360,q_auto:low,w_1600/v1651729614/forptbanner_hik3k6.jpg'
+          'https://res.cloudinary.com/jameswingert/image/upload/c_lfill,g_south,h_360,q_auto:low,w_1600/v1651729614/forptbanner_hik3k6'
         }
       />
       <Divider sectionName='Patient Resources' />
