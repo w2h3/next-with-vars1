@@ -1,7 +1,7 @@
 import Banner from '@/components/layout/Banner';
 import React from 'react';
-import tester from 'public/resized/drtest.jpg';
-// import tester from 'public/drtest.jpg';
+import tester from 'public/loss/drtest.webp';
+
 
 const faqs = [
   {

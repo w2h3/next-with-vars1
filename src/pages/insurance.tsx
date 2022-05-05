@@ -1,6 +1,6 @@
 import Banner from '@/components/layout/Banner';
-import tester from '/public/resized/insurancebanner.jpg';
-// import tester from 'public/billing1.jpeg';
+import tester from '/public/loss/insurancebanner.webp';
+
 
 export const Insurances = () => {
   return (
