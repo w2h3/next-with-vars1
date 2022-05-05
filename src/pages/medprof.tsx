@@ -63,7 +63,7 @@ export default function MedProf() {
       <Banner
         pageName='Medical Professionals'
         imageURL={
-          'https://res.cloudinary.com/jameswingert/image/upload/c_fit,g_south,h_360,q_auto:low,w_1600/v1651729614/drtest_t3fzum'
+          'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/drtest_t3fzum'
         }
       />
       <div className='container pt-24'>

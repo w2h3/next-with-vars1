@@ -110,7 +110,7 @@ export default function Contact() {
       <Banner
         pageName='ContactUs'
         imageURL={
-          'https://res.cloudinary.com/jameswingert/image/upload/c_fit,g_south,h_360,q_auto:low,w_1600/v1651729614/contactBanner_wzhdfp'
+          'https://res.cloudinary.com/jameswingert/image/upload/v1651729614/contactBanner_wzhdfp'
         }
       />
       <div className='container max-w-6xl pt-4 pb-24 sm:pt-12'>
