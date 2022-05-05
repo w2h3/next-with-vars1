@@ -58,7 +58,7 @@ export default function locations() {
       <div className=" mt-[6.5rem]">
         <div className="relative  h-[41vh]">
           <div className="relative">
-            <Image
+            <ExportedImage
               src={tester}
               alt=""
               layout="fill"

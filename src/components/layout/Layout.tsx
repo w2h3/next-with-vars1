@@ -7,7 +7,7 @@ const Layout = (props) => {
   return (
     <>
       {/* bg-wcyan/10 bg-opacity-60 */}
-      {/* <Image
+      {/* <ExportedImage
           layout="fill"
           className="pt-20 object-top object-cover pointer-events-none"
           src={background2}

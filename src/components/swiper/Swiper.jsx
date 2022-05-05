@@ -49,7 +49,7 @@ export default function Swipe() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <Image
+          <ExportedImage
             layout="responsive"
             objectFit="cover"
             height="100%"
@@ -60,7 +60,7 @@ export default function Swipe() {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <Image
+          <ExportedImage
             layout="responsive"
             objectFit="cover"
             height="100%"
@@ -69,7 +69,7 @@ export default function Swipe() {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <Image
+          <ExportedImage
             layout="responsive"
             objectFit="cover"
             height="100%"
@@ -78,7 +78,7 @@ export default function Swipe() {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <Image
+          <ExportedImage
             layout="responsive"
             objectFit="cover"
             height="100%"
@@ -87,7 +87,7 @@ export default function Swipe() {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <Image
+          <ExportedImage
             layout="responsive"
             objectFit="cover"
             height="100%"
@@ -96,7 +96,7 @@ export default function Swipe() {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <Image
+          <ExportedImage
             layout="responsive"
             objectFit="cover"
             height="100%"
@@ -105,7 +105,7 @@ export default function Swipe() {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <Image
+          <ExportedImage
             layout="responsive"
             objectFit="cover"
             height="100%"

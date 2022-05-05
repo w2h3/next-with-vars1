@@ -14,7 +14,7 @@ export default function Logo() {
           <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
             <div className="h-12 w-full relative cursor-pointer">
               <Link href="https://alz.org" passHref>
-                <Image
+                <ExportedImage
                   layout="fill"
                   objectFit="contain"
                   src={alz}
@@ -26,28 +26,48 @@ export default function Logo() {
           <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
             <div className="h-12 w-full relative cursor-pointer">
               <Link href="https://americanheadachesociety.org" passHref>
-                <Image layout="fill" src={ah} objectFit="contain" alt="Tuple" />
+                <ExportedImage
+                  layout="fill"
+                  src={ah}
+                  objectFit="contain"
+                  alt="Tuple"
+                />
               </Link>
             </div>
           </div>
           <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
             <div className="h-12 w-full relative cursor-pointer">
               <Link href="https://epilepsy.com" passHref>
-                <Image layout="fill" src={ep} objectFit="cover" alt="Tuple" />
+                <ExportedImage
+                  layout="fill"
+                  src={ep}
+                  objectFit="cover"
+                  alt="Tuple"
+                />
               </Link>
             </div>
           </div>
           <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
             <div className="h-12 w-full relative cursor-pointer">
               <Link href="https://nationalmssociety.org" passHref>
-                <Image layout="fill" src={ms} objectFit="cover" alt="Tuple" />
+                <ExportedImage
+                  layout="fill"
+                  src={ms}
+                  objectFit="cover"
+                  alt="Tuple"
+                />
               </Link>
             </div>
           </div>
           <div className="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
             <div className="h-12 w-full relative cursor-pointer">
               <Link href="https://parkinson.org" passHref>
-                <Image layout="fill" src={pk} objectFit="contain" alt="Tuple" />
+                <ExportedImage
+                  layout="fill"
+                  src={pk}
+                  objectFit="contain"
+                  alt="Tuple"
+                />
               </Link>
             </div>
           </div>

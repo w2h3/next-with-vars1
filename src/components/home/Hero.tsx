@@ -5,10 +5,10 @@ import Link from 'next/link';
 import { GoPrimitiveDot } from 'react-icons/go';
 export default function Hero() {
   return (
-    <div className='mt-[6.5rem]'>
+    <div className="mt-[6.5rem]">
       <div className="relative h-[90vh]">
         <div className="relative  ">
-          <Image
+          <ExportedImage
             src={tester}
             className="tiny-hero"
             alt=""

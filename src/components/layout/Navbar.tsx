@@ -46,7 +46,7 @@ export default function Navbar() {
                 <div className="flex-shrink-0 flex items-center ">
                   {/* <div className="flex lg:hidden w-auto">
                     <Link href="/">
-                      <Image
+                      <ExportedImage
                         src="/navlogo.png"
                         alt="logo"
                         height={55}
@@ -56,7 +56,7 @@ export default function Navbar() {
                   </div> */}
                   <div className="block pt-3 w-auto ">
                     <Link href="/" passHref>
-                      <Image
+                      <ExportedImage
                         src="/logo.png"
                         alt="logo"
                         height={55}

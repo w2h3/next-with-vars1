@@ -71,7 +71,7 @@ const Service = () => {
           </div>
           <div className=" w-full h-full flex flex-col items-center">
             <div className="relative w-full h-96  md:h-140 ">
-              <Image
+              <ExportedImage
                 src={neuro}
                 className="rounded-2xl"
                 alt=""
@@ -116,7 +116,7 @@ const Service = () => {
           </div>
           <div className=" w-full h-full flex flex-col items-center">
             <div className="relative w-full h-96  md:h-140 ">
-              <Image
+              <ExportedImage
                 src={insomnia}
                 className="rounded-2xl"
                 alt=""
@@ -162,7 +162,7 @@ const Service = () => {
           </div>
           <div className=" w-full h-full flex flex-col items-center">
             <div className="relative w-full h-96  md:h-140 ">
-              <Image
+              <ExportedImage
                 src={physical}
                 className="rounded-2xl"
                 alt=""
