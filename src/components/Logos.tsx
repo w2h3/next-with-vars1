@@ -29,7 +29,7 @@ export default function Logo() {
               <Link href="https://americanheadachesociety.org" passHref>
                 <ExportedImage
                   layout="fill"
-                  src={ah}
+                  src={ah.src}
                   objectFit="contain"
                   alt="Tuple"
                 />
@@ -41,7 +41,7 @@ export default function Logo() {
               <Link href="https://epilepsy.com" passHref>
                 <ExportedImage
                   layout="fill"
-                  src={ep}
+                  src={ep.src}
                   objectFit="cover"
                   alt="Tuple"
                 />
@@ -53,7 +53,7 @@ export default function Logo() {
               <Link href="https://nationalmssociety.org" passHref>
                 <ExportedImage
                   layout="fill"
-                  src={ms}
+                  src={ms.src}
                   objectFit="cover"
                   alt="Tuple"
                 />
@@ -65,7 +65,7 @@ export default function Logo() {
               <Link href="https://parkinson.org" passHref>
                 <ExportedImage
                   layout="fill"
-                  src={pk}
+                  src={pk.src}
                   objectFit="contain"
                   alt="Tuple"
                 />
