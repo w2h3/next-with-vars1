@@ -1,6 +1,7 @@
 module.exports = {
   swcMinify: true,
   images: {
+    domains: ['res.cloudinary.com'],
     formats: ['image/webp'],
     minimumCacheTTL: 31536000,
   },

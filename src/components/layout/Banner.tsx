@@ -15,6 +15,7 @@ export default function Banner({ pageName, imageURL }) {
             priority={true}
             objectFit="cover"
             quality={60}
+            unoptimized={true}
             // placeholder="blur"
             // loading="eager"
     
