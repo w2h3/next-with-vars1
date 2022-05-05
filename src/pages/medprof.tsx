@@ -1,7 +1,8 @@
-import Banner from '@/components/layout/Banner';
 import React from 'react';
-import tester from '/public/resized/drtest.jpg';
 
+import Banner from '@/components/layout/Banner';
+
+import tester from '/public/resized/drtest.jpg';
 
 const faqs = [
   {
@@ -59,25 +60,25 @@ const faqs = [
 export default function MedProf() {
   return (
     <>
-      <Banner pageName={'Medical Professionals'} imageURL={tester} />
-      <div className="pt-24 container">
-        <div className="bg-gray-50">
-          <div className="max-w-7xl mx-auto py-12 px-4 divide-y divide-gray-200 sm:px-6 lg:py-16 lg:px-8">
-            <h2 className="text-3xl font-extrabold text-gray-900">
+      <Banner pageName='Medical Professionals' imageURL={tester} />
+      <div className='container pt-24'>
+        <div className='bg-gray-50'>
+          <div className='mx-auto max-w-7xl divide-y divide-gray-200 py-12 px-4 sm:px-6 lg:py-16 lg:px-8'>
+            <h2 className='text-3xl font-extrabold text-gray-900'>
               For Medical Professionals
             </h2>
-            <div className="mt-8">
-              <dl className="divide-y divide-gray-200">
+            <div className='mt-8'>
+              <dl className='divide-y divide-gray-200'>
                 {faqs.map((faq) => (
                   <div
                     key={faq.id}
-                    className="pt-6 pb-8 md:grid md:grid-cols-12 md:gap-8"
+                    className='pt-6 pb-8 md:grid md:grid-cols-12 md:gap-8'
                   >
-                    <dt className="text-base font-medium text-gray-900 md:col-span-5">
+                    <dt className='text-base font-medium text-gray-900 md:col-span-5'>
                       {faq.question}
                     </dt>
-                    <dd className="mt-2 md:mt-0 md:col-span-7">
-                      <p className="text-base text-gray-500">{faq.answer}</p>
+                    <dd className='mt-2 md:col-span-7 md:mt-0'>
+                      <p className='text-base text-gray-500'>{faq.answer}</p>
                     </dd>
                   </div>
                 ))}

@@ -1,21 +1,22 @@
 import Banner from '@/components/layout/Banner';
-import stock from '/public/resized/handhold.jpg';
 import Swipe from '@/components/swiper/Swiper';
+
+import stock from '/public/resized/handhold.jpg';
 
 export const AboutUs = () => {
   return (
-    <div className="">
-      <Banner pageName="About Us" imageURL={stock} />
-      <div className="container pb-20">
-        <div className="grid grid-cols-1  lg:grid-cols-2 ">
-          <div className="flex flex-col justify-center lg:max-w-6xl md:flex-col ">
-            <h2 className=" mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl md:text-5xl sm:leading-none text-center lg:text-left  ">
+    <div className=''>
+      <Banner pageName='About Us' imageURL={stock} />
+      <div className='container pb-20'>
+        <div className='grid grid-cols-1  lg:grid-cols-2 '>
+          <div className='flex flex-col justify-center md:flex-col lg:max-w-6xl '>
+            <h2 className=' mb-6 text-center font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:text-5xl lg:text-left  '>
               Welcome to
               <br />
-              <p className="block text-[#7ba009]">Neurology and Sleep </p>
-              <span className="inline-block ">Medicine Associates</span>
+              <p className='block text-[#7ba009]'>Neurology and Sleep </p>
+              <span className='inline-block '>Medicine Associates</span>
             </h2>
-            <p className="text-base text-gray-700 md:text-lg md:mr-20 mb-10">
+            <p className='mb-10 text-base text-gray-700 md:mr-20 md:text-lg'>
               As a neurologic and sleep disorders specialty clinic, Neurology &
               Sleep Medicine Associates’ work is in a unique partnership of
               health care: providing and interpreting your tests, serving as a
@@ -27,7 +28,7 @@ export const AboutUs = () => {
               individual needs and concerns.
             </p>
           </div>
-          <div className="grid-cols-1 grid-flow-col  ">
+          <div className='grid-flow-col grid-cols-1  '>
             <Swipe />
           </div>
         </div>

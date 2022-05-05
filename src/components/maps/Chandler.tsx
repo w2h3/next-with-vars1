@@ -1,10 +1,10 @@
-import React from 'react';
 import {
   GoogleMap,
-  useJsApiLoader,
-  Marker,
   InfoWindow,
+  Marker,
+  useJsApiLoader,
 } from '@react-google-maps/api';
+import React from 'react';
 
 type OfficeNode = {
   id: string;
@@ -54,12 +54,12 @@ export default function Chandler() {
     lng: -111.84205,
   };
   return (
-    <div className="App mx-auto rounded-2xl  bg-white ">
+    <div className='App mx-auto rounded-2xl  bg-white '>
       {/* h-[40rem] */}
       {isLoaded && (
-        <div className="  mx-auto rounded-2xl  ">
+        <div className='  mx-auto rounded-2xl  '>
           <GoogleMap
-            mapContainerClassName="c-office-overview__map"
+            mapContainerClassName='c-office-overview__map'
             center={center}
             zoom={15}
           >

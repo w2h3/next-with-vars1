@@ -1,55 +1,55 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
-import tester from '/public/banner2.jpeg';
 import Image from 'next/image';
-
 import Link from 'next/link';
 import { GoPrimitiveDot } from 'react-icons/go';
+
+import tester from '/public/banner2.jpeg';
 export default function Hero() {
   return (
-    <div className="mt-[6.5rem]">
-      <div className="relative h-[90vh]">
-        <div className="relative  ">
+    <div className='mt-[6.5rem]'>
+      <div className='relative h-[90vh]'>
+        <div className='relative  '>
           <Image
             src={tester.src}
-            className="tiny-hero"
-            alt=""
-            layout="fill"
+            className='tiny-hero'
+            alt=''
+            layout='fill'
             priority={true}
-            objectFit="cover"
+            objectFit='cover'
             quality={75}
           />
-          <div className="relative flex justify-center px-4  sm:px-6  bg-black bg-opacity-60 h-[90vh] items-center ">
-            <div className=" max-w-7xl relative rounded-3xl ">
-              <h1 className="text-center text-4xl md:text-5xl font-extrabold tracking-tighter lg:text-6xl ">
-                <span className="block text-[#c2df6c]  sm:pt-10 font-nexa ">
+          <div className='relative flex h-[90vh] items-center  justify-center  bg-black bg-opacity-60 px-4 sm:px-6 '>
+            <div className=' relative max-w-7xl rounded-3xl '>
+              <h1 className='text-center text-4xl font-extrabold tracking-tighter md:text-5xl lg:text-6xl '>
+                <span className='block font-nexa  text-[#c2df6c] sm:pt-10 '>
                   Neurology and Sleep Medicine
                 </span>
-                <span className="block text-3xl mx:text-4xl font-thin tracking-widest  lg:text-5xl  text-white font-roboto align-text-bottom">
+                <span className='mx:text-4xl block align-text-bottom font-roboto text-3xl  font-thin  tracking-widest text-white lg:text-5xl'>
                   Associates
                 </span>
               </h1>
 
-              <div className="mt-12  max-w-lg sm:max-w-3xl mx-auto text-center text-2xl font-medium text-white flex flex-col sm:flex-row items-center justify-center">
+              <div className='mx-auto  mt-12 flex max-w-lg flex-col items-center justify-center text-center text-2xl font-medium text-white sm:max-w-3xl sm:flex-row'>
                 Neurology
-                <GoPrimitiveDot className="text-[#c2df6c] mx-2" />
+                <GoPrimitiveDot className='mx-2 text-[#c2df6c]' />
                 Physical Therapy
-                <GoPrimitiveDot className="text-[#c2df6c] mx-2" />
+                <GoPrimitiveDot className='mx-2 text-[#c2df6c]' />
                 Sleep
               </div>
-              <p className="mt-12 max-w-lg mx-auto text-center text-xl font-medium font-widest text-white sm:max-w-3xl">
+              <p className='font-widest mx-auto mt-12 max-w-lg text-center text-xl font-medium text-white sm:max-w-3xl'>
                 Serving our local community since{' '}
-                <span className="text-[#c2df6c]">2002</span>.
+                <span className='text-[#c2df6c]'>2002</span>.
               </p>
 
-              <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
-                <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 pb-10 px-10">
-                  <Link href="/appointment">
-                    <a className="flex items-center justify-center px-4 py-3 border  text-base font-bold rounded-xl shadow-sm text-white bg-wcyan hover:bg-opacity-60  hover:text-white border-white sm:px-8 text-center">
+              <div className='mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center'>
+                <div className='space-y-4 px-10 pb-10 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0'>
+                  <Link href='/appointment'>
+                    <a className='flex items-center justify-center rounded-xl border border-white  bg-wcyan px-4 py-3 text-center text-base font-bold text-white  shadow-sm hover:bg-opacity-60 hover:text-white sm:px-8'>
                       REQUEST APPOINTMENT
                     </a>
                   </Link>
-                  <Link href="https://app.formdr.com/practice/MjE0Mjg=/form/K5ixNCi0wAsH8UKm1OIxGddyP-sLyZbr">
-                    <a className="flex items-center justify-center px-4 py-3 border border-wcyan text-base font-bold rounded-xl shadow-sm text-wcyan bg-white hover:text-wcyan/60  sm:px-8 text-center">
+                  <Link href='https://app.formdr.com/practice/MjE0Mjg=/form/K5ixNCi0wAsH8UKm1OIxGddyP-sLyZbr'>
+                    <a className='flex items-center justify-center rounded-xl border border-wcyan bg-white px-4 py-3 text-center text-base font-bold text-wcyan shadow-sm  hover:text-wcyan/60 sm:px-8'>
                       NEW PATIENT FORM
                     </a>
                   </Link>

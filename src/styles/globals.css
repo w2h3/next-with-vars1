@@ -17,7 +17,7 @@
 }
 @layer components {
   .container {
-    @apply mx-auto px-8 py-8  max-w-6xl 2xl:max-w-[1700px];
+    @apply mx-auto max-w-6xl px-8  py-8 2xl:max-w-[1700px];
   }
 }
 @layer base {

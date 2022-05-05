@@ -1,25 +1,25 @@
 /* eslint-disable jsx-a11y/alt-text */
 
+import Image from 'next/image';
 import React from 'react';
+import { EffectCoverflow, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import swiper1 from '/public/wang/swiper1.jpeg';
-import newFront from '/public/wang/newFront1.jpeg';
-import swiper2 from '/public/wang/swiper21.jpeg';
-import swiper3 from '/public/wang/swiper31.jpeg';
-import swiper4 from '/public/wang/swiper4.jpg';
-import swiper5 from '/public/wang/swiper51.jpeg';
-import swiper6 from '/public/wang/swiper61.jpeg';
-import { EffectCoverflow, Pagination, Navigation } from 'swiper';
-
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
-import Image from 'next/image';
+
+import newFront from '/public/wang/newFront1.jpeg';
+import swiper1 from '/public/wang/swiper1.jpeg';
+import swiper4 from '/public/wang/swiper4.jpg';
+import swiper2 from '/public/wang/swiper21.jpeg';
+import swiper3 from '/public/wang/swiper31.jpeg';
+import swiper5 from '/public/wang/swiper51.jpeg';
+import swiper6 from '/public/wang/swiper61.jpeg';
 
 export default function Swipe() {
   return (
-    <div className="">
+    <div className=''>
       <Swiper
         style={{
           '--swiper-navigation-color': '#fff',
@@ -27,7 +27,7 @@ export default function Swipe() {
 
           // #D6F775
         }}
-        effect={'coverflow'}
+        effect='coverflow'
         slidesPerView={1.2}
         // spaceBetween={10}
         centeredSlides={true}
@@ -47,14 +47,14 @@ export default function Swipe() {
           slideShadows: true,
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="mySwiper"
+        className='mySwiper'
       >
         <SwiperSlide>
           <Image
-            layout="responsive"
-            objectFit="cover"
-            height="100%"
-            width="100%"
+            layout='responsive'
+            objectFit='cover'
+            height='100%'
+            width='100%'
             src={newFront}
             priority={true}
             // quality={75}
@@ -62,55 +62,55 @@ export default function Swipe() {
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            layout="responsive"
-            objectFit="cover"
-            height="100%"
-            width="100%"
+            layout='responsive'
+            objectFit='cover'
+            height='100%'
+            width='100%'
             src={swiper1}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            layout="responsive"
-            objectFit="cover"
-            height="100%"
-            width="100%"
+            layout='responsive'
+            objectFit='cover'
+            height='100%'
+            width='100%'
             src={swiper2}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            layout="responsive"
-            objectFit="cover"
-            height="100%"
-            width="100%"
+            layout='responsive'
+            objectFit='cover'
+            height='100%'
+            width='100%'
             src={swiper3}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            layout="responsive"
-            objectFit="cover"
-            height="100%"
-            width="100%"
+            layout='responsive'
+            objectFit='cover'
+            height='100%'
+            width='100%'
             src={swiper4}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            layout="responsive"
-            objectFit="cover"
-            height="100%"
-            width="100%"
+            layout='responsive'
+            objectFit='cover'
+            height='100%'
+            width='100%'
             src={swiper5}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            layout="responsive"
-            objectFit="cover"
-            height="100%"
-            width="100%"
+            layout='responsive'
+            objectFit='cover'
+            height='100%'
+            width='100%'
             src={swiper6}
           />
         </SwiperSlide>

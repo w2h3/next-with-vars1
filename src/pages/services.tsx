@@ -1,15 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
-import Banner from '@/components/layout/Banner';
-import React from 'react';
-import tester from '/public/resized/servebanner.jpg';
 import icon1 from 'public/ser_icon1.png';
 import icon2 from 'public/ser_icon2.png';
 import icon3 from 'public/ser_icon3.png';
 import icon4 from 'public/ser_icon4.png';
 import icon5 from 'public/ser_icon5.png';
 import icon6 from 'public/ser_icon6.png';
-import icon7 from 'public/ser_icon9.png';
 import icon8 from 'public/ser_icon8.png';
+import icon7 from 'public/ser_icon9.png';
+import React from 'react';
+
+import Banner from '@/components/layout/Banner';
+
+import tester from '/public/resized/servebanner.jpg';
 
 const features = [
   {
@@ -65,15 +67,15 @@ const features = [
 const services = () => {
   return (
     <>
-      <Banner pageName={'Services'} imageURL={tester} />
-      <div className="testImage">
-        <div className="container">
-          <div className="bg-wcyan/30 rounded-3xl mb-20">
-            <div className="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8 text-center">
-              <h2 className="text-3xl font-extrabold text-wcyan tracking-tight">
+      <Banner pageName='Services' imageURL={tester} />
+      <div className='testImage'>
+        <div className='container'>
+          <div className='mb-20 rounded-3xl bg-wcyan/30'>
+            <div className='mx-auto max-w-4xl px-4 py-16 text-center sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:px-8 lg:pt-24'>
+              <h2 className='text-3xl font-extrabold tracking-tight text-wcyan'>
                 Advanced Diagnostic Services
               </h2>
-              <p className="mt-4 max-w-6xl text-lg text-slate-600 text-center">
+              <p className='mt-4 max-w-6xl text-center text-lg text-slate-600'>
                 Our experienced team works together to evaluate your condition.
                 Our advanced diagnostic services utilize state-of-the-art
                 medical technology, providing referring physicians and patients
@@ -81,24 +83,24 @@ const services = () => {
                 appropriate treatments can begin as quickly as possible. Scroll
                 down to review our Advanced Diagnostic Services.
               </p>
-              <div className="mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
+              <div className='mt-12 grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16'>
                 {features.map((feature) => (
                   <div key={feature.name}>
                     <div>
-                      <span className="flex items-center justify-center h-30 w-30 rounded-md ">
+                      <span className='h-30 w-30 flex items-center justify-center rounded-md '>
                         <img
-                          className="h-30 w-30 text-slate-600"
-                          aria-hidden="true"
+                          className='h-30 w-30 text-slate-600'
+                          aria-hidden='true'
                           src={feature.icon}
-                          alt="service"
+                          alt='service'
                         />
                       </span>
                     </div>
-                    <div className="mt-6">
-                      <h3 className="text-lg font-medium text-slate-900 text-center">
+                    <div className='mt-6'>
+                      <h3 className='text-center text-lg font-medium text-slate-900'>
                         {feature.name}
                       </h3>
-                      <p className="mt-2 text-base text-slate-600">
+                      <p className='mt-2 text-base text-slate-600'>
                         {feature.description}
                       </p>
                     </div>

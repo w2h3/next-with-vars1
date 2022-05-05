@@ -1,7 +1,8 @@
-import Map from '../components/maps/Maps';
+import Service from '@/components/home/Service';
+
 import Contact from '../components/home/Contact';
 import Hero from '../components/home/Hero';
-import Service from '@/components/home/Service';
+import Map from '../components/maps/Maps';
 const Home = () => {
   return (
     <div>

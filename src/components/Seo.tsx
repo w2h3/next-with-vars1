@@ -3,7 +3,6 @@ import { useRouter } from 'next/router';
 
 import { openGraph } from '@/components/lib/helper';
 
-
 const defaultMeta = {
   title: 'Neurology and Sleep Medicine Associates',
   siteName: 'Neurology and Sleep Medicine Associates',

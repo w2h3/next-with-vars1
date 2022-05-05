@@ -1,11 +1,11 @@
-import Chandler from '../components/maps/Chandler';
 import { LocationMarkerIcon } from '@heroicons/react/outline';
-import Mesa from '../components/maps/Mesa';
-import Gilbert from '../components/maps/Gilbert';
+import Image from 'next/image';
 import Link from 'next/link';
 import tester from 'public/resized/locationbanner.jpg';
-import Banner from '@/components/layout/Banner';
-import Image from 'next/image';
+
+import Chandler from '../components/maps/Chandler';
+import Gilbert from '../components/maps/Gilbert';
+import Mesa from '../components/maps/Mesa';
 
 const posts = [
   {
@@ -54,20 +54,20 @@ const posts = [
 
 export default function locations() {
   return (
-    <div className="testImage">
+    <div className='testImage'>
       {/* <Banner pageName={'Locations'} imageURL={tester} /> */}{' '}
-      <div className=" mt-[6.5rem]">
-        <div className="relative  h-[41vh]">
-          <div className="relative">
+      <div className=' mt-[6.5rem]'>
+        <div className='relative  h-[41vh]'>
+          <div className='relative'>
             <Image
               src={tester}
-              alt=""
-              layout="fill"
+              alt=''
+              layout='fill'
               priority={true}
-              objectFit="cover"
+              objectFit='cover'
               quality={60}
-              placeholder="blur"
-              loading="eager"
+              placeholder='blur'
+              loading='eager'
             />
             {/* <img
             className="absolute"
@@ -80,27 +80,27 @@ export default function locations() {
               objectFit: 'cover',
             }}
           /> */}
-            <div className="relative justify-center px-4  sm:px-6 pt-1 bg-black bg-opacity-50 h-[41vh] items-center">
+            <div className='relative h-[41vh] items-center  justify-center bg-black bg-opacity-50 px-4 pt-1 sm:px-6'>
               {/* py-20  */}
-              <h1 className="text-6xl font-extrabold tracking-tight text-white sm:text-7xl text-center mt-16 sm:mt-20 ">
+              <h1 className='mt-16 text-center text-6xl font-extrabold tracking-tight text-white sm:mt-20 sm:text-7xl '>
                 Locations
               </h1>
 
-              <div className="pt-12 sm:pt-20" />
+              <div className='pt-12 sm:pt-20' />
 
-              <div className="max-w-sm mx-auto sm:max-w-none  flex justify-center ">
-                <div className=" justify-center space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-7 px-10">
-                  <Link href="/appointment" passHref>
-                    <button className="  flex  items-center justify-center px-4 py-3 border  text-base font-bold rounded-xl shadow-sm text-white bg-wcyan transition duration-450 hover:bg-[#07363D]   border-white  text-center">
+              <div className='mx-auto flex max-w-sm  justify-center sm:max-w-none '>
+                <div className=' justify-center space-y-4 px-10 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-7 sm:space-y-0'>
+                  <Link href='/appointment' passHref>
+                    <button className='  duration-450  flex items-center justify-center rounded-xl border  border-white bg-wcyan px-4 py-3 text-center text-base font-bold text-white shadow-sm   transition  hover:bg-[#07363D]'>
                       REQUEST APPOINTMENT
                     </button>
                   </Link>
                   <Link
-                    href="https://app.formdr.com/practice/MjE0Mjg=/form/K5ixNCi0wAsH8UKm1OIxGddyP-sLyZbr"
+                    href='https://app.formdr.com/practice/MjE0Mjg=/form/K5ixNCi0wAsH8UKm1OIxGddyP-sLyZbr'
                     passHref
                   >
                     <button
-                      className="flex  items-center justify-center  px-9 py-3 border border-wcyan text-base font-bold rounded-xl shadow-sm text-wcyan bg-white  hover:text-[#052429] transition duration-450 "
+                      className='duration-450  flex items-center  justify-center rounded-xl border border-wcyan bg-white px-9 py-3 text-base font-bold text-wcyan  shadow-sm transition hover:text-[#052429] '
                       // hover:text-white
                     >
                       NEW PATIENT FORM
@@ -112,44 +112,44 @@ export default function locations() {
           </div>{' '}
         </div>
       </div>
-      <div className="container">
-        <div className=" mx-auto mb-20">
-          <div className="mt-12  max-w-2xl  mx-auto grid gap-14  md:max-w-md  lg:grid-cols-3 lg:max-w-none text-center ">
+      <div className='container'>
+        <div className=' mx-auto mb-20'>
+          <div className='mx-auto  mt-12  grid max-w-2xl gap-14  text-center  md:max-w-md lg:max-w-none lg:grid-cols-3 '>
             {posts.map((post) => (
               <div
                 key={post.title}
-                className="flex border-2 border-wcyan/40 flex-col rounded-lg shadow-xl bg-white overflow-hidden "
+                className='flex flex-col overflow-hidden rounded-lg border-2 border-wcyan/40 bg-white shadow-xl '
               >
-                <div className="flex-shrink-0 h-48 w-full mb-32 bg-white ">
+                <div className='mb-32 h-48 w-full flex-shrink-0 bg-white '>
                   {post.con}
                 </div>
-                <div className="flex-1 mx-auto mb-4 flex flex-col justify-between ">
-                  <div className="flex-1">
-                    <p className="flex gap-2 items-center justify-center text-xl font-medium text-[#00847D] ">
+                <div className='mx-auto mb-4 flex flex-1 flex-col justify-between '>
+                  <div className='flex-1'>
+                    <p className='flex items-center justify-center gap-2 text-xl font-medium text-[#00847D] '>
                       <LocationMarkerIcon
-                        className="flex-shrink-0 h-6 w-6 text-[#00847D]/80"
-                        aria-hidden="true"
+                        className='h-6 w-6 flex-shrink-0 text-[#00847D]/80'
+                        aria-hidden='true'
                       />
                       {post.category.name}
                     </p>
-                    <p className="block mt-2">
-                      <p className="text-2xl font-semibold text-gray-700">
+                    <p className='mt-2 block'>
+                      <p className='text-2xl font-semibold text-gray-700'>
                         {post.title}
                       </p>
-                      <p className="text-2xl font-semibold text-gray-700">
+                      <p className='text-2xl font-semibold text-gray-700'>
                         {post.title2}
                       </p>
-                      <p className="text-2xl font-semibold text-gray-700">
+                      <p className='text-2xl font-semibold text-gray-700'>
                         {post.title3}
                       </p>
                     </p>
-                    <div className="mt-6 flex justify-center">
-                      <div className="flex-shrink-0"></div>
-                      <div className="w-full">
+                    <div className='mt-6 flex justify-center'>
+                      <div className='flex-shrink-0'></div>
+                      <div className='w-full'>
                         <Link href={post.href}>
                           <a
-                            target="_blank"
-                            className="flex items-center justify-center px-4 py-3 border border-wcyan text-base font-bold rounded-xl shadow-sm text-wcyan bg-white hover:text-wcyan/60"
+                            target='_blank'
+                            className='flex items-center justify-center rounded-xl border border-wcyan bg-white px-4 py-3 text-base font-bold text-wcyan shadow-sm hover:text-wcyan/60'
                           >
                             <time dateTime={post.date}>{post.date}</time>
                           </a>

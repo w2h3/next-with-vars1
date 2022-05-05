@@ -1,9 +1,10 @@
-import Chandler from './Chandler';
 import { LocationMarkerIcon } from '@heroicons/react/outline';
-import Mesa from './Mesa';
-import Gilbert from './Gilbert';
-import Divider from '../layout/Dividers';
 import Link from 'next/link';
+
+import Chandler from './Chandler';
+import Gilbert from './Gilbert';
+import Mesa from './Mesa';
+import Divider from '../layout/Dividers';
 const posts = [
   {
     title: '2919 S. Ellsworth Road',
@@ -51,56 +52,50 @@ const posts = [
 
 export default function Map() {
   return (
-    <div className="testImage">
-
-      <div className="container">
-                <div className=" mx-auto ">
-          <div className="text-center ">
-          
-            <Divider sectionName="Our Locations"></Divider>{' '}
+    <div className='testImage'>
+      <div className='container'>
+        <div className=' mx-auto '>
+          <div className='text-center '>
+            <Divider sectionName='Our Locations'></Divider>{' '}
           </div>
-          <div className="mt-12  max-w-2xl  mx-auto grid gap-14  md:max-w-md  lg:grid-cols-3 lg:max-w-none text-center ">
+          <div className='mx-auto  mt-12  grid max-w-2xl gap-14  text-center  md:max-w-md lg:max-w-none lg:grid-cols-3 '>
             {posts.map((post) => (
               <div
                 key={post.title}
-                className="flex flex-col rounded-lg shadow-xl bg-white overflow-hidden "
+                className='flex flex-col overflow-hidden rounded-lg bg-white shadow-xl '
               >
-                <div className="flex-shrink-0 h-48 w-full mb-32 bg-white ">
+                <div className='mb-32 h-48 w-full flex-shrink-0 bg-white '>
                   {post.con}
-
                 </div>
-                <div className="flex-1 mx-auto mb-4 flex flex-col justify-between ">
-                  <div className="flex-1">
-                    <p className="flex gap-2 items-center justify-center text-2xl font-medium text-wcyan ">
+                <div className='mx-auto mb-4 flex flex-1 flex-col justify-between '>
+                  <div className='flex-1'>
+                    <p className='flex items-center justify-center gap-2 text-2xl font-medium text-wcyan '>
                       <LocationMarkerIcon
-                        className="flex-shrink-0 h-6 w-6 text-wcyan"
-                        aria-hidden="true"
+                        className='h-6 w-6 flex-shrink-0 text-wcyan'
+                        aria-hidden='true'
                       />
                       {post.category.name}
-           
                     </p>
-                    <p className="block mt-2">
-                      <p className="text-2xl font-semibold text-gray-700">
+                    <p className='mt-2 block'>
+                      <p className='text-2xl font-semibold text-gray-700'>
                         {post.title}
                       </p>
-                      <p className="text-2xl font-semibold text-gray-700">
+                      <p className='text-2xl font-semibold text-gray-700'>
                         {post.title2}
                       </p>
-                      <p className="text-2xl font-semibold text-gray-700">
+                      <p className='text-2xl font-semibold text-gray-700'>
                         {post.title3}
                       </p>
                     </p>
-                    <div className="mt-6 flex justify-center">
-                      <div className="flex-shrink-0"/>
-                      <div className="w-full">
+                    <div className='mt-6 flex justify-center'>
+                      <div className='flex-shrink-0' />
+                      <div className='w-full'>
                         <Link href={post.href}>
                           <a
-                            target="_blank"
-                            className="flex items-center justify-center px-4 py-3 border border-wcyan text-base font-bold rounded-xl shadow-sm text-wcyan bg-white hover:text-wcyan/60"
-                        
+                            target='_blank'
+                            className='flex items-center justify-center rounded-xl border border-wcyan bg-white px-4 py-3 text-base font-bold text-wcyan shadow-sm hover:text-wcyan/60'
                           >
                             <time dateTime={post.date}>{post.date}</time>
-         
                           </a>
                         </Link>
                       </div>
