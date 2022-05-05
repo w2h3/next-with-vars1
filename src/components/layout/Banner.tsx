@@ -11,7 +11,7 @@ export default function Banner({ pageName, imageURL }) {
       <div className="relative w-[100vw] h-[41vh]">
         <div className="relative">
           <ExportedImage
-            src={imageURL}
+            src={imageURL.src}
             alt=""
             layout="fill"
             priority={true}
