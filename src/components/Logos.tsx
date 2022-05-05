@@ -18,7 +18,7 @@ export default function Logo() {
                 <ExportedImage
                   layout="fill"
                   objectFit="contain"
-                  src={alz}
+                  src={alz.src}
                   alt="Tuple"
                 />
               </Link>
