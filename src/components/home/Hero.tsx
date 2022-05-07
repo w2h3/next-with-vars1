@@ -6,7 +6,7 @@ import { GoPrimitiveDot } from 'react-icons/go';
 import tester from '/public/banner2.jpeg';
 export default function Hero() {
   return (
-    <div className='mt-[6.5rem]'>
+    <div className='mt-[6rem]'>
       <div className='relative h-[90vh]'>
         <div className='relative  '>
           <Image

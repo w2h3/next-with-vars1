@@ -70,7 +70,7 @@ export default function MedProf() {
         imageURL={myImage}
      
       />
-      <div className='container pt-24'>
+      <div className='container'>
         <div className='bg-gray-50'>
           <div className='mx-auto max-w-7xl divide-y divide-gray-200 py-12 px-4 sm:px-6 lg:py-16 lg:px-8'>
             <h2 className='text-3xl font-extrabold text-gray-900'>
