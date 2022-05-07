@@ -26,7 +26,10 @@ const patients = () => {
           <div className='h-full items-center rounded-r border border-l-4 border-l-[#457A9A] p-5 text-center shadow-sm'>
             {' '}
             <h1 className='mb-2 font-semibold leading-5 '>Offline Form</h1>
-            <Link href='/' passHref>
+            <Link
+              href='https://neurologyandsleep.com/wp-content/uploads/2020/03/New-Patient-Packet_3-2020.pdf'
+              passHref
+            >
               <button className=' inline-flex items-center justify-center rounded-lg bg-wcyan px-5 py-3 text-center text-white '>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
