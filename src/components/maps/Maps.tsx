@@ -56,7 +56,7 @@ export default function Map() {
       <div className='container'>
         <div className=' mx-auto '>
           <div className='text-center '>
-            <Divider sectionName='Our Locations'></Divider>{' '}
+            <Divider sectionName='Our Locations' />
           </div>
           <div className='mx-auto  mt-12  grid max-w-2xl gap-14  text-center  md:max-w-md lg:max-w-none lg:grid-cols-3 '>
             {posts.map((post) => (
@@ -76,7 +76,7 @@ export default function Map() {
                       />
                       {post.category.name}
                     </p>
-                    <p className='mt-2 block'>
+                    <div className='mt-2 block'>
                       <p className='text-2xl font-semibold text-gray-700'>
                         {post.title}
                       </p>
@@ -86,7 +86,7 @@ export default function Map() {
                       <p className='text-2xl font-semibold text-gray-700'>
                         {post.title3}
                       </p>
-                    </p>
+                    </div>
                     <div className='mt-6 flex justify-center'>
                       <div className='flex-shrink-0' />
                       <div className='w-full'>
