@@ -35,11 +35,11 @@ export default function Banner({ pageName, imageURL }) {
                   </button>
                 </Link>
                 <Link
-                  href='https://app.formdr.com/practice/MjE0Mjg=/form/K5ixNCi0wAsH8UKm1OIxGddyP-sLyZbr'
+                  href='/patients'
                   passHref
                 >
                   <button className='duration-450  flex items-center  justify-center rounded-xl border border-wcyan bg-white px-9 py-3 text-base font-bold text-wcyan  shadow-sm transition hover:text-[#052429] '>
-                    NEW PATIENT FORM
+                    NEW PATIENT FORMS
                   </button>
                 </Link>
               </div>
