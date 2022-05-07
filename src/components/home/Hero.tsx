@@ -48,9 +48,9 @@ export default function Hero() {
                       REQUEST APPOINTMENT
                     </a>
                   </Link>
-                  <Link href='https://app.formdr.com/practice/MjE0Mjg=/form/K5ixNCi0wAsH8UKm1OIxGddyP-sLyZbr'>
+                  <Link href='/patients'>
                     <a className='flex items-center justify-center rounded-xl border border-wcyan bg-white px-4 py-3 text-center text-base font-bold text-wcyan shadow-sm  hover:text-wcyan/60 sm:px-8'>
-                      NEW PATIENT FORM
+                      NEW PATIENT FORMS
                     </a>
                   </Link>
                 </div>
