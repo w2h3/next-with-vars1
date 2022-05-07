@@ -55,7 +55,7 @@ const patients = () => {
             {' '}
             <h1 className='mb-2 font-semibold leading-5 '>Online Form</h1>
             <Link
-              href='https://neurologyandsleep.com/wp-content/uploads/2020/03/New-Patient-Packet_3-2020.pdf'
+              href='https://app.formdr.com/practice/MjE3MzQ=/form/uOsuz9sNUUMQ7ljbaZfe_RiGnu07y7CI'
               passHref
             >
               <button className='inline-flex items-center justify-center rounded-lg bg-wcyan px-5 py-3 text-center text-white '>
