@@ -34,11 +34,8 @@ export default function Banner({ pageName, imageURL }) {
                     REQUEST APPOINTMENT
                   </button>
                 </Link>
-                <Link
-                  href='/patients'
-                  passHref
-                >
-                  <button className='duration-450  flex items-center  justify-center rounded-xl border border-wcyan bg-white px-9 py-3 text-base font-bold text-wcyan  shadow-sm transition hover:text-[#052429] '>
+                <Link href='/patients' passHref>
+                  <button className='duration-450  flex items-center  justify-center rounded-xl border border-wcyan bg-white px-9 py-3 text-base font-bold text-wcyan  shadow-sm transition hover:text-[#1b464d] '>
                     NEW PATIENT FORMS
                   </button>
                 </Link>
