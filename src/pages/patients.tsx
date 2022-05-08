@@ -27,7 +27,9 @@ const patients = () => {
             {' '}
             <h1 className='mb-2 font-semibold leading-5 '>Offline Form</h1>
             <Link
-              href='https://neurologyandsleep.com/wp-content/uploads/2020/03/New-Patient-Packet_3-2020.pdf'
+              href='https://drive.google.com/file/d/1hsCkPj2hetql_tLDncvx4CroML--ok5H/view?usp=sharing'
+              // 'https://
+              // 162.144.182.75/wp-content/uploads/2020/03/New-Patient-Packet_3-2020.pdf'
               passHref
             >
               <button className=' inline-flex items-center justify-center rounded-lg bg-wcyan px-5 py-3 text-center text-white '>

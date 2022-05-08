@@ -54,21 +54,7 @@ export default function Contact() {
 
     if (isValidForm) {
       setButtonText('Sending');
-      // https://formspree.io/f/mgedplbp
-      // /api/sendgrid
-      // const res = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
-      //   body: JSON.stringify({
-      //     fullname: fullname,
-      //     email: email,
-      //     phone: phone,
-      //     subject: subject,
-      //     message: message,
-      //   }),
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      //   method: 'POST',
-      // });
+
       let templateParams = {
         fullname: fullname,
         email: email,
@@ -108,28 +94,7 @@ export default function Contact() {
             return;
           }
         );
-      // const { error } = await response.json();
-      //   if (error) {
-      //     console.log(error);
-      //     setShowSuccessMessage(false);
-      //     setShowFailureMessage(true);
-      //     setButtonText('Submit');
-
-      //     // Reset form fields
-      //     setFullname('');
-      //     setEmail('');
-      //     setPhone('');
-      //     setMessage('');
-      //     return;
-      //   }
-      //   setShowSuccessMessage(true);
-      //   setShowFailureMessage(false);
-      //   setButtonText('Submit');
-      //   // Reset form fields
-      //   setFullname('');
-      //   setEmail('');
-      //   setPhone('');
-      //   setMessage('');
+   
     }
     console.log(fullname, email, phone, message);
   };

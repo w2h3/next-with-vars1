@@ -34,7 +34,7 @@ export default function Hero() {
                 <GoPrimitiveDot className='mx-2 text-[#c2df6c]' />
                 Physical Therapy
                 <GoPrimitiveDot className='mx-2 text-[#c2df6c]' />
-                Sleep
+                Sleep Medicine
               </div>
               <p className='font-widest mx-auto mt-12 max-w-lg text-center text-xl font-medium text-white sm:max-w-3xl'>
                 Serving our local community since{' '}
