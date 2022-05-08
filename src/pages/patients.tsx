@@ -32,7 +32,7 @@ const patients = () => {
               // 162.144.182.75/wp-content/uploads/2020/03/New-Patient-Packet_3-2020.pdf'
               passHref
             >
-              <button className=' inline-flex items-center justify-center rounded-lg bg-wcyan px-5 py-3 text-center text-white '>
+              <button className=' inline-flex items-center justify-center rounded-lg bg-wcyan px-5 py-3 text-center text-white hover:wcyan/60 '>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   className='h-6 w-6'
@@ -63,7 +63,7 @@ const patients = () => {
               href='https://app.formdr.com/practice/MjE3MzQ=/form/uOsuz9sNUUMQ7ljbaZfe_RiGnu07y7CI'
               passHref
             >
-              <button className='inline-flex items-center justify-center rounded-lg bg-wcyan px-5 py-3 text-center text-white '>
+              <button className='inline-flex items-center justify-center rounded-lg bg-wcyan px-5 py-3 text-center text-white hover:wcyan/60'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   className='h-6 w-6'
@@ -99,7 +99,7 @@ const patients = () => {
               href='https://mycw34.eclinicalweb.com/portal3661/jsp/100mp/login_otp.jsp'
               passHref
             >
-              <button className='inline-flex items-center justify-center rounded-lg bg-wcyan px-5 py-3 text-center text-white '>
+              <button className='inline-flex items-center justify-center rounded-lg bg-wcyan px-5 py-3 text-center text-white hover:wcyan/60'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   className='h-6 w-6'
