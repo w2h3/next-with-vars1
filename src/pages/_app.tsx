@@ -5,6 +5,7 @@ import '../components/swiper/swiper.css';
 
 import Layout from '../components/layout/Layout';
 function MyApp({ Component, pageProps }) {
+
   return (
     <>
       <Head>
