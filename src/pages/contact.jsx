@@ -11,6 +11,7 @@ import bgmap from 'public/cactus4.jpg';
 import { useState } from 'react';
 
 import Banner from '@/components/layout/Banner';
+import Seo from '@/components/Seo';
 
 export default function Contact() {
   const [fullname, setFullname] = useState('');
@@ -112,6 +113,7 @@ export default function Contact() {
   const myImage = cld.image('v1651729614/contactBanner_wzhdfp');
   return (
     <div className='testImage'>
+      <Seo />
       <Banner pageName='Contact Us' imageURL={myImage} />
       <div className='container max-w-6xl pt-4 pb-24 sm:pt-12'>
         <div className=' mt-14 lg:grid lg:grid-cols-3'>

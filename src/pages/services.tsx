@@ -11,6 +11,7 @@ import icon7 from 'public/ser_icon9.png';
 import React from 'react';
 
 import Banner from '@/components/layout/Banner';
+import Seo from '@/components/Seo';
 
 const features = [
   {
@@ -72,11 +73,8 @@ const services = () => {
   const myImage = cld.image('v1651729614/servebanner_bmunho');
   return (
     <>
-      <Banner
-        pageName='Services'
-        imageURL={myImage}
-     
-      />
+      <Seo />
+      <Banner pageName='Services' imageURL={myImage} />
       <div className='testImage'>
         <div className='container'>
           <div className='mb-20 rounded-3xl bg-wcyan/30'>

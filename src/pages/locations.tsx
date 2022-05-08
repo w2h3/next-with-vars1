@@ -3,6 +3,7 @@ import { LocationMarkerIcon } from '@heroicons/react/outline';
 import Link from 'next/link';
 
 import Banner from '@/components/layout/Banner';
+import Seo from '@/components/Seo';
 
 import Chandler from '../components/maps/Chandler';
 import Gilbert from '../components/maps/Gilbert';
@@ -62,11 +63,8 @@ export default function locations() {
   const myImage = cld.image('v1651729614/locationbanner_zrd8yb');
   return (
     <div className='testImage'>
-      <Banner
-        pageName='Locations'
-        imageURL={myImage}
-     
-      />
+      <Seo />
+      <Banner pageName='Locations' imageURL={myImage} />
 
       <div className='container'>
         <div className=' mx-auto mb-20'>

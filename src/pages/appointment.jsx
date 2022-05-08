@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 
 import Banner from '@/components/layout/Banner';
 import Divider from '@/components/layout/Dividers';
+import Seo from '@/components/Seo';
 
 export default function Appointment() {
   const [first, setFirst] = useState('');
@@ -157,11 +158,8 @@ export default function Appointment() {
   const myImage = cld.image('v1651729614/servebanner_bmunho');
   return (
     <>
-      <Banner
-        pageName='Book an Appointment'
-        imageURL={myImage}
-     
-      />
+      <Seo />
+      <Banner pageName='Book an Appointment' imageURL={myImage} />
       <div className='testImage'>
         <Divider sectionName='Request an Appointment' />
 

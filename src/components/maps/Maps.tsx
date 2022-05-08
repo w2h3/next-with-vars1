@@ -53,7 +53,7 @@ const posts = [
 export default function Map() {
   return (
     <div className='testImage'>
-      <div className='mx-auto max-w-8xl px-8  py-8 '>
+      <div className='max-w-8xl mx-auto px-8  py-8 '>
         <div className=' mx-auto '>
           <div className='text-center '>
             <Divider sectionName='Our Locations' />
@@ -95,7 +95,7 @@ export default function Map() {
                             target='_blank'
                             className='flex items-center justify-center rounded-xl border border-wcyan bg-white px-4 py-3 text-base font-bold text-wcyan shadow-sm hover:text-wcyan/60'
                           >
-                            <time >{post.date}</time>
+                            <time>{post.date}</time>
                           </a>
                         </Link>
                       </div>

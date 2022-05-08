@@ -1,6 +1,7 @@
 import { Cloudinary } from '@cloudinary/url-gen';
 
 import Banner from '@/components/layout/Banner';
+import Seo from '@/components/Seo';
 import Swipe from '@/components/swiper/Swiper';
 
 export const AboutUs = () => {
@@ -12,11 +13,8 @@ export const AboutUs = () => {
   const myImage = cld.image('v1651729614/handhold_qo4inn');
   return (
     <div className=''>
-      <Banner
-        pageName='About Us'
-        imageURL={myImage}
-
-      />
+      <Seo />
+      <Banner pageName='About Us' imageURL={myImage} />
       <div className='container pb-20'>
         <div className='grid grid-cols-1  lg:grid-cols-2 '>
           <div className='flex flex-col justify-center md:flex-col lg:max-w-6xl '>

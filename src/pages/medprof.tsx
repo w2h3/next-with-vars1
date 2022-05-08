@@ -2,6 +2,7 @@ import { Cloudinary } from '@cloudinary/url-gen';
 import React from 'react';
 
 import Banner from '@/components/layout/Banner';
+import Seo from '@/components/Seo';
 
 const faqs = [
   {
@@ -65,11 +66,8 @@ export default function MedProf() {
   const myImage = cld.image('v1651729614/locationbanner_zrd8yb');
   return (
     <>
-      <Banner
-        pageName='Medical Professionals'
-        imageURL={myImage}
-     
-      />
+      <Seo />
+      <Banner pageName='Medical Professionals' imageURL={myImage} />
       <div className='container'>
         <div className='bg-gray-50'>
           <div className='mx-auto max-w-7xl divide-y divide-gray-200 py-12 px-4 sm:px-6 lg:py-16 lg:px-8'>

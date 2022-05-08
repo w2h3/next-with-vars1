@@ -94,7 +94,6 @@ export default function Contact() {
             return;
           }
         );
-   
     }
     console.log(fullname, email, phone, message);
   };

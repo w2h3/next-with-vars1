@@ -5,6 +5,7 @@ import React from 'react';
 import Banner from '@/components/layout/Banner';
 import Divider from '@/components/layout/Dividers';
 import Logo from '@/components/Logos';
+import Seo from '@/components/Seo';
 
 const patients = () => {
   const cld = new Cloudinary({
@@ -15,6 +16,7 @@ const patients = () => {
   const myImage = cld.image('v1651729614/forptbanner_hik3k6');
   return (
     <>
+      <Seo />
       <Banner pageName='For Patients' imageURL={myImage} />
       <Divider sectionName='Patient Resources' />
       <div className='container mb-20'>
