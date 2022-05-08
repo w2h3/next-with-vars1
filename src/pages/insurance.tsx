@@ -11,11 +11,7 @@ export const Insurances = () => {
   const myImage = cld.image('v1651729614/insuranceBanner_ljpfam');
   return (
     <>
-      <Banner
-        pageName='Insurances'
-        imageURL={myImage}
-
-      />
+      <Banner pageName='Insurances' imageURL={myImage} />
       <div className='testImage'>
         <div className='max-w-screen  mx-auto py-8 sm:max-w-6xl 2xl:max-w-[1700px]'>
           <div className='mb-10 text-center text-4xl text-wcyan'>
@@ -127,7 +123,9 @@ export const Insurances = () => {
                 <td className='text-md mx-auto py-5 text-gray-800  sm:pl-10 sm:text-lg'>
                   Medicare
                 </td>
-                <td className='text-md mx-auto py-5  text-gray-800 sm:text-lg'></td>
+                <td className='text-md mx-auto py-5  text-gray-800 sm:text-lg'>
+                  Accepted
+                </td>
                 <td className='text-md mx-auto py-5  text-center text-gray-800 sm:text-lg'>
                   Railroad Medicare
                 </td>
@@ -145,7 +143,9 @@ export const Insurances = () => {
                 <td className='text-md mx-auto py-5 text-gray-800  sm:pl-10 sm:text-lg'>
                   TriWest/TriCare
                 </td>
-                <td className='text-md mx-auto py-5  text-gray-800 sm:text-lg'></td>
+                <td className='text-md mx-auto py-5  text-gray-800 sm:text-lg'>
+                  Accepted
+                </td>
                 <td className='text-md mx-auto py-5  text-center text-gray-800 sm:text-lg'></td>
               </tr>
               <tr className='bg-gray-200 '>
