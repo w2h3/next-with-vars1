@@ -1,11 +1,10 @@
 import * as React from 'react';
 
-import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 
 export default function NotFoundPage() {
   return (
-    <Layout>
+  <>
       <Seo />
 
       <main>
@@ -21,6 +20,6 @@ export default function NotFoundPage() {
           </div>
         </section>
       </main>
-    </Layout>
+      </>
   );
 }

@@ -1,11 +1,10 @@
 import * as React from 'react';
 
-import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 
 export default function ComingSoon() {
   return (
-    <Layout>
+    <>
       <Seo />
 
       <main>
@@ -25,6 +24,6 @@ export default function ComingSoon() {
           </div>
         </section>
       </main>
-    </Layout>
+    </>
   );
 }
