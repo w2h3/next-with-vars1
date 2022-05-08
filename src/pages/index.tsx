@@ -11,7 +11,7 @@ const Home = () => {
       <Hero />
       <Service />
 
-      {/* <Map /> */}
+      <Map />
       <Contact />
     </div>
   );
