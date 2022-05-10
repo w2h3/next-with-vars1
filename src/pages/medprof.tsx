@@ -42,16 +42,11 @@ const faqs = [
   },
   {
     id: 8,
-    question: 'Radiology Information: ',
-    answer: 'radiology@neurologyandsleep.com',
-  },
-  {
-    id: 9,
     question: 'Referrals Requests and Information:',
     answer: 'referrals@neurologyandsleep.com',
   },
   {
-    id: 10,
+    id: 9,
     question: 'Therapy Requests and Information:',
     answer: 'therapy@neurologyandsleep.com',
   },
