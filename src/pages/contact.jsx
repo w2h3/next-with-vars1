@@ -202,7 +202,7 @@ export default function Contact() {
                       aria-hidden='true'
                     />
                     <span className='ml-3 mb-32 font-bold text-gray-800 md:mb-20'>
-                      billing@neurologyandsleep.com
+                      HHedgpeth@neurologyandsleep.com
                     </span>
                   </dd>
                 </div>

@@ -18,7 +18,7 @@ const faqs = [
   {
     id: 3,
     question: 'Billing Requests and Information:',
-    answer: 'billing@neurologyandsleep.com',
+    answer: 'HHedgpeth@neurologyandsleep.com',
   },
   {
     id: 4,

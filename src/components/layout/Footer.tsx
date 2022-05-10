@@ -136,7 +136,7 @@ export const Footer = () => {
                     Email: &nbsp;
                   </span>{' '}
                   <span className='text-base text-[#191716] '>
-                    billing@neurologyandsleep.com
+                  HHedgpeth@neurologyandsleep.com
                   </span>
                 </dd>
               </div>
