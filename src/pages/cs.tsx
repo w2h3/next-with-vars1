@@ -11,13 +11,11 @@ export default function cs() {
       <section className='container'>
         <div className='layout flex min-h-screen flex-col items-center justify-center text-center text-black'>
           <h1 className='mt-8 text-3xl'>
-            This feature will be completed by 5/13/22. Please download and
-            fillout the offline form for now. Thank you for your understanding.
+            Thank you, your form as been submitted successfully! We look forward
+            to seeing you.
           </h1>
           <div className='mt-4 text-blue-600 underline underline-offset-2 md:text-lg'>
-            <Link className='' href='/patients'>
-              Back to Patients Page.
-            </Link>
+            <Link href='/'>Back to home.</Link>
           </div>
         </div>
       </section>
