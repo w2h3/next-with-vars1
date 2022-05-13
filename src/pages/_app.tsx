@@ -12,28 +12,25 @@ function MyApp({ Component, pageProps }) {
         strategy='lazyOnload'
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
-      <Script
-        id='google-analytics-script'
-        strategy='lazyOnload'
-        dangerouslySetInnerHTML={{
-          __html: `
+      <Script id='google-analytics-script' strategy='lazyOnload'>
+        {/* dangerouslySetInnerHTML={ __html:*/}
+        {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
               page_path: window.location.pathname,
             });
-          `,
-        }}
-      />
+                `}
+      </Script>
       <Head>
-        {/* <title>Neurology & Sleep Medicine Associates</title>
-        <link rel='icon' type='image/icon' sizes='16x16' href='/favicon.ico' />
+        <title>Neurology & Sleep Medicine Associates</title>
+
         <meta
           name='Neurology and Sleep Medicine Associates'
-          content='Neurology/Sleep/Physical Therapy/Psychiatry in Arizona'
+          content='Neurology/Sleep/Physical Therapy in Arizona'
         />
-        <meta name='author' content='James Wingert' /> */}
+        <meta name='author' content='James Wingert' />
       </Head>
       <Layout>
         <Component {...pageProps} />
