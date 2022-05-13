@@ -81,9 +81,11 @@ export default function Navbar() {
                         href='https://mycw34.eclinicalweb.com/portal3661/jsp/100mp/login_otp.jsp'
                         passHref
                       >
-                        <button className='rounded-full border border-wcyan bg-wcyan p-1 font-bold text-white hover:border hover:border-wcyan hover:bg-wcyan/70 xl:p-3'>
-                          Patient Portal
-                        </button>
+                        <a target='_blank'>
+                          <button className='rounded-full border border-wcyan bg-wcyan p-1 font-bold text-white hover:border hover:border-wcyan hover:bg-wcyan/70 xl:p-3'>
+                            Patient Portal
+                          </button>
+                        </a>
                       </Link>
                     </div>
                   </div>

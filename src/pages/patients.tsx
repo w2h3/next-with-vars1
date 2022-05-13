@@ -28,14 +28,7 @@ const patients = () => {
           <div className='h-full items-center rounded-r border border-l-4 border-l-[#457A9A] p-5 text-center shadow-sm'>
             {' '}
             <h1 className='mb-2 font-semibold leading-5 '>Offline Form</h1>
-            <Link
-              href='/pdf/NewPatient.pdf'
-              target='_blank'
-              // href='https://drive.google.com/file/d/1hsCkPj2hetql_tLDncvx4CroML--ok5H/view?usp=sharing'
-              // 'https://
-              // 162.144.182.75/wp-content/uploads/2020/03/New-Patient-Packet_3-2020.pdf'
-              passHref
-            >
+            <Link href='/pdf/NewPatient.pdf' target='_blank' passHref>
               <button className=' hover:wcyan/60 inline-flex items-center justify-center rounded-lg bg-wcyan px-5 py-3 text-center text-white '>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -66,30 +59,31 @@ const patients = () => {
             <Link
               href='https://app.formdr.com/practice/MjE3MzQ=/form/hOvfi-yfyE4rrOciJYi907SF32_Nxeam'
               passHref
-              target='_blank'
             >
-              <button className='hover:wcyan/60 inline-flex items-center justify-center rounded-lg bg-wcyan px-5 py-3 text-center text-white'>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  className='h-6 w-6'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  stroke='currentColor'
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12'
-                  />
-                </svg>
-                <span className='ml-4 flex flex-col items-center justify-center text-center leading-none'>
-                  <span className='mb-1 text-xs'>FILL OUT AND</span>
-                  <span className='title-font font-semibold'>
-                    Submit Online Form
+              <a target='_blank'>
+                <button className='hover:wcyan/60 inline-flex items-center justify-center rounded-lg bg-wcyan px-5 py-3 text-center text-white'>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    className='h-6 w-6'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    stroke='currentColor'
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12'
+                    />
+                  </svg>
+                  <span className='ml-4 flex flex-col items-center justify-center text-center leading-none'>
+                    <span className='mb-1 text-xs'>FILL OUT AND</span>
+                    <span className='title-font font-semibold'>
+                      Submit Online Form
+                    </span>
                   </span>
-                </span>
-              </button>
+                </button>
+              </a>
             </Link>
           </div>
         </div>
@@ -103,30 +97,32 @@ const patients = () => {
             <Link
               href='https://mycw34.eclinicalweb.com/portal3661/jsp/100mp/login_otp.jsp'
               passHref
-              target='_blank'
             >
-              <button className='hover:wcyan/60 inline-flex items-center justify-center rounded-lg bg-wcyan px-5 py-3 text-center text-white'>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  className='h-6 w-6'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  stroke='currentColor'
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    d='M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'
-                  />
-                </svg>
-                <span className='ml-4 flex flex-col items-center justify-center text-center leading-none'>
-                  <span className='mb-1 text-xs'>CLICK FOR THE</span>
-                  <span className='title-font font-semibold'>
-                    Patient Portal
+              {' '}
+              <a target='_blank'>
+                <button className='hover:wcyan/60 inline-flex items-center justify-center rounded-lg bg-wcyan px-5 py-3 text-center text-white'>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    className='h-6 w-6'
+                    fill='none'
+                    viewBox='0 0 24 24'
+                    stroke='currentColor'
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
+                      d='M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'
+                    />
+                  </svg>
+                  <span className='ml-4 flex flex-col items-center justify-center text-center leading-none'>
+                    <span className='mb-1 text-xs'>CLICK FOR THE</span>
+                    <span className='title-font font-semibold'>
+                      Patient Portal
+                    </span>
                   </span>
-                </span>
-              </button>
+                </button>
+              </a>
             </Link>
           </div>
         </div>
