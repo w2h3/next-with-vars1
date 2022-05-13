@@ -64,9 +64,9 @@ const patients = () => {
             {' '}
             <h1 className='mb-2 font-semibold leading-5 '>Online Form</h1>
             <Link
-              href='/cs'
+              href='https://app.formdr.com/practice/MjE3MzQ=/form/hOvfi-yfyE4rrOciJYi907SF32_Nxeam'
               passHref
-              // target='_blank'
+              target='_blank'
             >
               <button className='hover:wcyan/60 inline-flex items-center justify-center rounded-lg bg-wcyan px-5 py-3 text-center text-white'>
                 <svg
