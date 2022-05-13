@@ -51,10 +51,9 @@ const patients = () => {
                   </span>
                 </span>
               </button>
-            </Link>{' '}
+            </Link>
           </div>
           <div className='h-full items-center rounded-r border border-l-4 border-l-[#457A9A] p-5 text-center shadow-sm'>
-            {' '}
             <h1 className='mb-2 font-semibold leading-5 '>Online Form</h1>
             <Link
               href='https://app.formdr.com/practice/MjE3MzQ=/form/hOvfi-yfyE4rrOciJYi907SF32_Nxeam'
@@ -92,13 +91,11 @@ const patients = () => {
         </h2>
         <div className='flex flex-shrink-0 flex-col items-center justify-center space-y-6 sm:flex-row sm:space-x-10 sm:space-y-0'>
           <div className='h-full items-center justify-center rounded-r border border-l-4 border-l-[#457A9A] p-5 text-center shadow-sm'>
-            {' '}
             <h1 className='mb-2 font-semibold leading-5 '>Patient Portal</h1>
             <Link
               href='https://mycw34.eclinicalweb.com/portal3661/jsp/100mp/login_otp.jsp'
               passHref
             >
-              {' '}
               <a target='_blank'>
                 <button className='hover:wcyan/60 inline-flex items-center justify-center rounded-lg bg-wcyan px-5 py-3 text-center text-white'>
                   <svg
