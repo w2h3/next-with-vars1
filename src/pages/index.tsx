@@ -10,7 +10,6 @@ const Home = () => {
       <Seo />
       <Hero />
       <Service />
-
       <Map />
       <Contact />
     </div>
