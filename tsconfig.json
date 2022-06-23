@@ -32,11 +32,11 @@
     "src/components/swiper/Swiper.jsx",
     "src/components/home/Services.js",
     "src/components/util/Blur.js",
-    "src/pages/appointment.jsx",
-    "src/pages/appointment.jsx",
-    "src/pages/contact.jsx",
+    "src/pages/appointment.tsx",
+    "src/pages/appointment.tsx",
+    "src/pages/contact.tsx",
     "src/components/home/Contact.jsx",
-    "src/components/layout/Banner.jsx"
+    "src/components/layout/Banner.tsx"
   ],
   "exclude": ["node_modules"],
   "moduleResolution": ["node_modules", ".next", "node"]

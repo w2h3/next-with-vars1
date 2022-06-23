@@ -1,3 +1,4 @@
+/* eslint-disable unused-imports/no-unused-vars */
 import { Cloudinary } from '@cloudinary/url-gen';
 import emailjs from '@emailjs/browser';
 import {
@@ -52,7 +53,7 @@ export default function Contact() {
     }
 
     setErrors({ ...tempErrors });
-    console.log('errors', errors);
+    // console.log('errors', errors);
     return isValid;
   };
 
@@ -80,7 +81,7 @@ export default function Contact() {
         )
         .then(
           (response) => {
-            console.log(response.text);
+            // console.log(response.text);
             setShowSuccessMessage(true);
             setShowFailureMessage(false);
             setButtonText('Submit');
@@ -91,7 +92,7 @@ export default function Contact() {
             setMessage('');
           },
           (error) => {
-            console.log(error.text);
+            // console.log(error.text);
             setShowSuccessMessage(false);
             setShowFailureMessage(true);
             setButtonText('Submit');
@@ -103,7 +104,7 @@ export default function Contact() {
           }
         );
     }
-    console.log(fullname, email, phone, message);
+    // console.log(fullname, email, phone, message);
   };
   const cld = new Cloudinary({
     cloud: {

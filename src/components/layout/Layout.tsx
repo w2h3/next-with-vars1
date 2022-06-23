@@ -3,6 +3,7 @@ import React from 'react';
 import Footer from './Footer';
 import Navbar from './Navbar';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Layout = (props: any) => {
   return (
     <>

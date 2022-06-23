@@ -1,3 +1,5 @@
+/* eslint-disable unused-imports/no-unused-vars */
+/* eslint-disable prefer-const */
 import { Cloudinary } from '@cloudinary/url-gen';
 import emailjs from '@emailjs/browser';
 import React, { useState } from 'react';
@@ -42,7 +44,6 @@ export default function Appointment() {
   };
 
   // Validation check method
-  // Validation check method
   const handleValidation = () => {
     let tempErrors = {};
     let isValid = true;
@@ -75,7 +76,7 @@ export default function Appointment() {
 
     setErrors({ ...tempErrors });
 
-    console.log('errors', errors);
+    // console.log('errors', errors);
 
     return isValid;
   };
@@ -106,7 +107,7 @@ export default function Appointment() {
         )
         .then(
           (response) => {
-            console.log(response.text);
+            // console.log(response.text);
             setShowSuccessMessage(true);
             setShowFailureMessage(false);
             setButtonText('Submit');
@@ -121,7 +122,7 @@ export default function Appointment() {
             setVoicemail('');
           },
           (error) => {
-            console.log(error.text);
+            // console.log(error.text);
             setShowSuccessMessage(false);
             setShowFailureMessage(true);
             setButtonText('Submit');
@@ -138,16 +139,16 @@ export default function Appointment() {
           }
         );
     }
-    console.log(
-      first,
-      last,
-      email,
-      phone,
-      gender,
-      insurname,
-      insurnum,
-      voicemail
-    );
+    // console.log(
+    //   first,
+    //   last,
+    //   email,
+    //   phone,
+    //   gender,
+    //   insurname,
+    //   insurnum,
+    //   voicemail
+    // );
   };
 
   const cld = new Cloudinary({
