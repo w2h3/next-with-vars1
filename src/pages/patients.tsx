@@ -53,7 +53,7 @@ const patients = () => {
               </button>
             </Link>
           </div>
-          <div className='h-full items-center rounded-r border border-l-4 border-l-[#457A9A] p-5 text-center shadow-sm'>
+          {/* <div className='h-full items-center rounded-r border border-l-4 border-l-[#457A9A] p-5 text-center shadow-sm'>
             <h1 className='mb-2 font-semibold leading-5 '>Online Form</h1>
             <Link
               href='https://app.formdr.com/practice/MjE3MzQ=/form/hOvfi-yfyE4rrOciJYi907SF32_Nxeam'
@@ -84,7 +84,7 @@ const patients = () => {
                 </button>
               </a>
             </Link>
-          </div>
+          </div> */}
         </div>
         <h2 className='mb-6 mt-6  text-center font-sans text-3xl font-bold leading-none tracking-tight text-wcyan  md:mx-auto'>
           Portal Access
