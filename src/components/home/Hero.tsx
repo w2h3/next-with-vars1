@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { GoPrimitiveDot } from 'react-icons/go';
 
-import tester from '/public/banner2.jpeg';
+import tester from '/public/banner2.webp';
 export default function Hero() {
   return (
     <div className='mt-[6rem]'>
