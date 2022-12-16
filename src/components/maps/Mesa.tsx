@@ -27,8 +27,8 @@ export default function Chandler() {
         postal_code: '85210',
         address_line1: '2152 S. Vineyard Drive',
         address_line2: 'Suite 131, AZ 85210',
-        latitude: 33.36228103244491,
-        longitude: -111.6344741291186,
+        latitude: 33.37483231676786,
+        longitude: -111.84461498225293,
       },
     },
   ];
@@ -49,8 +49,8 @@ export default function Chandler() {
     lng: number;
   }
   const center: newProps = {
-    lat: 33.36228103244491,
-    lng: -111.6344741291186,
+    lat: 33.37483231676786,
+    lng: -111.84461498225293,
   };
   return (
     <div className='App mx-auto bg-white  '>
