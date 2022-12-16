@@ -25,10 +25,10 @@ export default function Chandler() {
       field_address: {
         locality: 'Mesa',
         postal_code: '85210',
-        address_line1: '2045 S. Vineyard',
-        address_line2: 'Bldg. N3, Suite 144',
-        latitude: 33.41493,
-        longitude: -111.84205,
+        address_line1: '2152 S. Vineyard',
+        address_line2: 'Suite 131',
+        latitude: 33.37489353241661,
+        longitude: -111.84458011349304,
       },
     },
   ];

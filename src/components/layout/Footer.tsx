@@ -215,7 +215,7 @@ export const Footer = () => {
                     aria-hidden='true'
                   />
                   <span className='mb-3 items-center text-center'>
-                    2045 S. Vineyard Dr.<br></br> Bldg. N3, Suite 144
+                    2152 S. Vineyard Dr.<br></br>Suite 131
                     <br /> Mesa, AZ 85210
                   </span>
                 </dd>

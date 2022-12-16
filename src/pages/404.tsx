@@ -1,12 +1,9 @@
 import Link from 'next/link';
 import * as React from 'react';
 
-import Seo from '@/components/Seo';
-
 export default function notfoundpage() {
   return (
     <>
-      <Seo />
 
       <section className='container'>
         <div className='layout flex min-h-screen flex-col items-center justify-center text-center text-black'>
