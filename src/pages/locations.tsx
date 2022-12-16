@@ -6,7 +6,6 @@ import Banner from '@/components/layout/Banner';
 import Seo from '@/components/Seo';
 
 import Chandler from '../components/maps/Chandler';
-import Gilbert from '../components/maps/Gilbert';
 import Mesa from '../components/maps/Mesa';
 
 const posts = [
@@ -36,21 +35,6 @@ const posts = [
     imageUrl:
       'https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
     con: <Mesa></Mesa>,
-  },
-
-  {
-    title: '4001 E Baseline Road',
-    title2: 'Suite 205',
-    title3: 'Gilbert, AZ 85234',
-    href: 'https://www.google.com/maps/place/4001+E+Baseline+Rd+Suite+%23205,+Gilbert,+AZ+85234/@33.3785159,-111.7490784,17z/data=!3m1!4b1!4m5!3m4!1s0x872baf13f77b0fc5:0xaf618104a20a2229!8m2!3d33.3785114!4d-111.7468844',
-    id: 3,
-    category: { name: 'Gilbert, AZ' },
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.',
-    date: 'Directions',
-    imageUrl:
-      'https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
-    con: <Gilbert></Gilbert>,
   },
 ];
 
