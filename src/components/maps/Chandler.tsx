@@ -27,8 +27,8 @@ export default function Chandler() {
         postal_code: '85210',
         address_line1: '2152 S. Vineyard',
         address_line2: 'Suite 131',
-        latitude: 33.37489353241661,
-        longitude: -111.84458011349304,
+        latitude: 33.374956440375264,
+        longitude: -111.84465520092091,
       },
     },
   ];
@@ -49,8 +49,8 @@ export default function Chandler() {
     lng: number;
   }
   const center: newProps = {
-    lat: 33.41493,
-    lng: -111.84205,
+    lat: 33.374956440375264,
+    lng: -111.84465520092091,
   };
   return (
     <div className='App mx-auto rounded-2xl  bg-white '>

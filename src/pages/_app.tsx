@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import { Analytics } from '@vercel/analytics/react';
 import Head from 'next/head';
 
 import '../styles/globals.css';
@@ -19,6 +22,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Layout>
         <Component {...pageProps} />
+        <Analytics />
       </Layout>
     </>
   );
