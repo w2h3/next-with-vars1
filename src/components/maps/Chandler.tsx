@@ -27,9 +27,10 @@ export default function Chandler() {
         postal_code: '85212',
         address_line1: '2919 S. Ellsworth Road',
         address_line2: 'Suite 135',
-        latitude: 33.374956440375264,
-        longitude: -111.84465520092091,
+        latitude: 33.362269636792085,
+        longitude: -111.63499880143968,
       },
+
     },
   ];
 
@@ -49,8 +50,8 @@ export default function Chandler() {
     lng: number;
   }
   const center: newProps = {
-    lat: 33.374956440375264,
-    lng: -111.84465520092091,
+    lat: 33.362269636792085,
+    lng: -111.63499880143968,
   };
   return (
     <div className='App mx-auto rounded-2xl  bg-white '>
