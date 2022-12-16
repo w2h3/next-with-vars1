@@ -52,7 +52,7 @@ export default function locations() {
 
       <div className='container'>
         <div className=' mx-auto mb-20'>
-          <div className='mx-auto  mt-12  grid max-w-2xl gap-14  text-center  md:max-w-md lg:max-w-none lg:grid-cols-3 '>
+          <div className='mx-auto  mt-12  grid max-w-2xl gap-14  text-center  md:max-w-md lg:max-w-none lg:grid-cols-2 '>
             {posts.map((post) => (
               <div
                 key={post.title}
