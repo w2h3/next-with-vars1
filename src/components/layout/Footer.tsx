@@ -204,17 +204,6 @@ export const Footer = () => {
                     aria-hidden='true'
                   />
                   <span className='mb-3 items-center text-center'>
-                    4001 E Baseline Rd.<br></br> Suite 205
-                    <br /> Gilbert, AZ 85234
-                  </span>
-                </dd>
-                <dt className='sr-only'>Postal address</dt>
-                <dd className='flex justify-center text-center'>
-                  <LocationMarkerIcon
-                    className='h-6 w-6 flex-shrink-0 text-wcyan'
-                    aria-hidden='true'
-                  />
-                  <span className='mb-3 items-center text-center'>
                     2152 S. Vineyard Dr.<br></br>Suite 131
                     <br /> Mesa, AZ 85210
                   </span>
