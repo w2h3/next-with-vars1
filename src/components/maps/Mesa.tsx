@@ -24,9 +24,9 @@ export default function Chandler() {
       id: '1',
       field_address: {
         locality: 'Mesa',
-        postal_code: '85212',
-        address_line1: '2919 S. Ellsworth Road',
-        address_line2: 'Suite 135, AZ 85212',
+        postal_code: '85210',
+        address_line1: '2152 S. Vineyard Drive',
+        address_line2: 'Suite 131, AZ 85210',
         latitude: 33.36228103244491,
         longitude: -111.6344741291186,
       },
